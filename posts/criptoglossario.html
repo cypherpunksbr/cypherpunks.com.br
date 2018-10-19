@@ -1,0 +1,417 @@
+<div class="page-header">
+<h1 style="text-align: center;">Cripto Glossário
+<small>Timothy C. May e Eric Hughes
+22 de novembro de 1992</small></h1>
+</div>
+<em>De: tcmay@netcom.com (Timothy C. May)
+Assunto: Cripto Glossário
+Data: Sun, 22 Nov 92 11:50:55 PST
+</em>
+
+Aqui está o glossário de termos de criptografia que divulgamos em formato impresso na primeira reunião da Cypherpunks em Setembro de 1992. Algumas concessões tiveram que ser feitas indo do impresso para o ASCII dessa transmissão, então espero que você tenha paciência comigo.
+
+Estou enviando para a lista inteira, porque quase todo mundo que ouve sobre isso diz: "Está online?" e quer uma cópia. Se você não quiser, descarte-o.
+
+Eu não vou manter o "Cypherpunks FAQ", então não me envie correções ou sugestões.
+
+Apreciem!
+
+Tim May
+
+<hr />
+
+<h4 class="text-center">Principais Tópicos da Criptologia (segundo minha opinião)</h4>
+(estas seções introduzirão os termos no contexto, embora as definições completas não sejam dadas)
+<table style="border-collapse: collapse; border: none;">
+<tbody style="border-collapse: collapse; border: none;">
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>Criptografia</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">Privacidade de mensagens usando cifras e códigos para proteger o sigilo de mensagens. DES é a cifra simétrica mais comum (mesma chave para cifragem e decifragem).
+RSA é a cifra assimétrica mais comum (chaves diferentes para cifrar e decifrar).</td>
+</tr>
+<tr style="vertical-align: top; border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>Assinaturas e Autenticação</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">Prova quem você é
+Prova que você assinou um documento (e não outra pessoa)</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>E-mail irrastreável</strong></td>
+<td style="border-collapse: collapse; border: none; width: 335.6px;">Envio e recebimento de mensagens e emails não rastreáveis. Foco: derrotar os bisbilhoteiros e análise de tráfego.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>Voto Criptográfico</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">Foco: anonimato na urna, credenciais para votar, questões de dupla votação, segurança, robustez, eficiência.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>Dinheiro Digital</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">Foco: privacidade em transações, compras, credenciais não vinculáveis, notas blindadas.
+"Moedas digitais" podem não ser possíveis.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>Cripto Anarquia</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">Usa as coisas descritas acima para evadir do governo, para ignorar a coleta de impostos, etc. Uma solução tecnológica para o problema do excesso de governo.</td>
+</tr>
+</tbody>
+</table>
+<h3 style="text-align: center;">Glossário</h3>
+<table style="border-collapse: collapse; border: none;">
+<tbody style="border-collapse: collapse; border: none;">
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>Sistemas agoristas</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">sistemas abertos de livre mercado nos quais as transações voluntárias são centrais.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>Alice e Bob</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">protocolos criptográficos são freqüentemente explicados considerando-se as partes A e B, ou Alice e Bob, realizando algum protocolo. Eva, a bisbilhoteira, Paulo, o provador, e Victor, o verificador, são outros nomes comuns.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>ANDOS</strong></td>
+<td style="border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">tudo ou nada - divulgação de segredos.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>credencial anônima</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">uma credencial que afirma algum direito, privilégio ou fato sem revelar a identidade do titular. Isso é diferente das licenças de dirigir da Cali´fórnia</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>cifra assimétrica</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">mesma coisa que criptografia de chave pública.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>autenticação</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">processo de verificação de uma identidade ou credencial, para garantir que você é quem você disse que era.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>segurança biométrica</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">um tipo de autenticação usando impressões digitais, exames de retina, impressões palmares ou outras assinaturas físicas / biológicas de um indivíduo.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><span style="background-color: #ffff99;"><strong>bit commitment</strong></span></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;"><span style="background-color: #ffff99;">e.g., tossing a coin and then committing to the value without being able to change the outcome. The blob is a cryptographic primitive for this.</span></td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>assinaturas cegas e blindadas</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">Uma assinatura que o assinante não se lembra de ter feito. Uma assinatura cega é sempre um protocolo cooperativo e o receptor da assinatura fornece ao signatário a informação de cegueira.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>blob</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">o equivalente criptográfico de uma caixa trancada. Um primitivo criptográfico para o comprometimento de bit, com as propriedades que os blobs podem representar um 0 ou um 1, que os outros não podem dizer estar procurando um 0 ou um 1, que o criador do blob pode "abrir" o blob para revelar o conteúdo, e que nenhum blob pode ser um 1 e um 0. Um exemplo disso é uma moeda virada coberta por uma mão.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>canal</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">o caminho pelo qual as mensagens são transmitidas. Os canais podem ser seguros ou inseguros, e podem ter bisbilhoteiros (ou inimigos, ou disruptores, etc.) que alteram mensagens, inserem e apagam mensagens, etc. Criptografia é o meio pelo qual as comunicações através de canais inseguros são protegidos.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>ataque de texto claro escolhido</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">um ataque em que o criptoanalista escolhe o texto simples a ser cifrado, por exemplo, quando a posse de uma máquina ou algoritmo de cifra está na posse do criptoanalista.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>cifra</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">uma forma secreta de escrita, usando substituição ou transposição de caracteres ou símbolos.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>texto cifrado (cyphertext)</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">o texto claro depois de ter sido cifrado.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>código</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">um sistema criptográfico restrito onde palavras ou letras de uma mensagem são substituídas por outras palavras escolhidas de um livro de códigos. Não faz parte da criptologia moderna, mas ainda é útil.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>lançamento de moeda</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">uma importante primitiva criptográfica, ou protocolo, no qual o equivalente de lançar uma moeda justa é possível. Implementado com blobs.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>conluio</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">em que vários participantes cooperam para deduzir a identidade de um remetente ou destinatário, ou para quebrar uma cifra. A maioria dos sistemas criptográficos é sensível a algumas formas de conluio. Grande parte do trabalho na implementação de redes de controle de tráfego, por exemplo, envolve a garantia de que os coletores não podem isolar os remetentes de mensagens e, portanto, rastrear origens e destinos de correspondência.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>computationalmente seguro</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">onde uma cifra não pode ser quebrada com os recursos de computação disponíveis, mas em teoria pode ser quebrada com recursos de computação suficientes. Contraste com incondicionalmente seguro.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>contramedida</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">algo que você faz para impedir um invasor.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>credencial</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">fatos ou afirmações sobre alguma entidade. Por exemplo, classificações de crédito, passaportes, reputações, status fiscal, registros de seguro, etc. No sistema atual, essas credenciais estão sendo cada vez mais interligadas. Assinaturas cegas podem ser usadas para criar credenciais anônimas.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>credencial <span style="background-color: #ffff99;">clearinghouse</span></strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">bancos, agências de crédito, companhias de seguro, departamentos de polícia, etc., que correlacionam registros e decidem o status dos registros.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>criptoanálise</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">métodos para atacar e quebrar cifras e sistemas criptográficos relacionados. As cifras podem ser quebradas, o tráfego pode ser analisado e as senhas podem ser quebradas. Computadores são naturalmente essenciais.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>criptoanarquia</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">sistema econômico e político após a implantação de criptografia, e-mails não rastreáveis, pseudônimos digitais, votação criptográfica e dinheiro digital. Um trocadilho com "criptografia", que significa "hipem", e como quando Gore Vidal chamou William F. Buckley de "criptista fascista".</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>criptografia</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">outro nome para criptologia.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>criptologia</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px; text-align: justify;">a ciência e o estudo de escrever, enviar, receber e decifrar mensagens secretas. Inclui autenticação, assinaturas digitais, ocultação de mensagens (esteganografia), criptoanálise e vários outros campos.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>cyberspace</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">the electronic domain, the Nets, and computer-generated spaces. Some say it is the "consensual reality" described in "Neuromancer." Others say it is the phone system. Others have work to do.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>DC protocol, or DC-Net</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">the dining cryptographers protocol. DC-Nets use multiple participants communicating with the DC protocol.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>DES</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">the Data Encryption Standard, proposed in 1977 by the National Bureau of Standards (now NIST), with assistance from the National Security Agency. Based on the "Lucifer" cipher developed by Horst Feistel at IBM, DES is a secret key cryptosystem that cycles 64-bit blocks of data through multiple permutations with a 56-bit key controlling the routing. "Diffusion" and "confusion" are combined to form a cipher that has not yet been cryptanalyzed (see "DES, Security of"). DES is in use for interbank transfers, as a cipher inside of several RSA-based systems, and is available for PCs.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>DES, Security of</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">many have speculated that the NSA placed a trapdoor (or back door) in DES to allow it to read DES-encrypted messages. This has not been proved. It is known that the original Lucifer algorithm used a 128-bit key and that this key length was shortened to 64 bits (56 bits plus 8 parity bits), thus making exhaustive search much easier (so far as is known, brute-force search has not been done, though it should be feasible today). Shamir and Bihan have used a technique called "differential cryptanalysis" to reduce the exhaustive search needed for chosen plaintext attacks (but with no import for ordinary DES).</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>differential cryptanalysis the Shamir-Biham</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">technique for cryptanalyzing DES. With a chosen plaintext attack, they've reduced the number of DES keys that must be tried from about 2^56 to about 2^47 or less. Note, however, that rarely can an attacker mount a chosen plaintext attack on DES systems.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>digital cash, digital money</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">Protocols for transferring value, monetary or otherwise, electronically. Digital cash usually refers to systems that are anonymous. Digital money systems can be used to implement any quantity that is conserved, such as points, mass, dollars, etc. There are many variations of digital money systems, ranging from VISA numbers to blinded signed digital coins. A topic too large for a single glossary entry.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>digital pseudonym</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">basically, a "crypto identity." A way for individuals to set up accounts with various organizations without revealing more information than they wish. Users may have several digital pseudonyms, some used only once, some used over the course of many years. Ideally, the pseudonyms can be linked only at the will of the holder. In the simplest form, a public key can serve as a digital pseudonym and need not be linked to a physical identity.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>digital signature</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">Analogous to a written signature on a document. A modification to a message that only the signer can make but that everyone can recognize. Can be used legally to contract at a distance.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>digital timestamping</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">one function of a digital notary public, in which some message (a song, screenplay, lab notebook, contract, etc.) is stamped with a time that cannot (easily) be forged.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>dining cryptographers protocol (aka DC protocol, DC nets)</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">the untraceable message sending system invented by David Chaum. Named after the "dining philosophers" problem in computer science, participants form circuits and pass messages in such a way that the origin cannot be deduced, barring collusion. At the simplest level, two participants share a key between them. One of them sends some actual message by bitwise exclusive-ORing the message with the key, while the other one just sends the key itself. The actual message from this pair of participants is obtained by XORing the two outputs. However, since nobody but the pair knows the original key, the actual message cannot be traced to either one of the participants.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>discrete logarithm problem</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">given integers a, n, and x, find some integer m such that a^m mod n = x, if m exists. Modular exponentiation, the a^m mod n part, is straightforward (and special purpose chips are available), but the inverse problem is believed to be very hard, in general. Thus it is conjectured that modular exponentiation is a one-way function.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>DSS, Digital Signature Standard</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">the latest NIST (National Institute of Standards and Technology, successor to NBS) standard for digital signatures. Based on the El Gamal cipher, some consider it weak and poor substitute for RSA-based signature schemes.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>eavesdropping, or passive wiretapping</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">intercepting messages without detection. Radio waves may be intercepted, phone lines may be tapped, and computers may have RF emissions detected. Even fiber optic lines can be tapped.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>factoring</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">Some large numbers are difficult to factor. It is conjectured that there are no feasible--i.e."easy," less than exponential in size of number-- factoring methods. It is also an open problem whether RSA may be broken more easily than by factoring the modulus (e.g., the public key might reveal information which simplifies the problem). Interestingly, though factoring is believed to be "hard", it is not known to be in the class of NP-hard problems. Professor Janek invented a factoring device, but he is believed to be fictional.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>information-theoretic security "unbreakable"</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">security, in which no amount of cryptanalysis can break a cipher or system. One time pads are an example (providing the pads are not lost nor stolen nor used more than once, of course). Same as unconditionally secure.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>key</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">a piece of information needed to encipher or decipher a message. Keys may be stolen, bought, lost, etc., just as with physical keys.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>key exchange, or key distribution</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">the process of sharing a key with some other party, in the case of symmetric ciphers, or of distributing a public key in an asymmetric cipher. A major issue is that the keys be exchanged reliably and without compromise. Diffie and Hellman devised one such scheme, based on the discrete logarithm problem.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>known-plaintext attack</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">a cryptanalysis of a cipher where plaintext-ciphertext pairs are known. This attack searches for an unknown key. Contrast with the chosen plaintext attack, where the cryptanalyst can also choose the plaintext to be enciphered.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>mail, untraceable</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">a system for sending and receiving mail without traceability or observability. Receiving mail anonymously can be done with broadcast of the mail in encrypted form. Only the intended recipient (whose identity, or true name, may be unknown to the sender) may able to decipher the message. Sending mail anonymously apparently requires mixes or use of the dining cryptographers (DC) protocol.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>minimum disclosure proofs</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">another name for zero knowledge proofs, favored by Chaum.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>mixes</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">David Chaum's term for a box which performs the function of mixing, or decorrelating, incoming and outgoing electronic mail messages. The box also strips off the outer envelope (i.e., decrypts with its private key) and remails the message to the apress on the inner envelope. Tamper-resistant modules may be used to prevent cheating and forced disclosure of the mapping between incoming and outgoing mail. A sequence of many remailings effectively makes tracing sending and receiving impossible. Contrast this with the software version, the DC protocol.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>modular exponentiation</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">raising an integer to the power of another integer, modulo some integer. For integers a, n, and m, a^m mod n. For example, 5^3 mod 100 = 25. Modular exponentiation can be done fairly quickly with a sequence of bit shifts and aps, and special purpose chips have been designed. See also discrete logarithm.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>National Security Agency (NSA)</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">the largest intelligence agency, responsible for making and breaking ciphers, for intercepting communications, and for ensuring the security of U.S. computers. Headquartered in Fort Meade, Maryland, with many listening posts around the world. The NSA funds cryptographic research and advises other agencies about cryptographic matters. The NSA once obviously had the world's leading cryptologists, but this may no longer be the case.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>negative credential</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">a credential that you possess that you don't want any one else to know, for example, a bankruptcy filing. A formal version of a negative reputation.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>NP-complete</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">a large class of difficult problems. "NP" stands for nondeterministic polynomial time, a class of problems thought in general not to have feasible algorithms for their solution. A problem is "complete" if any other NP problem may be reduced to that problem. Many important combinatorial and algebraic problems are NP-complete: the traveling salesman problem, the Hamiltonian cycle problem, the word problem, and on and on.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>oblivious transfer</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">a cryptographic primitive that involves the probabilistic transmission of bits. The sender does not know if the bits were received.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>one-time pad</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">a string of randomly-selected bits or symbols which is combined with a plaintext message to produce the ciphertext. This combination may be shifting letters some amount, bitwise exclusive-ORed, etc.). The recipient, who also has a copy of the one time pad, can easily recover the plaintext. Provided the pad is only used once and then destroyed, and is not available to an eavesdropper, the system is perfectly secure, i.e., it is information-theoretically secure. Key distribution (the pad) is obviously a practical concern, but consider CD-ROM's.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>one-way function</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">a function which is easy to compute in one direction but hard to find any inverse for, e.g. modular exponentiation, where the inverse problem is known as the discrete logarithm problem. Compare the special case of trap door one-way functions. An example of a one-way operation is multiplication: it is easy to multiply two prime numbers of 100 digits to produce a 200-digit number, but hard to factor that 200-digit number.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>P ?=? NP</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">Certainly the most important unsolved problem in complexity theory. If P = NP, then cryptography as we know it today does not exist. If P = NP, all NP problems are "easy."</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>paping</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">sending extra messages to confuse eavesdroppers and to defeat traffic analysis. Also aping random bits to a message to be enciphered.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>plaintext</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">also called cleartext, the text that is to be enciphered.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>Pretty Good Privacy (PGP)</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">Phillip Zimmerman's implementation of RSA, recently upgraded to version 2.0, with more robust components and several new features. RSA Data Security has threatened PZ so he no longer works on it. Version 2.0 was written by a consortium of non-U.S. hackers.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>prime numbers</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">integers with no factors other than themselves and 1. The number of primes is unbounded. About 1% of the 100 decimal digit numbers are prime. Since there are about 10^70 particles in the universe, there are about 10^23 100 digit primes for each and every particle in the universe!</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>probabilistic encryption</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">a scheme by Goldwasser, Micali, and Blum that allows multiple ciphertexts for the same plaintext, i.e., any given plaintext may have many ciphertexts if the ciphering is repeated. This protects against certain types of known ciphertext attacks on RSA.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>proofs of identity</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">proving who you are, either your true name, or your digital identity. Generally, possession of the right key is sufficient proof (guard your key!). Some work has been done on "is-a-person" credentialling agencies, using the so-called Fiat-Shamir protocol...think of this as a way to issue unforgeable digital passports. Physical proof of identity may be done with biometric security methods. Zero knowledge proofs of identity reveal nothing beyond the fact that the identity is as claimed. This has obvious uses for computer access, passwords, etc.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>protocol</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">a formal procedure for solving some problem. Modern cryptology is mostly about the study of protocols for many problems, such as coin-flipping, bit commitment (blobs), zero knowledge proofs, dining cryptographers, and so on.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>public key</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">the key distributed publicly to potential message-senders. It may be published in a phonebook-like directory or otherwise sent. A major concern is the validity of this public key to guard against spoofing or impersonation.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>public key cryptosystem</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">the modern breakthrough in cryptology, designed by Diffie and Hellman, with contributions from several others. Uses trap door one-way functions so that encryption may be done by anyone with access to the "public key" but decryption may be done only by the holder of the "private key." Encompasses public key encryption, digital signatures, digital cash, and many other protocols and applications.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>public key encryption</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">the use of modern cryptologic methods to provided message security and authentication. The RSA algorithm is the most widely used form of public key encryption, although other systems exist. A public key may be freely published, e.g., in phonebook-like directories, while the corresponding private key is closely guarded.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>public key patents</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">M.I.T. and Stanford, due to the work of Rivest, Shamir, Adleman, Diffie, Hellman, and Merkle, formed Public Key Partners to license the various public key, digital signature, and RSA patents. These patents, granted in the early 1980s, expire in the between 1998 and 2002. PKP has licensed RSA Data Security Inc., of Redwood City, CA, which handles the sales, etc.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>quantum cryptography</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">a system based on quantum-mechanical principles. Eavesdroppers alter the quantum state of the system and so are detected. Developed by Brassard and Bennett, only small laboratory demonstrations have been made.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>reputations</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">the trail of positive and negative associations and judgments that some entity accrues. Credit ratings, academic credentials, and trustworthiness are all examples. A digital pseudonym will accrue these reputation credentials based on actions, opinions of others, etc. In crypto anarchy, reputations and agoric systems will be of paramount importance. There are many fascinating issues of how reputation-based systems work, how credentials can be bought and sold, and so forth.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>RSA</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">the main public key encryption algorithm, developed by Ron Rivest, Adi Shamir, and Kenneth Adleman. It exploits the difficulty of factoring large numbers to create a private key and public key. First invented in 1978, it remains the core of modern public key systems. It is usually much slower than DES, but special-purpose modular exponentiation chips will likely speed it up. A popular scheme for speed is to use RSA to transmit session keys and then a high-speed cipher like DES for the actual message text.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>Description</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">Let p and q be large primes, typically with more than 100 digits. Let n = pq and find some e such that e is relatively prime to (p - 1)(q - 1). The set of numbers p, q, and e is the private key for RSA. The set of numbers n and e forms the public key (recall that knowing n is not sufficient to easily find p and q...the factoring problem). A message M is encrypted by computing M^e mod n. The owner of the private key can decrypt the encrypted message by exploiting number theory results, as follows. An integer d is computed such that ed =1 (mod (p - 1)(q - 1)). Euler proved a theorem that M^(ed) = M mod n and so M^(ed) mod n = M. This means that in some sense the integers e and d are "inverses" of each other. [If this is unclear, please see one of the many texts and articles on public key encryption.]</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>secret key cryptosystem</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">A system which uses the same key to encrypt and decrypt traffic at each end of a communication link. Also called a symmetric or one-key system. Contrast with public key cryptosystem.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>smart cards</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">a computer chip embeped in credit card. They can hold cash, credentials, cryptographic keys, etc. Usually these are built with some degree of tamper-resistance. Smart cards may perform part of a crypto transaction, or all of it. Performing part of it may mean checking the computations of a more powerful computer, e.g., one in an ATM.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>spoofing, or masquerading</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">posing as another user. Used for stealing passwords, modifying files, and stealing cash. Digital signatures and other authentication methods are useful to prevent this. Public keys must be validated and protected to ensure that others don't substitute their own public keys which users may then unwittingly use.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>steganography</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">a part of cryptology dealing with hiding messages and obscuring who is sending and receiving messages. Message traffic is often paped to reduce the signals that would otherwise come from a supen beginning of messages.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>symmetric cipher</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">same as private key cryptosystem.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>tamper-responding modules, tamper-resistant modules (TRMs)</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">sealed boxes or modules which are hard to open, requiring extensive probing and usually leaving ample evidence that the tampering has occurred. Various protective techniques are used, such as special metal or oxide layers on chips, armored coatings, embeped optical fibers, and other measures to thwart analysis. Popularly called "tamper-proof boxes." Uses include: smart cards, nuclear weapon initiators, cryptographic key holders, ATMs, etc.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>tampering, or active wiretapping</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">interfering with messages and possibly modifying them. This may compromise data security, help to break ciphers, etc. See also spoofing.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>token</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">some representation, such as ID cards, subway tokens, money, etc., that indicates possession of some property or value.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>traffic analysis</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">determining who is sending or receiving messages by analyzing packets, frequency of packets, etc. A part of steganography. Usually handled with traffic paping.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>transmission rules</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">the protocols for determining who can send messages in a DC protocol, and when. These rules are needed to prevent collision and deliberate jamming of the channels.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>trap messages</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">dummy messages in DC Nets which are used to catch jammers and disrupters. The messages contain no private information and are published in a blob beforehand so that the trap message can later be opened to reveal the disrupter. (There are many strategies to explore here.)</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>trap-door</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">In cryptography, a piece of secret information that allows the holder of a private key to invert a normally hard to invert function.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>trap-door one way functions</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">functions which are easy to compute in both the forward and reverse direction but for which the disclosure of an algorithm to compute the function in the forward direction does not provide information on how to compute the function in the reverse direction. More simply put, trap-door one way functions are one way for all but the holder of the secret information. The RSA algorithm is the best-known example of such a function.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>unconditional security</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">same as information-theoretic security, that is, unbreakable except by loss or theft of the key.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>unconditionally secure</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">where no amount of intercepted ciphertext is enough to allow the cipher to be broken, as with the use of a one-time pad cipher. Contrast with computationally secure.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>voting, cryptographic</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">Various schemes have been devised for anonymous, untraceable voting. Voting schemes should have several properties: privacy of the vote, security of the vote (no multiple votes), robustness against disruption by jammers or disrupters, verifiability (voter has confidence in the results), and efficiency.</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;">
+<td style="vertical-align: top; border-collapse: collapse; border: none; text-align: right; width: 236.4px;"><strong>zero knowledge proofs</strong></td>
+<td style="vertical-align: top; border-collapse: collapse; border: none; width: 335.6px;">proofs in which no knowledge of the actual proof is conveyed. Peggy the Prover demonstrates to Sid the Skeptic that she is indeed in possession of some piece of knowledge without actually revealing any of that knowledge. This is useful for access to computers, because eavesdroppers or dishonest sysops cannot steal the knowledge given. Also called minimum disclosure proofs. Useful for proving possession of some property, or credential, such as age or voting status, without revealing personal information.</td>
+</tr>
+</tbody>
+</table>
+--
+<div class="container-fluid">
+<div class="row">
+<div>
+<pre>......................................................................
+Timothy C. May         | Criptoanarquia: cifra, moedas digitais, money,  
+tcmay@netcom.com       | redes anônimas, pseudônimos digitais, zero
+408-688-5409           | knowledge, reputações, mercados de informação, 
+W.A.S.T.E.: Aptos, CA  | mercados negros, colapso de governos.
+Higher Power: 2^756839 | PGP Public Key: por acordo.</pre>
+</div>
+</div>
+</div>
