@@ -33,8 +33,7 @@ Colaboradores:
 -  [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 -  [accela](https://cypherpunks.com.br/author/accela/)
 -  [Disruptivas](https://cypherpunks.com.br/author/deep/)
--  [j2ff](https://cypherpunks.com.br/author/j2ff/)
-
+-  [j2ff](https://github.com/jeffesonjp)
 
 
 
