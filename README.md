@@ -20,17 +20,22 @@ Textos traduzidos:
 -  [X] [Libertária no Ciberespaço](https://cypherpunks.com.br/libertaria-no-ciberespaco/) – Tim May (1988)
 -  [X] [Política vs Tecnologia](https://cypherpunks.com.br/politica-vs-tecnologia/) – Hal Finney (1994)
     
-    
+## Como Contribuir?
+
+Se você tiver interesse em ajudar, criamos um [guia](https://github.com/CONTRIBUTING.md) para ajudá-lo e, se tiver qualquer dúvida, basta abrir uma issue.
+
+AGRADECIMENTOS
+==============    
+
 Este trabalho não seria possível sem a contribuição de diversas pessoas que ajudaram a traduzir e revisar voluntariamente todos estes artigos. São eles:
     
 Colaboradores:
 -  [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 -  [accela](https://cypherpunks.com.br/author/accela/)
 -  [Disruptivas](https://cypherpunks.com.br/author/deep/)
+-  [j2ff](https://cypherpunks.com.br/author/j2ff/)
 
-## Como Contribuir?
 
-Se você tiver interesse em ajudar, criamos um [guia](https://github.com/CONTRIBUTING.md) para ajudá-lo e, se tiver qualquer dúvida, basta abrir uma issue.
 
 
 
