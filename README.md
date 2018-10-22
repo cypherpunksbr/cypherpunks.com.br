@@ -7,7 +7,7 @@ Somos um grupo de pessoas (e robôs) interessados em criptologia, criptomoedas, 
 
 ## Como Contribuir?
 
-Se você tiver interesse em ajudar, criamos um [guia](https://github.com/CONTRIBUTING.md) para ajudá-lo e, se tiver qualquer dúvida, basta abrir uma issue.
+Se você tiver interesse em ajudar, criamos um [guia](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/CONTRIBUTING.md) para ajudá-lo e, se tiver qualquer dúvida, basta abrir uma issue.
 
 Apoie: BTC_ADDRESS
 
