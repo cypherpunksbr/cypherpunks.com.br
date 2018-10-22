@@ -2,7 +2,7 @@
 
 ### Por onde começar?
 
-**1.** Escolha um [arquivo](https://github.com/cypherpunksbr/cypherpunks.com.br/tree/master/todo) para traduzir ou [revisar](https://github.com/cypherpunksbr/cypherpunks.com.br/tree/master/posts). Verifique se o arquivo já não está sendo traduzido por alguém [aqui](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/README.md). 
+**1.** Escolha um [arquivo](https://github.com/cypherpunksbr/cypherpunks.com.br/tree/master/todo) para traduzir ou [revisar](https://github.com/cypherpunksbr/cypherpunks.com.br/tree/master/posts). Verifique se o arquivo já não está sendo traduzido por alguém [aqui](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/README.md). 
 
 **2.** [Entenda nosso fluxo](#fluxo).
 
