@@ -2,19 +2,19 @@
 
 ### Por onde começar?
 
-**1.** Escolha um [arquivo](https://github.com/cypherpunksbr/cypherpunks.com.br/tree/master/todo) para traduzir ou revisar.
+**1.** Escolha um [arquivo](https://github.com/cypherpunksbr/cypherpunks.com.br/tree/master/todo) para traduzir ou [revisar](https://github.com/cypherpunksbr/cypherpunks.com.br/tree/master/posts). Verifique se o arquivo já não está sendo traduzido por alguém [aqui](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/README.md). 
 
 **2.** [Entenda nosso fluxo](#fluxo).
 
 **3.** [Leia e pratique as boas práticas](#boas-pr%C3%A1ticas).
 
-**4.** Submeta um pull request
+**4.** Submeta um pull request. Não sabe como fazer isto? Veja este [tutorial](https://#) ou este [vídeo](https://#).
 
-**5.** Parabéns! Você acaba de contribuir para o projeto :)
+**5.** Parabéns! Você acaba de contribuir para o projeto :) Seu nome será adicionado na lista de contribuintes em breve por algum moderador.
 
 ### Fluxo
 
-É muito fácil contribuir para o projeto. Qualquer tipo de ajuda (seja ela grande ou pequena) é bem-vinda. Se encontrar qualquer parte do livro que possa ser melhorada, essa é uma grande oportunidade para participar ([aqui](https://github.com/braziljs/eloquente-javascript/issues?q=is%3Aopen+is%3Aissue+label%3Amelhorias) é um ótimo lugar para achar coisas que possam ser melhoradas). Caso não saiba por onde começar:
+É muito fácil contribuir para o projeto. Qualquer tipo de ajuda (seja ela grande ou pequena) é bem-vinda. Se encontrar qualquer parte dos posts/artigos que possam ser melhoradas, essa é uma grande oportunidade para participar ([aqui](https://github.com/cypherpunksbr/cypherpunks.com.br/issues?q=is%3Aopen+is%3Aissue+label%3Amelhorias) é um ótimo lugar para achar coisas que possam ser melhoradas). Caso não saiba por onde começar:
 
 **1.** Faça referência ao repositório oficial após o _fork_
 
@@ -67,7 +67,7 @@ git push -f origin master
 
 ### Boas práticas
 
-- **Não traduza termos técnicos e blocos de código**
+- **Não traduza nomes próprios ou marcas**
 - Antes de enviar sua contribuição, certifique-se de que está enviando apenas um **único** commit que represente o que foi feito. Caso tenha feito vários commits, [esmague-os](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html) antes de fazer o _Pull Request_.
 - Caso tenha qualquer tipo de dúvida, abre uma _Issue_ que faremos o possível para te ajudar.
 - Não adicione comentários nas issues de “log”. Elas tem apenas a finalidade de armazenar referências ao trabalho de cada capítulo.
