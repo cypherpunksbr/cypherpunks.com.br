@@ -36,3 +36,8 @@ Textos traduzidos:
 -  [ ] (1) [Criptoanarquia e Comunidades Virtuais](https://cypherpunks.com.br/criptoanarquia-e-comunidades-virtuais/) - Timothy C. May (1994) 
 
 //Revisado por [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
+
+
+-  [ ] (2) [O manifesto libbitcoin](https://cypherpunks.com.br/o-manifesto-libbitcoin/) - Amir Taaki (2013)
+
+//Revisado por [j2ff](https://cypherpunks.com.br/author/j2ff/), [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
