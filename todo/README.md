@@ -12,4 +12,6 @@ Textos sendo traduzidos:
 -  [X] [Right to read] - [@exslave]()
 -  [X] [contracts in cyberspace] - [@pedroreck]()
 -  [X] [PGP Web of Trust Misconceptions]- [@anonymous]()
+-  [X] ["Why I Wrote PGP"] -[@Deephi]()
+-  [X] ["Multinational Small Business"] - [@Deephi]()
 
