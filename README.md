@@ -7,13 +7,13 @@ Somos um grupo de pessoas (e robôs) interessados em criptologia, criptomoedas, 
 
 ## Como Contribuir?
 
-Se você tiver interesse em ajudar, criamos um [guia](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/CONTRIBUTING.md) para ajudá-lo e, se tiver qualquer dúvida, basta abrir uma issue.
+Se você tiver interesse em ajudar, criamos um [guia](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/CONTRIBUTING.md) sobre como você pode fazer isto. Se tiver qualquer dúvida ou alguma sugestão de melhoria, basta abrir uma [issue](https://github.com/cypherpunksbr/cypherpunks.com.br/issues).
 
 Apoie: BTC_ADDRESS
 
 ## Agradecimentos
 
-Este trabalho não seria possível sem a contribuição de diversas pessoas que ajudaram a traduzir e revisar voluntariamente todos estes artigos. São eles:
+Este trabalho não seria possível sem a contribuição de diversas pessoas que ajudaram a traduzir e revisar voluntariamente todos os nossos artigos. São eles:
     
 Colaboradores:
 -  [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
