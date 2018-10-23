@@ -19,26 +19,26 @@
 **1.** Faça referência ao repositório oficial após o _fork_
 
 ```
-git remote add upstream git@github.com:braziljs/eloquente-javascript.git
+git remote add upstream git@github.com:cypherpunksbr/cypherpunks.com.br.git
 ```
 
 **2.** Antes de iniciar o processo de contribuição, crie uma nova branch para fazer suas alterações.
 
 Alguns exemplos:
 
-- Para tradução: `git checkout -b traducaoCapX`
-- Para revisões: `git checkout -b revisaoCapX`
-- Para erros: `git checkout -b correcaoCapX`
+- Para tradução: `git checkout -b traducaoArtigoX`
+- Para revisões: `git checkout -b traducaoArtigoX`
+- Para erros: `git checkout -b traducaoArtigoX`
 
 > Use qualquer nome que seja coerente com a contribuição que está sendo feita.
-> `X` representa o número do capítulo.
+> `X` representa um nome de artigo.
 
 **3.** Após realizar as alterações, é hora de fazer um commit com uma mensagem coerente do que foi feito. Exemplo:
 
 ```
 git add --all
-git commit -am ‘Adiciona tradução/revisão/melhoria capítulo X linha/linhas Y’
-git push origin traducaoCapX
+git commit -am ‘Adiciona tradução/revisão/melhoria artigo X linha/linhas Y’
+git push origin traducaoArtigoTal
 ```
 
 **4.** Envie um _Pull Request_ com as alterações feitas, fazendo referência para o `master` do repositório oficial.
@@ -51,8 +51,8 @@ Após o merge:
 
 ```
 git checkout master
-git push origin :traducaoCapX
-git branch -D traducaoCapX
+git push origin :traducaoArtigoX
+git branch -D traducaoArtigoX
 ```
 
 - Atualize seu repositório com o repositório oficial:
@@ -67,27 +67,10 @@ git push -f origin master
 
 ### Boas práticas
 
-- **Não traduza nomes próprios ou marcas**
 - Antes de enviar sua contribuição, certifique-se de que está enviando apenas um **único** commit que represente o que foi feito. Caso tenha feito vários commits, [esmague-os](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html) antes de fazer o _Pull Request_.
-- Caso tenha qualquer tipo de dúvida, abre uma _Issue_ que faremos o possível para te ajudar.
-- Não adicione comentários nas issues de “log”. Elas tem apenas a finalidade de armazenar referências ao trabalho de cada capítulo.
+- Caso tenha qualquer tipo de dúvida, abre uma [_Issue_](https://github.com/cypherpunksbr/cypherpunks.com.br/issues) que faremos o possível para te ajudar.
 - Contribua com as discussões.
-- Delimitação para títulos de obras: Utilizar o travessão (—) para o início da frase, nome do autor e logo após o nome da obra, sem alterar nenhum valor. Exemplo:
 
-> — Master Yuan-Ma, The Book of Programming
-
-- Estrangeirismo: Utilizar o formato itálico. Exemplo: _bug_
-- Sentido Figurado: Sempre destacar com aspas duplas.
-- Citação: Aspas duplas com o sinal de >. Exemplo:
-
-> “Foo bar”
-
-- Marcação para código: Utilizar um apóstrofe (\`) para indicar um pedaço de código no meio de um texto (`var foo = undefined`). Ou três apóstrofe com o nome da linguagem de programação na frente (\`\`\`js), para indicar um bloco de código:
-
-```js
-var foo;
-foo = undefined;
-```
 
 ### Dúvidas em tradução de termos, palavras, expressões etc…
 
