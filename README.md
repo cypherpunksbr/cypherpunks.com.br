@@ -20,6 +20,7 @@ Colaboradores:
 -  [accela](https://cypherpunks.com.br/author/accela/)
 -  [Disruptivas](https://cypherpunks.com.br/author/deep/)
 -  [j2ff](https://github.com/jeffesonjp)
+-  [Matheus Bach](https://github.com/matheusbach/)
 
 **Pode copiar livremente. Propriedade Intelectual não é legítima.**
 
