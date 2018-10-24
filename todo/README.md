@@ -14,4 +14,5 @@ Textos sendo traduzidos:
 -  [X] [PGP Web of Trust Misconceptions]- [@anonymous]()
 -  [X] ["Why I Wrote PGP"] -[@Deephi]()
 -  [X] ["Multinational Small Business"] - [@Deephi]()
+-  [X] [Contracts with Bearer] - [Matheus Bach](https://github.com/matheusbach/)
 
