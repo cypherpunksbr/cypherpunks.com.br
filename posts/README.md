@@ -40,4 +40,7 @@ Textos traduzidos:
 
 -  [ ] (2) [O manifesto libbitcoin](https://cypherpunks.com.br/o-manifesto-libbitcoin/) - Amir Taaki (2013)
 
+
+-  [ ] (0) A ideia de Contratos Inteligentes - Nick Szabo (1997)
+
 //Revisado por [j2ff](https://cypherpunks.com.br/author/j2ff/), [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
