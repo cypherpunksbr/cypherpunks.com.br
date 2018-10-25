@@ -15,19 +15,17 @@
 	<h2>Certificados de Titular</h2>
 
 	<p>
-		"Certificado de titular digital" é um termo amplamente desenvolvido por este autor<sup><a href="#fn1" id="ref1">[1]</a></sup> incorporando pelo menos duas tecnologias emergentes: dinheiro digital e capacidaes distribuídas (referências seguras de objetos distribuídos). Primeiro descreverei o protocolo Chaum e seu recurso inovador de privacidade. Em seguida, discutirei como essas ideias são mapeadas para o mundo das capacidades na seção sobre direitos genéricos versus direitos específicos. Alterei a terminologia de dinheiro digital para certificado de titular ou ficha, de casa da moeda para emissor ou agente de transferência, e assim por diante, para refletir a capacidade dos protocolos de Chaum de generalizar. Os certificados de titular de Chaum implementam direitos padronizados transferíveis independentemente da identidade do titular. Cada tipo de contrato (por exemplo, cada denominação de "moeda" em dinheiro digital) corresponde a uma assinatura digital, assim como cada emissão de títulos da Reserva Federal ou certificados de ações corresponde a uma determinada conta.
+		"Certificado de titular digital" é um termo amplamente desenvolvido por este autor<sup><a href="#fn1" id="ref1">[1]</a></sup> incorporando pelo menos duas tecnologias emergentes: dinheiro digital e capacidaes distribuídas (referências seguras de objetos distribuídos). Primeiro descreverei o protocolo chaumiano e seu recurso inovador de privacidade. Em seguida, discutirei como essas ideias são mapeadas para o mundo das capacidades na seção sobre direitos genéricos versus direitos específicos. Alterei a terminologia de dinheiro digital para certificado de titular ou ficha, de casa da moeda para emissor ou agente de transferência, e assim por diante, para refletir a capacidade dos protocolos de Chaum de generalizar. Os certificados de titular de Chaum implementam direitos padronizados transferíveis independentemente da identidade do titular. Cada tipo de contrato (por exemplo, cada denominação de "moeda" em dinheiro digital) corresponde a uma assinatura digital, assim como cada emissão de títulos da Reserva Federal ou certificados de ações corresponde a uma determinada conta.
 	</p>
 
 	<p>
-		In the most straightforward Chaumian protocol, the issuer and transfer agent (the same entity, for our purposes, though they can easily be unbundled) create a serial number (really a large unguessable random number, rather than a sequence), and append it to a list of issued certificates. The transfer agent clears a transfer (i.e., redeems the certificate) by checking the signature to identify the class of bearer contract and verify that it was made, then looking on that contract's issued list to make sure the serial number is there, then removing the serial number. Alternatively, the issuer can let the issuee make up the serial number, then, when cleared, check the signature and put the number on the list of cleared certificates. The signature provides the assurance that the certificate is indeed the the particular kind of contract with bearer, while the serial number assures that the same instance of that contract is not cleared or redeemed more than once. In these simple versions, the transfer agent can link the transferee to the transferor for all transfers. To implement the privacy characteristics of coins and physical bearer certificates, we need to add unlinkability features.
-		
 		No protocolo chaumiano mais direto, o emissor e o agente de transferência (a mesma entidade, para os nossos propósitos, embora possam ser facilmente separados) criam um número de série (na verdade, um grande número aleatório, ao invés de uma sequência), e o anexam a uma lista de certificados emitidos. O agente de transferência libera uma transferência (ou seja, resgata o certificado) verificando a assinatura para identificar a classe de contrato de titular e verificar se ela foi feita, em seguida, examinando a lista emitida desse contrato para garantir que o número de série esteja lá e removendo o número de série. Alternativamente, o emissor pode deixar a emissão formar o número de série e, quando estiver removido, verificar a assinatura e colocar o número na lista de certificados removidos. A assinatura fornece a garantia de que o certificado é de fato o tipo específico de contrato com o titular, enquanto o número de série assegura que a mesma instância desse contrato não seja compensada ou resgatada mais de uma vez. Nessas versões simples, o agente de transferência pode vincular o cessionário ao transferidor para todas as transferências. Para implementar as características de privacidade de moedas e certificados de titular físico, precisamos adicionar recursos de desvinculação.
 	</p>
 
-	<h2>Blind Signatures</h2>
+	<h2>Assinaturas Disfarçada ("Blind Signatures")</h2>
 
 	<p>
-		Meet the greatest simple equation since e=mc<sup>2</sup>:
+		Conheça a maior equação simples desde e=mc<sup>2</sup>:
 	</p>
 
 	<p>
@@ -35,33 +33,33 @@
 	</p>
 
 	<p>
-		<code>S</code> is a digital signature. <code>f</code> is the blinding function, and <code>g</code> an unblinding function. The blinding functions are usually based on a secret random number called the "blinding factor". m is another random number, a unique identifier which can, for example, refer to an instance of some object.
+		<code>S</code> é uma assinatura digital. <code>f</code> é a função de disface, e <code>g</code> uma função de desvendar. As funções de disfarce são geralmente baseadas em um número aleatório secreto chamado "fator de disfarce". <code>m</code> é outro número aleatório, um identificador único que pode, por exemplo, referir-se a uma instância de algum objeto.
 	</p>
 
 	<p>
-		The idea is very clever but very simple. It may be counterintuitive because the simplest physical world metaphor of this highly useful e-commerce primitive sounds worse than useless: Alice can get Carol to sign a blank check! Here's how:
+		A ideia é muito inteligente, mas muito simples. Pode ser contra-intuitivo porque a mais simples metáfora do mundo físico deste e-commerce primitivo altamente útil parece um tanto quanto inútil: Alice pode fazer com que Carol assine um cheque em branco! Veja como:
 	</p>
 
 	<p>
 		<ol>
 			<li>
-				Alice generates m and blinds it. "Blinding" is just a one-time-pad encryption to oneself, <code>f(m)</code>. She sends this to Carol. This is like taking a piece of paper and sealing it inside an envelope which Carol can't open or see through.
+				Alice gera <code>m</code> e o disfarça. O "Disfaçar" é apenas uma criptografia one-time-pad para si mesmo, <code>f(m)</code>. Ela envia isso para Carol. É como pegar um pedaço de papel e selá-lo dentro de um envelope que Carol não pode abrir ou ver.
 			</li>
 			<li>
-				Carol signs it: <code>Sf(m)</code>, and sends this back to Alice. This is like Carol signing the outside of the envelope.
+				Carol então assina: <code>Sf(m)</code>, e manda de volta para Alice. É como se Carol estivesse assinando o lado de fora do envelope.
 			</li>
 			<li>
-				Alice unblinds it: <code>gSf(m) = S(m)</code>. Carol has also signed the paper Alice put inside the envelope!
+				Alice desvenda: <code>gSf(m) = S(m)</code>. Carol também assinou o papel que Alice colocou dentro do envelope!
 			</li>
 		</ol>
 	</p>
 
 	<p>
-		The genius behind this discovery: cryptography guru David Chaum. The brilliance lies in step 3: Chaum discovered that some signatures have the property of being "commutative" with the blinding functions: Alice can strip off the blinding in the reverse order which the blinding and signature were applied, leaving just Alice's signature of n. It is as if Alice put a piece of carbon paper inside the envelope!
+		O gênio por trás dessa descoberta: o guru da criptografia, David Chaum. O brilhantismo está no passo 3: Chaum descobriu que algumas assinaturas têm a propriedade de serem "comutativas" com as funções de disfarce: Alice pode retirar o disfarce na ordem inversa à qual a cegueira e a assinatura foram aplicadas, deixando apenas a assinatura de n. É como se Alice colocasse um pedaço de papel carbono dentro do envelope!
 	</p>
 
 	<p>
-		In particular for RSA signatures, with public key (pq, e) and private key d, the blind signature functions are the following modulo pq:
+		Em particular para assinaturas RSA, com chave pública (pq, e) e chave privada d, as funções de assinatura cega são o seguinte módulo pq:
 	</p>
 
 	<p>
@@ -73,7 +71,7 @@ f(x)= xk<sup>e</sup>
 	</p>
 
 	<p>
-		We can check that the blind signature property holds: <code>gSf(m) = (m(k<sup>e</sup>))<sup>d</sup> * k<sup>-1</sup> = m<sup>d</sup> * k * k<sup>-1</sup>	= m<sup>d</sup></code>, which is the valid RSA signature of private key d on m.
+		Podemos verificar se a propriedade de assinatura disfarçada contém: <code>gSf(m) = (m(k<sup>e</sup>))<sup>d</sup> * k<sup>-1</sup> = m<sup>d</sup> * k * k<sup>-1</sup>	= m<sup>d</sup></code>, qual é a assinatura RSA válida da chave privada d em m.
 	</p>
 
 	<h2>Unlinkable Transfers </h2>
