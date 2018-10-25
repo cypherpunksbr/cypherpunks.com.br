@@ -15,4 +15,5 @@ Textos sendo traduzidos:
 -  [X] ["Why I Wrote PGP"] -[@Deephi]()
 -  [X] ["Multinational Small Business"] - [@Deephi]()
 -  [X] [Contracts with Bearer] - [Matheus Bach](https://github.com/matheusbach/)
+-  [X] [A ideia de Contratos Inteligentes] - [pr1mx](https://github.com/pr1mx)
 
