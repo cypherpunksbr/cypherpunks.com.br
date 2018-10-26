@@ -16,11 +16,12 @@ Apoie: BTC_ADDRESS
 Este trabalho não seria possível sem a contribuição de diversas pessoas que ajudaram a traduzir e revisar voluntariamente todos os nossos artigos. São eles:
     
 Colaboradores:
--  [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 -  [accela](https://cypherpunks.com.br/author/accela/)
 -  [Disruptivas](https://cypherpunks.com.br/author/deep/)
 -  [j2ff](https://github.com/jeffesonjp)
 -  [Matheus Bach](https://github.com/matheusbach/)
+-  [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
+-  [pr1mx](https://github.com/pr1mx)
 
 **Pode copiar livremente. Propriedade Intelectual não é legítima.**
 
