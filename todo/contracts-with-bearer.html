@@ -74,34 +74,35 @@ f(x)= xk<sup>e</sup>
 		Podemos verificar se a propriedade de assinatura disfarçada contém: <code>gSf(m) = (m(k<sup>e</sup>))<sup>d</sup> * k<sup>-1</sup> = m<sup>d</sup> * k * k<sup>-1</sup>	= m<sup>d</sup></code>, qual é a assinatura RSA válida da chave privada d em m.
 	</p>
 
-	<h2>Unlinkable Transfers </h2>
+	<h2>Transferências Desvinculadas </h2>
 
 	<p>
-		Distinguish between either a counter or third party tracing one person's true name, via lack of or weak communications mix, and a third party linking two entities (whether nyms, use-more-than-once-addresses, account numbers, or true names) as being involved in the same transaction. By unlinkability herein we mean the latter. The goal where true names are used (this occurs, for example, when using true name accounts or not using good communications mixes), is to prevent third party linking of two people doing business with each other.  Where nyms are used the goal is to minimize the release of traffic information, to prevent the unwanted accumulation of unique behavior patterns, which could be used to link nyms (including to their true names), or could augment other means of breaching privacy. Blinding especially helps where rights holders want to keep third party or public accounts denominated in generic rights. In that case a communications mix doesn't even in principle give us what blinding does.
+		Distinguir entre um contador ou um terceiro rastreando o nome verdadeiro de uma pessoa, por falta ou deficiencia no mix de comunicações, e um terceiro vinculando duas entidades (seja nyms, usando mais de uma vez o mesmo endereço, números de contas ou nomes verdadeiros) como estando envolvido na mesma transação. Por desvinculadas aqui queremos dizer o último. A meta em que nomes verdadeiros são usados (isso ocorre, por exemplo, ao usar contas de nome verdadeiro ou não usar boas misturas de comunicação), é impedir a vinculação de terceiros de duas pessoas que fazem negócios entre si. Onde nyms são usados, o objetivo é minimizar a liberação de informações de tráfego, evitar o acúmulo indesejado de padrões de comportamento únicos, que poderiam ser usados para vincular nyms (incluindo seus nomes verdadeiros), ou poderiam aumentar outros meios de violação de privacidade. disfarces ajudam especialmente quando os detentores de direitos desejam manter contas públicas ou de terceiros expressas em direitos genéricos. Nesse caso, um mix de comunicação nem em princípio nos dá o que o disfarce faz.
 	</p>
 
 	<p>
-		Besides protecting against the transfer agent, Chaum's transferor-, transferee-, and double-blinding protocols protect against collusion of a party with a transfer agent to identify the countparty account or nym.
+		Além de proteger contra o agente de transferência, os protocolos de transferidor, transferência e dupla ocultação chaumiana protegem contra a conivência de uma parte com um agente de transferência para identificar parte da conta ou nym.
 	</p>
 
 	<p>
-		Unlinkability can be provided by combining a list of cleared certificates with blind signatures and a delay-mixing effect. Enough instances of a standardized contract are issued over a period of time to create a mix. Between the issuing and clearing of a certificate, many other certificates with the same signature will be cleared, making it highly improbable that a particular clearing can be linked to a particular issue via the signature. There is a tradeoff between the mixing effect and the exposure to the theft of a "plate" for a particular issue: the smaller the issue, the smaller the exposure but the greater the linkability; a larger issue has both greater exposure and greater confidentiality.
+		A desvinculação pode ser fornecida pela combinação de uma lista de certificados limpos com assinaturas disfarçadas e um delay na mistura. Exemplos suficientes de um contrato padronizado são emitidos durante um período de tempo para criar um mix. Entre a emissão e a liberação de um certificado, muitos outros certificados com a mesma assinatura serão apagados, tornando altamente improvável que uma compensação específica possa ser vinculada a uma determinada entrega por meio da assinatura. Existe uma troca entre o efeito de mistura e a exposição ao roubo de uma "placa" por um problema específico: quanto menor a entrega, menor a exposição, mas maior a conectividade; uma entrega maior tem maior exposição e maior confidencialidade.
 	</p>
 
 	<p>
-		Blind signatures can be used to make certificate transfers unlinkable via serial number. Privacy from the transfer agent can take the form of transferee-unlinkability, transferor-unlinkability, or "double blinded" where both transferor and transferee are unlinkable by the transfer agent or a collusion of a transfer agent and counterparty.
+		As assinaturas disfarçadas podem ser usadas para tornar as transferências de certificado não vinculáveis através do número de série. A privacidade do agente de transferência pode tomar a forma de transferência, desvinculação, não-vinculação do transferidor ou "duplo disfarçe", em que tanto o cedente quanto o cessionário não podem ser vinculados pelo agente de transferência ou conlusão de um agente de transferência e contraparte.
 	</p>
 
 	<p>
-		A use-once-address communications mix plus foreswearing any reputation gain from keeping accounts, in theory also buys us unlinkability, but a communications mix is weak and very expensive.
+		Um mix de comunicação com uso único de endereços, mais a previsão de qualquer ganho de reputação de manter contas, em teoria também nos compra de desvinculação, mas um mix de comunicações é fraco e muito caro.
 	</p>
 
 	<p>
 		Bearer certificates come in an "online" variety, cleared during every transfer, and thus both verifiable and observable, and an "offline" variety, which can be transferred without being cleared, but is only verifiable when finally cleared, by revealing any the clearing name of any intermediate holder who transferred the object multiple times (a breach of contract).
+		Os certificados de titular vêm em uma variedade "on-line", limpa durante cada transferência e, portanto, verificável e observável, e uma variedade "off-line", que pode ser transferida sem ser compensada, mas só é verificável quando finalmente liberada, revelando qualquer detentor intermediário que transferiu o objeto várias vezes (uma quebra de contrato).
 	</p>
 
 	<p>
-		This unlinkability is often called "anonymity", but the issue of whether accounts are issued to real names or pseudonyms, and whether transferor and transferee identify themselves to each other, is orthogonal to unlinkability by the transfer agent in the online model. In the off-line model, account identification (or at least a highly reputable and/or secured pseudonym) is required: passing an offline certificate a second time reveals this identity. Furthermore, communications channels can allow Eve to link transferor and transferee, unless they take the precaution of using an anonymous remailer. Online clearing does make lack of identification a reasonable option for many kinds of transactions, although common credit and warrantee situations often benefit from or even require identification.
+		Essa desvinculação é muitas vezes chamada de "anonimato", mas a questão de se as contas são emitidas para nomes reais ou pseudônimos e se o transferidor e o cessionário se identificam é ortogonal à não-vinculação pelo agente de transferência no modelo on-line. No modelo off-line, a identificação da conta (ou pelo menos um pseudônimo altamente confiável e / ou seguro) é necessária: passar um certificado off-line pela segunda vez revela essa identidade. Além disso, os canais de comunicação podem permitir que a transação anterior vincule o transferidor e o cessionário, a menos que eles tomem a precaução de usar um remailer anônimo. A compensação on-line faz da falta de identificação uma opção razoável para muitos tipos de transações, embora as situações comuns de crédito e garantia geralmente sejam beneficiadas ou até mesmo exijam identificação.
 	</p>
 
 	<p>
