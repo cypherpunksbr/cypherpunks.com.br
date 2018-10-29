@@ -136,34 +136,34 @@ Uma credencial chaumiana é um protocolo criptográfico para provar que o pseud�
 	</p>
 	-->
 
-	<h4>Generic vs. Specific Rights</h4>
+	<h4>Direitos Genéricos vs. Direitos Específicos</h4>
 
 	<p>
-		To discuss the mapping between Chaumian certificates and distributed capabilities as implemented in for example <a href="http://www.erights.org/">E</a> I introduce some different, partly overlapping terminology: generic vs. specific, exclusive vs. non-, Transfer Agent vs. Provider, token vs. Swiss number.
+		Discutir o mapeamento entre os certificados chaumianos e os recursos distribuídos, conforme implementado, por exemplo em <a href="http://www.erights.org/">E-Rights</a> Eu introduzo uma terminologia diferente, parcialmente sobreposta: genérico vs. específico, exclusivo versus não exclusivo, agente de transferência x provedor, token versus número suíço.
 	</p>
 
 	<p>
-		Rights can be generic or specific. Generic rights correspond to a class of objects, specific rights to an instance. So a specific right is implemented with a Swiss number, a large random number. The signed numbers corresponding to generic rights I will call "tokens".
+		Os direitos podem ser genéricos ou específicos. Os direitos genéricos correspondem a uma classe de objetos, direitos específicos a uma instância. Portanto, um direito específico é implementado com um número suíço, um grande número aleatório. Os números assinados correspondem aos direitos genéricos que chamarei de "tokens".
 	</p>
 
 	<p>
-		Rights can also be exclusive or non-exlusive. Any object which must be conserved, or finally allocated to a specific user, is "exclusive".
+		Os direitos também podem ser exclusivos ou não-exclusivos. Qualquer objeto que deve ser conservado ou finalmente alocado para um usuário específico é "exclusivo".
 	</p>
 
 	<p>
-		Simple example: the right to an exclusive lock on some 1 MB of memory is generic and exclusive.  The right to an exclusive lock on the specific address space 100-101 is specific and exclusive. The right to two dozen particular stock quotes at 12:22 p.m. today is specific and non-exclusive.
+		Exemplo simples: o direito a um bloqueio exclusivo em alguns 1 MB de memória é genérico e exclusivo. O direito a um bloqueio exclusivo no espaço de endereço específico 100-101 é específico e exclusivo. O direito a duas dúzias de cotações de ações particulares às 12h22min de hoje é específico e não exclusivo.
 	</p>
 
 	<p>
-		The main motivation for these distinctions are different mechanisms of unlinkable transfer of these rights, set out below.
+		A principal motivação para essas distinções são mecanismos diferentes de transferência indestrutível desses direitos, descritos a seguir.
 	</p>
 
 	<p>
-		For simplicity generic rights are all "use-once": the life cycle of a token consists of issuance, followed by a series of transfers, followed by consumption. More sophisticated life cycles, such as alternating transfer and consumption, are likely possible with some extra protocol.
+		Por simplicidade, os direitos genéricos são todos "use uma vez": o ciclo de vida de um token consiste em emissão, seguido por uma série de transferências, seguidas de consumo. Ciclos de vida mais sofisticados, como transferência e consumo alternados, provavelmente são possíveis com algum protocolo extra.
 	</p>
 
 	<p>
-		With a perfect communications mix, including use-once return addresses, and no reputation building, we wouldn't need blinded tokens. However, communications mixes are expensive, and we want the option of having certain public records by which to build reputations, yet do certain rights transfers privately. For these reasons, we should allow clients to blind token transfers in addition to providing a communications mix.
+		Com um mix de comunicações perfeito, incluindo endereços de retorno de uso único e sem criação de reputação, não precisaríamos de tokens ocultos. No entanto, os mixes de comunicações são caros e queremos a opção de ter certos registros públicos para construir reputações, mas fazer certas transferências de direitos em particular. Por esses motivos, devemos permitir que os clientes disfarçem transferências de token, além de fornecer um mix de comunicações.
 	</p>
 
 	<p>
