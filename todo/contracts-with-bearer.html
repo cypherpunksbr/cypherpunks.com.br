@@ -15,14 +15,14 @@
 	<h2>Certificados de Titular</h2>
 
 	<p>
-		"Certificado de titular digital" é um termo amplamente desenvolvido por este autor<sup><a href="#fn1" id="ref1">[1]</a></sup> incorporando pelo menos duas tecnologias emergentes: dinheiro digital e capacidaes distribuídas (referências seguras de objetos distribuídos). Primeiro descreverei o protocolo chaumiano e seu recurso inovador de privacidade. Em seguida, discutirei como essas ideias são mapeadas para o mundo das capacidades na seção sobre direitos genéricos versus direitos específicos. Alterei a terminologia de dinheiro digital para certificado de titular ou ficha, de casa da moeda para emissor ou agente de transferência, e assim por diante, para refletir a capacidade dos protocolos de Chaum de generalizar. Os certificados de titular de Chaum implementam direitos padronizados transferíveis independentemente da identidade do titular. Cada tipo de contrato (por exemplo, cada denominação de "moeda" em dinheiro digital) corresponde a uma assinatura digital, assim como cada emissão de títulos da Reserva Federal ou certificados de ações corresponde a uma determinada conta.
+		"Certificado digital de titular" é um termo amplamente desenvolvido por este autor<sup><a href="#fn1" id="ref1">[1]</a></sup> incorporando pelo menos duas tecnologias emergentes: dinheiro digital e capacidaes distribuídas (referências seguras de objetos distribuídos). Primeiro descreverei o protocolo chaumiano e seu recurso inovador de privacidade. Em seguida, discutirei como essas ideias são mapeadas para o mundo das capacidades na seção sobre direitos genéricos versus direitos específicos. Alterei a terminologia de dinheiro digital para certificado de titular ou token, de casa da moeda para emissor ou agente de transferência, e assim por diante, para refletir a capacidade dos protocolos de Chaum de generalizar. Os certificados de titular de Chaum implementam direitos padronizados transferíveis independentemente da identidade do titular. Cada tipo de contrato (por exemplo, cada denominação de "moeda" em dinheiro digital) corresponde a uma assinatura digital, assim como cada emissão de títulos da Reserva Federal ou certificados de ações corresponde a uma determinada conta.
 	</p>
 
 	<p>
-		No protocolo chaumiano mais direto, o emissor e o agente de transferência (a mesma entidade, para os nossos propósitos, embora possam ser facilmente separados) criam um número de série (na verdade, um grande número aleatório, ao invés de uma sequência), e o anexam a uma lista de certificados emitidos. O agente de transferência libera uma transferência (ou seja, resgata o certificado) verificando a assinatura para identificar a classe de contrato de titular e verificar se ela foi feita, em seguida, examinando a lista emitida desse contrato para garantir que o número de série esteja lá e removendo o número de série. Alternativamente, o emissor pode deixar a emissão formar o número de série e, quando estiver removido, verificar a assinatura e colocar o número na lista de certificados removidos. A assinatura fornece a garantia de que o certificado é de fato o tipo específico de contrato com o titular, enquanto o número de série assegura que a mesma instância desse contrato não seja compensada ou resgatada mais de uma vez. Nessas versões simples, o agente de transferência pode vincular o cessionário ao transferidor para todas as transferências. Para implementar as características de privacidade de moedas e certificados de titular físico, precisamos adicionar recursos de desvinculação.
+		No protocolo chaumiano mais direto, o emissor e o agente de transferência (a mesma entidade, para os nossos propósitos, embora possam ser facilmente separados) criam um número de série (na verdade, um grande número aleatório, ao invés de uma sequência), e o anexam a uma lista de certificados emitidos. O agente de transferência libera uma transferência (ou seja, resgata o certificado) verificando a assinatura para identificar a classe de contrato de titular e verificar se ela foi feita, em seguida, examinando a lista emitida desse contrato para garantir que o número de série esteja lá e removendo o número de série. Alternativamente, o emissor pode deixar a emissão formar o número de série e, quando estiver removido, verificar a assinatura e colocar o número na lista de certificados removidos. A assinatura fornece a garantia de que o certificado é de fato o tipo específico de contrato com o titular, enquanto o número de série assegura que a mesma instância desse contrato não seja compensada ou resgatada mais de uma vez. Nessas versões simples, o agente de transferência pode vincular o cessionário ao receptor para todas as transferências. Para implementar as características de privacidade de moedas e certificados de titular físico, precisamos adicionar recursos de desvinculação.
 	</p>
 
-	<h2>Assinaturas Disfarçada ("Blind Signatures")</h2>
+	<h2>Assinaturas Ofuscada ("Blind Signatures")</h2>
 
 	<p>
 		Conheça a maior equação simples desde e=mc<sup>2</sup>:
@@ -33,7 +33,7 @@
 	</p>
 
 	<p>
-		<code>S</code> é uma assinatura digital. <code>f</code> é a função de disface, e <code>g</code> uma função de desvendar. As funções de disfarce são geralmente baseadas em um número aleatório secreto chamado "fator de disfarce". <code>m</code> é outro número aleatório, um identificador único que pode, por exemplo, referir-se a uma instância de algum objeto.
+		<code>S</code> é uma assinatura digital. <code>f</code> é a função de ofuscamento, e <code>g</code> uma função de desofuscamento. As funções de ofuscamento são geralmente baseadas em um número aleatório secreto chamado "fator de ofuscação". <code>m</code> é outro número aleatório, um identificador único que pode, por exemplo, referir-se a uma instância de algum objeto.
 	</p>
 
 	<p>
@@ -43,7 +43,7 @@
 	<p>
 		<ol>
 			<li>
-				Alice gera <code>m</code> e o disfarça. O "Disfaçar" é apenas uma criptografia one-time-pad para si mesmo, <code>f(m)</code>. Ela envia isso para Carol. É como pegar um pedaço de papel e selá-lo dentro de um envelope que Carol não pode abrir ou ver.
+				Alice gera <code>m</code> e o ofusca. O "ofuscar" é apenas uma criptografia one-time-pad para si mesmo, <code>f(m)</code>. Ela envia isso para Carol. É como pegar um pedaço de papel e selá-lo dentro de um envelope que Carol não pode abrir ou ver.
 			</li>
 			<li>
 				Carol então assina: <code>Sf(m)</code>, e manda de volta para Alice. É como se Carol estivesse assinando o lado de fora do envelope.
@@ -55,11 +55,11 @@
 	</p>
 
 	<p>
-		O gênio por trás dessa descoberta: o guru da criptografia, David Chaum. O brilhantismo está no passo 3: Chaum descobriu que algumas assinaturas têm a propriedade de serem "comutativas" com as funções de disfarce: Alice pode retirar o disfarce na ordem inversa à qual a cegueira e a assinatura foram aplicadas, deixando apenas a assinatura de n. É como se Alice colocasse um pedaço de papel carbono dentro do envelope!
+		O gênio por trás dessa descoberta: o guru da criptografia, David Chaum. O brilhantismo está no passo 3: Chaum descobriu que algumas assinaturas têm a propriedade de serem "comutativas" com as funções de ofuscamento: Alice pode desofuscar na ordem inversa à qual a ofuscação e a assinatura foram aplicadas, deixando apenas a assinatura de n. É como se Alice colocasse um pedaço de papel carbono dentro do envelope!
 	</p>
 
 	<p>
-		Em particular para assinaturas RSA, com chave pública (pq, e) e chave privada d, as funções de assinatura cega são o seguinte módulo pq:
+		Em particular para assinaturas RSA, com chave pública (pq, e) e chave privada d, as funções de assinatura ofuscada são o seguinte módulo pq:
 	</p>
 
 	<p>
@@ -71,25 +71,25 @@ f(x)= xk<sup>e</sup>
 	</p>
 
 	<p>
-		Podemos verificar se a propriedade de assinatura disfarçada contém: <code>gSf(m) = (m(k<sup>e</sup>))<sup>d</sup> * k<sup>-1</sup> = m<sup>d</sup> * k * k<sup>-1</sup>	= m<sup>d</sup></code>, qual é a assinatura RSA válida da chave privada d em m.
+		Podemos verificar se a propriedade de assinatura ofuscada contém: <code>gSf(m) = (m(k<sup>e</sup>))<sup>d</sup> * k<sup>-1</sup> = m<sup>d</sup> * k * k<sup>-1</sup>	= m<sup>d</sup></code>, qual é a assinatura RSA válida da chave privada d em m.
 	</p>
 
 	<h2>Transferências Desvinculadas </h2>
 
 	<p>
-		Distinguir entre um contador ou um terceiro rastreando o nome verdadeiro de uma pessoa, por falta ou deficiencia no mix de comunicações, e um terceiro vinculando duas entidades (seja nyms, usando mais de uma vez o mesmo endereço, números de contas ou nomes verdadeiros) como estando envolvido na mesma transação. Por desvinculadas aqui queremos dizer o último. A meta em que nomes verdadeiros são usados (isso ocorre, por exemplo, ao usar contas de nome verdadeiro ou não usar boas misturas de comunicação), é impedir a vinculação de terceiros de duas pessoas que fazem negócios entre si. Onde nyms são usados, o objetivo é minimizar a liberação de informações de tráfego, evitar o acúmulo indesejado de padrões de comportamento únicos, que poderiam ser usados para vincular nyms (incluindo seus nomes verdadeiros), ou poderiam aumentar outros meios de violação de privacidade. disfarces ajudam especialmente quando os detentores de direitos desejam manter contas públicas ou de terceiros expressas em direitos genéricos. Nesse caso, um mix de comunicação nem em princípio nos dá o que o disfarce faz.
+		Se pode distinguir entre um contador ou um terceiro rastreando o nome verdadeiro de uma pessoa, por falta ou deficiência no mix de comunicações, ou com um terceiro vinculando duas entidades (pseudônimo usando mais de uma vez o mesmo endereço, números de contas ou nomes verdadeiros), como estando envolvido na mesma transação. Por desvinculadas aqui queremos dizer o último. A meta em que nomes verdadeiros são usados (isso ocorre, por exemplo, ao usar contas de nome verdadeiro ou não usar boas misturas de comunicação), é impedir a vinculação de terceiros de duas pessoas que fazem negócios entre si. Onde pseudônimo são usados, o objetivo é minimizar a liberação de informações de tráfego, evitar o acúmulo indesejado de padrões de comportamento únicos, que poderiam ser usados para vincular pseudônimo (incluindo seus nomes verdadeiros), ou poderiam aumentar outros meios de violação de privacidade. Ofuscamento ajuda especialmente quando os detentores de direitos desejam manter contas públicas ou de terceiros expressas em direitos genéricos. Nesse caso, um mix de comunicação nem em princípio nos dá o que o disfarce faz.
 	</p>
 
 	<p>
-		Além de proteger contra o agente de transferência, os protocolos de transferidor, transferência e dupla ocultação chaumiana protegem contra a conivência de uma parte com um agente de transferência para identificar parte da conta ou nym.
+		Além de proteger contra o agente de transferência, os protocolos de transferidor, transferência e duplo ofuscamento chaumiano protegem contra a conivência de uma parte com um agente de transferência para identificar parte da conta ou pseudônimo.
 	</p>
 
 	<p>
-		A desvinculação pode ser fornecida pela combinação de uma lista de certificados limpos com assinaturas disfarçadas e um delay na mistura. Exemplos suficientes de um contrato padronizado são emitidos durante um período de tempo para criar um mix. Entre a emissão e a liberação de um certificado, muitos outros certificados com a mesma assinatura serão apagados, tornando altamente improvável que uma compensação específica possa ser vinculada a uma determinada entrega por meio da assinatura. Existe uma troca entre o efeito de mistura e a exposição ao roubo de uma "placa" por um problema específico: quanto menor a entrega, menor a exposição, mas maior a conectividade; uma entrega maior tem maior exposição e maior confidencialidade.
+		A desvinculação pode ser fornecida pela combinação de uma lista de certificados limpos com assinaturas ofuscadas e um delay na mistura. Exemplos suficientes de um contrato padronizado são emitidos durante um período de tempo para criar um mix. Entre a emissão e a liberação de um certificado, muitos outros certificados com a mesma assinatura serão apagados, tornando altamente improvável que uma compensação específica possa ser vinculada a uma determinada entrega por meio da assinatura. Existe uma troca entre o efeito de mistura e a exposição ao roubo de um "pacote" por um problema específico: quanto menor a entrega, menor a exposição, mas maior a conectividade; uma entrega maior tem maior exposição e maior confidencialidade.
 	</p>
 
 	<p>
-		As assinaturas disfarçadas podem ser usadas para tornar as transferências de certificado não vinculáveis através do número de série. A privacidade do agente de transferência pode tomar a forma de transferência, desvinculação, não-vinculação do transferidor ou "duplo disfarçe", em que tanto o cedente quanto o cessionário não podem ser vinculados pelo agente de transferência ou conlusão de um agente de transferência e contraparte.
+		As assinaturas ofuscadas podem ser usadas para tornar as transferências de certificado não vinculáveis através do número de série. A privacidade do agente de transferência pode tomar a forma de transferência, desvinculação, não-vinculação do transferidor ou "duplo disfarçe", em que tanto o cedente quanto o cessionário não podem ser vinculados pelo agente de transferência ou conlusão de um agente de transferência e contraparte.
 	</p>
 
 	<p>
@@ -97,12 +97,11 @@ f(x)= xk<sup>e</sup>
 	</p>
 
 	<p>
-		Bearer certificates come in an "online" variety, cleared during every transfer, and thus both verifiable and observable, and an "offline" variety, which can be transferred without being cleared, but is only verifiable when finally cleared, by revealing any the clearing name of any intermediate holder who transferred the object multiple times (a breach of contract).
-		Os certificados de titular vêm em uma variedade "on-line", limpa durante cada transferência e, portanto, verificável e observável, e uma variedade "off-line", que pode ser transferida sem ser compensada, mas só é verificável quando finalmente liberada, revelando qualquer detentor intermediário que transferiu o objeto várias vezes (uma quebra de contrato).
+		Os certificados de titular vêm em uma versão "on-line", limpa durante cada transferência e, portanto, verificável e observável, e uma versão "off-line", que pode ser transferida sem ser compensada, mas só é verificável quando finalmente liberada, revelando qualquer detentor intermediário que transferiu o objeto várias vezes (uma quebra de contrato).
 	</p>
 
 	<p>
-		Essa desvinculação é muitas vezes chamada de "anonimato", mas a questão de se as contas são emitidas para nomes reais ou pseudônimos e se o transferidor e o cessionário se identificam é ortogonal à não-vinculação pelo agente de transferência no modelo on-line. No modelo off-line, a identificação da conta (ou pelo menos um pseudônimo altamente confiável e / ou seguro) é necessária: passar um certificado off-line pela segunda vez revela essa identidade. Além disso, os canais de comunicação podem permitir que a transação anterior vincule o transferidor e o cessionário, a menos que eles tomem a precaução de usar um remailer anônimo. A compensação on-line faz da falta de identificação uma opção razoável para muitos tipos de transações, embora as situações comuns de crédito e garantia geralmente sejam beneficiadas ou até mesmo exijam identificação.
+		Essa desvinculação é muitas vezes chamada de "anonimato", mas a questão de se as contas são emitidas para nomes reais ou pseudônimos e se o transferidor e o cessionário se identificam é ortogonal à não-vinculação pelo agente de transferência no modelo on-line. No modelo off-line, a identificação da conta (ou pelo menos um pseudônimo altamente confiável e/ou seguro) é necessária: passar um certificado off-line pela segunda vez revela essa identidade. Além disso, os canais de comunicação podem permitir que a transação anterior vincule o transferidor e o cessionário, a menos que eles tomem a precaução de usar um retransmissor anônimo. A compensação on-line faz da falta de identificação uma opção razoável para muitos tipos de transações, embora as situações comuns de crédito e garantia geralmente sejam beneficiadas ou até mesmo exijam identificação.
 	</p>
 
 	<p>
@@ -110,7 +109,7 @@ f(x)= xk<sup>e</sup>
 	</p>
 
 	<p>
-		Com a comunicação anônima bidirecional ideal entre as chaves de uso único e a compensação totalmente sem conta, a não-conectividade por meio de assinaturas disfarçadas se torna redundante. Este caso ideal ainda não foi abordado de perto com a tecnologia implementada e envolve necessariamente longos atrasos nas comunicações, que muitas vezes são intoleráveis. Misturas de comunicação realmente imperfeitas e tokens disfarçados menos caros se complementam.
+		Com a comunicação anônima bidirecional ideal entre as chaves de uso único e a compensação totalmente sem conta, a não-conectividade por meio de assinaturas ofuscadas se torna redundante. Este caso ideal ainda não foi abordado de perto com a tecnologia implementada e envolve necessariamente longos atrasos nas comunicações, que muitas vezes são intoleráveis. Misturas de comunicação realmente imperfeitas e tokens ofuscados menos caros se complementam.
 	</p>
 
 	<h2>Objetos Conservados</h2>
@@ -120,7 +119,7 @@ f(x)= xk<sup>e</sup>
 	</p>
 
 	<p>
-		Para implementar uma transação completa de pagamento por serviços, muitas vezes precisamos de mais do que apenas o protocolo de dinheiro digital; precisamos de um protocolo que garanta que o serviço será prestado se o pagamento for feito e vice-versa. Os sistemas comerciais atuais usam uma ampla variedade de técnicas para realizar isso, como correspondência certificada, troca face a face, confiança em histórico de crédito e agências de cobrança para conceder crédito, etc. Eu discuto tais questões em meu artigo sobre <a href="http://nakamotoinstitute.org/formalizing-securing-relationships.html">Contratos Inteligentes</a>.
+		Para implementar uma transação completa de pagamento por serviços, muitas vezes precisamos de mais do que apenas o protocolo de dinheiro digital; precisamos de um protocolo que garanta que o serviço será prestado se o pagamento for feito e vice-versa. Os sistemas comerciais atuais usam uma ampla variedade de técnicas para realizar isso, como correspondência certificada, troca cara a cara, confiança em histórico de crédito e agências de cobrança para conceder crédito, etc. Eu discuto tais questões em meu artigo sobre <a href="http://nakamotoinstitute.org/formalizing-securing-relationships.html">Contratos Inteligentes</a>.
 	</p>
 
 	<!--
@@ -166,64 +165,64 @@ f(x)= xk<sup>e</sup>
 	</p>
 
 	<p>
-		Para transferência barata, não-vinculável e verificável de direitos genéricos exclusivos, usando tokens disfarçados, deve haver uma população significativa de direitos genéricos intercambiáveis. Tais direitos combinados com direitos específicos não-excludentes também podem ser transferidos de maneira barata, uma vez que a compensação on-line não é necessária para o segundo. A transferência não vinculável e verificável de direitos específicos exclusivos parece exigir a compensação on-line através de um mix de comunicações caro.
+		For inexpensive, unlinkable, and verifiable transfer of exclusive generic rights, using blinded tokens, there must be a signficant population of interchangable generic rights. Such rights bundled with nonexlusive specific rights can also be cheaply transferred since online clearing is not required for the latter. Unlinkable and verifiable transfer of exclusive specific rights seems to require online clearing via an expensive communications mix.
 	</p>
 
 	<p>
-		Dois tipos de TTPs: um agente de transferência (AT) e um provedor. O AT funciona como uma casa da moeda de dinheiro digital mesmo sem possuir conta, limpando a transferência de tokens para direitos genéricos. O dinheiro digital é um caso especial: o dinheiro é o mais genérico dos direitos.
+		Two kinds of TTPs: a Transfer Agent (TA) and a Provider. The TA operates like an accountless digital cash mint, clearing the transfer of tokens for generic rights. Digital cash is a special case: money is the most generic of rights.
 	</p>
 
 	<p>
-		O Provedor é responsável por atualmente manter o objeto, que pode conter um estado exclusivo. O Provedor emite um número suíço, ou melhor, uma descrição assinada do direito específico e seu número suíço. Essa assinatura permite a verificação off-line do direito não excludente em que o Provedor é confiável. O AT emite um token para os direitos genéricos correspondentes.
+		The Provider is responsible for actually holding the object, which can contain unique state. The Provider issues a Swiss number, or better a signed description of the specific right and its Swiss number. This signature allows offline verification of the nonexlusive right where the Provider is reputable. The TA issues a token for the corresponding generic rights.
 	</p>
 
 	<p>
-		Chaum também desenvolveu outros meios para lidar com um estado único<sup><a href="#fn2" id="ref2">[2]</a></sup>.
+		Chaum has also developed other means for dealing with unique state<sup><a href="#fn2" id="ref2">[2]</a></sup>.
 	</p>
 
 	<p>
-		Estou supondo que o AT e o Provedor tenham conhecido assinaturas respeitáveis. A confiança ou reputação necessária para garantir a correção da transferência entre Provedor, AT e usuários é deixada em parte para análise posterior. Os dois principais objetivos aqui são garantir que os usuários possam verificar seus direitos (incluindo a exclusividade dos transferentes quando prometidos) e manter total privacidade dos ATs e Provedores. Algumas outras suposições de confiança provavelmente são feitas aqui e precisam ser explicadas e analisadas.
+		I'm assuming the TA and Provider have known reputable signatures. The trust or reputation  needed to ensure correctness of transfer between Provider, TA, and users is partly left for later analysis. The two main goals here are to assure that users can verify their rights (including exclusivity from transferors where promised) and retain full privacy from TAs and Providers. Some other trust assumptions are likely made here which need to be explicated and analyzed.
 	</p>
 
 	<p>
-		Para implementar transferências exclusivas, o AT mantém uma lista de números de tokens revogados (cancelados). O AT corresponde a uma "casa da moeda" no protocolo de dinheiro digital on-line Chaumiano (veja acima). Uma classe de direitos genéricos corresponde a uma "designação" da moeda. O Provedor também pode manter uma lista de números suíços pendentes ou usados, como um registrador E.
+		To implement exclusive transfers, the TA keeps a list of cleared (cancelled) token numbers. The TA corresponds to a "mint" in the Chaumian online digital cash protocol (see above). A class of generic rights corresponds to a "denomination" of coin. The Provider may also keep a list of outstanding or used Swiss numbers, like an E Registrar.
 	</p>
 
 	<p>
-		Aqui está outro exemplo de um direito genérico, ou classe de objetos fungíveis: "Um banco de dados SQL desejável com até 10 MB de armazenamento, e certas garantias de tempo de resposta padrão".
+		Here is another example of a generic right, or class of fungible objects: "A queriable SQL database with up to 10 MB of storage, and certain standard response time guarantees".
 	</p>
 
 	<p>
-		O AT vê apenas classes de objetos fungíveis. O Provedor e os usuários vêem instâncias particulares com estado exclusivo, por exemplo, um banco de dados preenchido com informações exclusivas.
+		The TA sees only classes of fungible objects. The Provider and users see particular instances with unique state, for example a database filled with unique information.
 	</p>
 
 	<p>
-		O Provedor age de maneira análoga a uma "loja". É apenas outro cliente de tokens para o AT, que, como outros clientes, pode transferir ou receber tokens. Sua função especial é que ele é responsável pela emissão, onde informa ao TA sobre uma nova instância, obtém um novo token e o transfere para o cliente para quem o novo direito genérico está sendo emitido. O TA gera e destrói o fornecimento de token apenas a pedido do Provedor; caso contrário, todas as suas transferências conservam o fornecimento de um determinado direito genérico. O Provedor também é responsável pela entrega do serviço ao cliente que possui o(s) direito(s) prometido(s), momento em que o Provedor "deposita" o(s) token(s) genérico(s), instruindo o TA a diminuir o fornecimento do token. Na terminologia de d9inheiro digital, o Provedor é a única entidade que tem que manter algo como uma conta bancária. Os detentores de direitos também podem manter uma conta, se quiserem usá-la para ajudar a construir reputação, ou podem simplesmente usar a TA para transferência de direitos conservados sem conta.
+		The Provider acts analogously to a "shop". It is just another token client to the TA, which like other clients can transfer or receive tokens. Its special role is that it is responsible for issuance, where it tells the TA about a new instance, obtains a new token, and transfers it to the client to whom the new generic right is being issued. The TA generates and destroys token supply only at the behest of the Provider; otherwise all its transfers conserve the supply of a particular generic right. The Provider is also responsible for the delivery of service to the client bearing the promised right(s), at which time the Provider "deposits" the generic token(s), instructing the TA to decrement the token supply.  In digital cash terminology, the Provider is the only entity which has to keep something like a bank account. Rights holders can also keep an account, if they wish to use it to help build reputation, or they can just use the TA for accountless conserved rights transfer.
 	</p>
 
 	<p>
-		O Provedor emite junto com o token de direitos genéricos inicial um juramento assinado, máquina ou humanamente legível, descrevendo aspectos do objeto que podem ser não-exclusivos e exclusivos, juntamente com o número suíço dessa instância e a chave pública do direito genérico(s) para os quais é válido. Por exemplo, pode-se dizer "um banco de dados contendo cotações dessas duas dúzias de ações listadas às 12:22 de segunda-feira", sem conter as cotações. Muitas vezes, essa descrição vale mais quando agrupada com direitos exclusivos genéricos, como o direito a um tempo de resposta rápido. Os direitos específicos podem elaborar de maneira única os direitos genéricos, desde que essas elaborações não sejam tomadas para definir direitos exclusivos. Os direitos genéricos permitem que os TAs garretam exclusividade aos usuários e conservação de recursos aos Provedores, enquanto os direitos específicos descrevem o estado único para qualquer grau desejado de elaboração. O Provedor deve estar preparado para atender a qualquer promessa específica que tenha emitido, desde que seja acompanhado pelos tokens genéricos conservados adequados.
+		The Provider issues along with the initial generic rights token a signed affadavit, machine or human readable, describing aspects of the object which may be non-exlusive and unique, along with that instance's Swiss number and the public key(s) of the generic right(s) for which it is valid. For example, it  might say "a database containing quotes of these two dozen listed stocks as of 12:22 pm Monday", without actually containing those quotes. Often such description is worth more when bundled with generic exclusive rights, such as the right to a fast response time. The specific rights can elaborate in unique ways upon the generic rights, as long as these elaborations are not taken to define exclusive rights. The generic rights let the TAs garuntee exclusivity to users and conservation of resources to Providers, while the specific rights describe the unique state to any desired degree of elaboration. The Provider must be prepared to service any specific promise it has issued, as long as it is accompanied by the proper conserved generic tokens.
 	</p>
 
 	<p>
-		Esse método de composição de direitos específicos e genéricos, transferidos como um pacote, mas com átomos genéricos exclusivos liberados por diferentes ATs, permite que pacotes de direitos arbitrariamente sofisticados, referindo-se a objetos com estado arbitrariamente exclusivo, sejam transferidos de forma não vinculante. Uma grande variedade de derivados e combinações são possíveis. A única restrição é que a obtenção de direitos a recursos exclusivos específicos deve ser adiada para a fase de consumo ou transferida com compensação on-line por meio de mix de comunicações caras.
+		This method of composing specific and generic rights, transferred as a bundle but with exlusive generic atoms cleared by different TAs, allows arbitrarily sophisticated rights bundles, referring to objects with arbitrarily unique state, to be transferred unlinkably. A wide variety of derivatives and combinations are possible. The only restriction is that obtaining rights to specific exclusive resources must either be deferred to the consumption phase, or transferred with online clearing via expensive communications mix.
 	</p>
 
 	<p>
-		Se o Provedor desejasse garantir a exclusividade de um direito específico, a transferência parece exigir um mix de comunicações dispendiosas entre o Provedor e o cessionário, em vez de um token disfarcado barato. Por exemplo, "Deep Space Station 60 de 0500-0900 domingo" ou "um bloqueio no autoexec.bat agora" exige exclusividade para um direito específico e, portanto, parece exigir um mix de comunicações para transferir de forma não vinculativa. Por outro lado, "Um bloco de uma hora no DSS-60 em maio" e "o direito de travar o autoexec.bat em algum momento" são genéricos e podem ser transferidos de forma privada com o disfarce muito mais barato, dada uma população suficiente de outros tokens para essa classe de direito genérico transferido entre a emissão e o consumo de um determinado token.
+		If the Provider wished to guarantee exclusivity to a specific right, transfer seems to require an expensive communications mix between Provider and transferee, rather than a cheap blinded token. For example, "Deep Space Station 60 from 0500-0900 Sunday" or "a lock on autoexec.bat now" demands exclusivity to a specific right, and thus seems to require a communications mix to unlinkably transfer. On the other hand, "A one hour block on DSS-60 in May" and "the right to lock autoexec.bat at some point" are generic and can be transferred privately with the much less expensive blinding, given a sufficient population of other tokens for this class of generic right transfered between the issuance and consumption of a given token.
 	</p>
 
 	<p>
-		Os clientes podem lidar com o AT sem um mix de comunicação. Eles lidam com o provedor por meio de um mix de comunicação. Se os titulares inicial e final não conseguissem fazer isso, o Provedor poderia vinculá-los. Se apenas o detentor final não o fizesse, o Provedor poderia identificá-lo como o usuário real do recurso. Assim, para a privacidade total, transferências genéricas são baratas, e transferências não-exclusivas são baratas, enquanto transferências exsclusivas específicas e, na verdade, o uso do objeto parecem exigir o dispendioso mix de comunicações.
+		Clients can deal with the TA without a communications mix. They deal with the Provider via a communications mix. If both the initial and final holders failed to do this, the Provider could link them. If just the final holder failed to do so, the Provider could identify him as the actual user of the resource. Thus for full privacy generic transfers are cheap, and nonexclusive transfers are cheap, while specific exsclusive transfers and actually using the object seem to require the expensive communications mix.
 	</p>
 
-	<h2>Agradecimentsos</h2>
+	<h2>Acknowledgements</h2>
 
 	<p>
-		Meus agradecimentos a David Chaum, a Mark Miller, a Bill Frantz, a Norm Hardy e a muitos outros por dedicarem tempo para me dar informações valiosas sobre essas questões.
+		My thanks to David Chaum, Mark Miller, Bill Frantz, Norm Hardy, and many others for taking the time to give me their valuable insights into these issues.
 	</p>
 
-	<h2>Referências</h2>
+	<h2>References</h2>
 
 	<ol>
 		<li id="fn1">
@@ -260,12 +259,12 @@ f(x)= xk<sup>e</sup>
 
 	<hr>
 	<p>
-		Por favor, envie seus comentários para nszabo (at) law (ponto) gwu (ponto) edu
+		Please send your comments to nszabo (at) law (dot) gwu (dot) edu
 	</p>
 
 	<p>
-		Direitos autorais e cópia; 1997, 1999 por Nick Szabo<br>
-		Permissão para redistribuir sem alteração por este concedida.
+		Copyright &copy; 1997, 1999 by Nick Szabo<br>
+		Permission to redistribute without alteration hereby granted
 	</p>
 
 </div>
