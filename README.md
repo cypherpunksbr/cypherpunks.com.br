@@ -26,6 +26,7 @@ Colaboradores:
 -  [Matheus Bach](https://github.com/matheusbach/)
 -  [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 -  [pr1mx](https://github.com/pr1mx)
+-  [R]
 
 **Pode copiar livremente. Propriedade Intelectual não é legítima.**
 
