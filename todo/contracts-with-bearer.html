@@ -137,11 +137,11 @@ f(x)= xk<sup>e</sup>
 	<h4>Direitos Genéricos vs. Direitos Específicos</h4>
 
 	<p>
-		Discutir o mapeamento entre os certificados chaumianos e os recursos distribuídos, conforme implementado, por exemplo em <a href="http://www.erights.org/">E-Rights</a> Eu introduzo uma terminologia diferente, parcialmente sobreposta: genérico vs. específico, exclusivo versus não exclusivo, agente de transferência x provedor, token versus número suíço.
+		Discutiremos o mapeamento entre os certificados chaumianos e os recursos distribuídos, conforme implementado, por exemplo em <a href="http://www.erights.org/">E-Rights</a> onde introduzo uma terminologia diferente, parcialmente sobreposta: genérico vs. específico, exclusivo versus não exclusivo, agente de transferência x provedor, token versus hash.
 	</p>
 
 	<p>
-		Os direitos podem ser genéricos ou específicos. Os direitos genéricos correspondem a uma classe de objetos, direitos específicos a uma instância. Portanto, um direito específico é implementado com um número suíço, um grande número aleatório. Os números assinados correspondem aos direitos genéricos que chamarei de "tokens".
+		Os direitos podem ser genéricos ou específicos. Os direitos genéricos correspondem a uma classe de objetos, direitos específicos a uma instância. Portanto, um direito específico é implementado com um hash, um grande número aleatório. Os números assinados correspondem aos direitos genéricos que chamarei de "tokens".
 	</p>
 
 	<p>
@@ -149,7 +149,7 @@ f(x)= xk<sup>e</sup>
 	</p>
 
 	<p>
-		Exemplo simples: o direito a um bloqueio exclusivo em alguns 1 MB de memória é genérico e exclusivo. O direito a um bloqueio exclusivo no espaço de endereço específico 100-101 é específico e exclusivo. O direito a duas dúzias de cotações de ações particulares às 12h22min de hoje é específico e não exclusivo.
+		Exemplo simples: o direito a um bloqueio exclusivo em  1 MB de memória é genérico e exclusivo. O direito a um bloqueio exclusivo no espaço de endereço específico 100-101 é específico e exclusivo. O direito a cotação de duas dúzias de ações particulares às 12h22min de hoje é específico e não exclusivo.
 	</p>
 
 	<p>
@@ -157,81 +157,81 @@ f(x)= xk<sup>e</sup>
 	</p>
 
 	<p>
-		Por simplicidade, os direitos genéricos são todos "use uma vez": o ciclo de vida de um token consiste em emissão, seguido por uma série de transferências, seguidas de consumo. Ciclos de vida mais sofisticados, como transferência e consumo alternados, provavelmente são possíveis com algum protocolo extra.
+		Por simplicidade, os direitos genéricos são todos "de uso único": o ciclo de vida de um token consiste em emissão, seguido por uma série de transferências, seguidas de consumo. Ciclos de vida mais sofisticados, como transferência e consumo alternados, provavelmente são possíveis com algum protocolo extra.
 	</p>
 
 	<p>
-		Com um mix de comunicações perfeito, incluindo endereços de retorno de uso único e sem criação de reputação, não precisaríamos de tokens ocultos. No entanto, os mixes de comunicações são caros e queremos a opção de ter certos registros públicos para construir reputações, mas fazer certas transferências de direitos em particular. Por esses motivos, devemos permitir que os clientes disfarçem transferências de token, além de fornecer um mix de comunicações.
+		Com um mix de comunicações perfeito, incluindo endereços de retorno obedecendo ao uso único e sem criação de reputação, não precisaríamos de tokens ofuscados. No entanto, os mixes de comunicações são caros e queremos a opção de ter certos registros públicos para construir reputações, mas fazer certas transferências de direitos em particular. Por esses motivos, devemos permitir que os clientes ofusquem transferências de token, além de fornecer um mix de comunicações.
 	</p>
 
 	<p>
-		For inexpensive, unlinkable, and verifiable transfer of exclusive generic rights, using blinded tokens, there must be a signficant population of interchangable generic rights. Such rights bundled with nonexlusive specific rights can also be cheaply transferred since online clearing is not required for the latter. Unlinkable and verifiable transfer of exclusive specific rights seems to require online clearing via an expensive communications mix.
+		Para transferência barata, não-vinculável e verificável de direitos genéricos exclusivos, usando tokens disfarçados, deve haver uma quantidade significativa de direitos genéricos intercambiáveis. Tais direitos combinados com direitos específicos não-excludentes também podem ser transferidos de maneira barata, uma vez que a compensação on-line não é necessária para o segundo. A transferência não vinculável e verificável de direitos específicos exclusivos parece exigir a compensação on-line através de um mix de comunicações caro.
 	</p>
 
 	<p>
-		Two kinds of TTPs: a Transfer Agent (TA) and a Provider. The TA operates like an accountless digital cash mint, clearing the transfer of tokens for generic rights. Digital cash is a special case: money is the most generic of rights.
+		Dois tipos de TTPs: um agente de transferência (AT) e um provedor. O AT funciona como um Banco Central do dinheiro digital mesmo sem possuir conta, limpando a transferência de tokens para direitos genéricos. O dinheiro digital é um caso especial: o dinheiro é o mais genérico dos direitos.
 	</p>
 
 	<p>
-		The Provider is responsible for actually holding the object, which can contain unique state. The Provider issues a Swiss number, or better a signed description of the specific right and its Swiss number. This signature allows offline verification of the nonexlusive right where the Provider is reputable. The TA issues a token for the corresponding generic rights.
+		O Provedor é responsável por atualmente manter o objeto, que pode conter um estado exclusivo. O Provedor emite um hash, ou melhor, uma descrição assinada do direito específico e seu hash. Essa assinatura permite a verificação off-line do direito não excludente em que o Provedor é confiável. O AT emite um token para os direitos genéricos correspondentes.
 	</p>
 
 	<p>
-		Chaum has also developed other means for dealing with unique state<sup><a href="#fn2" id="ref2">[2]</a></sup>.
+		Chaum também desenvolveu outros meios para lidar com um estado único<sup><a href="#fn2" id="ref2">[2]</a></sup>.
 	</p>
 
 	<p>
-		I'm assuming the TA and Provider have known reputable signatures. The trust or reputation  needed to ensure correctness of transfer between Provider, TA, and users is partly left for later analysis. The two main goals here are to assure that users can verify their rights (including exclusivity from transferors where promised) and retain full privacy from TAs and Providers. Some other trust assumptions are likely made here which need to be explicated and analyzed.
+		Estou supondo que o AT e o Provedor tenham usado assinaturas confiáveis. A confiança ou reputação necessária para garantir a correção da transferência entre Provedor, AT e usuários é deixada em parte para análise posterior. Os dois principais objetivos aqui são garantir que os usuários possam verificar seus direitos (incluindo a exclusividade dos transferentes quando prometidos) e manter total privacidade dos ATs e Provedores. Algumas outras suposições de confiança provavelmente são feitas aqui e precisam ser explicadas e analisadas.
 	</p>
 
 	<p>
-		To implement exclusive transfers, the TA keeps a list of cleared (cancelled) token numbers. The TA corresponds to a "mint" in the Chaumian online digital cash protocol (see above). A class of generic rights corresponds to a "denomination" of coin. The Provider may also keep a list of outstanding or used Swiss numbers, like an E Registrar.
+		Para implementar transferências exclusivas, o AT mantém uma lista de números de tokens revogados (cancelados). O AT corresponde a um "Banco Central" no protocolo de dinheiro digital on-line chaumiano (veja acima). Uma classe de direitos genéricos corresponde a uma "designação" da moeda. O Provedor também pode manter uma lista de hashs pendentes ou usados, como um registrador E.
 	</p>
 
 	<p>
-		Here is another example of a generic right, or class of fungible objects: "A queriable SQL database with up to 10 MB of storage, and certain standard response time guarantees".
+		Aqui está outro exemplo de um direito genérico, ou classe de objetos fungíveis: "Um banco de dados SQL desejável com até 10 MB de armazenamento, e certas garantias de tempo de resposta padrão".
 	</p>
 
 	<p>
-		The TA sees only classes of fungible objects. The Provider and users see particular instances with unique state, for example a database filled with unique information.
+		O AT vê apenas classes de objetos fungíveis. O Provedor e os usuários vêem instâncias particulares com estado exclusivo, por exemplo, um banco de dados preenchido com informações exclusivas.
 	</p>
 
 	<p>
-		The Provider acts analogously to a "shop". It is just another token client to the TA, which like other clients can transfer or receive tokens. Its special role is that it is responsible for issuance, where it tells the TA about a new instance, obtains a new token, and transfers it to the client to whom the new generic right is being issued. The TA generates and destroys token supply only at the behest of the Provider; otherwise all its transfers conserve the supply of a particular generic right. The Provider is also responsible for the delivery of service to the client bearing the promised right(s), at which time the Provider "deposits" the generic token(s), instructing the TA to decrement the token supply.  In digital cash terminology, the Provider is the only entity which has to keep something like a bank account. Rights holders can also keep an account, if they wish to use it to help build reputation, or they can just use the TA for accountless conserved rights transfer.
+		O Provedor age de maneira análoga a uma "loja". É apenas outro cliente de tokens para o AT, que, como outros clientes, pode transferir ou receber tokens. Sua função especial é que ele é responsável pela emissão, onde informa ao TA sobre uma nova instância, obtém um novo token e o transfere para o cliente para quem o novo direito genérico está sendo emitido. O TA gera e destrói o fornecimento de token apenas a pedido do Provedor; caso contrário, todas as suas transferências conservam o fornecimento de um determinado direito genérico. O Provedor também é responsável pela entrega do serviço ao cliente que possui o(s) direito(s) prometido(s), momento em que o Provedor "deposita" o(s) token(s) genérico(s), instruindo o TA a diminuir o fornecimento do token. Na terminologia de dinheiro digital, o Provedor é a única entidade que tem que manter algo como uma conta bancária. Os detentores de direitos também podem manter uma conta, se quiserem usá-la para ajudar a construir reputação, ou podem simplesmente usar o TA para transferência de direitos conservados sem conta.
 	</p>
 
 	<p>
-		The Provider issues along with the initial generic rights token a signed affadavit, machine or human readable, describing aspects of the object which may be non-exlusive and unique, along with that instance's Swiss number and the public key(s) of the generic right(s) for which it is valid. For example, it  might say "a database containing quotes of these two dozen listed stocks as of 12:22 pm Monday", without actually containing those quotes. Often such description is worth more when bundled with generic exclusive rights, such as the right to a fast response time. The specific rights can elaborate in unique ways upon the generic rights, as long as these elaborations are not taken to define exclusive rights. The generic rights let the TAs garuntee exclusivity to users and conservation of resources to Providers, while the specific rights describe the unique state to any desired degree of elaboration. The Provider must be prepared to service any specific promise it has issued, as long as it is accompanied by the proper conserved generic tokens.
+		O Provedor emite junto com o token de direitos genéricos inicial um juramento assinado, máquina ou humanamente legível, descrevendo aspectos do objeto que podem ser não-exclusivos ou exclusivos, juntamente com o hash dessa instância e a chave pública do(s) direito(s) genérico(s) para os quais é(são) válido(s). Por exemplo, pode-se dizer "um banco de dados contendo cotações dessas duas dúzias de ações listadas às 12:22 de segunda-feira", sem conter as cotações. Muitas vezes, essa descrição vale mais quando agrupada com direitos exclusivos genéricos, como o direito a um tempo de resposta rápido. Os direitos específicos podem elaborar de maneira única os direitos genéricos, desde que essas elaborações não sejam tomadas para definir direitos exclusivos. Os direitos genéricos permitem que os ATs garantam exclusividade aos usuários e conservação de recursos aos Provedores, enquanto os direitos específicos descrevem o estado único para qualquer grau desejado de elaboração. O Provedor deve estar preparado para atender a qualquer promessa específica que tenha emitido, desde que seja acompanhado pelos tokens genéricos conservados adequados.
 	</p>
 
 	<p>
-		This method of composing specific and generic rights, transferred as a bundle but with exlusive generic atoms cleared by different TAs, allows arbitrarily sophisticated rights bundles, referring to objects with arbitrarily unique state, to be transferred unlinkably. A wide variety of derivatives and combinations are possible. The only restriction is that obtaining rights to specific exclusive resources must either be deferred to the consumption phase, or transferred with online clearing via expensive communications mix.
+		Esse método de composição de direitos específicos e genéricos, transferidos como um pacote, mas com átomos genéricos exclusivos liberados por diferentes ATs, permite que pacotes de direitos arbitrariamente sofisticados, referindo-se a objetos com estado arbitrariamente exclusivo, sejam transferidos de forma não vinculante. Uma grande variedade de derivados e combinações são possíveis. A única restrição é que a obtenção de direitos a recursos exclusivos específicos deve ser adiada para a fase de consumo ou transferida com compensação on-line por meio de mix de comunicações caras.
 	</p>
 
 	<p>
-		If the Provider wished to guarantee exclusivity to a specific right, transfer seems to require an expensive communications mix between Provider and transferee, rather than a cheap blinded token. For example, "Deep Space Station 60 from 0500-0900 Sunday" or "a lock on autoexec.bat now" demands exclusivity to a specific right, and thus seems to require a communications mix to unlinkably transfer. On the other hand, "A one hour block on DSS-60 in May" and "the right to lock autoexec.bat at some point" are generic and can be transferred privately with the much less expensive blinding, given a sufficient population of other tokens for this class of generic right transfered between the issuance and consumption of a given token.
+		Se o Provedor desejasse garantir a exclusividade de um direito específico, a transferência parece exigir um mix de comunicações dispendiosas entre o Provedor e o cessionário, em vez de um token ofuscado barato. Por exemplo, "Deep Space Station 60 de 0500-0900 domingo" ou "um bloqueio no autoexec.bat agora" exige exclusividade para um direito específico e, portanto, parece exigir um mix de comunicações para transferir de forma não vinculativa. Por outro lado, "Um bloco de uma hora no DSS-60 em maio" e "o direito de travar o autoexec.bat em algum momento" são genéricos e podem ser transferidos de forma privada com o ofuscamento muito mais barato, dada uma população suficiente de outros tokens para essa classe de direito genérico transferido entre a emissão e o consumo de um determinado token.
 	</p>
 
 	<p>
-		Clients can deal with the TA without a communications mix. They deal with the Provider via a communications mix. If both the initial and final holders failed to do this, the Provider could link them. If just the final holder failed to do so, the Provider could identify him as the actual user of the resource. Thus for full privacy generic transfers are cheap, and nonexclusive transfers are cheap, while specific exsclusive transfers and actually using the object seem to require the expensive communications mix.
+		Os clientes podem lidar com o AT sem um mix de comunicação. Eles lidam com o provedor por meio de um mix de comunicação. Se os titulares inicial e final não conseguissem fazer isso, o Provedor poderia vinculá-los. Se apenas o detentor final não o fizesse, o Provedor poderia identificá-lo como o usuário real do recurso. Assim, para a privacidade total, transferências genéricas são baratas, e transferências não-exclusivas são baratas, enquanto transferências exclusivas específicas e, na verdade, o uso do objeto parecem exigir o dispendioso mix de comunicações.
 	</p>
 
-	<h2>Acknowledgements</h2>
+	<h2>Agradecimentos</h2>
 
 	<p>
-		My thanks to David Chaum, Mark Miller, Bill Frantz, Norm Hardy, and many others for taking the time to give me their valuable insights into these issues.
+		Meus agradecimentos a David Chaum, a Mark Miller, a Bill Frantz, a Norm Hardy e a muitos outros por dedicarem tempo para me dar informações valiosas sobre essas questões.
 	</p>
 
-	<h2>References</h2>
+	<h2>Referências</h2>
 
 	<ol>
 		<li id="fn1">
 			<p>
-				The first public references to this idea can be found <a href="http://www.i-m.com/archives/9412/0179.html">here</a>, <a href="http://szabo.best.vwh.net/smart.contracts.html">here</a>. I also referred to this idea during this period in many personal communications, using the phrases "digital bearer instrument", "digital bearer certificate", "scarce object", and "conserved object". The idea of digital bearer certificates as a serious proposal for the financial industry has been popularized, with many intruiging additional ideas, by Bob Hettinga.
+				As primeiras referências públicas a essa ideia podem ser encontradas <a href="http://www.i-m.com/archives/9412/0179.html">aqui</a>, <a href="http://szabo.best.vwh.net/smart.contracts.html">aqui</a>. Eu também me referi a essa idéia durante esse período em muitas comunicações pessoais, usando as frases "instrumento titular digital", "certificado titular digital", "objeto escasso" e "objeto conservado". A idéia de certificados de titular digital como uma proposta séria para o setor financeiro foi popularizada, com muitas idéias adicionais intruigentes, por Bob Hettinga.
 			</p>
 			<!--
 			<p class="text-muted">
-				The phrases "digital bearer certificate" and "digital bearer settlement(DBS)" were soon thereafter popularized by a correspondent of mine, Robert Hettinga, as referring to a legal/institutional idea of instant, irrevocable settlement made possible by both the instant clearing and privacy features of this technology.&nbsp;<a href="#ref1">↩</a>
+				As frases "certificado titular digital" e "povoado titular digital (DBS)" foram logo depois popularizadas por um correspondente meu, Robert Hettinga, como se referindo a uma idéia legal/institucional de assentamento instantâneo e irrevogável tornada possível tanto pela limpeza imediata quanto características de privacidade desta tecnologia.&nbsp;<a href="#ref1">↩</a>
 			</p>
 			-->
 		</li>
@@ -259,13 +259,14 @@ f(x)= xk<sup>e</sup>
 
 	<hr>
 	<p>
-		Please send your comments to nszabo (at) law (dot) gwu (dot) edu
+		Por favor, envie seus comentários para nszabo (at) law (ponto) gwu (ponto) edu
 	</p>
 
 	<p>
-		Copyright &copy; 1997, 1999 by Nick Szabo<br>
-		Permission to redistribute without alteration hereby granted
+		Direitos autorais e cópia; 1997, 1999 por Nick Szabo<br>
+		Permissão para redistribuir sem alteração por este concedida.
 	</p>
 
 </div>
 {% endblock %}
+ 
