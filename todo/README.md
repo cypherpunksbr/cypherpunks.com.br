@@ -42,8 +42,6 @@
  
  :clock3: [areopagitica](../todo/areopagitica.html)
  
- :clock3: [bit gold](../todo/bit-gold.html)
- 
  :clock3: [bitcoin and me](../todo/bitcoin-and-me.html)
  
  :clock3: [bitcoin](../todo/bitcoin.html)
@@ -74,19 +72,13 @@
  
  :clock3: [money blockchains and social scalability](../todo/money-blockchains-and-social-scalability.html)
  
- :clock3: [multinational small business](../todo/multinational-small-business.html)
- 
  :clock3: [negative reputation](../todo/negative-reputation.html)
  
  :clock3: [online cash checks](../todo/online-cash-checks.html)
  
  :clock3: [origins of bitcoin](../todo/origins-of-bitcoin.html)
- 
- :clock3: [pgp web of trust misconceptions](../todo/pgp-web-of-trust-misconceptions.html)
- 
+
  :clock3: [reciprocal altruism in the theory of money](../todo/reciprocal-altruism-in-the-theory-of-money.html)
- 
- :clock3: [right to read](../todo/right-to-read.html)
  
  :clock3: [rpow](../todo/rpow.html)
  
@@ -99,8 +91,6 @@
  :clock3: [smart contracts glossary](../todo/smart-contracts-glossary.html)
  
  :clock3: [the case for privacy](../todo/the-case-for-privacy.html)
- 
- :clock3: [the cathedral and the bazaar](../todo/the-cathedral-and-the-bazaar.html)
  
  :clock3: [the geodesic market](../todo/the-geodesic-market.html)
  
