@@ -22,10 +22,14 @@
 
 :pencil2: Right to read - [@exslave]()
 
+:pencil2: Advanced in distributed security - [@Vinicius]()
+
 
 ### Textos traduzidos: 
 
  :ok: [A ideia de Contratos Inteligentes](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/a_ideia_de_contratos_inteligentes.html "ver texto traduzido") - [pr1mx](https://github.com/pr1mx)
+ 
+ :ok: [BitGold](https://cypherpunks.com.br/bitgold/ "ver texto traduzido") - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 
  :ok: [Contratos com Titular](https://cypherpunks.com.br/contratos-com-titular/ "ver publicação traduzida") - [Matheus Bach](https://github.com/matheusbach/ "perfil de Matheus Bach no github")
 
@@ -37,8 +41,6 @@
 
 
 ### Textos aguardando tradução:
-
- :clock3: [advances in distributed security](../todo/advances-in-distributed-security.html)
  
  :clock3: [areopagitica](../todo/areopagitica.html)
  
