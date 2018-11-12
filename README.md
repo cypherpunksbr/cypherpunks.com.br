@@ -25,8 +25,11 @@ Colaboradores:
 -  [j2ff](https://github.com/jeffesonjp)
 -  [Matheus Bach](https://github.com/matheusbach/)
 -  [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
+-  [Pedro Reck](https://github.com/r3ck)
 -  [pr1mx](https://github.com/pr1mx)
 -  [R]
+
+Seu nome não aparece na lista acima? Lamentamos que isso tenha ocorrido. Por favor, reinvidique uma contribuição nesta página.
 
 **Pode copiar livremente. Propriedade Intelectual não é legítima.**
 
