@@ -80,9 +80,13 @@ Quando estiver em uma situação em que você não sabe exatamente como traduzir
 
 **2.** Adicione uma tag `[TODO: ref #<número-da-issue-da-discussão>]<palavra/termo não traduzido>[/TODO]` e continue trabalhando no arquivo enquanto não há uma conclusão na _Issue_. Esse processo é importante para facilitar o acesso a itens pendentes e ter uma referência clara onde está ocorrendo a discussão.
 
-**3.** Após a conclusão da discussão na _Issue_, feche a mesma. Em seguida, remova a tag adicionada no passo 2 e atualize a palavra/termo não traduzido.
+**3.** Após a conclusão da discussão na _Issue_, feche-a. Em seguida, remova a tag adicionada no passo 2 e atualize a palavra/termo não traduzido.
 
 **4.** Como mantemos um arquivo de [glossário](https://github.com/braziljs/eloquente-javascript/blob/master/glossario.md), faça um _Pull Request_ adicionando o novo termo, colocando a referência `#<número-da-issue>` no termo/palavra em questão para fácil acesso no futuro.
+
+**5** Deixe o termo, palavra, expressões do modo como está escrito nos seguintes casos:
+-  São termos comuns que usamos em inglês sem problemas de entendimento;
+-  Termos, palavras, expressões etc que ficam estranhas quando traduzidas. Nesse caso, pode-se colocar a tradução ao lado do que se está traduzindo entre parêntesis, somente na primeira vez que aparece no texto.
 
 ***
 
