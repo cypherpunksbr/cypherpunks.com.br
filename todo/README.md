@@ -14,8 +14,6 @@
 
 :pencil2: BitGold - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 
-:pencil2: contracts in cyberspace - [@pedroreck]()
-
 :pencil2: "Multinational Small Business" - [@Deephi]()
 
 :pencil2: PGP Web of Trust Misconceptions- [@anonymous]()
@@ -23,6 +21,8 @@
 :pencil2: Right to read - [@exslave]()
 
 :pencil2: Advanced in distributed security - [@Vinicius]()
+
+:pencil2: Crypto-Anarchy and Libertarian Entrepreneurship Chapter: 1-4 - [Pedro Reck](https://github.com/r3ck/)
 
 
 ### Textos traduzidos: 
