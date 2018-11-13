@@ -42,6 +42,9 @@ Textos traduzidos:
 //Criado por [j2ff](https://cypherpunks.com.br/author/j2ff/) Revisado por [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 
 -  [ ] (0) A ideia de Contratos Inteligentes - Nick Szabo (1997)
+
 //Criado por [pr1mx](https://github.com/pr1mx)
 
+-  [ ] (0) Contratos no Ciberespaço - David Friedman (2000)
 
+//Criado por [Pedro Reck](https://github.com/r3ck)
