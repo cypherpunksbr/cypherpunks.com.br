@@ -23,21 +23,39 @@
 
 ### Textos traduzidos: 
 
- :ok: [A ideia de Contratos Inteligentes](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/a_ideia_de_contratos_inteligentes.html "ver texto traduzido") - [pr1mx](https://github.com/pr1mx)
- 
- :ok: [BitGold](https://cypherpunks.com.br/bitgold/ "ver texto traduzido") - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
+:ok: [BitGold](https://cypherpunks.com.br/bitgold/ "ver texto traduzido") - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 
- :ok: [Contratos com Titular](https://cypherpunks.com.br/contratos-com-titular/ "ver publicação traduzida") - [Matheus Bach](https://github.com/matheusbach/ "perfil de Matheus Bach no github")
+:ok: [Contratos no Ciberespaço](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/Contratos%20no%20Ciberespa%C3%A7o.html)
 
- :ok: [Cripto Glossário](https://cypherpunks.com.br/cripto-glossario/ "ver publicação traduzida") - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
+:ok: [Contratos com Titular](https://cypherpunks.com.br/contratos-com-titular/ "ver publicação traduzida") - [Matheus Bach](https://github.com/matheusbach/ "perfil de Matheus Bach no github")
 
- :ok: [Porque eu escrevi o PGP](https://cypherpunks.com.br/porque-eu-escrevi-o-pgp/ "ver publicação traduzida") - [@Deephi]()
+:ok: [Criptoanarquia_e_Comunidades_Virtuais](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/Criptoanarquia_e_Comunidades_Virtuais.html)
 
- :ok: [Bitcoin e eu](../todo/bitcoin-and-me.html) - [Marcos]()
+:ok: [Feliz_Aniversário_Bitcoin](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/Feliz_Anivers%C3%A1rio_Bitcoin.html)
 
- :ok: [rpow](../todo/rpow.html) - [Marcos]()
+:ok: [Porque eu escrevi o PGP](https://cypherpunks.com.br/porque-eu-escrevi-o-pgp/ "ver publicação traduzida") - [@Deephi]()
 
-:ok: A Catedral e o Bazar - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
+:ok: [A ideia de Contratos Inteligentes](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/a_ideia_de_contratos_inteligentes.html "ver texto traduzido") - [pr1mx](https://github.com/pr1mx)
+
+:ok: [bmoney](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/bmoney.html)
+
+:ok: [Cripto Glossário](https://cypherpunks.com.br/cripto-glossario/ "ver publicação traduzida") - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
+
+:ok: [Libertária_no_Ciberespaço](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/libertaria_no_ciberespa%C3%A7o.html)
+
+:ok: [O Manifesto Criptoanarquista](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/o_manifesto_criptoanarquista.html)
+
+:ok: [O Manifesto Cypherpunk](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/o_manifesto_cypherpunk.html)
+
+:ok: [O_Manifesto_libbitcoin](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/O_Manifesto_libbitcoin.html)
+
+:ok: [politica_vs_tecnologia](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/politica_vs_tecnologia.html)
+
+:ok: [A Catedral e o Bazar](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/a-catedral-e-o-bazar.html) - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
+
+:ok: [Bitcoin e eu](../todo/bitcoin-and-me.html) - [Marcos]()
+
+:ok: [rpow](../todo/rpow.html) - [Marcos]()
 
 * Mais publicações você pode encontrar em nossa [biblioteca](https://cypherpunks.com.br/biblioteca/)
 
