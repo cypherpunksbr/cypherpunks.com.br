@@ -10,8 +10,6 @@
 
 ### Textos sendo traduzidos:
 
-:pencil2: A Catedral e o Bazar - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
-
 :pencil2: "Multinational Small Business" - [@Deephi]()
 
 :pencil2: PGP Web of Trust Misconceptions- [@anonymous]()
@@ -38,6 +36,8 @@
  :ok: [Bitcoin e eu](../todo/bitcoin-and-me.html) - [Marcos]()
 
  :ok: [rpow](../todo/rpow.html) - [Marcos]()
+
+:ok: A Catedral e o Bazar - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 
 * Mais publicações você pode encontrar em nossa [biblioteca](https://cypherpunks.com.br/biblioteca/)
 
