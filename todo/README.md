@@ -12,8 +12,6 @@
 
 :pencil2: A Catedral e o Bazar - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 
-:pencil2: BitGold - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
-
 :pencil2: "Multinational Small Business" - [@Deephi]()
 
 :pencil2: PGP Web of Trust Misconceptions- [@anonymous]()
@@ -37,14 +35,16 @@
 
  :ok: [Porque eu escrevi o PGP](https://cypherpunks.com.br/porque-eu-escrevi-o-pgp/ "ver publicação traduzida") - [@Deephi]()
 
+ :ok: [Bitcoin e eu](../todo/bitcoin-and-me.html) - [Marcos]()
+
+ :ok: [rpow](../todo/rpow.html) - [Marcos]()
+
 * Mais publicações você pode encontrar em nossa [biblioteca](https://cypherpunks.com.br/biblioteca/)
 
 
 ### Textos aguardando tradução:
  
  :clock3: [areopagitica](../todo/areopagitica.html)
- 
- :clock3: [bitcoin and me](../todo/bitcoin-and-me.html)
  
  :clock3: [bitcoin](../todo/bitcoin.html)
  
@@ -81,8 +81,6 @@
  :clock3: [origins of bitcoin](../todo/origins-of-bitcoin.html)
 
  :clock3: [reciprocal altruism in the theory of money](../todo/reciprocal-altruism-in-the-theory-of-money.html)
- 
- :clock3: [rpow](../todo/rpow.html)
  
  :clock3: [scarce objects](../todo/scarce-objects.html)
  
