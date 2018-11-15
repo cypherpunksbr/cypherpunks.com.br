@@ -22,7 +22,7 @@ Este trabalho não seria possível sem a contribuição de diversas pessoas que 
 Colaboradores:
 -  [accela](https://cypherpunks.com.br/author/accela/)
 -  [Disruptivas](https://cypherpunks.com.br/author/deep/)
--  [j2ff](https://github.com/jeffesonjp)
+-  [jeffeson](https://github.com/jeffesonjp)
 -  [Marcos](https://github.com/marcosmmb)
 -  [Matheus Bach](https://github.com/matheusbach/)
 -  [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
