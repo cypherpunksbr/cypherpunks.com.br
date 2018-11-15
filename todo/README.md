@@ -20,6 +20,7 @@
 
 :pencil2: Crypto-Anarchy and Libertarian Entrepreneurship Chapter: 1-4 - [Pedro Reck](https://github.com/r3ck/)
 
+:pencil2: Shelling Out: The Origins of Money 
 
 ### Textos traduzidos: 
 
@@ -103,8 +104,6 @@
  :clock3: [scarce objects](../todo/scarce-objects.html)
  
  :clock3: [secure property titles](../todo/secure-property-titles.html)
- 
- :clock3: [shelling out](../todo/shelling-out.html)
  
  :clock3: [smart contracts glossary](../todo/smart-contracts-glossary.html)
  
