@@ -20,13 +20,16 @@
 
 :pencil2: Crypto-Anarchy and Libertarian Entrepreneurship Chapter: 1-4 - [Pedro Reck](https://github.com/r3ck/)
 
-:pencil2: Shelling Out: The Origins of Money
+:pencil2: Intrapolynomial Cryptography [Davi Figueiredo](https://github.com/davimello28)
+
+:pencil2: Shelling Out: The Origins of Money 
 
 :pencil2: Shelling Out: Money, Blockchains, and Social Scalability - [@hanelore](https://github.com/hanelore)
 
 :pencil2: The God Protocols - [jeffeson](https://github.com/jeffesonjp)
 
 :pencil2: Origins of Bitcoin - [@aferreira44]()
+
 
 ### Textos traduzidos: 
 
