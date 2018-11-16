@@ -20,7 +20,9 @@
 
 :pencil2: Crypto-Anarchy and Libertarian Entrepreneurship Chapter: 1-4 - [Pedro Reck](https://github.com/r3ck/)
 
-:pencil2: Shelling Out: The Origins of Money 
+:pencil2: Shelling Out: The Origins of Money
+
+:pencil2: Shelling Out: Money, Blockchains, and Social Scalability - [@hanelore](https://github.com/hanelore)
 
 ### Textos traduzidos: 
 
