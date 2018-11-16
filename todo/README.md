@@ -24,6 +24,12 @@
 
 :pencil2: Shelling Out: The Origins of Money 
 
+:pencil2: Shelling Out: Money, Blockchains, and Social Scalability - [@hanelore](https://github.com/hanelore)
+
+:pencil2: The God Protocols - [jeffeson](https://github.com/jeffesonjp)
+
+:pencil2: Origins of Bitcoin - [@aferreira44]()
+
 
 ### Textos traduzidos: 
 
@@ -99,8 +105,6 @@
  :clock3: [negative reputation](../todo/negative-reputation.html)
  
  :clock3: [online cash checks](../todo/online-cash-checks.html)
- 
- :clock3: [origins of bitcoin](../todo/origins-of-bitcoin.html)
 
  :clock3: [reciprocal altruism in the theory of money](../todo/reciprocal-altruism-in-the-theory-of-money.html)
  
@@ -114,9 +118,7 @@
  
  :clock3: [the geodesic market](../todo/the-geodesic-market.html)
  
- :clock3: [the god protocols](../todo/the-god-protocols.html)
- 
- :clock3: [the playdough protocols](../todo/the-playdough-protocols.html)
+:clock3: [the playdough protocols](../todo/the-playdough-protocols.html)
  
  :clock3: [the ricardian contract](../todo/the-ricardian-contract.html)
  
@@ -127,3 +129,22 @@
  :clock3: [trusted third parties](../todo/trusted-third-parties.html)
  
 * Você pode sugerir ou traduzir um texto que não esteja nessa lista. Basta submeter uma "pull request" pelo GitHub
+
+Aqui algumas sugestões de textos para tradução:
+
+ :clock3: [Nakamoto Institute](https://nakamotoinstitute.org/literature/)
+
+ :clock3: [Activism.net](https://www.activism.net/)
+
+ :clock3: [Cryptography Mail Archive I](https://www.mail-archive.com/cryptography@metzdowd.com/msg10152.html)
+
+ :clock3: [Cryptography Mail Archive II](http://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html)
+
+ :clock3: [Satoshi Mails](https://satoshi.nakamotoinstitute.org/emails/)
+
+ :clock3: [Cartas do Ross Ulbricht](https://freeross.org/writings-from-ross/)
+
+ :clock3: [Cypherpunks Archive mail list](https://lists.cpunks.org/pipermail/cypherpunks/)
+
+ :clock3: [Cypherspace articles](http://www.cypherspace.org/)
+ 
