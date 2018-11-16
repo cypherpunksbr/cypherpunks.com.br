@@ -1,61 +1,28 @@
-<!-- extend base layout -->
-{% extends "doc.html" %}
-{% block doc %}
-<div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
-  <div class="page-header">
-    <h1 class="text-center">
-      RPOW – Reusable Proofs of Work<br><small>Hal Finney</small>
-    </h1>
-    <h4 class="text-center">
-      August 15, 2004<br>
-    </h4>
-    <div class="text-center">
-      <p><a href="{{url_for('rpow_site', path='index.html')}}">Archived website</a></p>
-      <p><a href="https://github.com/NakamotoInstitute/RPOW">GitHub</a></p>
-    </div>
-  </div>
-
-<pre>
-To: cypherpunks@al-qaeda.net
-Subject: RPOW - Reusable Proofs of Work
-Date: Sun, 15 Aug 2004 10:43:09 -0700 (PDT)
-From: hal at finney dot org ("Hal Finney")
-</pre>
-
-  <p>
-    I'd like to invite members of this list to try out my new hashcash-based server, <a href="{{url_for('rpow_site', path='index.html')}}">rpow.net</a>.
-  </p>
-
-  <p>
-    This system receives hashcash as a Proof of Work (POW) token, and in exchange creates RSA-signed tokens which I call Reusable Proof of Work (RPOW) tokens.  RPOWs can then be transferred from person to person and exchanged for new RPOWs at each step.  Each RPOW or POW token can only be used once but since it gives birth to a new one, it is as though the same token can be handed from person to person.
-  </p>
-
-  <p>
-    Because RPOWs are only created from equal-value POWs or RPOWs, they are as rare and "valuable" as the hashcash that was used to create them. But they are reusable, unlike hashcash.
-  </p>
-
-  <p>
-    The new concept in the server is the security model.  The RPOW server is running on a high-security processor card, the IBM 4758 Secure Cryptographic Coprocessor, validated to FIPS-140 level 4.  This card has the capability to deliver a signed attestation of the software configuration on the board, which any (sufficiently motivated) user can verify against the published source code of the system.  This lets everyone see that the system has no back doors and will only create RPOW tokens when supplied with POW/RPOW tokens of equal value.
-  </p>
-
-  <p>
-    This is what creates trust in RPOWs as actually embodying their claimed values, the knowledge that they were in fact created based on an equal value POW (hashcash) token.
-  </p>
-
-  <p>
-    I have a lot more information about the system at <a href="{{url_for('rpow_site', path='index.html')}}">rpow.net</a>, along with downloadable source code.  There is also a crude web interface which lets you exchange POWs for RPOWs without downloading the client.
-  </p>
-
-  <p>
-    This system is in early beta right now so I'd appreciate any feedback if anyone has a chance to try it out.  Please keep in mind that if there are problems I may need to reload the server code, which will invalidate any RPOW tokens which people have previously created.  So don't go too crazy hoarding up RPOWs quite yet.
-  </p>
-
-  <p>
-    Thanks very much -
-  </p>
-
-  <p>
-    Hal Finney
-  </p>
+<div class="page-header">
+<h1 style="text-align: center;">RPOW – Provas de Trabalho Reutilizáveis
+<small>Hal Finney
+15 de agosto de 2004</small></h1>
 </div>
-{% endblock %}
+<div class="text-center">
+
+<a href="https://nakamotoinstitute.org/finney/rpow/index.html">Website arquivado</a>
+
+<a href="https://github.com/NakamotoInstitute/RPOW">GitHub</a>
+
+</div>
+<pre>Para: cypherpunks@al-qaeda.net
+Assunto: RPOW - Provas de Trabalho Reutilizáveis
+Data: domingo, 15 de agosto de 2004 às 10:43:09 -07:00 (PDT)
+De: hal arroba finney ponto org ("Hal Finney")
+</pre>
+<p style="text-align: justify;">Eu gostaria de convidar os membros dessa lista para testar meu novo servidor baseado em hashcash, <a href="{{url_for('rpow_site', path='index.html')}}">rpow.net</a>.</p>
+<p style="text-align: justify;">Esse sistema recebe hashcash como um token de Prova de Trabalho (POW), e, em troca, cria tokens assinados por RSA que eu chamo de tokens de Prova de Trabalho Reutilizável (RPOW). RPOWs podem ser transferidos de pessoa para pessoa e trocados por novos RPOWs a cada passo. Cada RPOW ou token POW só pode ser usado uma vez já que dá vida a um novo, é como se o mesmo token pudesse ser entregue de pessoa a pessoa.</p>
+<p style="text-align: justify;">Porque RPOWs são criados apenas a partir de POWs ou RPOWs de igual valor, eles são tão raros e "valiosos" quanto o hashcash que foi usado para criá-los. Mas eles são reutilizáveis, diferentemente do hashcash.</p>
+<p style="text-align: justify;">O novo conceito no servidor é o modelo de segurança. O servidor RPOW está rodando em um cartão de processamento de alta segurança, o IBM 4758 SCC, validado para FIPS-140 nível 4. Esse cartão tem a capacidade de entregar um atestado assinado do software de configuração na placa, que qualquer usuário (suficientemente motivado) pode verificar o código fonte publicado do sistema. Isso permite a todos verem que o sistema não tem back doors e criará apenas tokens RPOW quando fornecidos com token POW/RPOW de igual valor.</p>
+<p style="text-align: justify;">Isso é o que cria confiança em RPOWs, de fato incorporando seus valores, o conhecimento que eles foram, na verdade, criados baseado em um token POW (hashcash) de igual valor.</p>
+<p style="text-align: justify;">Eu tenho muito mais informações sobre o sistema em <a href="{{url_for('rpow_site', path='index.html')}}">rpow.net</a>, juntamente ao código fonte baixável. Há também uma interface web crua que te deixa trocar POWs por RPOWs sem precisar baixar o cliente.</p>
+<p style="text-align: justify;">Esse sistema está em fase beta inicial no momento, então eu gostaria de ler comentários se alguém tiver a chance de testá-lo. Por favor, tenha em mente que se houver problemas eu posso ter que recarregar o código do servidor, o que invalidará os tokens RPOW que as pessoas criaram previamente. Então não enlouqueça acumulando muitos RPOWs ainda.</p>
+<p style="text-align: justify;">Muito obrigado -</p>
+<p style="text-align: justify;">Hal Finney
+
+Fonte: <a href="https://nakamotoinstitute.org/rpow/">https://nakamotoinstitute.org/rpow/</a></p>
