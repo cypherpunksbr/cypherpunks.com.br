@@ -24,6 +24,8 @@
 
 :pencil2: Crypto-Anarchy and Libertarian Entrepreneurship Chapter: 1-4 - [Pedro Reck](https://github.com/r3ck/)
 
+:pencil2: Intrapolynomial Cryptography [Davi Figueiredo](https://github.com/davimello28)
+
 
 ### Textos traduzidos: 
 
