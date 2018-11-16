@@ -22,6 +22,8 @@
 
 :pencil2: Shelling Out: The Origins of Money 
 
+:pencil2: The God Protocols - [jeffeson](https://github.com/jeffesonjp)
+
 ### Textos traduzidos: 
 
 :ok: [BitGold](https://cypherpunks.com.br/bitgold/ "ver texto traduzido") - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
@@ -111,9 +113,7 @@
  
  :clock3: [the geodesic market](../todo/the-geodesic-market.html)
  
- :clock3: [the god protocols](../todo/the-god-protocols.html)
- 
- :clock3: [the playdough protocols](../todo/the-playdough-protocols.html)
+:clock3: [the playdough protocols](../todo/the-playdough-protocols.html)
  
  :clock3: [the ricardian contract](../todo/the-ricardian-contract.html)
  
