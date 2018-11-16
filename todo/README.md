@@ -10,10 +10,6 @@
 
 ### Textos sendo traduzidos:
 
-:pencil2: A Catedral e o Bazar - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
-
-:pencil2: BitGold - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
-
 :pencil2: "Multinational Small Business" - [@Deephi]()
 
 :pencil2: PGP Web of Trust Misconceptions- [@anonymous]()
@@ -26,18 +22,44 @@
 
 :pencil2: Intrapolynomial Cryptography [Davi Figueiredo](https://github.com/davimello28)
 
+:pencil2: Shelling Out: The Origins of Money 
+
 
 ### Textos traduzidos: 
 
- :ok: [A ideia de Contratos Inteligentes](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/a_ideia_de_contratos_inteligentes.html "ver texto traduzido") - [pr1mx](https://github.com/pr1mx)
- 
- :ok: [BitGold](https://cypherpunks.com.br/bitgold/ "ver texto traduzido") - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
+:ok: [BitGold](https://cypherpunks.com.br/bitgold/ "ver texto traduzido") - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 
- :ok: [Contratos com Titular](https://cypherpunks.com.br/contratos-com-titular/ "ver publicação traduzida") - [Matheus Bach](https://github.com/matheusbach/ "perfil de Matheus Bach no github")
+:ok: [Contratos no Ciberespaço](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/Contratos%20no%20Ciberespa%C3%A7o.html)
 
- :ok: [Cripto Glossário](https://cypherpunks.com.br/cripto-glossario/ "ver publicação traduzida") - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
+:ok: [Contratos com Titular](https://cypherpunks.com.br/contratos-com-titular/ "ver publicação traduzida") - [Matheus Bach](https://github.com/matheusbach/ "perfil de Matheus Bach no github")
 
- :ok: [Porque eu escrevi o PGP](https://cypherpunks.com.br/porque-eu-escrevi-o-pgp/ "ver publicação traduzida") - [@Deephi]()
+:ok: [Criptoanarquia_e_Comunidades_Virtuais](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/Criptoanarquia_e_Comunidades_Virtuais.html)
+
+:ok: [Feliz_Aniversário_Bitcoin](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/Feliz_Anivers%C3%A1rio_Bitcoin.html)
+
+:ok: [Porque eu escrevi o PGP](https://cypherpunks.com.br/porque-eu-escrevi-o-pgp/ "ver publicação traduzida") - [@Deephi]()
+
+:ok: [A ideia de Contratos Inteligentes](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/a_ideia_de_contratos_inteligentes.html "ver texto traduzido") - [pr1mx](https://github.com/pr1mx)
+
+:ok: [bmoney](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/bmoney.html)
+
+:ok: [Cripto Glossário](https://cypherpunks.com.br/cripto-glossario/ "ver publicação traduzida") - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
+
+:ok: [Libertária_no_Ciberespaço](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/libertaria_no_ciberespa%C3%A7o.html)
+
+:ok: [O Manifesto Criptoanarquista](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/o_manifesto_criptoanarquista.html)
+
+:ok: [O Manifesto Cypherpunk](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/o_manifesto_cypherpunk.html)
+
+:ok: [O_Manifesto_libbitcoin](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/O_Manifesto_libbitcoin.html)
+
+:ok: [politica_vs_tecnologia](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/politica_vs_tecnologia.html)
+
+:ok: [A Catedral e o Bazar](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/a-catedral-e-o-bazar.html) - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
+
+:ok: [Bitcoin e eu](../todo/bitcoin-and-me.html) - [Marcos]()
+
+:ok: [rpow](../todo/rpow.html) - [Marcos]()
 
 * Mais publicações você pode encontrar em nossa [biblioteca](https://cypherpunks.com.br/biblioteca/)
 
@@ -45,8 +67,6 @@
 ### Textos aguardando tradução:
  
  :clock3: [areopagitica](../todo/areopagitica.html)
- 
- :clock3: [bitcoin and me](../todo/bitcoin-and-me.html)
  
  :clock3: [bitcoin](../todo/bitcoin.html)
  
@@ -84,13 +104,9 @@
 
  :clock3: [reciprocal altruism in the theory of money](../todo/reciprocal-altruism-in-the-theory-of-money.html)
  
- :clock3: [rpow](../todo/rpow.html)
- 
  :clock3: [scarce objects](../todo/scarce-objects.html)
  
  :clock3: [secure property titles](../todo/secure-property-titles.html)
- 
- :clock3: [shelling out](../todo/shelling-out.html)
  
  :clock3: [smart contracts glossary](../todo/smart-contracts-glossary.html)
  

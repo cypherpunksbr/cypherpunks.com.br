@@ -4,13 +4,15 @@
 
 **1.** Escolha um [arquivo](https://github.com/cypherpunksbr/cypherpunks.com.br/tree/master/todo) para traduzir ou [revisar](https://github.com/cypherpunksbr/cypherpunks.com.br/tree/master/posts). Verifique se o arquivo já não está sendo traduzido por alguém [aqui](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/README.md). 
 
-**2.** [Entenda nosso fluxo](#fluxo).
+**2. [Importante]** Atualize [este arquivo](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/README.md) informando que você está traduzindo um determinado artigo. Isto é muito importante, pois evita que duas pessoas traduzam o mesmo arquivo. Lembre-se de atualizá-lo também quando você terminar de traduzir :)
 
-**3.** [Leia e pratique as boas práticas](#boas-pr%C3%A1ticas).
+**3.** [Entenda nosso fluxo](#fluxo).
 
-**4.** Submeta um pull request. Não sabe como fazer isto? Veja este [tutorial](https://#) ou este [vídeo](https://#).
+**4.** [Leia e pratique as boas práticas](#boas-pr%C3%A1ticas).
 
-**5.** Parabéns! Você acaba de contribuir para o projeto :) Seu nome será adicionado na lista de contribuintes em breve por algum moderador.
+**5.** Submeta um pull request. Não sabe como fazer isto? Veja este [tutorial](https://#) ou este [vídeo](https://#).
+
+**6.** Parabéns! Você acaba de contribuir para o projeto :) Seu nome será adicionado na lista de contribuintes em breve por algum moderador.
 
 ### Complicado?
 
