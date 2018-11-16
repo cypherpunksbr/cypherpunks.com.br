@@ -124,3 +124,22 @@
  :clock3: [trusted third parties](../todo/trusted-third-parties.html)
  
 * Você pode sugerir ou traduzir um texto que não esteja nessa lista. Basta submeter uma "pull request" pelo GitHub
+
+Aqui algumas sugestões de textos para tradução:
+
+ :clock3: [Nakamoto Institute](https://nakamotoinstitute.org/literature/)
+
+ :clock3: [Activism.net](https://www.activism.net/)
+
+ :clock3: [Cryptography Mail Archive I](https://www.mail-archive.com/cryptography@metzdowd.com/msg10152.html)
+
+ :clock3: [Cryptography Mail Archive II](http://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html)
+
+ :clock3: [Satoshi Mails](https://satoshi.nakamotoinstitute.org/emails/)
+
+ :clock3: [Cartas do Ross Ulbricht](https://freeross.org/writings-from-ross/)
+
+ :clock3: [Cypherpunks Archive mail list](https://lists.cpunks.org/pipermail/cypherpunks/)
+
+ :clock3: [Cypherspace articles](http://www.cypherspace.org/)
+ 
