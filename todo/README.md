@@ -22,6 +22,8 @@
 
 :pencil2: Shelling Out: The Origins of Money 
 
+:pencil2: Origins of Bitcoin - [@aferreira44]()
+
 ### Textos traduzidos: 
 
 :ok: [BitGold](https://cypherpunks.com.br/bitgold/ "ver texto traduzido") - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
@@ -96,8 +98,6 @@
  :clock3: [negative reputation](../todo/negative-reputation.html)
  
  :clock3: [online cash checks](../todo/online-cash-checks.html)
- 
- :clock3: [origins of bitcoin](../todo/origins-of-bitcoin.html)
 
  :clock3: [reciprocal altruism in the theory of money](../todo/reciprocal-altruism-in-the-theory-of-money.html)
  
