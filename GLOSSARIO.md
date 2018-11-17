@@ -20,6 +20,7 @@ Essa página tem como objetivo reunir termos técnicos (ou não) e suas respecti
 * URL Encoding - Codificação da URL
 * Array - Array
 * Aka (Also Known As) - também conhecido como
+* Fail-stop - sistema com paragem segura
 
 ## Como contribuir?
 No arquivo [CONTRIBUTING.md](https://github.com/braziljs/eloquente-javascript/blob/master/CONTRIBUTING.md), há uma seção chamada **"Dúvidas em tradução de termos, palavras, expressões etc..."** explicando mais detalhes sobre como contribuir. Se você tem alguma sugestão para melhorar alguma tradução já feita, basta comentar na issue de referência sua sugestão que vamos discutir a proposta de alteração.
