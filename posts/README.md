@@ -11,7 +11,7 @@ Quorum mínimo:
 - **20 revisões para ir ao Steemit**
 
 Textos traduzidos:
--  [ ] (1) [O manifesto criptoanarquista](https://cypherpunks.com.br/o-manifesto-criptoanarquista/) – Timothy C. May (1992) 
+-  [ ] (2) [O manifesto criptoanarquista](https://cypherpunks.com.br/o-manifesto-criptoanarquista/) – Timothy C. May (1992) 
 
 //Criado por [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 -  [ ] (2) [bmoney](https://cypherpunks.com.br/b-money/) – Wei Dai (1998)
