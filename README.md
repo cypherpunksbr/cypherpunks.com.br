@@ -31,6 +31,7 @@ Colaboradores:
 -  [R]
 -  [davimello28](https://github.com/davimello28)
 -  [Hanerone](https://github.com/hanelore)
+-  [steffandsv](https://github.com/steffandsv)
 
 Seu nome não aparece na lista acima? Lamentamos que isso tenha ocorrido. Por favor, reinvidique uma contribuição nesta página.
 
