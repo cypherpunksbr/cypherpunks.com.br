@@ -28,8 +28,6 @@
 
 :pencil2: Shelling Out: Money, Blockchains, and Social Scalability - [@hanelore](https://github.com/hanelore)
 
-:pencil2: The God Protocols - [jeffeson](https://github.com/jeffesonjp)
-
 :pencil2: Origins of Bitcoin - [@aferreira44]()
 
 
@@ -68,6 +66,10 @@
 :ok: [Bitcoin e eu](../todo/bitcoin-and-me.html) - [Marcos]()
 
 :ok: [rpow](../todo/rpow.html) - [Marcos]()
+
+:ok: [The God Protocols](https://github.com/cypherpunksbr/) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
+
+:ok:[Auditoria Confidencial](https://github.com/cypherpunksbr/) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
 * Mais publicações você pode encontrar em nossa [biblioteca](https://cypherpunks.com.br/biblioteca/)
 
