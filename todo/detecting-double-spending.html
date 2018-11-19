@@ -4,147 +4,147 @@
 <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
 	<div class="page-header">
   	<h1 class="text-center">
-  		Detecting Double Spending <br><small>Hal Finney</small>
+  		Detectando Gastos Duplicados <br><small>Hal Finney</small>
   	</h1>
   	<h4 class="text-center">
-  		October 15, 1993<br>
-      (Revised March 13, 1996)
+  		15 de outubro de 1993 <br>
+      (revisado em 13 de março de 1996)
   	</h4>
   </div>
 	<p>
-		Here is an attempt to describe Chaum's digital cash from his paper, Untraceable Electronic Cash, by Chaum, Fiat, and Naor, from the Crypto 88 proceedings. This cash has the property that the user of the cash can remain anonymous so long as she does not spend it more than once, but if she does double-spend then her identity is revealed.
+		Aqui está uma tentativa de descrever o dinheiro digital de Chaum a partir de seu trabalho, Untraceable Electronic Cash, de Chaum, Fiat e Naor, do processo Crypto 88. Esse dinheiro tem a propriedade de que o usuário do dinheiro pode permanecer anônimo, desde que não o gaste mais de uma vez, mas se ela gastar duas vezes, sua identidade será revelada.
 	</p>
 
   <p>
-    This is how it works in general terms: Alice opens an account with a bank non-anonymously. She shows ID so that the bank knows who she is; both she and the bank know her account number. When she withdraws cash, she goes to the bank or contacts them electronically and presents some proof of who she is and what her account number is, and the bank gives her some digital cash. The digital cash is an information pattern, perhaps stored in a computer file on a smart card or magnetic disk. Later, she spends the digital cash by sending or giving it to Bob, a merchant. Bob can check and verify that the cash must have come from the bank. He accepts the cash if it is valid, giving Alice the merchandise. Later, he sends the cash to the bank to be added to his own account.
+    É assim que funciona em termos gerais: Alice abre uma conta com um banco de forma não anônima. Ela mostra a identidade para que o banco saiba quem ela é; tanto ela como o banco sabem o número da sua conta. Quando ela sacar dinheiro, ela vai ao banco ou entra em contato com eles eletronicamente e apresenta uma prova de quem ela é e qual é o seu número de conta, e o banco lhe dá algum dinheiro digital. O dinheiro digital é um padrão de informação, talvez armazenado em um arquivo de computador em um cartão inteligente ou disco magnético. Mais tarde, ela gasta o dinheiro digital enviando ou dando para Bob, um comerciante. Bob pode verificar e verificar se o dinheiro deve ter vindo do banco. Ele aceita o dinheiro se for válido, dando a Alice a mercadoria. Mais tarde, ele envia o dinheiro para o banco para ser adicionado à sua própria conta.
   </p>
 
   <p>
-    Note that this much could basically be done with a simple RSA signature. The bank could give Alice a statement saying, "this is worth $1", signed by the bank's secret key. Bob could verify that the statement was in fact signed by the bank, and know therefore that no one else than the bank could have created that statement. He accepts it and sends it to the bank, which honors it since it recognizes its own signature.
+    Note que isso basicamente poderia ser feito com uma simples assinatura RSA. O banco poderia dar a Alice uma declaração dizendo: "vale 1 dólar", assinada pela chave secreta do banco. Bob poderia verificar se a declaração estava de fato assinada pelo banco e, portanto, saber que ninguém mais do que o banco poderia ter criado essa declaração. Ele aceita e envia para o banco, que o homenageia porque reconhece sua própria assinatura.
   </p>
 
   <p>
-    One problem with this trivial money is that double-spending can not be detected or prevented since all the cash looks alike. This can be remedied by having the cash include a unique serial number. Now when Bob goes to accept the cash from Alice, he can call the bank and say, has anyone else deposited serial number 123456? If not, he accepts the cash and deposits it. This is called on-line electronic money; the merchant must check with the bank for each transaction.
+    Um problema com esse dinheiro trivial é que o gasto duplo não pode ser detectado ou evitado, já que todo o dinheiro parece igual. Isso pode ser remediado com o dinheiro incluir um número de série exclusivo. Agora, quando Bob vai aceitar o dinheiro de Alice, ele pode ligar para o banco e dizer: alguém mais depositou o número de série 123456? Se não, ele aceita o dinheiro e deposita-o. Isso é chamado de dinheiro eletrônico on-line; o comerciante deve verificar com o banco para cada transação.
   </p>
 
   <p>
-    This improved simple system does not deserve to be called cash, though, because it lacks the distinguishing characteristic of digital cash: it is not anonymous. When the bank sees money with serial number 123456 being deposited, the bank recognizes that this was the same bill that Alice withdrew. The bank can therefore deduce that Alice spent the money at Bob's, and from this kind of information a dossier could be built up with all kinds of privacy-destroying information about her.
+    No entanto, esse sistema simples melhorado não merece ser chamado de caixa, porque não possui a característica distintiva do dinheiro digital: ele não é anônimo. Quando o banco recebe dinheiro com o número de série 123456 que está sendo depositado, o banco reconhece que essa foi a mesma fatura que Alice retirou. O banco pode, portanto, deduzir que Alice gastou o dinheiro na casa de Bob e, a partir desse tipo de informação, um dossiê poderia ser construído com todos os tipos de informações destruidoras de privacidade sobre ela.
   </p>
 
   <p>
-    To allow anonymity, we have to get into the mathematics. What we want is for Alice and the bank collectively to create an RSA signature from the bank that could not be forged, but one which the bank will not recognize as coming from Alice. This is the first thing Chaum's paper discusses.
+    Para permitir o anonimato, precisamos entrar na matemática. O que queremos é que Alice e o banco coletivamente criem uma assinatura RSA do banco que não pode ser falsificada, mas que o banco não reconhecerá como proveniente de Alice. Esta é a primeira coisa que o artigo de Chaum discute.
   </p>
 
   <p>
-    The money in this system is of the form (x, f(x)^(1/3)) mod n, where n is the bank's public modulus. f() (and, below, g()) is a one-way function, one which can be calculated easily but for which it is infeasible to calculate the inverse. It should also be infeasible to come up with two different y,z such that f(y) = f(z). Today there are several suitable choices for one-way functions, the most common being the MD5 algorithm from RSA, and the US government's Secure Hash Algorithm (SHA).
+    O dinheiro neste sistema é da forma (x, f (x) ^ (1/3)) mod n, onde n é o módulo público do banco. f () (e, abaixo, g ()) é uma função unidirecional, que pode ser calculada facilmente, mas para a qual é inviável calcular o inverso. Também deve ser inviável encontrar dois y diferentes, z tais que f (y) = f (z). Atualmente, existem várias opções adequadas para funções unidirecionais, sendo as mais comuns o algoritmo MD5 da RSA e o Secure Hash Algorithm (SHA) do governo dos EUA.
   </p>
 
   <p>
-    The reason the expression above would be accepted as cash is two-fold. First, only the bank can calculate anything ^ (1/3) mod n. This is basically the RSA signing operation for the exponent of 3. Nobody else can find cube roots. The reason f(x) is used is this. Suppose we proposed that (x, x^(1/3)) should be the cash, for some random x, reasoning that only the bank could find the cube root of x. Can you see how to forge cash like this? (Take a few moments and try to see how you could construct a pair like this even if you can't take cube roots.)
+    A razão pela qual a expressão acima seria aceita como dinheiro é dupla. Primeiro, apenas o banco pode calcular qualquer coisa ^ (1/3) mod n. Esta é basicamente a operação de assinatura RSA para o expoente de 3. Ninguém mais pode encontrar raízes cúbicas. A razão f (x) é usada é isso. Suponha que nós propusemos que (x, x ^ (1/3)) deveria ser o dinheiro, para algum x aleatório, raciocinando que somente o banco poderia encontrar a raiz cúbica de x. Você pode ver como forjar dinheiro assim? (Dedique alguns instantes e tente ver como você pode construir um par como este, mesmo que você não consiga criar raízes cúbicas.)
   </p>
 
   <p>
-    The answer is that it is easy to forge this by first choosing a random y, and exhibiting the pair (y^3, y). Now we have a number and then its cube root. Yet we didn't have to take any cube roots to find it. That's why this kind of money would be no good.
+    A resposta é que é fácil forjar isso escolhendo primeiro um y aleatório e exibindo o par (y ^ 3, y). Agora temos um número e depois sua raiz cúbica. No entanto, não precisamos ter raízes cúbicas para encontrá-lo. É por isso que esse tipo de dinheiro não seria bom.
+   </p>
+
+  <p>
+    O sistema de Chaum evita isso pegando a raiz cúbica de uma função unidirecional de x. Para forjar sem ter uma raiz cúbica, você teria que produzir (finv (y ^ 3), y), que corresponderia ao padrão acima, mas não é possível inverter a função unidirecional como essa. Portanto, apenas o banco pode criar dinheiro da forma apropriada. Isso pode ser pensado como a forma formal e matemática do meu "dinheiro" informal, acima do qual havia uma nota assinada digitalmente com um número de série. Aqui, x é o número de série e é assinado digitalmente desta maneira especial. Nada mais é necessário.
   </p>
 
   <p>
-    Chaum's system avoids this by taking the cube root of a one-way function of x. To forge it without taking a cube root you'd have to produce (finv(y^3), y), which would match the above pattern, but you can't invert the one-way function like that. So only the bank can create money of the proper form. This can be thought of as the formal, mathematical form of my informal "money" above which was a digitally signed note with a serial number. Here, x is the serial number, and it's digitally signed in this special way. Nothing more is needed.
+    A coisa boa sobre esse dinheiro é que ele permite cegar, um método de fazer com que o banco assine o valor sem saber que valor ele está assinando. Funciona assim. Alice escolhe x, que será o x no dinheiro. Ela calcula f (x), mas em vez de enviá-la ao banco para ser assinada (aumentada para 1/3 de poder) ela escolhe primeiro um número aleatório r e envia f (x) * r ^ 3 para o banco. O banco leva esse número para 1/3 da potência, obtendo r * f (x) ^ (1/3). Lembre-se, porém, que o banco não vê r ou f (x) separadamente, mas apenas seu produto. Não sabe o que r ou f (x) é. Eles poderiam ser qualquer coisa, na verdade.
   </p>
 
   <p>
-    The nice thing about this money is that it allows for blinding, a method of having the bank sign the value without knowing what value it is signing. It works like this. Alice chooses x, which will be the x in the cash. She calculates f(x), but instead of sending it to the bank to be signed (raised to the 1/3 power) she first chooses a random number r, and sends f(x)*r^3 to the bank. The bank takes this number to the 1/3 power, getting r * f(x)^(1/3). Remember, though, that the bank doesn't see r or f(x) separately, but just their product. It doesn't know what r or f(x) is. They could each be anything, actually.
+    O banco envia este r * f (x) ^ (1/3) de volta para Alice, e ela divide por r, que ela sabe. Isso dá a ela f (x) ^ (1/3), e ela coloca isso junto com x para obter seu dinheiro digital: (x, f (x) ^ (1/3)). Ela tem um dinheiro que só poderia ter sido assinado pelo banco, mas o banco não o reconhece quando é depositado.
   </p>
 
   <p>
-    The bank sends this r * f(x)^(1/3) back to Alice, and she divides it by r, which she knows. This gives her f(x)^(1/3), and she puts that together with x to get her digital cash: (x, f(x)^(1/3)). She has a piece of money which could only have been signed by the bank, yet the bank won't recognize it when it is deposited.
+    Outras coisas, não matemáticas, acontecem quando esta retirada continua. Alice deve provar sua identidade ao banco, como mencionado acima. E o banco debitará sua conta pelo valor do dinheiro. Neste sistema, assumimos por simplicidade que todo o dinheiro tem o mesmo valor. Em um sistema real, diferentes valores podem ser codificados por expoentes diferentes de 3.
   </p>
 
   <p>
-    Other, non-mathematical, things take place as this withdrawal goes on. Alice must prove her identity to the bank, as mentioned above. And the bank will debit her account by the value of the cash. In this system, we are assuming for simplicity that all cash has the same value. In a real system, different values might be encoded by different exponents than 3.
+    Quando Alice deposita o dinheiro, Bob deve ligar para o banco para se certificar de que não foi depositado antes, sendo este um sistema "on-line". Embora o banco não reconheça x (nunca se ouve falar dele) ele se lembrará de todos os x's que foram depositados e assim poderá alertar Bob se o dinheiro tiver sido gasto anteriormente. Tanto Bob quanto o banco podem verificar a assinatura digital sobre o dinheiro e, assim, honrá-lo.
   </p>
 
   <p>
-    When Alice deposits the money, Bob must call the bank to make sure that it hasn't been deposited before, this being an "on-line" system. Although the bank won't recognize x (it's never heard of it) it will remember all the x's which have been deposited and so can alert Bob if the money has been spent before. Both Bob and the bank can verify the digital signature on the money and so will honor it.
+    Todo o material acima ocupa menos de uma página do artigo de nove páginas de Chaum. Para Chaum, isso é trivial. Agora chegamos à parte interessante. Agora vamos ver o esquema que permite que os gastadores de casal percam seu anonimato. Isso permitirá dinheiro eletrônico "off-line"; Bob não precisará mais verificar com o banco se o dinheiro já foi gasto. Ele aceita de Alice sabendo que, se ela trapaceia, o banco vai honrar o dinheiro e processar Alice para compensar a perda.
   </p>
 
   <p>
-    All the material above takes up less than one page of Chaum's nine-page paper. For Chaum, this much is trivial. Now we get to the interesting part. Now we will see the scheme that allows double-spenders to lose their anonymity. This will allow for "off-line" electronic cash; Bob will no longer have to check with the bank to see if the money has already been spent. He accepts it from Alice knowing that if she does cheat, the bank will honor the cash and sue Alice to make up the loss.
+    (Para tornar esta explicação mais fácil de seguir, descreverei uma versão ligeiramente simplificada do dinheiro off-line de Chaum. A versão que eu descrevo requer o uso de uma função unidirecional não-invertível como na f () usada acima. não requer uma suposição tão forte e fornece uma rastreabilidade "incondicional" mesmo se a função unidirecional for quebrada.)
   </p>
 
   <p>
-    (To make this explanation easier to follow, I will describe a slightly simplified version of Chaum's off-line cash. The version I describe requires the use of a non-invertable one-way function as in the f() used above. Chaum's version does not require as strong an assumption and provides "unconditional" untraceability even if the one-way function is broken.)
+    Vamos começar com a forma do dinheiro em si. É o produto dos números k / 2, onde k é um "parâmetro de segurança" que afeta a chance de sucesso de um trapaceiro. Cada número é da forma g (xi, yi) ^ (1/3), onde g é uma função unidirecional de dois argumentos semelhante à f acima. (O "xi", "yi", "ai", etc. aqui são valores separados para cada i de 0 ak / 2.)
   </p>
 
   <p>
-    Let's start with the form of the cash itself. It is the product of k/2 numbers, where k is a "security parameter" that affects the chance of a cheater succeeding. Each number is of the form g(xi,yi)^(1/3), where g is a two-argument one-way function similar to the f above. (The "xi", "yi", "ai", etc. here are separate values for each i from 0 to k/2.)
+    xi e yi são assim: xi = f (ai), onde ai é um número aleatório, e f é outra função unidirecional. yi é meio complicado. É f (ai xor <info>), onde <info>, a chave para toda essa operação, está identificando informações sobre a conta de Alice! É o número da sua conta concatenado com um número de série para o dinheiro.
   </p>
 
   <p>
-    xi and yi are like this: xi = f(ai), where ai is a random number, and f is another one-way function. yi is kind of complicated. It is f(ai xor &lt;info&gt;), where &lt;info&gt;, the key to this whole operation, is identifying information about Alice's account! It is her account number concatenated with a serial number for the cash.
+    Agora, por que passar por tudo isso? Aqui está o porquê. Se você pudesse descobrir ai e (ai xor <info>), para algum eu, você saberia a identidade de Alice. (Xor'ing eles produziriam <info>.) Quando Alice double-gasta, ambos ai e ai xor <info> serão revelados.
   </p>
 
   <p>
-    Now, why go through all this? Here's why. If you could find out both ai and (ai xor &lt;info&gt;), for some i, you would know Alice's identity. (Xor'ing them would produce &lt;info&gt;.) When Alice double-spends, both ai and ai xor &lt;info&gt;will be revealed.
+    O que acontece quando Alice gasta a moeda é isso. Para cada i de 0 a k / 2, Bob escolhe 0 ou 1 aleatoriamente. Se ele escolhe 1, ele é informado de ai e yi. Se ele escolher 0, ele será informado (ai xor <info>) e xi. Isso permitirá que ele verifique a assinatura do dinheiro, conforme descrito em mais detalhes abaixo.
   </p>
 
   <p>
-    What happens when Alice spends the coin is this. For each i from 0 to k/2 Bob chooses 0 or 1 at random. If he chooses 1 he gets told ai and yi. If he chooses 0 he gets told (ai xor &lt;info&gt;) and xi. This will let him check the signature on the money, as described in more detail below.
+    Note que quando Bob receber essa informação, ele saberá um monte de ai's, e ele saberá um monte de (ai xor <info>), mas eles são para i's diferentes. Ele não sabe ai e (ai xor <info>) para qualquer um i. Então ele não pode quebrar o anonimato de Alice.
   </p>
 
   <p>
-    Notice that when Bob gets this information, he'll know a bunch of ai's, and he'll know a bunch of (ai xor &lt;info&gt;)'s, but they are for different i's. He doesn't know both ai and (ai xor &lt;info&gt;) for any one i. So he can't break Alice's anonymity.
+    Quando Bob deposita o dinheiro no banco, ele repassa as informações que recebeu de Alice sobre o ai e tal.
   </p>
 
   <p>
-    When Bob deposits the money at the bank, he passes along the information he got from Alice regarding the ai's and such.
+    Agora, suponha que Alice trapaceie. Ela gasta o dinheiro de novo em algum outro lugar, no Charlie's. Charlie passa pelo mesmo procedimento que Bob, escolhendo 0 ou 1 aleatoriamente para cada valor de i. Aqui está o truque. Como ele está escolhendo aleatoriamente, seria muito improvável que ele escolhesse exatamente os mesmos 0s e 1s que Bob escolheu. (Aqui é onde o tamanho de k importa - tornando-se maior, torna menos provável que Charlie e Bob escolham o mesmo padrão de 0 e 1. Mas faz com que os cálculos demorem mais tempo.) Isso significa que para um ou mais valores de i, Charlie provavelmente escolherá um 0 onde Bob escolheu um 1, ou vice-versa.
   </p>
 
   <p>
-    Now, suppose Alice cheats. She spends the money again somewhere else, at Charlie's. Charlie goes through the same procedure as Bob, choosing 0 or 1 at random for each value of i. Here is the catch. Since he is choosing at random, it would be very unlikely that he will choose exactly the same 0's and 1's that Bob chose. (Here is where the size of k matters &ndash; making it bigger makes it less likely that Charlie and Bob will choose the same pattern of 0's and 1's. But it makes the calculations take longer.) That means for one or more values of i, Charlie will probably choose a 0 where Bob chose a 1, or vice versa.
+    Por causa disso, se o Bob tiver um ai para esse i, o Charlie irá obter ai xor <info>. Ou se Bob tiver ai xor <info>, Charlie vai ter ai. De qualquer forma, quando Charlie envia seu registro dessas informações para o banco, o banco coloca as informações de Bob e Charlie juntas e obtém os dois ai e ai xor <info>. Xor'ing estes juntos revela <info>, e Alice é pego! Essa é a ideia principal.
   </p>
 
   <p>
-    Because of this, if Bob got ai for that i, Charlie will get ai xor &lt;info&gt;. Or if Bob got ai xor &lt;info&gt;, Charlie will get ai. Either way, when Charlie sends his record of this information to the bank, the bank will put Bob's and Charlie's information together and get both ai and ai xor &lt;info&gt;. Xor'ing these together reveals &lt;info&gt;, and Alice is caught! This is the main idea.
+    (Chaum sugere não apenas depender da chance aleatória para garantir que Bob e Charlie usem conjuntos diferentes de 1 e 0. Pelo menos alguns dos bits podem ser atribuídos a Bob e Charlie pelo banco de tal forma que todos obtenham um número diferente. Desta forma, seria garantido que Bob e Charlie escolheriam valores opostos para alguns i.)
   </p>
 
   <p>
-    (Chaum suggests not just relying on random chance to make sure Bob and Charlie use different sets of 1's and 0's. At least some of the bits might be assigned to Bob and Charlie by the bank in such a way that everybody gets a different number. This way it would be guaranteed that Bob and Charlie would choose opposite values for some i.)
+    A razão para o dinheiro ter a forma que ele faz é para que Bob possa verificar se ele está assinado pelo banco. Para cada valor de i, Alice precisa fornecer informações suficientes para calcular xi e yi. Se Bob escolher um 1, ela dá a ele ai e yi. Dado ai Bob pode calcular xi (= f (ai)), e com isso e yi ele pode calcular g (xi, yi). Se Bob escolher um 0, ela lhe dará (ai xor <info>), como descrito anteriormente, e também xi. Dado (ai xor <info>), Bob calcula yi (= f (ai xor <info>)), e com isso e xi ele pode calcular g (xi, yi).
   </p>
 
   <p>
-    The reason for the money to have the form it does is so that Bob can check that it is signed by the bank. For each value of i Alice has to give him enough information to calculate xi and yi. If Bob choses a 1, she gives him ai and yi. Given ai Bob can calculate xi (=f(ai)), and with this and yi he can calculate g(xi,yi). If Bob chooses a 0, she gives him (ai xor &lt;info&gt;), as described before, and also xi. Given (ai xor &lt;info&gt;), Bob calculates yi (=f(ai xor &lt;info&gt;)), and with this and xi he can calculate g(xi,yi).
+    Então, para cada i, se Bob dá um 0 ou um 1, ele recebe informações suficientes para calcular g (xi, yi). Ele multiplica estes todos juntos e confirma que eles são iguais ao valor "dinheiro" original de Alice quando é levado ao 3º poder (lembre-se que o dinheiro foi produto de g (xi, yi) ^ (1/3) para todo i). Somente o banco poderia ter produzido uma assinatura nesta função unidirecional cujos argumentos assumem essa forma especial.
   </p>
 
   <p>
-    So for each i, whether Bob gives a 0 or a 1 he gets enough information to calculate g(xi,yi). He multiplies these all together and confirms that they are equal to Alice's original "money" value when it is taken to the 3rd power (recall the money was product of g(xi,yi)^(1/3) for all i). Only the bank could have produced a signature on this one-way function f whose arguments take this special form.
+    Mais uma complicação existe. (Bem, na verdade, um número quase infinito de complicações existe se você procurar bastante. Mas vamos nos focar em mais uma.) Alice precisa obter essa forma especial de dinheiro do banco de tal forma que o banco ganhou ' t reconhecê-lo. Isso significa que ela tem que cegar. Mas neste caso, o banco quer ter certeza de que o dinheiro é da forma adequada quando o assina; em particular, ele quer ter a certeza de que a <info> de Alice, que está enterrada em todos esses f's de g, é na verdade a mais adequada para ela. Mas como o banco não consegue ver o que está assinando, isso é difícil de fazer.
   </p>
 
   <p>
-    One more complication exists. (Well, actually, an almost infinite number of complications exist if you look hard enough. But we'll just focus on one more.) Alice needs to get this special form of money from the bank in such a way that the bank won't recognize it. That means she has to blind it. But in this case the bank wants to be sure that the money is of the proper form when it signs it; in particular, it wants to make darned sure that Alice's &lt;info&gt; which is buried deep in all of those f's of g's is actually the right one for her. But since the bank can't see what it is signing, this is hard to do.
+    Chaum usa corte-e-escolha para isso. Ele faz com que Alice prepare todos esses f e gs de acordo com o formulário acima, inserindo cuidadosamente sua própria <info> incriminadora em cada uma delas. Então ela multiplica cada g (xi, yi) por um fator de cegueira ri ^ 3 como no primeiro dinheiro. Estes são o que ela envia ao banco para ser assinado.
   </p>
 
   <p>
-    Chaum uses cut-and-choose for this. He has Alice prepare all these f's and g's according to the form above, carefully embedding her own incriminating &lt;info&gt; in each one. Then she multiplies each g(xi,yi) by a blinding factor ri^3 just like in the first cash. These are what she sends to the bank to be signed.
+    O truque, porém, é que ela envia o dobro do que será usado. Ela envia k deles, mas apenas k / 2 será usado. (É por isso que o loop acima usou k / 2 como limite). O banco escolhe k / 2 aleatoriamente do k que ela enviou como os que realmente serão usados. Alice então tem que enviar os valores de ri cegantes para aqueles que o banco não escolheu.
   </p>
 
   <p>
-    The trick, though, is that she sends twice as many as will be used. She sends k of them, but only k/2 will be used. (That's why the loop above used k/2 as the limit.) The bank chooses k/2 at random out of the k she sent as the ones which will actually be used. Alice then has to send the blinding ri values for the ones which the bank didn't pick.
+    A ideia é que, se Alice tentar enganar, incorporando "Bozo" em vez de "Alice" no campo <info>, ela está dando uma chance. Primeiro, para ser útil, ela terá que incorporá-lo em muitos campos <info> para valores diferentes de i. Quando Bob e Charlie comparam notas depois que ela gasta duas vezes, cada valor de i para o qual eles escolheram diferentes 0s e 1s, que estarão na metade média deles, revelará um campo <info>. Se ela só finge algumas, é provável que sua verdadeira identidade ainda seja revelada.
   </p>
 
   <p>
-    The idea is that if Alice tries to cheat, embedding "Bozo" instead of "Alice" in that &lt;info&gt; field, she's taking a chance. First, to be useful, she's going to have to embed it in a lot of &lt;info&gt; fields for different values of i. When Bob and Charlie compare notes after she double-spends, every value of i for which they chose different 0's and 1's, which will be on the average half of them, will reveal an &lt;info&gt; field. If she only fakes a few, chances are her real identity will still be revealed.
+    Mas se ela falsificar muitos deles, então quando o banco escolher metade, as chances são de que pelo menos alguns dos falsos estarão no set que o banco não escolheu. Então, quando Alice tiver que revelar seus rms ofuscantes, o gabarito estará pronto. O banco irá cegar todos aqueles g (xi, yi) que não estão sendo usados ​​e ver os falsos campos <info>.
   </p>
 
   <p>
-    But if she falsifies a great many of them, then when the bank chooses half, chances are at least some of the fake ones will be in the set the bank didn't choose. Then when Alice has to reveal her blinding r's, the jig will be up. The bank will un-blind all those g(xi,yi)'s which aren't being used, and see the fake &lt;info&gt; fields.
+    Essa metodologia de corte-e-escolha tem a desvantagem de que Alice precisa fazer o dobro de trabalho na preparação do dinheiro, metade da qual será jogada fora. Mas é uma maneira simples e "bruta" de certificar-se de que assinaturas ofuscantes estão sendo feitas em dados corretamente formados.
   </p>
 
   <p>
-    This cut-and-choose methodology has the disadvantage that Alice has to do twice as much work in preparing the money, half of which will just be thrown away. But it is a simple, "brute force" way to make sure that blinding signatures are actually being done on properly-formed data.
-  </p>
-
-  <p>
-    So, there you have it. Anonymity as long as you don't cheat, and double-spenders get caught. It's a little complicated but that's what computers are for; Bob and Alice wouldn't do all this stuff by hand. Alice would push the "generate a money candidate" button and get something to be sent to the bank (lots of the new PDA's have infrared wireless communications that would be perfect for face-to-face transactions). Bob would push the "check money" button when Alice spent it and it would flash red or green. As long as the calculations don't actually take too much time, which they really wouldn't in this case despite this long-winded explanation, the people involved can ignore the details.
+    Então, você tem isso. Anonimato, desde que você não trapaceie, e os que gastam com o dobro sejam pegos. É um pouco complicado, mas é para isso que os computadores são; Bob e Alice não fariam tudo isso a mão. Alice pressionaria o botão "gerar um candidato a dinheiro" e obteria algo para ser enviado ao banco (muitos dos novos PDAs têm comunicações sem fio infravermelhas que seriam perfeitas para transações face a face). Bob apertava o botão "cheque de dinheiro" quando Alice o gastava e ele piscava vermelho ou verde. Contanto que os cálculos não demorem muito tempo, o que eles realmente não fariam neste caso, apesar desta longa explicação, as pessoas envolvidas podem ignorar os detalhes.
   </p>
 
   <p>
@@ -153,7 +153,7 @@
   </p>
 
   <p>
-    <a href="http://finney.org/~hal/">Hal Finney Home Page</a>
+    <a href="http://finney.org/~hal/">Página de Hal Finney</a>
   </p>
 
 </div>
