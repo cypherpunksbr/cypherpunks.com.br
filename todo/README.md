@@ -32,6 +32,9 @@
 
 :pencil2: Measuring Value - [MamãeCrypto]()
 
+:pencil2: Secure Property Titles - [Matheus Bach](https://github.com/matheusbach/)
+
+
 ### Textos traduzidos: 
 
 :ok: [BitGold](https://cypherpunks.com.br/bitgold/ "ver texto traduzido") - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
@@ -134,6 +137,7 @@
  :clock3: [trusted third parties](../todo/trusted-third-parties.html)
  
 * Você pode sugerir ou traduzir um texto que não esteja nessa lista. Basta submeter uma "pull request" pelo GitHub
+
 
 ### Aqui algumas sugestões de textos para tradução:
 
