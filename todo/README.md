@@ -5,7 +5,9 @@
  
  :ok: Tradução finalizada  
  
- :clock3: Aguarda Tradução  
+ :clock3: Aguarda tradução  
+
+ :speech_balloon: Sugestão para tradução
 
 
 ### Textos sendo traduzidos:
@@ -25,8 +27,6 @@
 :pencil2: Shelling Out: The Origins of Money 
 
 :pencil2: Shelling Out: Money, Blockchains, and Social Scalability - [@hanelore](https://github.com/hanelore)
-
-:pencil2: The God Protocols - [jeffeson](https://github.com/jeffesonjp)
 
 :pencil2: Origins of Bitcoin - [@aferreira44]()
 
@@ -66,6 +66,10 @@
 :ok: [Bitcoin e eu](../todo/bitcoin-and-me.html) - [Marcos]()
 
 :ok: [rpow](../todo/rpow.html) - [Marcos]()
+
+:ok: [The God Protocols](https://github.com/cypherpunksbr/) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
+
+:ok:[Auditoria Confidencial](https://github.com/cypherpunksbr/) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
 * Mais publicações você pode encontrar em nossa [biblioteca](https://cypherpunks.com.br/biblioteca/)
 
@@ -130,21 +134,21 @@
  
 * Você pode sugerir ou traduzir um texto que não esteja nessa lista. Basta submeter uma "pull request" pelo GitHub
 
-Aqui algumas sugestões de textos para tradução:
+### Aqui algumas sugestões de textos para tradução:
 
- :clock3: [Nakamoto Institute](https://nakamotoinstitute.org/literature/)
+ :speech_balloon: [Nakamoto Institute](https://nakamotoinstitute.org/literature/)
 
- :clock3: [Activism.net](https://www.activism.net/)
+ :speech_balloon: [Activism.net](https://www.activism.net/)
 
- :clock3: [Cryptography Mail Archive I](https://www.mail-archive.com/cryptography@metzdowd.com/msg10152.html)
+ :speech_balloon: [Cryptography Mail Archive I](https://www.mail-archive.com/cryptography@metzdowd.com/msg10152.html)
 
- :clock3: [Cryptography Mail Archive II](http://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html)
+ :speech_balloon: [Cryptography Mail Archive II](http://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html)
 
- :clock3: [Satoshi Mails](https://satoshi.nakamotoinstitute.org/emails/)
+ :speech_balloon: [Satoshi Mails](https://satoshi.nakamotoinstitute.org/emails/)
 
- :clock3: [Cartas do Ross Ulbricht](https://freeross.org/writings-from-ross/)
+ :speech_balloon: [Cartas do Ross Ulbricht](https://freeross.org/writings-from-ross/)
 
- :clock3: [Cypherpunks Archive mail list](https://lists.cpunks.org/pipermail/cypherpunks/)
+ :speech_balloon: [Cypherpunks Archive mail list](https://lists.cpunks.org/pipermail/cypherpunks/)
 
- :clock3: [Cypherspace articles](http://www.cypherspace.org/)
+ :speech_balloon: [Cypherspace articles](http://www.cypherspace.org/)
  

@@ -6,7 +6,7 @@
     <h1 class="text-center">Criptografia Intrapolinomial<br><small>Nick Szabo</small></h1>
     <h4 id="section">1999</h4>
 </div>
-<p>Pesquisadores tem proposto uma variedade de “desafios para clientes” e “trabalho pesado” como o hashcash, MicroMint, Bit Gold e a Postagem com Custo Computacional para criar uma moeda independente ou fazer o spam ficar custoso. As implicações matemáticas desta proposta é de que existe uma “Criptografia Intrapolinomial”. As 4 motivações para a teoria da criptografia intrapolinomial são (a) novas construções como as mencionadas anteriormente, (b) estimativas mais acuradas sobre o custo para se quebrar uma cifra, (c) é possível que seja mais fácil provar os limites menores ao invés de apenas executá-los, como nos casos da criptografia superpolinomial (padrão), e (d) se não existe nenhuma função digestiva (one-way function), a criptografia padrão é intrapolinomial ao invés de superpolinomial.</p>
+<p>Pesquisadores têm proposto uma variedade de “desafios para clientes” e “trabalho pesado” como o hashcash, MicroMint, Bit Gold e a Postagem com Custo Computacional para criar uma moeda independente ou fazer o spam ficar custoso. A implicação matemática desta proposta é de que existe uma “criptografia intrapolinomial”. As 4 motivações para a teoria da criptografia intrapolinomial são (a) as novas construções como as mencionadas anteriormente, (b) estimativas mais acuradas sobre o custo para se quebrar uma cifra, (c) é possível que seja mais fácil provar os limites menores ao invés de apenas executá-los, como na criptografia superpolinomial (padrão), e (d) se não existe nenhuma função digestiva (one-way function), a criptografia padrão é intrapolinomial ao invés de superpolinomial.</p>
 <p>Proponho a seguinte formalização:</p>
 <pre><code>Assumindo que: 
 
@@ -18,8 +18,8 @@
     2.f não reduza os dados inseridos mais do que q(n,k), onde q(n,k) é um polinômio de grau k.
     3.Para cada algoritmo aleatório A que seja processado em M em um tempo menor que q(n,k)p(n), existe um N tal que n &gt; N
 Pr[A(f(x)) = f^-1(f(x))] &lt; 1/q(n,k)p(n)</code></pre>
-<p>Em outras palavras, não existe um algoritmo rodando mais rápido que q(n,k)p(n) que possa inverter f em um número significante de valores.</p>
-<p>É possível definir casos médios, melhor dos casos e pior dos casos para a função de benchmark de grau k. O questionamento (análogo a questão da criptografia superpolinomial, se existe uma função de uma única via): pode provar (3) os limites superiores e inferiores para um função qualquer e k&gt;=1 em uma máquina real como a RAM-log?</p>
+<p>Em outras palavras, não existe um algoritmo mais rápido que q(n,k)p(n) que possa inverter f em um número significante de valores.</p>
+<p>É possível definir casos médios, melhor dos casos e pior dos casos para a função de benchmark de grau k. O questionamento (análogo a questão da criptografia superpolinomial, se existe uma função de uma única via): Serã que podemos provar (3) os limites superiores e inferiores para um função qualquer e k&gt;=1 em uma máquina real como a RAM-log?</p>
 <p>Casos fortes e médios são os mais oportunos em casos relacionados a criptografia. Infelizmente, para estes propósitos nós também precisamos de:</p>
 <ol type="1">
     <li>uma lista de máquinas que compreenda todos os modelos praticáveis de máquina, no sentido de que qualquer uma dessas máquinas possam ser simuladas com uma pequena sobrecarga, como uma constante ou O(log(n)).</li>
