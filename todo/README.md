@@ -30,6 +30,7 @@
 
 :pencil2: Origins of Bitcoin - [@aferreira44]()
 
+:pencil2: Measuring Value - [MamãeCrypto]()
 
 ### Textos traduzidos: 
 
