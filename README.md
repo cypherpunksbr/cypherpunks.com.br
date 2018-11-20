@@ -28,7 +28,8 @@ Colaboradores:
 -  [pr1mx](https://github.com/pr1mx)
 -  [Pedro Reck](https://github.com/r3ck)
 -  [Marcos](https://github.com/marcosmmb)
--  [R]
+-  [R]()
+-  [Coret47]()
 -  [davimello28](https://github.com/davimello28)
 -  [Hanerone](https://github.com/hanelore)
 -  [steffandsv](https://github.com/steffandsv)
