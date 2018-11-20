@@ -73,9 +73,9 @@
 
 :ok: [rpow](../todo/rpow.html) - [Marcos]()
 
-:ok: [The God Protocols](https://github.com/cypherpunksbr/) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
+:ok: [Os Protocolos de Deus](https://github.com/jeffesonjp/cypherpunks.com.br/tree/master/todo) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
-:ok:[Auditoria Confidencial](https://github.com/cypherpunksbr/) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
+:ok: [Auditoria Confidencial](https://github.com/jeffesonjp/cypherpunks.com.br/tree/master/todo) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
 * Mais publicações você pode encontrar em nossa [biblioteca](https://cypherpunks.com.br/biblioteca/)
 
