@@ -159,3 +159,4 @@
 
  :speech_balloon: [Cypherspace articles](http://www.cypherspace.org/)
  
+ :speech_balloon: [Nick Szabo's Essays, Papers, and Concise Tutorials](http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/)
