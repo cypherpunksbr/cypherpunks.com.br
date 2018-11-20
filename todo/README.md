@@ -12,6 +12,8 @@
 
 ### Textos sendo traduzidos:
 
+:pencil2: Areopagitica [Gustavo]()
+
 :pencil2: Bitcoin Whitepaper - [OneTimePad]()
 
 :pencil2: "Multinational Small Business" - [@Deephi]()
