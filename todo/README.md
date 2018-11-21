@@ -16,6 +16,8 @@
 
 :pencil2: Bitcoin Whitepaper - [OneTimePad]()
 
+:pencil2: [Cyphernomicon](https://nakamotoinstitute.org/static/docs/cyphernomicon.txt) - [OneTimePad]()
+
 :pencil2: "Multinational Small Business" - [@Deephi]()
 
 :pencil2: PGP Web of Trust Misconceptions- [@anonymous]()
