@@ -39,8 +39,8 @@ Menções:
 
 Agradecimentos especiais a 
 
-[Felipe Bitnada](https://www.youtube.com/watch?v=t_-nA7Lwlq0)
-[Livecoins](https://livecoins.com.br/movimento-cypherpunk-brasileiro-cresce/)
+- [Felipe Bitnada](https://www.youtube.com/watch?v=t_-nA7Lwlq0)
+- [Livecoins](https://livecoins.com.br/movimento-cypherpunk-brasileiro-cresce/)
 
 Por acreditarem e divulgarem o projeto
 
