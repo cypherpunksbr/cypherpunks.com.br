@@ -37,7 +37,15 @@ Colaboradores:
 
 Menções:
 
-Agradecimentos especiais a Felipe Bitnada por acreditar e divulgar o projeto
+Agradecimentos especiais a 
+
+[Felipe Bitnada](https://www.youtube.com/watch?v=t_-nA7Lwlq0)
+[Livecoins](https://livecoins.com.br/movimento-cypherpunk-brasileiro-cresce/)
+
+Por acreditarem e divulgarem o projeto
+
+
+
 
 Seu nome não aparece na lista acima? Lamentamos que isso tenha ocorrido. Por favor, reinvidique uma contribuição nesta página.
 
