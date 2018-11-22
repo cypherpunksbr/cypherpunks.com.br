@@ -17,7 +17,7 @@ Por medidas de segurança, não revelamos os detentores das chaves que controlam
 
 ## Agradecimentos
 
-Este trabalho não seria possível sem a contribuição de diversas pessoas que ajudaram a traduzir e revisar voluntariamente todos os nossos artigos. São eles:
+Este trabalho não seria possível sem a contribuição de diversas pessoas que ajudaram a traduzir, revisar, escrever código, configurar servidores entre muitas outras coisas. São eles/elas:
     
 Colaboradores:
 -  [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
@@ -34,6 +34,10 @@ Colaboradores:
 -  [Hanerone](https://github.com/hanelore)
 -  [steffandsv](https://github.com/steffandsv)
 -  [das_rm](https://github.com/rdsm)
+
+Menções:
+
+Agradecimentos especiais a Felipe Bitnada por acreditar e divulgar o projeto
 
 Seu nome não aparece na lista acima? Lamentamos que isso tenha ocorrido. Por favor, reinvidique uma contribuição nesta página.
 
