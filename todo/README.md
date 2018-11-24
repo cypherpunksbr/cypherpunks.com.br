@@ -40,6 +40,8 @@
 
 :pencil2: Secure Property Titles - [Matheus Bach](https://github.com/matheusbach/)
 
+:pencil2: Cartas do Ross Ulbricht - [@MarlonX19](https://github.com/MarlonX19)
+
 
 ### Textos traduzidos: 
 
