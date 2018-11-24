@@ -11,7 +11,7 @@ Quorum mínimo:
 - **20 revisões para ir ao Steemit**
 
 Textos traduzidos:
--  [ ] (1) [O manifesto criptoanarquista](https://cypherpunks.com.br/o-manifesto-criptoanarquista/) – Timothy C. May (1992) 
+-  [ ] (2) [O manifesto criptoanarquista](https://cypherpunks.com.br/o-manifesto-criptoanarquista/) – Timothy C. May (1992) 
 
 //Criado por [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 -  [ ] (2) [bmoney](https://cypherpunks.com.br/b-money/) – Wei Dai (1998)
@@ -39,7 +39,7 @@ Textos traduzidos:
 
 -  [ ] (2) [O manifesto libbitcoin](https://cypherpunks.com.br/o-manifesto-libbitcoin/) - Amir Taaki (2013)
 
-//Criado por [j2ff](https://cypherpunks.com.br/author/j2ff/) Revisado por [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
+//Criado por [jeffeson](https://cypherpunks.com.br/author/j2ff/) Revisado por [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 
 -  [ ] (0) A ideia de Contratos Inteligentes - Nick Szabo (1997)
 

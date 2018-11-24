@@ -17,17 +17,35 @@ Por medidas de segurança, não revelamos os detentores das chaves que controlam
 
 ## Agradecimentos
 
-Este trabalho não seria possível sem a contribuição de diversas pessoas que ajudaram a traduzir e revisar voluntariamente todos os nossos artigos. São eles:
+Este trabalho não seria possível sem a contribuição de diversas pessoas que ajudaram a traduzir, revisar, escrever código, configurar servidores entre muitas outras coisas. São eles/elas:
     
 Colaboradores:
+-  [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 -  [accela](https://cypherpunks.com.br/author/accela/)
 -  [Disruptivas](https://cypherpunks.com.br/author/deep/)
--  [j2ff](https://github.com/jeffesonjp)
+-  [jeffeson](https://github.com/jeffesonjp)
 -  [Matheus Bach](https://github.com/matheusbach/)
--  [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
--  [Pedro Reck](https://github.com/r3ck)
 -  [pr1mx](https://github.com/pr1mx)
--  [R]
+-  [Pedro Reck](https://github.com/r3ck)
+-  [Marcos](https://github.com/marcosmmb)
+-  [R]()
+-  [Coret47]()
+-  [davimello28](https://github.com/davimello28)
+-  [Hanerone](https://github.com/hanelore)
+-  [steffandsv](https://github.com/steffandsv)
+-  [das_rm](https://github.com/rdsm)
+
+Menções:
+
+Agradecimentos especiais a 
+
+- [Felipe Bitnada](https://www.youtube.com/watch?v=t_-nA7Lwlq0)
+- [Livecoins](https://livecoins.com.br/movimento-cypherpunk-brasileiro-cresce/)
+
+Por acreditarem e divulgarem o projeto
+
+
+
 
 Seu nome não aparece na lista acima? Lamentamos que isso tenha ocorrido. Por favor, reinvidique uma contribuição nesta página.
 

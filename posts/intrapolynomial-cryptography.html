@@ -1,0 +1,62 @@
+<!-- extend base layout -->
+{% extends "doc.html" %}
+{% block doc %}
+<div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+  <div class="page-header">
+    <h1 class="text-center">
+      Criptografia Intrapolinomial <br><small>Nick Szabo</small>
+    </h1>
+    <h4 class="text-center">
+      1999<br>
+    </h4>
+  </div>
+  <p>
+    Pesquisadores propuseram uma variedade de propostas de "quebra-cabeças de clientes" ou de "trabalho ativo" como hashcash, MicroMint, bit gold e porte de custo de computação para criar moedas independentes ou tornar o envio de spams caro. A implicação matemática dessas propostas é que existe uma criptografia intrapolinomial. Quatro motivações para a teoria da criptografia intrapolinominal são (a) novas construções como as aplicações acima mencionadas, (b) estimativa mais precisa do custo computacional de quebrar uma cifra, (c) pode ser mais fácil provar limites inferiores, em vez de apenas conjeturá-las como é o caso da criptografia superpolinomial (padrão) e (d) se não existem funções unidirecionais, a criptografia padrão é intrapolinomial e não super polinomial.
+  </p>
+
+  <p>
+   Eu proponho a seguinte formalização:
+  </p>
+
+<pre>
+f: {0,1}* --> {0,1}* é chamado de uma função k-benchmark forte
+para o modelo de máquina M e k>=1 se o seguinte procede:
+
+1. f é computável no tempo O(p(n)) em M, onde p é um polinômio.
+2. f não encolhe a entrada mais que q(n,k), onde q(n,k) é um polinômio de grau k.
+3. Para cada algoritmo aleatório A rodando em M no tempo
+menor que q(n, k)p(n), existe um N tal que para n > N
+        Pr[A(f(x)) = f^-1(f(x))] < 1/q(n,k)p(n)
+</pre>
+
+  <p>
+    Em outras palavras, não há algoritmo funcionando mais rápido que q(n,k)p(n), que pode inverter f para mais do que um número insignificante de valores.
+  </p>
+
+  <p>
+    Pode-se definir similarmente as funções de benchmark de caso médio, melhor caso e pior caso de k-grau, de forma análoga às funções unidirecionais. Pergunta aberta (análogo à questão aberta na criptografia superpolinomial de se funções unidirecionais existem): pode-se provar (3) como limites inferior e superior para alguma função e k> = 1 em algum modelo de máquina realizável, como RAM-log?
+  </p>
+
+  <p>
+    Casos fortes e médios são mais adequados a aplicações relacionadas à criptografia. Infelizmente, para esses propósitos, também precisamos:
+  </p>
+
+  <ol type="a">
+    <li>
+      uma lista de modelos de máquinas que é abrangente de todas as máquinas fisicamente realizáveis, no sentido de que qualquer máquina desse tipo pode ser simulada com uma sobrecarga muito pequena, como constante ou O(log(n)), por algum modelo na lista;
+    </li>
+    <li>
+      para provar limites inferiores em uma função de referência para todos os modelos da lista
+    </li>
+  </ol>
+
+  <p>
+    Como isso é pelo menos muito entediante, esperamos que, na prática, possamos nos safar com uma pequena lista que abrange todas as arquiteturas de máquinas plausivelmente implementadas. Isso pode funcionar, por exemplo, onde a exposição total do cracking de um protocolo é menor do que os custos de P & D de projetar e construir uma nova arquitetura de máquina para derrotá-lo. A criptanálise incluiria a descoberta das arquiteturas de máquina ideais para quebrar uma cifra intrapolinomial.
+  </p>
+
+  <p>
+    Há pelo menos duas implicações práticas da análise acima. Uma é que há muito pouco espaço para erro na análise e implementação de postagem de custo de computação, hashcash, bit gold, MicroMint e outros esquemas de criptografia intrapolinomial. Outra é que, a menos que o oponente tenha um orçamento muito baixo e seja, portanto, limitado a computadores pessoais padrão, não faz sentido analisar a segurança ou o custo desses esquemas sem referência à arquitetura da máquina. Por exemplo, os remetentes de spam podem ser capazes de derrotar a postagem de custo de computação usando chips personalizados otimizados para computar a função específica do quebra-cabeça.
+  </p>
+
+</div>
+{% endblock %}
