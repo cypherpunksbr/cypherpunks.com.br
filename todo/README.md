@@ -24,6 +24,8 @@
 
 :pencil2: Crypto-Anarchy and Libertarian Entrepreneurship Chapter: 1-4 - [Pedro Reck](https://github.com/r3ck/)
 
+:pencil2: Contract Language, Nick Szabo - [Davi Figueiredo](https://github.com/davimello28/)
+
 
 ### Textos traduzidos: 
 
@@ -47,8 +49,6 @@
  :clock3: [bitcoin and me](../todo/bitcoin-and-me.html)
  
  :clock3: [bitcoin](../todo/bitcoin.html)
- 
- :clock3: [contract language](../todo/contract-language.html)
  
  :clock3: [cyberspace crypto anarchy and pushing limits](../todo/cyberspace-crypto-anarchy-and-pushing-limits.html)
  
