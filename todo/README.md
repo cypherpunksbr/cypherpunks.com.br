@@ -88,7 +88,9 @@
 
 ### Textos aguardando tradução:
  
- :clock3: [areopagitica](../todo/areopagitica.html)
+:clock3: [gent-forum-spies](https://cryptome.org/2012/07/gent-forum-spies.htm) 
+
+:clock3: [areopagitica](../todo/areopagitica.html)
  
  :clock3: [bitcoin](../todo/bitcoin.html)
  
@@ -166,6 +168,13 @@
  :speech_balloon: [Cypherspace articles](http://www.cypherspace.org/)
  
  :speech_balloon: [Nick Szabo's Essays, Papers, and Concise Tutorials](http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/)
+
 :speech_balloon:  [The GNU/Linux Crypto Series](https://sanctum.geek.nz/arabesque/series/gnu-linux-crypto/)
 
 :speech_balloon: [The Gnu/Linux Crypto PT-BR](https://cabaladada.org/2013/09/16/linux_cripto_intro/)
+
+:speech_ballon: [Cryptome](https://cryptome.org)
+
+:speech_ballon: [Cryptoanarchy Wiki](https://cryptoanarchy.wiki)
+
+:speech_ballon: [Paralelni Polis](https://www.paralelnipolis.cz/o-nas/en/)
