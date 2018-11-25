@@ -28,7 +28,7 @@
 
 :pencil2: Crypto-Anarchy and Libertarian Entrepreneurship Chapter: 1-4 - [Pedro Reck](https://github.com/r3ck/)
 
-:pencil2: Intrapolynomial Cryptography [Davi Figueiredo](https://github.com/davimello28)
+:pencil2: Contract Language, Nick Szabo - [Davi Figueiredo](https://github.com/davimello28/)
 
 :pencil2: Shelling Out: The Origins of Money 
 
@@ -43,6 +43,7 @@
 :pencil2: Cartas do Ross Ulbricht - [@MarlonX19](https://github.com/MarlonX19)
 
 
+
 ### Textos traduzidos: 
 
 :ok: [BitGold](https://cypherpunks.com.br/bitgold/ "ver texto traduzido") - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
@@ -52,6 +53,8 @@
 :ok: [Contratos com Titular](https://cypherpunks.com.br/contratos-com-titular/ "ver publicação traduzida") - [Matheus Bach](https://github.com/matheusbach/ "perfil de Matheus Bach no github")
 
 :ok: [Criptoanarquia_e_Comunidades_Virtuais](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/Criptoanarquia_e_Comunidades_Virtuais.html)
+
+:ok: [Criptografia Intrapolinomial](cypherpunks.com.br/posts/intrapolynomial-cryptography.html) - [Davi Figueiredo](https://github.com/davimello28)
 
 :ok: [Feliz_Aniversário_Bitcoin](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/Feliz_Anivers%C3%A1rio_Bitcoin.html)
 
@@ -93,8 +96,6 @@
 :clock3: [areopagitica](../todo/areopagitica.html)
  
  :clock3: [bitcoin](../todo/bitcoin.html)
- 
- :clock3: [contract language](../todo/contract-language.html)
  
  :clock3: [cyberspace crypto anarchy and pushing limits](../todo/cyberspace-crypto-anarchy-and-pushing-limits.html)
  
