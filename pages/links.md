@@ -47,3 +47,4 @@ mercado de criptomoedas.
 ### Livros recomendados:
 
 - [Mastering Bitcoin](https://bitcoinbook.info/wp-content/translations/pt_BR/book.pdf)
+- [Cypherpunks - Liberdade e o Futuro da Internet](https://resistir.info/varios/assange_livro_port.pdf)
