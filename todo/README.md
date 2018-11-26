@@ -36,8 +36,6 @@
 
 :pencil2: Origins of Bitcoin - [@aferreira44]()
 
-:pencil2: Measuring Value - [MamãeCrypto]()
-
 :pencil2: Secure Property Titles - [Matheus Bach](https://github.com/matheusbach/)
 
 :pencil2: Cartas do Ross Ulbricht - [@MarlonX19](https://github.com/MarlonX19)
@@ -45,6 +43,8 @@
 
 
 ### Textos traduzidos: 
+
+:ok: [Measuring Value](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/mensura%C3%A7%C3%A3o-do-valor.html) - [MamãeCrypto]()
 
 :ok: [BitGold](https://cypherpunks.com.br/bitgold/ "ver texto traduzido") - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 
@@ -170,12 +170,12 @@
  
  :speech_balloon: [Nick Szabo's Essays, Papers, and Concise Tutorials](http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/)
 
-:speech_balloon:  [The GNU/Linux Crypto Series](https://sanctum.geek.nz/arabesque/series/gnu-linux-crypto/)
+ :speech_balloon:  [The GNU/Linux Crypto Series](https://sanctum.geek.nz/arabesque/series/gnu-linux-crypto/)
 
-:speech_balloon: [The Gnu/Linux Crypto PT-BR](https://cabaladada.org/2013/09/16/linux_cripto_intro/)
+ :speech_balloon: [The Gnu/Linux Crypto PT-BR](https://cabaladada.org/2013/09/16/linux_cripto_intro/)
 
-:speech_ballon: [Cryptome](https://cryptome.org)
+ :speech_balloon: [Cryptome](https://cryptome.org)
 
-:speech_ballon: [Cryptoanarchy Wiki](https://cryptoanarchy.wiki)
+ :speech_balloon: [Cryptoanarchy Wiki](https://cryptoanarchy.wiki)
 
-:speech_ballon: [Paralelni Polis](https://www.paralelnipolis.cz/o-nas/en/)
+ :speech_balloon: [Paralelni Polis](https://www.paralelnipolis.cz/o-nas/en/)
