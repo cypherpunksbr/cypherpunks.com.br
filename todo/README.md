@@ -169,3 +169,5 @@
 :speech_balloon:  [The GNU/Linux Crypto Series](https://sanctum.geek.nz/arabesque/series/gnu-linux-crypto/)
 
 :speech_balloon: [The Gnu/Linux Crypto PT-BR](https://cabaladada.org/2013/09/16/linux_cripto_intro/)
+
+:speech_ballon: [La Quadrature du Net](https://www.laquadrature.net/en/)
