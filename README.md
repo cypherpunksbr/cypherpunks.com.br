@@ -35,6 +35,7 @@ Colaboradores:
 -  [steffandsv](https://github.com/steffandsv)
 -  [das_rm](https://github.com/rdsm)
 -  [Vinicius Figueiredo](https://github.com/ViniciusFigueiredo)
+-  [MamãeCrypto](https://mamaecrypto.blogspot.com)
 
 Menções:
 
