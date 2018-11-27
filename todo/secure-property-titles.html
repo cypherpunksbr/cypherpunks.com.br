@@ -49,45 +49,45 @@
   </p>
 
   <p>
-    To implement a property club, we set up a replicated database so that the club members, hereafter "servers", can securely maintain titles  of ownership, and securely transfer them upon the request of current owners. Actually getting end users to respect the property rights agreed upon by this system will be dependent on the specific nature of the property, and is beyond the scope of the current inquiry. The purpose of the replicated database is simply to securely agree on who owns what. The entire database is public.
+    Para implementar um clube de propriedade, montamos um banco de dados replicado para que os membros do clube, de agora em diante "servidores", possam manter com segurança os títulos de propriedade e transferi-los com segurança mediante solicitação dos proprietários atuais. Na verdade, fazer com que os usuários finais respeitem os direitos de propriedade acordados por este sistema dependerá da natureza específica da propriedade e está além do escopo da consulta atual. O objetivo do banco de dados replicado é simplesmente concordar com segurança sobre quem possui o quê. O banco de dados inteiro é público.
   </p>
 
   <!--
   <p class="text-muted">
-    Confidentiality will be addressed below.
+    Confidencialidade será abordada abaixo.
   </p>
   -->
 
   <p>
-    The ideal title database would have the following  properties:
+    O banco de dados de títulos ideal teria as seguintes propriedades:
   </p>
 
   <ol>
     <li>
       <p>
-        Current owner Alice should be able transfer her title to only a single relying counterparty (similar to the "double spending" problem in digital cash)
+        A atual proprietária Alice deve poder transferir seu título para apenas uma única contraparte confiável (semelhante ao problema de "gasto duplo" em dinheiro digital)
       </p>
     </li>
 
     <li>
       <p>
-        Servers should not be able to forge transfers
+        Os servidores não devem conseguir falsificar transferências
       </p>
     </li>
 
     <li>
       <p>
-        Servers should not be able to block transfers to or from politically incorrect parties.
+        Os servidores não devem poder bloquear transferências de ou para partes politicamente incorretas.
       </p>
     </li>
   </ol>
 
   <p>
-    We cannot achieve ideals (1) and (3), so we introduce "voting" as follows. A good model of secure replicated databases is the "Byzantine Quorum System" of <a href="http://www.research.att.com/~dalia/">Malkhi &amp; Reiter</a><sup><a href="#fn6" id="ref6-2">[6]</a></sup>. In contrast to most recent work in peer-to-peer software, our design is based on mathematical proofs of security rather than hand-waving. For a short discussion of such threshold-of-servers approaches, see my essay <a href="http://szabo.best.vwh.net/coalition.html">"Coalition Design for Secure Protocols"</a>. The database is replicated across a universe of servers U, |U|=n. The "quorum system" is a collection of  subsets (quora) of these servers, each pair of which intersect. Each quorum can operate on behalf of the system; intersection guarantees that operations done on distinct quora preserve consistency. A quorum system tolerant of Byzantine (unconditionally malicious) server failures is a collection of subsets of servers, each pair of which intersect in a set containing sufficiently many correct servers to guarantee the consistency of the replicated data. The authors construct a protocol such that any intersection contains at least  2f+1 servers, thus providing resilience against up to f malicious servers, n &gt; 4f.
+    Não podemos alcançar os ideais (1) e (3), por isso introduzimos o "voto" da seguinte maneira. Um bom modelo de bancos de dados replicados seguros é o "Sistema de Quorum Bizantino" de <a href="http://www.research.att.com/~dalia/">Malkhi &amp; Reiter</a><sup><a href="#fn6" id="ref6-2">[6]</a></sup>. Em contraste com o trabalho mais recente em software peer-to-peer, nosso design é baseado em provas matemáticas de segurança em vez de acenar com a mão. Para uma breve discussão sobre essas abordagens de limiar de servidores, veja meu ensaio <a href="http://szabo.best.vwh.net/coalition.html">"Design de Coalizão para Protocolos Seguros"</a>. O banco de dados é replicado em um universo de servidores U, |U|=n. O "sistema de quorum" é uma coleção de subconjuntos (quorum) desses servidores, cada um dos quais se cruza. Cada quórum pode operar em nome do sistema; a interseção garante que as operações feitas em quorums distintos preservam a consistência. Um sistema de quorum tolerante a falhas de servidor bizantinas (maliciosas incondicionalmente) é uma coleção de subconjuntos de servidores, cada um dos quais se cruza em um conjunto contendo muitos servidores corretos para garantir a consistência dos dados replicados. Os autores constroem um protocolo de tal forma que qualquer interseção contenha pelo menos 2f+1 servidores, fornecendo assim resiliência contra até f servidores maliciosos, n &gt; 4f.
   </p>
 
   <p>
-    Using these results it looks like we can approach our ideal title database as follows:
+    Usando esses resultados, parece que podemos abordar nosso banco de dados de títulos ideal da seguinte maneira:
   </p>
 
   <ol>
