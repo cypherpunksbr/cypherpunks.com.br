@@ -1,7 +1,9 @@
 # Git e GitHub
+***
 
-#### [Se você não sabe ou não está acostumado a usar essas ferramentas, pule para o passo a passo detalhado](#passo-a-passo-detalhado)
+#### Se você não sabe ou não está acostumado a usar essas ferramentas, pule para o [passo a passo detalhado](#passo-a-passo-detalhado)
 
+#### Se você não configurou o _Git_ veja como fazer isso clicando [aqui](GIT.md)
 
 ## Passo a passo simplificado
 
@@ -218,4 +220,4 @@ Se você fez o **rebase** do seu **branch** a partir de ```upstream/master```, r
 
 Quando iniciar uma nova contribuição comece pelo passo a partir da criação da **branch**.
 
-[Se você entendeu toda a explicação, volte ao começo do texto e faça o passo a passo simplificado](#passo-a-passo-simplificado)
+Se você entendeu toda a explicação, volte ao começo do texto e faça o [passo a passo simplificado](#passo-a-passo-simplificado).
