@@ -93,31 +93,31 @@
   <ol>
     <li>
       <p>
-        Alice signs the title and Bob's public key, and sends this message to 2f+1 servers, committing her to transfer title to Bob. Bob checks at least 2f+1 servers before relying on Alice's transfer.
+        Alice assina o título e a chave pública de Bob e envia esta mensagem para os servidores 2f+1, comprometendo-a a transferir o título para Bob. Bob verifica pelo menos 2f+1 servidores antes de confiar na transferência de Alice.
       </p>
     </li>
 
     <li>
       <p>
-        No collusion of servers can forge Alice's signature (we achieve at least this property ideally!)
+        Nenhuma conspiração de servidores pode forjar a assinatura de Alice (nós conseguimos pelo menos essa conquista idealmente!)
       </p>
     </li>
 
     <li>
       <p>
-        A conspiracy of  &gt;=(1/4)n servers can block a transfer. Alice's only recourse is to use some other channels to broadcast her intention, demonstrating that the registry did not follow her wishes, and hoping the alternative channels are more reliable.  Bob only has similar recourse if he signed a document with Alice demonstrating their intentions to transfer title from Alice to Bob. The most basic recourse is a correct subset of servers which exits the property club and establishes a new one, then advertises its correctness (and proves the incorrectness of its rival group) as described above.
+        Uma conspiração de  &gt;=(1/4)n servidores podem bloquear uma transferência. O único recurso de Alice é usar alguns outros canais para transmitir sua intenção, demonstrando que o registro não seguiu seus desejos e esperando que os canais alternativos sejam mais confiáveis. Bob só tem um recurso similar se ele assinou um documento com Alice demonstrando suas intenções de transferir o título de Alice para Bob. O recurso mais básico é um subconjunto correto de servidores que sai do clube de propriedades e estabelece um novo, e então anuncia sua correção (e prova a incorreção de seu grupo rival) como descrito acima.
       </p>
     </li>
   </ol>
 
   <p>
-    Sharing control over property, for example as security for a loan, could be accomplished by sharing the private key corresponding to the current owner's public key. Possession of this private key is required to sign over title; multiparty threshold signatures could also be handled. So it may be a good idea to use one keypair for each combination of title and current owner, rather than keypairs representing the identities of owners. When certain contractual conditions are met, such as the last payment on a loan, this could trigger the generation of a new keypair held solely by the owner, and transfer of title from the shared keypair to the new keypair.
+    O compartilhamento de controle sobre a propriedade, por exemplo, como garantia para um empréstimo, pode ser realizado compartilhando-se a chave privada correspondente à chave pública do proprietário atual. A posse dessa chave privada é necessária para assinar o título; assinaturas de múltiplas entradas também poderiam ser manipuladas. Por isso, pode ser uma boa ideia usar um par de chaves para cada combinação de título e proprietário atual, em vez de pares de chaves representando as identidades dos proprietários. Quando certas condições contratuais são atendidas, como o último pagamento de um empréstimo, isso pode desencadear a geração de um novo par de chaves mantido unicamente pelo proprietário e a transferência do título do par de chaves compartilhado para o novo par de chaves.
   </p>
 
-  <h2>Divisibility and Homesteading</h2>
+  <h2>Divisibilidade e Homesteading</h2>
 
   <p>
-    The initial allocations might occur by mapping existing property rights from their current institutional incarnation, or by using traditional methods of staking and negotiating mutual recognition of claims. Some methods less dependent on an existing legal regime for the rights will be discussed in this section.
+    As alocações iniciais podem ocorrer mapeando os direitos de propriedade existentes a partir de sua encarnação institucional atual, ou usando os métodos tradicionais de estacamento e negociação de reconhecimento mútuo de reivindicações. Alguns métodos menos dependentes de um regime legal existente para os direitos serão discutidos nesta seção.
   </p>
 
   <p>
