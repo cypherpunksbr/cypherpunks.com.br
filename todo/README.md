@@ -180,4 +180,4 @@
 
  :speech_balloon: [Paralelni Polis](https://www.paralelnipolis.cz/o-nas/en/)
 
- :speech_ballon: [La Quadrature du Net](https://www.laquadrature.net/en/)
+ :speech_balloon: [La Quadrature du Net](https://www.laquadrature.net/en/)
