@@ -27,7 +27,7 @@ Após o download de todos os arquivos precisaremos importar a chave pública do 
 gpg –import goatpig-signing-key.asc
 ```
 
-Logo após isso, vericaremos o arquivo de hash com:
+Logo após isso, verificaremos o arquivo de hash com:
 ```
 gpg –verify sha256sum.asc
 ```
