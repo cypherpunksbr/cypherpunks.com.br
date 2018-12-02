@@ -7,11 +7,11 @@ Somos um grupo de pessoas (e robôs) interessados em criptologia, criptomoedas, 
 
 ## Como Contribuir?
 
-Se você tiver interesse em ajudar, criamos um [guia](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/CONTRIBUTING.md) sobre como você pode fazer isto. Se tiver qualquer dúvida ou alguma sugestão de melhoria, basta abrir uma [issue](https://github.com/cypherpunksbr/cypherpunks.com.br/issues).
+Se você tiver interesse em ajudar, criamos um [guia] sobre como você pode fazer isto. Se tiver qualquer dúvida ou alguma sugestão de melhoria, basta abrir uma [issue].
 
 Doe Bitcoins: bc1qjgsxk4qatgtlzqs0w6pu2lv3mcr025e2tz95nxafgt8qak70jm0qm0fqa3
 
-A carteira acima é um endereço multisig e os fundos só podem ser movidos se os integrantes do projeto concordarem. Todos os fundos são utilizados para manter o projeto e para apoiar as nossas iniciativas. Todos os nossos gastos são transparentes e podem ser consultados [neste link](https://cypherpunks.com.br/transparencia/).
+A carteira acima é um endereço multisig e os fundos só podem ser movidos se os integrantes do projeto concordarem. Todos os fundos são utilizados para manter o projeto e para apoiar as nossas iniciativas. Todos os nossos gastos são transparentes e podem ser consultados [neste link].
 
 Por medidas de segurança, não revelamos os detentores das chaves que controlam o endereço, nem a quantidade de assinaturas necessárias.
 
@@ -53,3 +53,7 @@ Seu nome não aparece na lista acima? Lamentamos que isso tenha ocorrido. Por fa
 
 **Pode copiar livremente. Propriedade Intelectual não é legítima.**
 
+
+[guia]: https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/CONTRIBUTING.md
+[issue]: https://github.com/cypherpunksbr/cypherpunks.com.br/issues
+[neste link]: https://cypherpunks.com.br/transparencia/

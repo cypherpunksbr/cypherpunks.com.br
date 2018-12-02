@@ -72,7 +72,7 @@
 
 :ok: [O Manifesto Cypherpunk](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/o_manifesto_cypherpunk.html)
 
-:ok: [O_Manifesto_libbitcoin](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/O_Manifesto_libbitcoin.html)
+:ok: [O_Manifesto_libbitcoin](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/O_Manifesto_libbitcoin.html) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
 :ok: [politica_vs_tecnologia](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/politica_vs_tecnologia.html)
 
@@ -82,9 +82,9 @@
 
 :ok: [rpow](../todo/rpow.html) - [Marcos]()
 
-:ok: [Os Protocolos de Deus](https://github.com/jeffesonjp/cypherpunks.com.br/tree/master/todo) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
+:ok: [Os Protocolos de Deus](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/os-protocolos-de-deus.html) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
-:ok: [Auditoria Confidencial](https://github.com/jeffesonjp/cypherpunks.com.br/tree/master/todo) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
+:ok: [Auditoria Confidencial](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/auditoria-confidencial.html) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
 * Mais publicações você pode encontrar em nossa [biblioteca](https://cypherpunks.com.br/biblioteca/)
 

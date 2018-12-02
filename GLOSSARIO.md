@@ -3,11 +3,11 @@ Essa página tem como objetivo reunir termos técnicos (ou não) e suas respecti
 
 # Traduções (Original - Tradução)
 
-* Debug - Debugar ([#155](https://github.com/braziljs/eloquente-javascript/issues/155))
-* Writable stream - Stream de escrita ([#115](https://github.com/braziljs/eloquente-javascript/issues/115))
-* Thread - Thread ([#98](https://github.com/braziljs/eloquente-javascript/issues/98))
-* Callback - Callback ([#97](https://github.com/braziljs/eloquente-javascript/issues/97))
-* Let’s get coding - Vamos codar ([#92](https://github.com/braziljs/eloquente-javascript/issues/92))
+* Debug - Debugar ([#155])
+* Writable stream - Stream de escrita ([#115])
+* Thread - Thread ([#98])
+* Callback - Callback ([#97])
+* Let’s get coding - Vamos codar ([#92])
 * Body - Corpo 
 * Client - Cliente
 * Encoded - Codificado
@@ -28,4 +28,12 @@ Essa página tem como objetivo reunir termos técnicos (ou não) e suas respecti
 * Blind signature - assinatura disfarçada ou oculta
 
 ## Como contribuir?
-No arquivo [CONTRIBUTING.md](https://github.com/braziljs/eloquente-javascript/blob/master/CONTRIBUTING.md), há uma seção chamada **"Dúvidas em tradução de termos, palavras, expressões etc..."** explicando mais detalhes sobre como contribuir. Se você tem alguma sugestão para melhorar alguma tradução já feita, basta comentar na issue de referência sua sugestão que vamos discutir a proposta de alteração.
+No arquivo [CONTRIBUTING.md], há uma seção chamada **"Dúvidas em tradução de termos, palavras, expressões etc..."** explicando mais detalhes sobre como contribuir. Se você tem alguma sugestão para melhorar alguma tradução já feita, basta comentar na issue de referência sua sugestão que vamos discutir a proposta de alteração.
+
+
+[CONTRIBUTING.md]: https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/CONTRIBUTING.md
+[#92]: https://github.com/braziljs/eloquente-javascript/issues/92
+[#97]: https://github.com/braziljs/eloquente-javascript/issues/97
+[#98]: https://github.com/braziljs/eloquente-javascript/issues/98
+[#115]: https://github.com/braziljs/eloquente-javascript/issues/115
+[#155]: https://github.com/braziljs/eloquente-javascript/issues/155
