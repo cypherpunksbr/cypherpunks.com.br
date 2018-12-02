@@ -3,7 +3,7 @@
 
 #### Se você não sabe ou não está acostumado a usar essas ferramentas, pule para o [passo a passo detalhado](#passo-a-passo-detalhado)
 
-#### Se você não configurou o _Git_ veja como fazer isso clicando [aqui](GIT.md)
+#### Se você não configurou o _Git_ veja como fazer isso clicando [aqui].
 
 ## Passo a passo simplificado
 
@@ -45,10 +45,10 @@ git push -f origin master
 
 ###### 7. Importante
 
-- Antes de enviar sua contribuição, certifique-se de que está enviando apenas um **único** _commit_ que represente o que foi feito. Caso tenha feito vários commits, [esmague-os](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html) antes de fazer o _Pull Request_.
-- Caso tenha qualquer tipo de dúvida, abra uma [_Issue_](https://github.com/cypherpunksbr/cypherpunks.com.br/issues) que faremos o possível para te ajudar.
+- Antes de enviar sua contribuição, certifique-se de que está enviando apenas um **único** _commit_ que represente o que foi feito. Caso tenha feito vários commits, [esmague-os] antes de fazer o _Pull Request_.
+- Caso tenha qualquer tipo de dúvida, abra uma [_Issue_] que faremos o possível para te ajudar.
 
-#### [Volte a página de contribuições e veja o restante das recomendações](../CONTRIBUTING.md)
+#### Volte a página de [contribuições] e veja o restante das recomendações.
 
 ## Passo a passo detalhado
 
@@ -221,3 +221,9 @@ Se você fez o **rebase** do seu **branch** a partir de ```upstream/master```, r
 Quando iniciar uma nova contribuição comece pelo passo a partir da criação da **branch**.
 
 Se você entendeu toda a explicação, volte ao começo do texto e faça o [passo a passo simplificado](#passo-a-passo-simplificado).
+
+
+[aqui]: https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/documentacao/GIT.md
+[esmague-os]: http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html
+[_Issue_]: https://github.com/cypherpunksbr/cypherpunks.com.br/issues
+[contribuições]: https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/CONTRIBUTING.md

@@ -48,7 +48,7 @@ ssh-add ~/.ssh/id_rsa
 
 ###### 8. Se solicitado, confirme sua senha do GitHub.
 
-##### Ao fim dessa configuração você pode ir para o [passo a passo](GITGITHUB.md) para enviar sua contribuição ou ir para a página de [contribuições](../CONTRIBUTING.md).
+##### Ao fim dessa configuração você pode ir para o passo a passo usando [Git e GitHub] para enviar sua contribuição ou ir para a página de [contribuições].
 
 ## Passo a passo detalhado
 
@@ -142,3 +142,7 @@ Ou simplesmente abrir esse arquivo com um editor de texto e copiar o conteúdo.
 
 **8.** Se solicitado, confirme sua senha do **GitHub**.
 ![Password](img/git-06.png)
+
+
+[contribuições]: https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/CONTRIBUTING.md
+[Git e GitHub]: https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/documentacao/GITGITHUB.md
