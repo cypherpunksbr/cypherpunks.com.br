@@ -189,36 +189,36 @@
     Outra solução é que as regras do clube de propriedade e o registro incorporem originalmente informações ricas sobre o estado real da propriedade e modifiquem a propriedade e a transferência reais dessa propriedade com base nesse estado, deixando poucas ambiguidades para que possam ser totalmente auditadas por sócios do clube e terceiros. É mais vantajoso quando esta auditoria pode permanecer automatizada, conforme previsto acima. No entanto, a introdução como critério de regra de estados transitórios não registrados (ou não registrados de forma segura) comuns em propriedades físicas faz com que a auditoria, e portanto os títulos, se tornem menos seguros e mais caros.
 
   <!--
-  <h2 class="text-muted">Confidential Ownership</h2>
+  <h2 class="text-muted">Propriedade Confidencial</h2>
 
   <p class="text-muted">
-    Using a new key pair for each transfer, besides facilitating shared control over property, can also help solve the confidentiality problem, and make it so that servers cannot discriminate against politically incorrect parties. This takes advantage of the "blindfolded justice" effect provided by anonymity. The holder of the unique key can remain anonymous (to some extent, see caveats below) and still transfer the title to others. One could contact the owners if they incorporate remailer-return envelopes with the title.
+    O uso de um novo par de chaves para cada transferência, além de facilitar o controle compartilhado da propriedade, também pode ajudar a resolver o problema de confidencialidade e fazer com que os servidores não possam discriminar as partes politicamente incorretas. Isso tira proveito do efeito de "justiça vendada" fornecido pelo anonimato. O detentor da chave exclusiva pode permanecer anônimo (até certo ponto, ver as advertências abaixo) e ainda transferir o título para outras pessoas. Pode-se contatar os proprietários se eles incorporarem envelopes de retorno ao reencaminhador com o título.
   </p>
 
   <p class="text-muted">
-    Anonymous property titles would have some other interesting consequences. Let's say there's a public good which nobody has incentive to fund unless they own most of a certain kind of property. (For example, the classic stock market takeover, where only holders of large voting blocks will put in the oversight needed to straighten out management). They could purchase property under different keys without raising suspicion that a takeover is underway. Of course, the same strategy could be used to create monopolies for less useful purposes.
+    Títulos de propriedade anônimos teriam outras consequências interessantes. Digamos que há um bem público que ninguém tem incentivo para financiar, a menos que seja o proprietário de um determinado tipo de propriedade. (Por exemplo, a aquisição clássica do mercado de ações, em que somente os detentores de grandes blocos de votação colocarão a supervisão necessária para endireitar a administração). Eles poderiam comprar propriedades sob chaves diferentes sem levantar suspeitas de que uma aquisição estava em andamento. É claro que a mesma estratégia poderia ser usada para criar monopólios para fins menos úteis.
   </p>
 
   <p class="text-muted">
-    If potential users of a property don't know who the owner of the property is, that might make practical enforcement of some kinds of property rights difficult. To enforce Alice's rights, she may have to prove to a jurisdiction that she owns the property. She can prove that the titled owner claims that she owns (not the same thing as proving that she owns, but perhaps good enough for enforcement purposes) by signing her jurisdictional name with the current owner's key. To completely prove that she owns, she would have to transfer the title to her jurisdictional name. (The jurisdiction being the entity that actually physically enforces the property rights, where this is necessary). In either case, it seems she has to reveal her jurisdictional identity in order to enforce her rights.
+    Se os usuários em potencial de uma propriedade não souberem quem é o proprietário da propriedade, isso pode dificultar a aplicação prática de alguns tipos de direitos de propriedade. Para reforçar os direitos de Alice, ela pode ter que provar a uma jurisdição que é dona da propriedade. Ela pode provar que o proprietário do título alega que ela é proprietária (não é a mesma coisa que provar que é dona dela, mas talvez seja boa o suficiente para fins de execução) assinando seu nome jurisdicional com a chave do proprietário atual. Para provar completamente que ela é dona, ela teria que transferir o título para seu nome jurisdicional. (A jurisdição é a entidade que realmente aplica fisicamente os direitos de propriedade, quando isso é necessário). Em ambos os casos, parece que ela tem que revelar sua identidade jurisdicional para impor seus direitos.
   </p>
 
   <p class="text-muted">
-    Self-enforcing property protection protocols might allow more anonymity, where these are feasible.
+    Protocolos de proteção de propriedade auto-aplicáveis podem permitir mais anonimato, quando estes são viáveis.
   </p>
 
   <p class="text-muted">
-    Some kinds of property would naturally be associated with some physical location, and thereby not be very anonymous. Furthermore, a mass of transaction detail can accumulate in the public database, revealing unique patterns of behavior. So overall the anonymity is pretty weak even with use-once keys, and may raise problems with hidden monopolies and enforcement.
+    Alguns tipos de propriedade seriam naturalmente associados a alguma localização física e, portanto, não seriam muito anônimos. Além disso, um conjunto de detalhes de transação pode se acumular no banco de dados público, revelando padrões únicos de comportamento. Portanto, no geral, o anonimato é bastante fraco, mesmo com chaves de uso único, e pode causar problemas com monopólios e coação oculta.
   </p>
 
   <p class="text-muted">
-    So it would be nice if the servers could be trusted not to block trades even when they know the identities of the owners. In the design I suggested a conspiracy of >=1/4 of the servers can so block. It might also be nice if some sort of blinding/mixing mechanism (a la digital cash) could be introduced to unlink trades between these identities while maintaining the integrity of ownership transfer, so that the public database doesn't reveal so much traffic information.
+    Por isso, seria bom se os servidores pudessem ser confiáveis para não bloquear negócios, mesmo quando eles conhecem as identidades dos proprietários. No design eu sugeri uma conspiração de >=1/4 dos servidores podem dessa forma bloquear. Também poderia ser bom se algum tipo de mecanismo de ofuscamento/mistura pudesse ser introduzido para desvincular negociações entre essas identidades, mantendo a integridade da transferência de propriedade, para que o banco de dados público não revelasse tanta informação de tráfego.
   </p>
 
-  <h2 class="text-muted">Keeping Servers Honest</h2>
+  <h2 class="text-muted">Mantendo Servidores Honestos</h2>
 
   <p class="text-muted">
-    The two theoretical areas dealing with this are Byzantine agreement (used here) and multiparty secure computation. Some recent work in these areas has been done by:
+    As duas áreas teóricas que tratam disso são a concordância bizantina (usada aqui) e a computação segura multipartidária. Alguns trabalhos recentes nessas áreas foram feitos por:
   </p>
 
     <ul class="text-muted">
