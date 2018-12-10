@@ -124,23 +124,29 @@ clip < ~/.ssh/id_rsa.pub
 Ou simplesmente abrir esse arquivo com um editor de texto e copiar o conteúdo.
 
 **2.** No canto superior direito da página, clique na foto do seu perfil e, em seguida, clique em **Settings**.
+
 ![Settings](img/git-01.png)
 
 **3.** Na barra lateral de configurações do usuário, clique em **SSH and GPG keys**.
+
 ![SSH and GPG keys](img/git-02.png)
 
 **4.** Clique em **New SSH key** ou **Add SSH key**.
+
 ![New SSH key](img/git-03.png)
 
 **5.** No campo **Title**, adicione um rótulo descritivo para a nova chave. Por exemplo, se você estiver usando um Mac pessoal, poderá chamar essa chave de "Personal MacBook Air".
 
 **6.** Cole sua chave no campo **Key**.
+
 ![Key](img/git-04.png)
 
 **7.** Clique em **Add SSH key**.
+
 ![Add SSH key](img/git-05.png)
 
 **8.** Se solicitado, confirme sua senha do **GitHub**.
+
 ![Password](img/git-06.png)
 
 
