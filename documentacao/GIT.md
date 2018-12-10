@@ -15,7 +15,7 @@ git config --global user.email "seu_email@email.com"
 
 ###### 2. Crie um par de chaves _SSH_
 ```
-ssh-keygen -t rsa -b 4096 -C "seu_email@dominio.com"
+ssh-keygen -t rsa -b 4096 -C "seu_email@email.com"
 ```
 
 ###### 3. Dê _Enter_ para salvar o arquivo e escolha uma senha para essa chave
@@ -66,7 +66,7 @@ Após isso você está pronto para usar o **Git** localmente.
 Tendo cadastrado e logado em sua conta, agora você precisa de uma chave **SSH** para poder começar a _comitar_ para sua conta. No terminal digite:
 
 ```
-ssh-keygen -t rsa -b 4096 -C "seu_email@dominio.com"
+ssh-keygen -t rsa -b 4096 -C "seu_email@email.com"
 ```
 
 O comando ```-t rsa``` indica que o tipo de chave é **RSA**. O comando ```-b 4096``` indica que o tamanho da chave é de 4096 bits. Se quiser pode deixar sem o ```-b 4096```, criando uma chave padrão com tamanho 2048 bits. Enfim, o último comando ```-C "seu_email@dominio.com"``` indica sua conta do GitHub.
