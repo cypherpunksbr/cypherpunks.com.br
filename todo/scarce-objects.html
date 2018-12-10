@@ -4,340 +4,338 @@
 <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
 	<div class="page-header">
   	<h1 class="text-center">
-  		Scarce Objects<br><small>Nick Szabo</small>
+  		Objetos Escassos <br><small>Nick Szabo</small>
   	</h1>
   	<h4 class="text-center">
-  		Originally published in 2004
+  		Originalmente publicado em 2004
   	</h4>
   </div>
 
-  <h3>Abstract</h3>
+  <h3>Abstrato</h3>
 
   <p>
-    <em>A more intuitive and secure approach to programming with objects distributed across trust boundaries is presented. The approach involves scarce objects and software to support markets in trading scarce objects "rights."</em>
+    <em>Uma abordagem mais intuitiva e segura para programação com objetos distribuídos através de limites de confiança é apresentada. A abordagem envolve objetos escassos e software para apoiar os mercados na negociação de "direitos" de objetos escassos.</em>
 	</p>
 
-  <h3>Introduction</h3>
+  <h3>Introdução</h3>
 
   <p>
-    Scarce objects are computational objects that like physical objects are finite and excludable, and force the client to either conserve or consume (use up) their own rights to use the object. References to scarce objects are <a href="http://nakamotoinstitute.org/contracts-with-bearer/">bearer certificates</a> with two key properties: (1) they are use-once or use-N-times tokens, and (2) like digital cash they are transferred using online clearing using "spent lists" to conserve the number of these scarce object references.
+    Objetos escassos são objetos computacionais que, como objetos físicos, são finitos e excludentes, e forçam o cliente a conservar ou consumir (usar) seus próprios direitos para usar o objeto. Referências a objetos escassos são <a href="http://nakamotoinstitute.org/contracts-with-bearer/">certificados de portador</a> com duas propriedades principais: (1) são tokens use uma vez ou usados N vezes e (2) como dinheiro digital são transferidos usando compensação on-line usando "listas gastas" para conservar o número dessas referências de objetos escassos.
   </p>
 
   <p>
-    Scarce objects, a.k.a. conserved objects, provide a user and programmer friendly metaphor for distributed objects interacting across trust boundaries. (To simplify the language, I will use the present tense to describe architectures and hypothetical software). Scarce objects also give us the ability to translate user preferences into sophisticated contracts, via the market translator described below. These innovations will enable us for the first time to break through the <a href="http://szabo.best.vwh.net/micropayments.html">mental transaction cost barrier</a> to micropayments and a <a href="https://web.archive.org/web/20000229091752/http://www.agorics.com/agorpapers.html">micromarket</a> economy.
+    Objetos escassos, também conhecidos como objetos conservados, fornecem uma metáfora amigável ao usuário e ao programador para objetos distribuídos que interagem entre limites de confiança. (Para simplificar o idioma, usarei o tempo presente para descrever arquiteturas e software hipotético). Objetos escassos também nos dão a capacidade de traduzir as preferências do usuário em contratos sofisticados, através do tradutor de mercado descrito abaixo. Essas inovações nos permitirá, pela primeira vez para romper a <a href="http://szabo.best.vwh.net/micropayments.html">barreira mental do custo de transação</a> para micropagamentos e uma <a href="https://web.archive.org/web/20000229091752/http://www.agorics.com/agorpapers.html">economia de micromercados</a>.
   </p>
 
   <p>
-    A scarce object is a software object (or one of its methods) which uses a finite and excludable resource – be it disk space, network bandwidth, a costly information source such as a trade secret or a minimally delayed stock quotes, or a wide variety of other scarce resources used by online applications. Scarce objects constrain remote callers to invoke methods in ways that use only certain amounts of the resources and do not divulge the trade secrets. Furthermore, scarce object wrappers form the basis for an online economy of scarce objects that makes efficient use of the underlying scarce resources.
+    Um objeto escasso é um objeto de software (ou um de seus métodos) que usa um recurso finito e excludente - seja espaço em disco, largura de banda de rede, uma fonte de informações cara como um segredo comercial ou uma cotação de ações minimamente atrasada ou uma ampla variedade de outros recursos escassos usados ​​por aplicativos on-line. Objetos escassos restringem os chamadores remotos a invocar métodos de maneiras que usam apenas determinados recursos e não divulgam os segredos comerciais. Além disso, os invólucros de objetos escassos formam a base para uma economia on-line de objetos escassos que faz uso eficiente dos recursos escassos subjacentes.
   </p>
 
   <p>
-    Scarce objects are also a new security model. No security model to date has been widely used for distributing objects across trust boundaries. This is due to their obscure consequences, their origins in single-TCB computing, or both. The security of scarce objects is much more readily understood, since it is based on duplicating in computational objects the essential intuitive features of physical possessions. Our brains reason in much more sophisticated ways about physical objects than about computational objects. Scarce objects are thus readily understood by programmers and end users alike. Scarce objects lower mental transaction costs, which are the main barrier to sophisticated small-scale commerce on the Net. Finally, scarce objects will solve for the first time denial of service attacks, at all layers above the primitive scarce object implementation.
+    Objetos escassos também são um novo modelo de segurança. Nenhum modelo de segurança até o momento foi amplamente usado para distribuir objetos entre limites de confiança. Isto é devido a suas conseqüências obscuras, suas origens na computação TCB-unica, ou ambos. A segurança de objetos escassos é muito mais facilmente compreendida, uma vez que se baseia na duplicação em objetos computacionais das características intuitivas essenciais das posses físicas. Nossos cérebros raciocinam de maneiras muito mais sofisticadas sobre objetos físicos do que sobre objetos computacionais. Objetos escassos são assim facilmente compreendidos por programadores e usuários finais. Objetos escassos reduzem os custos de transação mental, que são a principal barreira para o comércio sofisticado de pequena escala na Internet. Finalmente, objetos escassos resolverão pela primeira vez ataques de negação de serviço,
   </p>
 
   <p>
-    The intuitive physical metaphor of scarce objects gives scarce objects the following basic properties:
+    A metáfora física intuitiva de objetos escassos dá aos objetos escassos as seguintes propriedades básicas:
   </p>
 
   <ol>
-    <li>Conservation of atomic objects</li>
-    <li>Hierarchical composition of objects (analogous to spatial composition)</li>
+    <li>Conservação de objetos atômicos</li>
+    <li>Composição hierárquica de objetos (análoga à composição espacial)</li>
   </ol>
 
   <p>
-    Closely related to these is a social property of objects critical to the success of economies:
+    Intimamente relacionado a estes é uma propriedade social de objetos críticos para o sucesso das economias:
   </p>
 
   <ol start="3">
-    <li>A clear delineation of property rights and responsibilities. In other words, minimal externalities. Property rights specify residual control and liability over states of the world for which specific obligations or rights are not completely specified in contracts.</li>
+    <li>Um delineamento claro de direitos e responsabilidades de propriedade. Em outras palavras, externalidades mínimas. Os direitos de propriedade especificam controle residual e responsabilidade sobre estados do mundo para os quais obrigações ou direitos específicos não são completamente especificados em contratos.</li>
   </ol>
 
   <p>
-    Property rights and contracts are highly evolved methodologies for dealing with economic objects and each other across trust boundaries. Scarce object architecture can reuse this working paradigm, because it reuses the mental model of the physical world in which this security paradigm was invented.
+    Direitos de propriedade e contratos são metodologias altamente evoluídas para lidar com objetos econômicos e entre si através de limites de confiança. A escassa arquitetura de objetos pode reutilizar esse paradigma de trabalho, porque reutiliza o modelo mental do mundo físico no qual esse paradigma de segurança foi inventado.
   </p>
 
   <p>
-    With scarce objects, any computation across trust boundaries will have these properties of atomicity, conservation, composition, and the accompanying clear delineation of rights and responsibilities. This model is rather restrictive compared to what we are used to within trust boundaries. However, it will much more readily keep programmers from writing obscurely insecure code, which is easy to do with either ACLs, capabilities, or cryptography. Furthermore, conservation (scarcity) and lack of externalities are the two major assumptions of microeconomics, the study of commercial transactions across trust boundaries. So the scarce objects security model allows us to inherit a rich literature of formal reasoning about such systems.
+    Com objetos escassos, qualquer cálculo entre os limites de confiança terá essas propriedades de atomicidade, conservação, composição e a clara delimitação de direitos e responsabilidades. Esse modelo é bastante restritivo em comparação com o que estamos acostumados dentro dos limites de confiança. No entanto, será muito mais fácil impedir que os programadores escrevam código obscuramente inseguro, o que é fácil de fazer com ACLs, recursos ou criptografia. Além disso, a conservação (escassez) e a falta de externalidades são os dois principais pressupostos da microeconomia, o estudo das transações comerciais através dos limites da confiança. Assim, o escasso modelo de segurança de objetos nos permite herdar uma rica literatura de raciocínio formal sobre esses sistemas.
   </p>
 
   <p>
-    Scarce objects are, in other words, online commodities. These commodities may represent, typically, rights (or expectations) to services – the right to use an e-mail or news service (or a component of that bundle of rights, e.g. the right to use that service’s e-mail server), the right to upload or cache content, the "right" (here more like an expectation) to have e-mail read (digital postage to prevent spam), etc. Such service rights will usually be limited against the client by time or resource usage or number of invocations. When represented properly, by scarce objects, these services are conserved. Such "rights" or codified expectations are enforced against the server by reputation, by the "physics" of scarce objects, or both, in substitute for or in addition to expensive traditional legal means.
+    Objetos escassos são, em outras palavras, commodities online. Essas mercadorias podem representar, normalmente, direitos (ou expectativas) aos serviços - o direito de usar um serviço de notícias ou e-mail (ou um componente desse pacote de direitos, por exemplo, o direito de usar o servidor de e-mail desse serviço), direito de fazer o upload ou cache de conteúdo, o "direito" (aqui mais como uma expectativa) de ter e-mail lido (postagem digital para evitar spam), etc. Tais direitos de serviço geralmente serão limitados ao cliente pelo tempo ou uso de recursos ou número de invocações. Quando representados adequadamente, por objetos escassos, esses serviços são conservados. Tais "direitos" ou expectativas codificadas são aplicadas contra o servidor pela reputação, pela "física" de objetos escassos, ou ambos, em substituição ou em adição aos caros meios legais tradicionais.
   </p>
 
   <p>
-    Scarce objects may also represent unique or finite relationships between people and bits – names that correspond to addresses, ownership of trademarks, authorship of content, ownership of certain rights to content (which probably does not, for security reasons, include the right to exclude others from copying the bits), etc.
+    Objetos escassos também podem representar relacionamentos únicos ou finitos entre pessoas e bits - nomes que correspondem a endereços, propriedade de marcas registradas, autoria de conteúdo, propriedade de certos direitos ao conteúdo (o que provavelmente não inclui, por razões de segurança, o direito de excluir outros de copiar os bits), etc.
   </p>
 
   <p>
-    Scarce objects are not a complete model of computation across trust boundaries. Indeed, there are many <a href="http://szabo.best.vwh.net/idea.html">smart contracts</a> that can be implemented with cryptographic protocols and/or secure hardware but not with scarce objects. What scarce objects provide is a straightforward basis for implementing, in an intuitively secure way, the anonymous commodity exchange economies formalized in microeconomics in a P2P fashion on the Internet.
+    Objetos escassos não são um modelo completo de computação entre limites de confiança. Na verdade, existem muitos <a href="http://szabo.best.vwh.net/idea.html">contratos inteligentes</a> que podem ser implementados com protocolos criptográficos e / ou hardware seguro, mas não com objetos escassos. O que os objetos escassos oferecem é uma base direta para a implementação, de forma intuitivamente segura, das economias de troca de mercadorias anônimas formalizadas na microeconomia de maneira P2P na Internet.
   </p>
 
   <p>
-    Another area important to scarce objects is in reasoning about supply chains. In distributed objects, the call graph is the supply chain. To stretch call graphs across trust boundaries, we must replace rigid client-server relationships with dynamically adaptable customer-supplier relationships. The ideal here is to create a rich toolset of exception handling across trust boundaries. Note that credit risks are a proper subset of supply chain risks. Ka-Ping Yee recently put the supply chain problem succinctly: "be wary of return values from objects you don't trust."
+    Outra área importante para objetos escassos é o raciocínio sobre as cadeias de suprimentos. Em objetos distribuídos, o gráfico de chamadas é a cadeia de suprimentos. Para estender os gráficos de chamadas através dos limites de confiança, devemos substituir os relacionamentos rígidos cliente-servidor com relacionamentos de cliente-fornecedor dinamicamente adaptáveis. O ideal aqui é criar um rico conjunto de ferramentas de manipulação de exceções entre limites de confiança. Observe que os riscos de crédito são um subconjunto adequado dos riscos da cadeia de suprimentos. Recentemente, Ka-Ping Yee colocou o problema da cadeia de suprimentos de maneira sucinta: "Desconfie de valores de retorno de objetos nos quais você não confia".
   </p>
 
-  <h3>Usage Control vs. Access Control</h3>
+  <h3>Controle de Uso vs. Controle de Acesso</h3>
 
   <p>
-    The scarce object architecture suggested here shares some things in common with capabilities, but it secures more kinds of resources and is far more affordable for users and programmers. Capabilities (along with ACLs) are a means of implementing <a href="http://srl.cs.jhu.edu/pubs/SRL2003-03.pdf">access control</a>. Access control simply deals with the first-level of issue of whether an entity has access or not to a given resource. If an entity has such access, this access is, as modelled or implemented by basic capabilities or ACLs, effectively unlimited in scope. Scarce objects, on the other hand, limit resource usage in three ways – first, by limiting the amount of resources used per invocation, second, by limiting the number of resources used per right (per ticket), and third, by limiting the number of tickets issued.
+    A escassa arquitetura de objetos sugerida aqui compartilha algumas coisas em comum com os recursos, mas protege mais tipos de recursos e é muito mais acessível para usuários e programadores. Capacidades (juntamente com ACLs) são um meio de implementar o <a href="http://srl.cs.jhu.edu/pubs/SRL2003-03.pdf">controle de acesso</a>. O controle de acesso simplesmente lida com o primeiro nível de questão sobre se uma entidade tem acesso ou não a um determinado recurso. Se uma entidade tiver esse acesso, esse acesso será, conforme modelado ou implementado por recursos básicos ou ACLs, efetivamente ilimitado em escopo. Objetos escassos, por outro lado, limitam o uso de recursos de três maneiras - primeiro, limitando a quantidade de recursos usados ​​por invocação, segundo, limitando o número de recursos usados ​​por direito (por ticket) e terceiro, limitando o número de bilhetes emitidos.
   </p>
 
-  <h3>Scarce Objects and POLA</h3>
+  <h3>Objetos escassos e POLA</h3>
 
   <p>
-    A raw distributed capability system (i.e. what Mark Miller refers to as <a href="http://www.eros-os.org/pipermail/cap-talk/2004-November/002337.html">"caps-as-data"</a>, to distinguish from capabilities local to the TCB ("object caps") which have strictly stronger security properties) give out capabilities of infinite duration and unlimited invocations, cannot be considered to be a true principle of least authority (POLA) system. For an object reference to implement POLA, it must be finite in every dimension. A true POLA system never gives out more authority than is necessary and proper to compute the needed function. It is never either necessary or proper to allocate infinite resources, and usually it is not necessary to allocate large resources. The scarce object architecture is the first design for object systems to achieve finite authority, and to allow small allocations for objects that need only small amounts of resources. Scarce objects are thus the first architecture to make true POLA possible.
+    Um sistema de capacidade bruta distribuída (ou seja, o que Mark Miller chama de <a href="http://www.eros-os.org/pipermail/cap-talk/2004-November/002337.html">"caps-as-data"</a>, para distinguir de capacidades locais para o TCB ("objeto caps"), que têm propriedades de segurança estritamente mais fortes) dar capacidades de duração infinita e invocações ilimitadas, não pode ser considerado como um verdadeiro princípio do sistema de menor autoridade (POLA). Para uma referência de objeto para implementar o POLA, ele deve ser finito em todas as dimensões. Um verdadeiro sistema POLA nunca dá mais autoridade do que é necessário e apropriado para calcular a função necessária. Nunca é necessário ou apropriado alocar recursos infinitos e, geralmente, não é necessário alocar recursos grandes. A escassa arquitetura de objetos é o primeiro design para sistemas de objetos a atingir autoridade finita e permitir pequenas alocações para objetos que precisam apenas de pequenas quantidades de recursos. Objetos escassos são, portanto, a primeira arquitetura a tornar possível o verdadeiro POLA.
   </p>
 
-  <h3>Scarce Object Architecture</h3>
+  <h3>Arquitetura de objetos escassos</h3>
 
   <p>
-    Scarce object architecture depends on a distributed object architecture that makes minimal security assumptions. A good implementation strategy may be therefore to implement this model on top of <a href="http://www.erights.org/">E</a>. No sophisticated use of its distributecd capability architecture need be made to securely distribute scarce objects; rather the resource-conserving features of scarce objects can be relied on for securing resources.
-  </p>
-
-  <p>
-    A bearer right to invoke a scarce object method takes the form of a bearer certificate, or <em>ticket</em>. It can be <em>generic</em>, meaning a right to an N invocations of one of a set of similar or identical objects, or <em>specific</em>, meaning a right to invoke a particular object method in a unique way. Generic rights are fungible and can be transferred unlinkably, using Chaumian blinding.
+    A arquitetura de objetos escassos epende de uma arquitetura de objetos distribuídos que faz suposições mínimas de segurança. Uma boa estratégia de implementação pode ser, portanto, para implementar este modelo em cima de <a href="http://www.erights.org/">E</a>. Nenhum uso sofisticado de sua arquitetura de capacidade distributecd precisa ser feito para distribuir com segurança objetos escassos; em vez disso, os recursos de conservação de recursos de objetos escassos podem ser confiáveis ​​para proteger recursos.
   </p>
 
   <p>
-    The general steps to build a scarce object are (1) define a normal object, then (2) wrap it in a layer that protects its public methods using tickets. Our sketch of the architecture here describes how this wrapping layer can work.
+   Um direito de portador de invocar um método de objeto escasso assume a forma de um certificado de portador ou <em>ticket</em>. Ele pode ser <em>genérico</em>, significando um direito a uma invocação N de um conjunto de objetos semelhantes ou idênticos, ou <em>específico</em>, significando um direito de invocar um método de objeto específico de uma maneira única. Os direitos genéricos são fungíveis e podem ser transferidos sem relação, usando a cegueira de Chaumian.
   </p>
 
   <p>
-    The wrapping layer involves three different servers: a transfer agent (TA), a Provider, and an Issuer. The Issuer and TA operate like an accountless digital cash mint. The Issuer signs tickets. The TA clears the transfer of tickets for generic rights. Both the Issuer and TA have copies of the private keys ("plates") corresponding to each issue of generic right. A particular kind of generic right (e.g., a particular denomination of digital coin) can have multiple issues, usually ordered sequentially. Digital cash is a special case: money is the most generic of rights. Here is another example of a generic right, or class of fungible objects: "A queriable SQL database with up to 10 MB of storage, and certain standard response time guaruntees".
+    As etapas gerais para criar um objeto escasso são (1) definir um objeto normal e, em seguida, (2) envolvê-lo em uma camada que proteja seus métodos públicos usando tickets. Nosso esboço da arquitetura aqui descreve como essa camada de embalagem pode funcionar.
   </p>
 
   <p>
-    It is a design option whether to combine the Issuer and TA into a single server (thereby reduce exposure of the private key) or keep them separate (thereby enable certain personell controls based on <a href="http://szabo.best.vwh.net/groupcontrols.html">separation of duties</a>). Distributed servers, described below, are an even better way to increase the trustworthiness of Issuers and TAs.
+    A camada em questão envolve três servidores diferentes: um agente de transferência (TA), um Provedor e um Emissor. O Emitente e o TA funcionam como uma moeda digital sem dinheiro. O Emitente assina bilhetes. O TA elimina a transferência de bilhetes para direitos genéricos. Tanto a Emissora quanto a TA possuem cópias das chaves privadas ("chapas") correspondentes a cada emissão de direito genérico. Um tipo específico de direito genérico (por exemplo, uma denominação específica de moeda digital) pode ter vários problemas, geralmente ordenados sequencialmente. O dinheiro digital é um caso especial: o dinheiro é o mais genérico dos direitos. Aqui está outro exemplo de um direito genérico, ou classe de objetos fungíveis: "Um banco de dados SQL queriable com até 10 MB de armazenamento, e certas garantias de tempo de resposta padrão".
   </p>
 
   <p>
-    The Provider is responsible for actually holding the object, which can contain unique state. It publishes a signed description of its scarce object method, describing a particular kind of generic right (e.g. in the form of design-by-contract pre- and post-conditions). The issuer and transfer agent then create plate(s) and prepare to issue tickets for the method.
+    É uma opção de design combinar ou não o Emissor e o TA em um único servidor (portanto, reduzir a exposição da chave privada) ou mantê-los separados (permitindo assim determinados controles pessoais baseados na <a href="http://szabo.best.vwh.net/groupcontrols.html">separação de tarefas</a>). Servidores distribuídos, descritos abaixo, são uma maneira ainda melhor de aumentar a confiabilidade dos Emissores e TAs.
   </p>
 
   <p>
-    Any or all of these component servers can be distributed, using the methods described <a href="http://szabo.best.vwh.net/coalition.html">here</a> and <a href="http://nakamotoinstitute.org/secure-property-titles/">here</a>. A distributed signature is used to issue tickets (M out of N must sign using a distributed private key for a verifiable signature to be produced). Such distribution greatly reduces exposure to breach of trust and thus lowers the mental transaction costs of reputation tracking.
+    O Provedor é responsável por realmente manter o objeto, que pode conter um estado exclusivo. Publica uma descrição assinada de seu método de objeto escasso, descrevendo um tipo particular de direito genérico (por exemplo, na forma de pré e pós-condições de projeto por contrato). O emissor e o agente de transferência criam as placas e preparam-se para emitir tickets para o método.
   </p>
 
   <p>
-    To implement exclusive transfers, the TA keeps a list of cancelled ticket numbers. A ticket is cancelled whenever it is transferred or used. The Provider instructs the TA when a ticket has been used, or alternatively they both write to a shared list of cleared tickets.
+    Qualquer um ou todos esses servidores de componentes podem ser distribuídos, usando os métodos descritos <a href="http://szabo.best.vwh.net/coalition.html">aqui</a> e <a href="http://nakamotoinstitute.org/secure-property-titles/">aqui</a>. Uma assinatura distribuída é usada para emitir tickets (M de N deve assinar usando uma chave privada distribuída para que uma assinatura verificável seja produzida). Essa distribuição reduz muito a exposição à quebra de confiança e, portanto, reduz os custos de transação mental do rastreamento de reputação.
   </p>
 
   <p>
-    The TA and Issuer see only classes of fungible objects. The Provider and users see particular instances with unique state. In the above example of a database generic right, the Provider sees a database filled with unique information while the TA and Issuer see only the generic description of the database object invocation methods.
+    Para implementar transferências exclusivas, o TA mantém uma lista de números de tickets cancelados. Um bilhete é cancelado sempre que é transferido ou usado. O Provedor instrui o TA quando um ticket foi usado ou, alternativamente, ambos gravam em uma lista compartilhada de tickets limpos.
   </p>
 
   <p>
-    In contrast to the servers, the remote user of a scarce object wraps his object invocation stub with calls that trade for needed tickets (again using a market translator), send the tickets as needed with method invocations to those methods’ Provider(s). In some (hopefully many) cases sufficiently identical generic services will be provided by competitors. Where this occurs a "ticket client" may also "shop around" in the sense that if the pre- or post-conditions of the method invocation fail, or if the invocation is otherwise detected as faulty, the ticket client will retry by invoking the competitor's method.
+    O TA e o Emissor veem apenas classes de objetos fungíveis. O Provedor e os usuários vêem instâncias particulares com um estado exclusivo. No exemplo acima de um direito genérico do banco de dados, o Provedor vê um banco de dados preenchido com informações exclusivas, enquanto o TA e o Emissor veem apenas a descrição genérica dos métodos de invocação do objeto de banco de dados.
   </p>
 
   <p>
-    The Provider server is almost just another ticket client to the TA, which like other clients can transfer or receive tickets. It special role is in informing the TA when tickets have been used thus should be cancelled (or, altrneatively, writing the cancelled ticket number directly to a list of cancelled ticket numbers that it shares with the TA). Only the Issuer can create tickets, and only the Provider can consume them.
+    Em contraste com os servidores, o usuário remoto de um objeto escasso encapsula seu stub de invocação de objeto com chamadas que trocam por tickets necessários (novamente usando um tradutor do mercado), envia os tickets conforme necessário com invocações de método para os métodos 'Provider (s). Em alguns casos (esperamos que muitos), serviços genéricos suficientemente idênticos serão fornecidos pelos concorrentes. Quando isso ocorre, um "cliente de ticket" também pode "pesquisar", no sentido de que, se as condições pré ou pós-falha falharem, ou se a chamada for detectada como defeituosa, o cliente do ticket tentará novamente invocando a solicitação. método do concorrente.
   </p>
 
   <p>
-    At the core of the Provider is the raw object itself, the set of methods that provide the defined services for scarce object clients. The Provider is the wrapper around this object. Besides its gatekeeping, ticket verification, and ticket consumption functions, the Provider can keep track of and inform the Issuer regarding resource usage.
+    O servidor Provider é quase apenas mais um cliente de ticket para o TA, o qual, como outros clientes, pode transferir ou receber tickets. Seu papel especial é informar ao TA quando os tickets foram usados, portanto, deve ser cancelado (ou, ainda, escrever o número do ticket cancelado diretamente para uma lista de números de tickets cancelados que ele compartilha com o TA). Somente o Emissor pode criar tickets e somente o Provedor pode consumi-los.
   </p>
 
   <p>
-    The Issuer in turn is the interface to the micromarket functions, especially the market translator described below. The Issuer may, for example, via a market translator, which incorporates the preferences of the person who operates the Provider, negotiate barter deals in which certain tickets are issued and exchanged for certain other tickets giving rights to invoke the counterparty's or a third party's scarce object methods. The negotiations might also be multi-party, i.e. <a href="https://web.archive.org/web/20000229091752/http://www.agorics.com/agorpapers.html">auctions, and secondary exchanges</a> for generic rights may also be developed for scarce object tickets. In turn, the market translator, to enable automated (low mental transaction cost) bartering operations, depends on the existence of reasonably liquid online exchanges of generic scarce object rights.
+    No núcleo do Provedor está o próprio objeto bruto, o conjunto de métodos que fornece os serviços definidos para clientes de objetos escassos. O provedor é o wrapper em torno desse objeto. Além de suas funções de gatekeeping, verificação de ticket e consumo de tickets, o Provedor pode acompanhar e informar o Emitente sobre o uso de recursos.
   </p>
 
   <p>
-    The TA generates ticket supply only at the behest of the Issuer, and destroys it only at the behest of the Provider. All its own transfers conserve the supply of a particular generic right. The Provider is also responsible for the delivery of service to the client that satisfies the service description (contract, e.g. pre and post conditions), at which time the Provider "deposits" the generic ticket(s), i.e. adds them to the cancelled list.
+    A Emissora, por sua vez, é a interface para as funções do micromercado, especialmente o tradutor do mercado descrito abaixo. O Emissor pode, por exemplo, por meio de um tradutor do mercado, que incorpora as preferências da pessoa que opera o Provedor, negociar acordos de permuta nos quais determinados tíquetes são emitidos e trocados por determinados outros tíquetes dando direito de invocar a contraparte ou um escasso métodos de objeto. As negociações também podem ser multipartidárias, ou seja <a href="https://web.archive.org/web/20000229091752/http://www.agorics.com/agorpapers.html">leilões e trocas secundárias</a> para direitos genéricos também podem ser desenvolvidas para bilhetes de objetos escassos. Por sua vez, o tradutor do mercado, para permitir operações de barganha automatizadas (baixo custo de transação mental), depende da existência de trocas on-line razoavelmente líquidas de direitos genéricos de objetos escassos.
   </p>
 
   <p>
-    The Provider issues along with the initial generic rights ticket a signed affadavit, machine or human readable, describing aspects of the object which may be non-exlusive and unique, along with that instance's ticket number and the public key(s) of the generic right(s) for which it is valid. For example, it might say "a database containing quotes of these two dozen listed stocks as of 12:22 pm Monday", without actually containing those quotes. Often such description is worth more when bundled with generic exclusive rights, such as the right to a fast response time. The specific rights can elaborate in unique ways upon the generic rights, as long as these elaborations are not taken to define exclusive rights. The generic rights let the TAs garuntee exclusivity to users and conservation of resources to Providers, while the specific rights describe the unique state to any desired degree of elaboration. The Provider must be prepared to service any specific promise it has issued, as long as it is accompanied by the proper conserved generic tickets.
+    O TA gera a oferta de ingresso somente a pedido do Emissor, e o destrói apenas a pedido do Provedor. Todas as suas próprias transferências conservam o fornecimento de um determinado direito genérico. O Provedor também é responsável pela entrega do serviço ao cliente que satisfaz a descrição do serviço (contrato, por exemplo, condições pré e pós), quando o Provedor "deposita" o (s) bilhete (s) genérico (s), ou seja, adiciona-os à lista cancelada.
   </p>
 
   <p>
-    This method of composing specific and generic rights, transferred as a bundle but with exlusive generic atoms cleared by different TAs, allows arbitrarily sophisticated rights bundles, referring to objects with arbitrarily unique state, to be transferred unlinkably. A wide variety of derivatives and combinations are possible. The only restriction is that obtaining rights to specific exclusive resources must either be deferred to the consumption phase, or transferred with online clearing via expensive communications mix.
+    O Provedor emite junto com o ticket inicial de direitos genéricos um affadavit assinado, máquina ou legível, descrevendo aspectos do objeto que podem ser não exclusivos e exclusivos, juntamente com o número do ticket da instância e as chaves públicas do direito genérico (s) para os quais é válido. Por exemplo, pode-se dizer "um banco de dados contendo cotações dessas duas dúzias de ações listadas às 12:22 de segunda-feira", sem conter as cotações. Muitas vezes, essa descrição vale mais quando agrupada com direitos exclusivos genéricos, como o direito a um tempo de resposta rápido. Os direitos específicos podem elaborar de maneira única os direitos genéricos, desde que essas elaborações não sejam tomadas para definir direitos exclusivos. Os direitos genéricos permitem que os TAs garretam exclusividade aos usuários e conservação de recursos aos Provedores, enquanto os direitos específicos descrevem o estado único para qualquer grau desejado de elaboração. O Provedor deve estar preparado para atender a qualquer promessa específica que tenha emitido, contanto que seja acompanhado pelos tickets genéricos conservados adequados.
   </p>
 
   <p>
-    If the Provider wished to garuntee exclusivity to a specific right, transfer seems to require an expensive communications mix between Provider and transferee, rather than a cheap blinded ticket. For example, "Deep Space Station 60 from 0500-0900 Sunday" or "a lock on autoexec.bat now" demands exclusivity to a specific right, and thus seems to require a communications mix to unlinkably transfer. On the other hand, "A one hour block on DSS-60 in May" and "the right to lock autoexec.bat at some point" are generic and can be transferred privately with the much less expensive blinding, given a sufficient population of other ticket for this class of generic right transfered between the issuance and consumption of a given ticket.
+    Esse método de composição de direitos específicos e genéricos, transferidos como um pacote, mas com átomos genéricos exclusivos liberados por diferentes TAs, permite que pacotes de direitos arbitrariamente sofisticados, referindo-se a objetos com estado arbitrariamente exclusivo, sejam transferidos sem vinculação. Uma grande variedade de derivados e combinações são possíveis. A única restrição é que a obtenção de direitos a recursos exclusivos específicos deve ser adiada para a fase de consumo ou transferida com compensação on-line por meio de mix de comunicações caras.
   </p>
 
   <p>
-    Clients can deal with the TA without a communications mix. They deal with the Provider via a communications mix. If both the initial and final holders failed to do this, the Provider could link them. If just the final holder failed to do so, the Provider could identify him as the actual user of the resource. Thus for full privacy generic transfers are cheap, and nonexclusive transfers are cheap, while specific exsclusive transfers and actually using the object seem to require the expensive communications mix.
+    Se o Provedor desejasse garetar a exclusividade a um direito específico, a transferência parece exigir um mix de comunicações dispendiosas entre Provedor e cessionário, em vez de um bilhete cego barato. Por exemplo, "Deep Space Station 60 de 0500-0900 de domingo" ou "um bloqueio de autoexec.bat agora" exige exclusividade para um direito específico e, portanto, parece exigir um mix de comunicações para transferir de forma não vinculativa. Por outro lado, "Um bloco de uma hora no DSS-60 em maio" e "o direito de travar o autoexec.bat em algum momento" são genéricos e podem ser transferidos de forma privada com o cegamento muito mais barato, dada uma população suficiente de outros bilhete para esta classe de direito genérico transferido entre a emissão e o consumo de um determinado bilhete.
   </p>
 
   <p>
-    Here's a review of our architecture:
+    Os clientes podem lidar com o TA sem um mix de comunicação. Eles lidam com o provedor por meio de um mix de comunicação. Se os titulares inicial e final não conseguissem fazer isso, o Provedor poderia vinculá-los. Se apenas o detentor final não o fizesse, o Provedor poderia identificá-lo como o usuário real do recurso. Assim, para a privacidade total, as transferências genéricas são baratas, e as transferências não exclusivas são baratas, enquanto transferências exsclusivas específicas e, na verdade, o uso do objeto parecem exigir o dispendioso mix de comunicações.
+  </p>
+
+  <p>
+    Aqui está uma revisão da nossa arquitetura:
   </p>
 
   <ul>
-    <li>Composable conserved atomic objects (scarce objects proper):</li>
+    <li>Objetos atômicos conserváveis ​​compositáveis ​​(objetos escassos propriamente ditos):</li>
     <ul>
-      <li><a href="http://nakamotoinstitute.org/contracts-with-bearer/">Tickets (bearer contracts)</a> are digital certificates, issued by trusted or distributed issuers. Each kind of ticket represents a specific and limited right to a scarce object – for example the right to invoke a method on that object (i.e., use a service provided by that object) up to N times, or up to a certain resource usage limit. Tickets are an essential part of the "object wrapper" that makes a scarce object look and act scarce.</li>
-      <li>Distributed issuers, which maintain <a href="http://nakamotoinstitute.org/secure-property-titles/">property titles</a> for certain bearer contracts, namespaces, and other otherwise insecurely conserved publically identifiable entities.</li>
-      <li>Design by contract (e.g., detailed specification and testing of pre- and post- conditions) as a central rather than optional part of object programming.</li>
+      <li><a href="http://nakamotoinstitute.org/contracts-with-bearer/">Tickets (contratos de portador)</a> são certificados digitais emitidos por emissores confiáveis ​​ou distribuídos. Cada tipo de ticket representa um direito específico e limitado a um objeto escasso - por exemplo, o direito de invocar um método nesse objeto (ou seja, usar um serviço fornecido por esse objeto) até N vezes ou até um certo limite de uso de recursos . Os ingressos são uma parte essencial do "invólucro de objetos" que faz com que um objeto escasso pareça e aja de maneira rara.</li>
+      <li>Emissores distribuídos, que mantêm <a href="http://nakamotoinstitute.org/secure-property-titles/">títulos de propriedade</a> para certos contratos ao portador, namespaces e outras entidades publicamente identificáveis ​​de outra forma inseguramente conservadas.</li>
+      <li>Projeto por contrato (por exemplo, especificação detalhada e teste de pré e pós-condições) como uma parte central e não opcional da programação de objetos.</li>
     </ul>
-    <li>An advanced scarce object infrastructure may also include:</li>
+    <li>Uma infra-estrutura avançada de objetos escassos também pode incluir:</li>
     <ul>
-      <li>Exception handling as bankruptcy or contract breach procedure, to convert rigid client-server relationships into mutually beneficial and dynamically reconfigurable (competitive) customer-supplier relationships, suitable for object invocation across trust boundaries.</li>
-      <li>Reputation tracking of the behavior of supply chains. Cryptographic protocols, such as those used to create unforgeable and confidentially auditable transaction logs, can be used to improve the privacy vs. reputation information tradeoff, as long as they are hidden under an intuitively clear metaphor for the reputation of supply chain behavior.</li>
+      <li>Manipulação de exceções como procedimento de quebra ou quebra de contrato, para converter relacionamentos rígidos cliente-servidor em relacionamentos mutuamente benéficos e dinamicamente reconfiguráveis ​​(competitivos) cliente-fornecedor, adequados para invocação de objetos através de limites de confiança.</li>
+      <li>Rastreamento de reputação do comportamento das cadeias de suprimentos. Protocolos criptográficos, como aqueles usados ​​para criar logs de transações não comprovados e confidencialmente auditáveis, podem ser usados ​​para melhorar a troca de privacidade versus informações de reputação, contanto que estejam ocultos sob uma metáfora intuitivamente clara da reputação do comportamento da cadeia de suprimentos.</li>
     </ul>
   </ul>
 
   <p>
-    Scarce objects, by creating a simpler and far more intuitive model of computation across trust boundaries, can make the distribution of objects on the global Internet a reality, just as the simplification of hypertext into HTML made the Web a reality.
+    Objetos escassos, criando um modelo de computação mais simples e intuitivo através de fronteiras de confiança, podem tornar realidade a distribuição de objetos na Internet global, assim como a simplificação do hipertexto em HTML tornou a Web uma realidade.
   </p>
 
-  <h3>Diagram of Proposed Scarce Object Architecture</h3>
+  <h3>Diagrama da arquitetura proposta de objetos escassos</h3>
 
   <a href="/static/img/docs/scarce-objects/ScarceObjects.jpg"><img class="img-responsive center-block" src="/static/img/docs/scarce-objects/ScarceObjects.jpg"></a>
 
   <p class="text-center">
-    <small>Click for larger version</small>
+    <small>Clique para uma versão maior</small>
   </p>
 
-  <h3>Shopping for Scarce Objects – The Market Translator</h3>
+  <h3>Compras de objetos escassos - O tradutor do mercado</h3>
 
   <p>
-    The <a href="http://szabo.best.vwh.net/micropayments.html">mental transaction cost</a> problem is one that underlies all markets – the mental effort it takes to shop – to map private preferences to prices to decide whether a bundle of rights is worth the cost. In particular this problem presents a severe barrier to micropayments and market-based resource allocation for networks and computers.
+    O problema dos <a href="http://szabo.best.vwh.net/micropayments.html">custos mentais de transação</a> é aquele que sustenta todos os mercados - o esforço mental necessário para fazer compras - para mapear as preferências privadas em relação aos preços, a fim de decidir se um conjunto de direitos vale o custo. Em particular, este problema apresenta uma barreira severa para micropagamentos e alocação de recursos baseada em mercado para redes e computadores.
   </p>
 
   <p>
-    The market translator is aimed squarely at solving, for the first time, this problem for Internet commerce. A market translator both enables and depends on online micromarkets to automate resource allocation among scarce objects. It will do so by enabling the following:
+    O tradutor do mercado tem como objetivo resolver, pela primeira vez, esse problema para o comércio na Internet. Um tradutor de mercado permite e depende de micro-mercados on-line para automatizar a alocação de recursos entre objetos escassos. Isso será feito permitindo o seguinte:
   </p>
 
   <ul>
-    <li>Expression of preferences – and their translation into codified expectations, or rights and duties – with both user-friendly GUIs ("source language") and a <a href="http://nakamotoinstitute.org/contract-language/">formal contract language</a> ("target language"), and translation between them.</li>
-    <li>The bundling and recombination of sophisticated structures of rights.</li>
-    <li>The input of user preferences, and their translation from human expressible to computer readable form.</li>
+    <li>Expressão de preferências - e sua tradução em expectativas codificadas, ou direitos e deveres - com GUIs de fácil utilização ("idioma de origem") e uma <a href="http://nakamotoinstitute.org/contract-language/">linguagem de contrato formal</a> ("idioma de destino") e tradução entre eles.</li>
+    <li>Agrupamento e recombinação de estruturas sofisticadas de direitos.</li>
+    <li>A entrada de preferências do usuário e sua tradução de humano expressável para forma legível por computador.</li>
   </ul>
 
-  <h4>The Problem</h4>
+  <h4>O Problema</h4>
 
   <p>
-    The problem of "translating" between bearer contracts (which represent and secure rights to scarce objects) can be cast as a problem of translating between <a href="http://nakamotoinstitute.org/shelling-out/">monetary currencies</a>. For our purposes, a "currency" in a scarce object economy is simply any kind of <a href="http://nakamotoinstitute.org/contracts-with-bearer">bearer contract used for holding and transferring wealth, rather than for consumption by the holder. It is thus a <a href="http://nakamotoinstitute.org/shelling-out/#attributes-of-collectibles">"collectible"</a> (or "intermediate commodity", to use Carl Menger’s term). The market translator, incidentally, makes the O(n^2) prices in a barter economy, versus O(n) in a monetary economy, a far less important distinction.
+    O problema de "traduzir" entre contratos ao portador (que representam e garantem direitos a objetos escassos) pode ser lançado como um problema de tradução entre <a href="http://nakamotoinstitute.org/shelling-out/">moedas</a>. Para nossos propósitos, uma "moeda" em uma economia de objeto escassa é simplesmente qualquer tipo de <a href="http://nakamotoinstitute.org/contracts-with-bearer">contrato de portador</a> utilizado para a detenção e transferência de riqueza, e não para consumo pelo detentor. É assim um <a href="http://nakamotoinstitute.org/shelling-out/#attributes-of-collectibles">"colecionável"</a> (ou "mercadoria intermediária", para usar o termo de Carl Menger). O tradutor do mercado, aliás, faz os preços O (n ^ 2) em uma economia de escambo, contra O (n) em uma economia monetária, uma distinção muito menos importante.  </p>
+  <p>
+    Então, vamos olhar para as moedas. Vamos dizer que o pequeno empresário Alice está negociando contratos ciberespaciais com Bob, Charlie, etc. Típicos dos contratos internacionais, os termos podem ser denominados de várias maneiras. Estes são potencialmente não confiáveis: postagem de repostagem de Joe-Bob, Notas da Reserva Federal dos EUA em sua modalidade de 1970 (ou em 2003), recibos de depósito de ouro em Seychelles, moedas "Tigre Asiático" em 1997 e assim por diante.
   </p>
 
   <p>
-    So let’s look at currencies. Let's say small businessman Alice is negotiating cyberspace contracts with Bob, Charlie, etc. Typical of international contracts, terms can be denominated in a variety of ways. These are potentially unreliable: Joe-Bob's remailer postage, U.S. Federal Reserve Notes in their 1970s mode (or in 2003), Seychelles gold cache warehouse receipts, "Asian Tiger" currencies in 1997, and so on.
-  </p>
-
-  <p>
-    Unreliable currencies can play havoc with:
+    Moedas não confiáveis ​​podem causar estragos:
   </p>
 
   <ol type="i">
-    <li>contractual terms of long duration</li>
-    <li>long term accounting of one's own budget in a consistent manner.</li>
+    <li>termos contratuais de longa duração</li>
+    <li>contabilidade a longo prazo do próprio orçamento de uma maneira consistente.</li>
   </ol>
 
   <p>
-    Each problem interferes with potential solutions to the other. On the one hand, picking one single best currency for all contracts concentrates risk. In some cases there is nothing close to a reliable currency, and in any case diversification is preferable. Without hedging Alice remains exposed to risks that more sophisticated traders can easily hedge.
+    Cada problema interfere nas possíveis soluções para o outro. Por um lado, escolher uma única moeda melhor para todos os contratos concentra o risco. Em alguns casos, não há nada próximo a uma moeda confiável e, de qualquer forma, a diversificação é preferível. Sem cobertura, Alice permanece exposta a riscos que os traders mais sofisticados podem facilmente proteger.
   </p>
 
   <p>
-    Another way of looking at it: there are no issuers in the world who are 100% trustworthy and 100% reliable. Lacking a security protocol to ensure that a currency retains its value, Alice needs risk management.
+    Outra maneira de olhar para ele: não há emissores no mundo que sejam 100% confiáveis ​​e 100% seguros. Na falta de um protocolo de segurança para garantir que uma moeda retenha seu valor, Alice precisa de gerenciamento de risco.
   </p>
 
   <p>
-    On the other hand Alice, to plan her (personal and/or small business) budget and properly express her preferences, needs a simple, consistent long-term unit of account. Budgeting with a single fluctuating currency is bad enough, but if Alice denominates different expenditures and revenues in different currencies, her budget becomes an inconsistent mess. It's also unreasonable to ask a non-financial professional to worry about the finer points of exchange rates, hedging, etc.
+    Por outro lado, Alice, para planejar seu orçamento (pessoal e / ou de pequena empresa) e expressar adequadamente suas preferências, precisa de uma unidade de conta de longo prazo simples e consistente. Orçamento com uma única moeda flutuante já é ruim o suficiente, mas se Alice denomina gastos e receitas diferentes em moedas diferentes, seu orçamento se torna uma bagunça inconsistente. Também não é razoável pedir a um profissional não financeiro que se preocupe com os pontos mais sutis das taxas de câmbio, cobertura, etc.
   </p>
 
   <p>
-    What is Alice to do? Old answer: Alice either hires, at a cost of both money and privacy, an accountant or financial planner, and may gain a few crude improvements. Mostly, she's out of luck: small businessmen have left most international trade to big corporations, whose finance officers partake in sophisticated hedging strategies.
+    O que Alice faz? Resposta antiga: Alice contrata, a um custo de dinheiro e privacidade, um contador ou planejador financeiro, e pode ganhar algumas melhorias brutas. Principalmente, ela está sem sorte: pequenos empresários deixaram a maior parte do comércio internacional para grandes corporações, cujos executivos financeiros participam de sofisticadas estratégias de hedge.
   </p>
 
   <p>
-    Proposed new answer: use a market translator to help Alice draft her contracts. This market translator should be useful for both normal law-enforced contracts and untraceable self-enforcing contracts, where the latter are feasible. In the following post I will sketch how a market translator can work.
+    Proposta de nova resposta: use um tradutor do mercado para ajudar Alice a redigir seus contratos. Este tradutor de mercado deve ser útil tanto para contratos normais executados por lei quanto para contratos auto-obrigatórios não rastreáveis, onde estes são viáveis. No post seguinte vou esboçar como um tradutor de mercado pode funcionar.
   </p>
 
-  <h4>A Solution</h4>
+  <h4>Uma solução</h4>
 
   <p>
-    Automatic currency conversion, as done today by some credit cards and ATM machines, is a useful primitive kind of market translation. The casual reader (and user) can think of the market translator (MT) as a fancy kind of automated currency convertor, and get the basic gist of it. The MT serves to convert, hedge, and in general restructure the payment terms contracts negotiated in any manner.
-  </p>
-
-  <p>
-    Our main novelty is to account for personal budgets, not in terms of any external standard of value, but rather in terms of personal accounting units (PAUs). PAUs correspond to what Alice can express of her personal utility. The MT determines Alice's static and and temporal preferences from the budget Alice already maintains (for example, her small business budget in Quicken). Additional preference specification forms may be provided beyond those of a normal budgeting program. For example, Alice’s software preference settings, her behavior with keyboard and mouse, and similar clues might be usefully interpreted as economic preferences, for example with regard to where to allocate scarce screen real estate and network bandwidth.
+    A conversão automática de moeda, como feito hoje por alguns cartões de crédito e máquinas ATM, é um tipo primitivo útil de tradução de mercado. O leitor casual (e usuário) pode pensar no tradutor de mercado (MT) como um tipo sofisticado de conversor de moeda automatizado e obter a essência básica dele. O MT serve para converter, fazer hedge e, em geral, reestruturar os contratos de condições de pagamento negociados de qualquer maneira.
   </p>
 
   <p>
-    For convenience Alice's PAU might correspond to the local currency most commonly used by Alice. If most of Alice's budget items deal with online contracts negotiated via MT, then using the local currency is by no means necessary, and is undesirable if that currency is unstable.
+    Nossa principal novidade é dar conta dos orçamentos pessoais, não em termos de qualquer padrão externo de valor, mas sim em termos de unidades contábeis pessoais (PAUs). PAUs correspondem ao que Alice pode expressar de sua utilidade pessoal. O MT determina as preferências estáticas e temporais de Alice a partir do orçamento que Alice já mantém (por exemplo, seu orçamento para pequenas empresas em Quicken). Formulários de especificação de preferência adicionais podem ser fornecidos além daqueles de um programa de orçamento normal. Por exemplo, as configurações de preferência de software de Alice, seu comportamento com teclado e mouse e dicas semelhantes podem ser interpretadas como preferências econômicas, por exemplo, com relação a onde alocar o escasso espaço na tela e a largura de banda da rede.
   </p>
 
   <p>
-    Here is a diagram showing Alice and Bob negotiating a contract using their market translators:
+    Por conveniência, o PAU de Alice pode corresponder à moeda local mais usada por Alice. Se a maioria dos itens orçamentários de Alice lidam com contratos on-line negociados via MT, o uso da moeda local não é necessário, e é indesejável se essa moeda for instável.
+  </p>
+
+  <p>
+    Aqui está um diagrama mostrando Alice e Bob negociando um contrato usando seus tradutores de mercado:
   </p>
 
 <pre>
 Alice                            Bob
 
-Draft Contract, "source"         Draft Contract,  "source"
+Esboço de contrato, "fonte"         Esboço de contrato,  "fonte"
   (Alice PAUs)                       (Bob PAUs)
          ^                               ^
          |                               |
          MT                              MT
          |                               |
          v                               v
-Draft Contract, "target" <-----> Draft Contract, "target"
+Esboço de contrato, "alvo" <-----> Esboço de contrato, "alvo"
 </pre>
 
   <p>
-    One mode in which the MT can be used is to have Bob offer a take-it-or-leave-it binary contract, corresponding to the current retail practice of take-it-or-leave-it prices. In the mode pictured above, Alice and Bob negotiate back and forth. The negotation of the source contract terms will usually be manual. The "source language" will typically be a human readable GUI, while the "target" will be a standard <a href="http://nakamotoinstitute.org/contract-language/">formal contract language</a>. If Alice and Bob can input preferences leading to automated negotiations, then a "shopping bot" and "catalog bot" respectively may be used. This is a layer above and beyond the scope of the MT. The MT is only a "shopping bot" in the restricted but important area of contracts composed of atomic bearer contracts – rights to scarce objects – to the extent that the price relationships between these bearer contracts are available from quoted markets.
+    Um modo em que o MT pode ser usado é fazer com que Bob ofereça um contrato binário take-it-leave-it, correspondendo à prática atual de varejo de preços take-it-or-it-it. No modo mostrado acima, Alice e Bob negociam para frente e para trás. A negociação dos termos do contrato de origem geralmente será manual. O "idioma de origem" normalmente será uma GUI legível, enquanto o "alvo" será uma  <a href="http://nakamotoinstitute.org/contract-language/">linguagem de contrato formal</a>. Se Alice e Bob puderem inserir preferências que levem a negociações automáticas, um "bot de compras" e um "bot de catálogo", respectivamente, poderão ser usados. Esta é uma camada acima e além do escopo do MT. O MT é apenas um "bot de compras" na área restrita mas importante de contratos compostos de contratos de suporte atômico - direitos a objetos escassos - na medida em que as relações de preço entre esses contratos ao portador estão disponíveis em mercados cotados.
   </p>
 
   <p>
-    The MT acts like a computer language compiler. But it translates both ways, and in real time as Alice and Bob negotiate payment terms. So, for example, Alice changes a term in her contract, proposing to pay fewer Alice-PAUs for Bob's services. Her MT translates this into a series of payments and hedges: a sophisticated synthetic contract as obscure to Alice and Bob as binary code is to many programmers these days. This synthetic is constructed out of liquid market securities (bearer contracts) and derivatives of low transaction cost. A synthetic contract is naturally represented as a composite object, a part-whole hierarchy composing primitive contractual "atoms", such as securities and derivatives.
+    O MT funciona como um compilador de linguagem de computador. Mas isso se traduz nos dois sentidos e, em tempo real, Alice e Bob negociam as condições de pagamento. Assim, por exemplo, Alice muda um termo em seu contrato, propondo pagar menos Alice-PAUs pelos serviços de Bob. Seu MT traduz isso em uma série de pagamentos e hedges: um sofisticado contrato sintético tão obscuro para Alice e Bob quanto o código binário é para muitos programadores atualmente. Este sintético é construído a partir de títulos do mercado líquido (contratos ao portador) e derivados de baixo custo de transação. Um contrato sintético é naturalmente representado como um objeto composto, uma hierarquia de partes inteiras que compõe "átomos" contratualizados primitivos, como títulos e derivativos.
   </p>
 
   <p>
-    Bob's MT reverse-translates the actual market terms into Bob-PAUs. Although they each agree to different looking amounts of payment, the visible structure besides amounts and the complete underlying contract is the same. They can be confident that when their preferences have been satisfied, their minds have met and they can commit to the contract.
+    O MT de Bob inverte os termos reais de mercado em Bob-PAUs. Apesar de cada um concordar com diferentes quantias de pagamento, a estrutura visível além dos valores e o contrato subjacente completo é o mesmo. Eles podem estar confiantes de que, quando suas preferências tiverem sido satisfeitas, suas mentes se encontraram e podem se comprometer com o contrato.
   </p>
 
   <p>
-    As a result, both Alice and Bob see the contract in terms of their own consistent personal utility units. All consideration of exchange rates, inflation risks, and so on is handled by the MT.
+    Como resultado, Alice e Bob vêem o contrato em termos de suas próprias unidades de utilidade pessoal consistentes. Todas as considerações sobre taxas de câmbio, riscos de inflação e assim por diante são tratadas pelo MT.
   </p>
 
   <p>
-    Alice and Bob's MTs can make side conversions, hedges, and restructurings to balance their portfolios. These side hedges are not revealed to each other. Any binary terms which can be side hedged can be made almost arbitrarily distant from what Alice and Bob prefer financially. Thus Alice and Bob need not reveal their financial preferences to each other.
+    Os MTs de Alice e Bob podem fazer conversões paralelas, coberturas e reestruturações para equilibrar seus portfólios. Essas sebes laterais não são reveladas umas às outras. Quaisquer termos binários que possam ser protegidos de uma só vez podem ser feitos quase arbitrariamente distantes do que Alice e Bob preferem financeiramente. Assim, Alice e Bob não precisam revelar suas preferências financeiras uns aos outros.
   </p>
 
   <p>
-    (Note: For contracts with delayed payment terms, Alice and Bob determining the credit risk caused by each others' credit exposures is an important problem, but beyond the scope of the MT as I have described it).
+    (Nota: Para contratos com prazos de pagamento atrasados, Alice e Bob determinando o risco de crédito causado pelas exposições de crédito de cada um é um problema importante, mas além do escopo do MT como descrevi).
   </p>
 
   <p>
-    The whole set of Alice's contracts with all her counterparties constitutes her complete portfolio – not merely a segregated investment portfolio, but a complete portfolio encompassing all her finances. This portfolio is is represented as a composite of composite contracts, and forms the basis for all of Alice's financial planning, and for the automated portfolio rebalancing activity of the MT.
+    Todo o conjunto de contratos de Alice com todas as suas contrapartes constitui seu portfólio completo - não apenas uma carteira de investimento segregada, mas uma carteira completa abrangendo todas as suas finanças. Este portfólio é representado como um composto de contratos compostos e forma a base para todo o planejamento financeiro de Alice e para a atividade de reequilíbrio de portfólios automatizados do MT.
   </p>
 
   <p>
-    The main data structure representing the contracts for analytical purposes is the chance/choice decision tree. This tree has two kinds of nodes, "chance" nodes which iterate through all material possibilities, and "choice" nodes where the optimal choice is made. The result is the expected value of a set of contractual terms. The trees can represent a large number of contracts with low resolution (lots of pruning and heuristics), or a simple contract with high resolution (all possibilities considered). Desktop computers are or will soon be fast enough to search through thousands of contingencies, and synthetic contracts composed of hundreds of atomic contracts, with delays less than Internet latencies. So the binary contract can be a very sophisticated synthetic, as long as its analysis is fully automated, and still conserve mental transaction costs.
+    A principal estrutura de dados que representa os contratos para fins analíticos é a árvore de decisão de chance / escolha. Esta árvore tem dois tipos de nós, nós "casuais", que percorrem todas as possibilidades materiais, e nós de "escolha", onde a escolha ótima é feita. O resultado é o valor esperado de um conjunto de termos contratuais. As árvores podem representar um grande número de contratos com baixa resolução (lotes de poda e heurística), ou um contrato simples com alta resolução (todas as possibilidades consideradas). Os computadores desktop são ou serão em breve suficientemente rápidos para pesquisar milhares de contingências e contratos sintéticos compostos por centenas de contratos atômicos, com atrasos menores que as latências da Internet. Então o contrato binário pode ser um sintético muito sofisticado, desde que sua análise seja totalmente automatizada,
   </p>
 
-  <h3>Conclusion</h3>
+  <h3>Conclusão</h3>
 
   <p>
-    The MT relies on online, automated exchanges hosting liquid markets for fixed income securities and derivatives. These markets reveal the information the MT needs to properly hedge currencies. Market makers and arbitrageurs maintain these markets, ensuring the most accurate information on risk premiums, yield curves, and so on is available to MTs. Some information not automatically derivable from market prices might be made available online by financial consultants, in a standard format, downloadable by MTs for a fee.
+    O MT baseia-se em trocas automáticas on-line que hospedam mercados líquidos para títulos de renda fixa e derivativos. Esses mercados revelam as informações que o MT precisa para proteger adequadamente as moedas. Os criadores de mercado e os arbitradores mantêm esses mercados, garantindo que as informações mais precisas sobre prêmios de risco, curvas de juros e assim por diante estejam disponíveis para os MTs. Algumas informações não deriváveis ​​automaticamente dos preços de mercado podem ser disponibilizadas on-line por consultores financeiros, em formato padrão, para download por MTs por uma taxa.
   </p>
 
   <p>
-    The source contract is normally negotiated and closed manually, as per normal shopping. The MT is a a "shopping bot", but only in the very restricted but important realm of finance related to payment terms. Since
+    O contrato de origem é normalmente negociado e fechado manualmente, conforme compras normais. O MT é um "bot de compras", mas apenas no domínio muito restrito, mas importante, das finanças relacionadas a condições de pagamento. Desde a
   </p>
 
   <ol>
-    <li>Alice has sufficiently input her financial preferences for risk and time value, via her budget program and/or specialized forms, and these preferences apply to all the payment terms used by the MT,</li>
+    <li>Alice tem informações suficientes sobre suas preferências financeiras para o risco e o valor do tempo, através de seu programa de orçamento e / ou formulários especializados, e essas preferências se aplicam a todos os termos de pagamento usados ​​pelo MT,</li>
 
-    <li>All the information necessary to determine the risk posed by a payment term is available online (usually in the form of market prices for securties and derivatives, but also from online financial consultants who publish financial news in MT-readable format), and</li>
+    <li>Todas as informações necessárias para determinar o risco apresentado por um termo de pagamento estão disponíveis on-line (geralmente na forma de preços de mercado para securitários e derivativos, mas também de consultores financeiros on-line que publicam notícias financeiras em formato legível por MT), e</li>
 
-    <li>By assumption all the hedging securities and derivatives can be automatically purchased or sold by the MT,</li>
+    <li>Assumindo que todos os valores mobiliários de cobertura e derivados podem ser automaticamente comprados ou vendidos pelo MT,</li>
   </ol>
 
   <p>
-    there should be no need for manual intervention in the hedging translation process. If such manual intervention is required, the system very quickly loses its appeal for most users.
+    não deve haver necessidade de intervenção manual no processo de tradução de cobertura. Se tal intervenção manual for necessária, o sistema perderá rapidamente seu apelo para a maioria dos usuários.
   </p>
 
   <p>
-    If the preference or market information is not available, or the securities and derivatives exchanges are not available, the market translator can revert back to simple automated currency conversion.
+    Se a informação de preferência ou de mercado não estiver disponível, ou as trocas de títulos e derivativos não estiverem disponíveis, o tradutor do mercado pode reverter para a conversão de moeda automatizada simples.
   </p>
 
   <p>
-    The market translator thus solves a vexing problem faced by multinational small business, the hedging of payment terms using potentially unreliable currencies. More generally, the market translator built on a scarce object architecture will lower the mental transaction cost barrier to micropayments and micromarkets. It will translate skills and preferences into microrights and microduties for use in fine-grained allocation of resources and services – whether online e-mail accounts, online game collectibles, screen real estate, network bandwidth and caching, or a variety of other network objects which, thanks to scarce object architecture, become economic objects.
+    O tradutor do mercado resolve assim um problema inquietante enfrentado pelas pequenas empresas multinacionais, a cobertura de termos de pagamento usando moedas potencialmente não confiáveis. Em termos mais gerais, o tradutor de mercado construído sobre uma arquitetura de objetos escassa reduzirá a barreira do custo de transação mental para micropagamentos e micro-mercados. Ele converterá habilidades e preferências em microlights e microduties para uso na alocação de recursos e serviços - seja contas de e-mail on-line, colecionáveis ​​de jogos on-line, imóveis na tela, largura de banda de rede e armazenamento em cache ou uma variedade de outros objetos de rede que , graças à escassa arquitetura de objetos, tornam-se objetos econômicos.
   </p>
 </div>
 {% endblock %}
