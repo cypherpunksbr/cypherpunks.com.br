@@ -242,33 +242,33 @@
   </p>
 
   <p class="text-muted">
-    Under the assumption of digital signatures, agreement can be reached in n > f. This gives the same abstract trust model as the untraceability of anonymous remailers. (Of course, actually getting the message through requires all n remailers to work properly, so in that sense even cf reliability is better than remailers). It would be neat if one could do a replicated database with such a high trust threshold, but I haven't seen anything like that in the literature and there may be good reasons why we can't.
+    Sob a hipótese de assinaturas digitais, a concordância pode ser alcançada em n > f. Isso fornece o mesmo modelo abstrato de confiança que a impossibilidade de rastreamento de remailers anônimos. (É claro que, na verdade, a transmissão da mensagem requer que todos os remailers funcionem corretamente, portanto, nesse sentido, até mesmo a confiabilidade é melhor do que os remailers). Seria legal se alguém pudesse fazer um banco de dados replicado com um limite de confiança tão alto, mas não vi nada parecido na literatura e pode haver boas razões para que não possamos.
   </p>
 
   <p class="text-muted">
-    Economic security models would be desirable here, but are not ready for prime time. Deciding what the preferences and resources of the attacker should be is tough. Economists assume some typical probability distribution of preferences, and some constant amount of wealth. Cryptographers, and even some people studying fault tolerance, assume a much more powerful and malicious adversary: with polynomial computational resources, and preferring to do the most damage possible to the user. The Byzantine attacker's utility is precisely the negative utility of the user!
+    Modelos de segurança econômica seriam desejáveis aqui, mas não estão prontos para o horário nobre. Decidir quais devem ser as preferências e os recursos do invasor é difícil. Os economistas assumem uma distribuição de probabilidade típica de preferências e alguma quantidade constante de riqueza. Criptógrafos, e até mesmo algumas pessoas que estudam tolerância a falhas, assumem um adversário muito mais poderoso e malicioso: com recursos computacionais polinomiais, e preferindo causar o maior dano possível ao usuário. A utilidade do atacante bizantino é precisamente a utilidade negativa do usuário!
   </p>
 
   <p class="text-muted">
-    Economic models tend to look at linear or constant differences (Mallet can't make more money than it costs him to crack the security, so Mallet won't try to crack it) whereas cryptographers prefer super-polynomial differences (the cost to Mallet is super-polynomial in a security parameter controlled by the defender). Economic models bear some similiarity to the "benign" models of statistically distributed error in fault tolerance (as opposed to the "Byzantine" models of maximally malicious faults). However, once security models bubble up to the level of trading off f vs. 2f vs. 3f security, we have the same linear structure as an economic model. So it would make sense to introduce economics at that level of analysis.
+    Modelos econômicos tendem a olhar para diferenças lineares ou constantes (Mallet não pode ganhar mais dinheiro do que custa a ele quebrar a segurança, então Mallet não vai tentar quebrá-lo) enquanto criptógrafos preferem diferenças super-polinomiais (o custo para Mallet é super-polinomial em um parâmetro de segurança controlado pelo defensor). Os modelos econômicos apresentam alguma semelhança com os modelos "benignos" de erro estatisticamente distribuído na tolerância a falhas (em oposição aos modelos "Bizantinos" de falhas maximamente maliciosas). No entanto, uma vez que os modelos de segurança atingem o nível de negociação f versus 2f versus 3f, temos a mesma estrutura linear que um modelo econômico. Portanto, faria sentido introduzir a economia nesse nível de análise.
   </p>
 
   <p class="text-muted">
-    Economic security ideas like "exposure" make a lot of sense, especially for financial security. An example is the the ATM limit of $300/day: this is the user's "exposure", the most she can lose, to a crack of the ATM system. This is a "knob" which can be adjusted to reflect the current costs of cracking the security.
+    Idéias de segurança econômica como "exposição" fazem muito sentido, especialmente para a segurança financeira. Um exemplo é o limite de caixa eletrônico de US$300/dia: essa é a "exposição" do usuário, o máximo que ela pode perder, para uma falha no sistema de caixa eletrônico. Este é um "botão" que pode ser ajustado para refletir os custos atuais de quebrar a segurança.
   </p>
 
   <p class="text-muted">
-    So it would be nice to come up with good theories along these lines at some point. Another nice thing might be a theoretical regime "in between" economics and cryptography, dealing with resource and preference differences within the polynomial range (e.g., O(n<sup>4</sup>) vs. O(n)).
+    Por isso, seria bom apresentar boas teorias ao longo destas linhas em algum momento. Outra coisa interessante pode ser um regime teórico "entre" economia e criptografia, lidando com diferenças de recursos e preferências dentro da faixa polinomial (por exemplo, O(n<sup>4</sup>) vs. O(n)).
   </p>
   -->
 
-  <h2>Acknowledgements</h2>
+  <h2>Agradecimentos</h2>
 
   <p>
-    My thanks to Gregory Burch, J.D., Eileen O'Connor, J.D., Melora Svoboda, and many others for their helpful comments.
+    Meus agradecimentos a Gregory Burch, J.D., Eileen O'Connor, J.D., Melora Svoboda, e muitos outros por seus comentários úteis.
   </p>
 
-  <h2>References</h2>
+  <h2>Referências</h2>
 
     <ol>
       <li id="fn1">
@@ -336,12 +336,12 @@
 
   <hr>
   <p>
-    Please send your comments to nszabo (at) law (dot) gwu (dot) edu
+    Por favor, envie seus comentários para nszabo (at) law (dot) gwu (dot) edu
   </p>
 
   <p>
     Copyright &copy; 1998,1999,2002,2005 by Nick Szabo<br>
-    Permission to redistribute without alteration hereby granted
+    Permissão para redistribuir sem alteração por este concedida
   </p>
 
 </div>
