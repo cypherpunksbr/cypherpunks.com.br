@@ -12,6 +12,12 @@
 
 ### Textos sendo traduzidos:
 
+:pencil2: Areopagitica [Gustavo]()
+
+:pencil2: Bitcoin Whitepaper - [OneTimePad]()
+
+:pencil2: [Cyphernomicon](https://nakamotoinstitute.org/static/docs/cyphernomicon.txt) - [OneTimePad]()
+
 :pencil2: "Multinational Small Business" - [@Deephi]()
 
 :pencil2: PGP Web of Trust Misconceptions- [@anonymous]()
@@ -22,7 +28,7 @@
 
 :pencil2: Crypto-Anarchy and Libertarian Entrepreneurship Chapter: 1-4 - [Pedro Reck](https://github.com/r3ck/)
 
-:pencil2: Intrapolynomial Cryptography [Davi Figueiredo](https://github.com/davimello28)
+:pencil2: Contract Language, Nick Szabo - [Davi Figueiredo](https://github.com/davimello28/)
 
 :pencil2: Shelling Out: The Origins of Money 
 
@@ -30,12 +36,15 @@
 
 :pencil2: Origins of Bitcoin - [@aferreira44]()
 
-:pencil2: Measuring Value - [MamãeCrypto]()
-
 :pencil2: Secure Property Titles - [Matheus Bach](https://github.com/matheusbach/)
+
+:pencil2: Cartas do Ross Ulbricht - [@MarlonX19](https://github.com/MarlonX19)
+
 
 
 ### Textos traduzidos: 
+
+:ok: [Measuring Value](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/mensura%C3%A7%C3%A3o-do-valor.html) - [MamãeCrypto]()
 
 :ok: [BitGold](https://cypherpunks.com.br/bitgold/ "ver texto traduzido") - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 
@@ -44,6 +53,8 @@
 :ok: [Contratos com Titular](https://cypherpunks.com.br/contratos-com-titular/ "ver publicação traduzida") - [Matheus Bach](https://github.com/matheusbach/ "perfil de Matheus Bach no github")
 
 :ok: [Criptoanarquia_e_Comunidades_Virtuais](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/Criptoanarquia_e_Comunidades_Virtuais.html)
+
+:ok: [Criptografia Intrapolinomial](cypherpunks.com.br/posts/intrapolynomial-cryptography.html) - [Davi Figueiredo](https://github.com/davimello28)
 
 :ok: [Feliz_Aniversário_Bitcoin](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/Feliz_Anivers%C3%A1rio_Bitcoin.html)
 
@@ -61,7 +72,7 @@
 
 :ok: [O Manifesto Cypherpunk](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/o_manifesto_cypherpunk.html)
 
-:ok: [O_Manifesto_libbitcoin](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/O_Manifesto_libbitcoin.html)
+:ok: [O_Manifesto_libbitcoin](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/O_Manifesto_libbitcoin.html) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
 :ok: [politica_vs_tecnologia](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/politica_vs_tecnologia.html)
 
@@ -71,20 +82,20 @@
 
 :ok: [rpow](../todo/rpow.html) - [Marcos]()
 
-:ok: [The God Protocols](https://github.com/cypherpunksbr/) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
+:ok: [Os Protocolos de Deus](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/os-protocolos-de-deus.html) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
-:ok:[Auditoria Confidencial](https://github.com/cypherpunksbr/) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
+:ok: [Auditoria Confidencial](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/auditoria-confidencial.html) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
 * Mais publicações você pode encontrar em nossa [biblioteca](https://cypherpunks.com.br/biblioteca/)
 
 
 ### Textos aguardando tradução:
  
- :clock3: [areopagitica](../todo/areopagitica.html)
+:clock3: [gent-forum-spies](https://cryptome.org/2012/07/gent-forum-spies.htm) 
+
+:clock3: [areopagitica](../todo/areopagitica.html)
  
  :clock3: [bitcoin](../todo/bitcoin.html)
- 
- :clock3: [contract language](../todo/contract-language.html)
  
  :clock3: [cyberspace crypto anarchy and pushing limits](../todo/cyberspace-crypto-anarchy-and-pushing-limits.html)
  
@@ -157,3 +168,16 @@
 
  :speech_balloon: [Cypherspace articles](http://www.cypherspace.org/)
  
+ :speech_balloon: [Nick Szabo's Essays, Papers, and Concise Tutorials](http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/)
+
+ :speech_balloon:  [The GNU/Linux Crypto Series](https://sanctum.geek.nz/arabesque/series/gnu-linux-crypto/)
+
+ :speech_balloon: [The Gnu/Linux Crypto PT-BR](https://cabaladada.org/2013/09/16/linux_cripto_intro/)
+
+ :speech_balloon: [Cryptome](https://cryptome.org)
+
+ :speech_balloon: [Cryptoanarchy Wiki](https://cryptoanarchy.wiki)
+
+ :speech_balloon: [Paralelni Polis](https://www.paralelnipolis.cz/o-nas/en/)
+
+ :speech_balloon: [La Quadrature du Net](https://www.laquadrature.net/en/)
