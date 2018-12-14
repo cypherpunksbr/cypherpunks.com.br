@@ -86,6 +86,8 @@
 
 :ok: [Auditoria Confidencial](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/auditoria-confidencial.html) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
+:ok: [trusted third parties](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/trusted-third-parties.html)
+
 * Mais publicações você pode encontrar em nossa [biblioteca](https://cypherpunks.com.br/biblioteca/)
 
 
@@ -95,57 +97,55 @@
 
 :clock3: [areopagitica](../todo/areopagitica.html)
  
- :clock3: [bitcoin](../todo/bitcoin.html)
- 
- :clock3: [cyberspace crypto anarchy and pushing limits](../todo/cyberspace-crypto-anarchy-and-pushing-limits.html)
- 
- :clock3: [cyberspace independence](../todo/cyberspace-independence.html)
- 
- :clock3: [detecting double spending](../todo/detecting-double-spending.html)
- 
- :clock3: [digital cash and privacy](../todo/digital-cash-and-privacy.html)
- 
- :clock3: [dining cryptographers problem](../todo/dining-cryptographers-problem.html)
- 
- :clock3: [financial cryptography in 7 layers](../todo/financial-cryptography-in-7-layers.html)
- 
- :clock3: [for pay remailers](../todo/for-pay-remailers.html)
- 
- :clock3: [formalizing securing relationships](../todo/formalizing-securing-relationships.html)
- 
- :clock3: [gpg contracts](../todo/gpg-contracts.html)
- 
- :clock3: [intrapolynomial cryptography](../todo/intrapolynomial-cryptography.html)
- 
- :clock3: [measuring value](../todo/measuring-value.html)
- 
- :clock3: [money blockchains and social scalability](../todo/money-blockchains-and-social-scalability.html)
- 
- :clock3: [negative reputation](../todo/negative-reputation.html)
- 
- :clock3: [online cash checks](../todo/online-cash-checks.html)
+:clock3: [bitcoin](../todo/bitcoin.html)
 
- :clock3: [reciprocal altruism in the theory of money](../todo/reciprocal-altruism-in-the-theory-of-money.html)
- 
- :clock3: [scarce objects](../todo/scarce-objects.html)
- 
- :clock3: [secure property titles](../todo/secure-property-titles.html)
- 
- :clock3: [smart contracts glossary](../todo/smart-contracts-glossary.html)
- 
- :clock3: [the case for privacy](../todo/the-case-for-privacy.html)
- 
- :clock3: [the geodesic market](../todo/the-geodesic-market.html)
- 
+:clock3: [cyberspace crypto anarchy and pushing limits](../todo/cyberspace-crypto-anarchy-and-pushing-limits.html)
+
+:clock3: [cyberspace independence](../todo/cyberspace-independence.html)
+
+:clock3: [detecting double spending](../todo/detecting-double-spending.html)
+
+:clock3: [digital cash and privacy](../todo/digital-cash-and-privacy.html)
+
+:clock3: [dining cryptographers problem](../todo/dining-cryptographers-problem.html)
+
+:clock3: [financial cryptography in 7 layers](../todo/financial-cryptography-in-7-layers.html)
+
+:clock3: [for pay remailers](../todo/for-pay-remailers.html)
+
+:clock3: [formalizing securing relationships](../todo/formalizing-securing-relationships.html)
+
+:clock3: [gpg contracts](../todo/gpg-contracts.html)
+
+:clock3: [intrapolynomial cryptography](../todo/intrapolynomial-cryptography.html)
+
+:clock3: [measuring value](../todo/measuring-value.html)
+
+:clock3: [money blockchains and social scalability](../todo/money-blockchains-and-social-scalability.html)
+
+:clock3: [negative reputation](../todo/negative-reputation.html)
+
+:clock3: [online cash checks](../todo/online-cash-checks.html)
+
+:clock3: [reciprocal altruism in the theory of money](../todo/reciprocal-altruism-in-the-theory-of-money.html)
+
+:clock3: [scarce objects](../todo/scarce-objects.html)
+
+:clock3: [secure property titles](../todo/secure-property-titles.html)
+
+:clock3: [smart contracts glossary](../todo/smart-contracts-glossary.html)
+
+:clock3: [the case for privacy](../todo/the-case-for-privacy.html)
+
+:clock3: [the geodesic market](../todo/the-geodesic-market.html)
+
 :clock3: [the playdough protocols](../todo/the-playdough-protocols.html)
- 
- :clock3: [the ricardian contract](../todo/the-ricardian-contract.html)
- 
- :clock3: [triple entry accounting](../todo/triple-entry-accounting.html)
- 
- :clock3: [truledger](../todo/truledger.html)
- 
- :clock3: [trusted third parties](../todo/trusted-third-parties.html)
+
+:clock3: [the ricardian contract](../todo/the-ricardian-contract.html)
+
+:clock3: [triple entry accounting](../todo/triple-entry-accounting.html)
+
+:clock3: [truledger](../todo/truledger.html)
  
 * Você pode sugerir ou traduzir um texto que não esteja nessa lista. Basta submeter uma "pull request" pelo GitHub
 
