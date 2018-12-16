@@ -36,8 +36,6 @@
 
 :pencil2: Origins of Bitcoin - [@aferreira44]()
 
-:pencil2: Secure Property Titles - [Matheus Bach](https://github.com/matheusbach/)
-
 :pencil2: Cartas do Ross Ulbricht - [@MarlonX19](https://github.com/MarlonX19)
 
 
@@ -85,6 +83,8 @@
 :ok: [Os Protocolos de Deus](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/os-protocolos-de-deus.html) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
 :ok: [Auditoria Confidencial](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/auditoria-confidencial.html) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
+
+:ok: [Títulos Seguros de Propriedade]() - [Matheus Bach](https://github.com/matheusbach/ "Ver perfil no GitHub")
 
 * Mais publicações você pode encontrar em nossa [biblioteca](https://cypherpunks.com.br/biblioteca/)
 

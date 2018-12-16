@@ -5,220 +5,220 @@
 <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
   <div class="page-header">
     <h1 class="text-center">
-      Secure Property Titles with Owner Authority <br><small>Nick Szabo</small>
+      Títulos Seguros de Propriedade com Autoridade do Proprietário <br><small>Nick Szabo</small>
     </h1>
     <h4 class="text-center">
-      Originally published in 1998<br>
+      Originalmente publicado em 1998<br>
     </h4>
   </div>
 
   <p>
-    The advent of writing greatly improved the tracking of property rights, and indeed gave rise to our modern systems of property rights and law. However, written records have proven to be quite vulnerable to abuse. A common pattern during eras of <a href="http://chronicle.com/free/99/06/99061701t.htm">political instability or oppression</a> has been the confiscation of land via the forgery or destruction of public records. Reconstruction from informal records, such as residency recorded in phone books, even when possible is costly and fraught with error and potential for fraud<sup><a href="#fn1" id="ref1">[1]</a></sup>. Large amounts of, in some areas most, property in developing countries is not formally titled<sup><a href="#fn2" id="ref2">[2]</a></sup>. Even during eras of political stability in developed countries, there occur many expensive problems with <a href="http://hobbyfarm.com/buysell11.html">titles.</a><sup><a href="#fn3" id="ref3">[3]</a></sup> Straightforward transcription of written records into a centralized online repository would make many of these problems even worse &ndash; electronic records can be highly vulnerable to loss and forgery, and insiders are the most common source of such attacks. This paper proposes a secure, distributed title database to prevent such attacks against property rights in the future.
+    O advento da escrita melhorou muito o rastreamento dos direitos de propriedade e, de fato, deu origem a nossos modernos sistemas de direitos de propriedade e leis. No entanto, registros escritos provaram ser bastante vulneráveis ao abuso. Um padrão comum durante eras de <a href="http://chronicle.com/free/99/06/99061701t.htm">instabilidade política ou opressão</a> foi o confisco de terras através da falsificação ou destruição de registros públicos. A reconstrução de registros informais, como a residência registrada em listas telefônicas, mesmo quando possível, é custosa e repleta de erros e potencial para fraudes<sup><a href="#fn1" id="ref1">[1]</a></sup>. Muitas propriedade em alguns países em desenvolvimento não são formalmente tituladas<sup><a href="#fn2" id="ref2">[2]</a></sup>. Mesmo durante eras de estabilidade política em países desenvolvidos, ocorrem muitos problemas graves com <a href="http://hobbyfarm.com/buysell11.html">títulos.</a><sup><a href="#fn3" id="ref3">[3]</a></sup> Transcrição direta de registros escritos em um repositório online centralizado tornaria muitos desses problemas ainda piores &ndash; registros eletrônicos podem ser altamente vulneráveis a perdas e falsificações, e "hacks internos" são a fonte mais comum de tais ataques. Este artigo propõe um banco de dados de títulos seguro e distribuído para evitar tais ataques contra os direitos de propriedade no futuro.
   </p>
 
   <p>
-    Many kinds of Internet resources have a basic characteristic: users must agree on their control across trust boundaries. A big example is names. The article <a href="https://web.archive.org/web/20120204172516/http://zooko.com/distnames.html">"Names: Decentralized, Secure, Human-Meaningful: Choose Two"</a> dismisses not only the ubiquity and importance of this problem, but also the possibility of solution.<sup><a href="#fn4" id="ref4">[4]</a></sup> Instead <a href="http://www.erights.org/elib/capability/pnml.html">petnames</a> are proposed. These are at best mere mnemonics to translate human-readable into cryptographic names; petnames don't do anything to secure naming across trust boundaries. All three attributes &ndash; decentralized, secure, and human-meaningful &ndash; must be provided if people are to communicate and be communicated about securely over the Internet, and this paper along with the article <a href="{{url_for('slugview', slug='advances-in-distributed-security')}}">Advances in Distributed Security</a> shows how to provide all three.
+    Muitos tipos de recursos da Internet têm uma característica básica: os usuários devem concordar com seu controle através dos limites de confiança. Um grande exemplo é o nome. O artigo <a href="https://web.archive.org/web/20120204172516/http://zooko.com/distnames.html" title="Names: Decentralized, Secure, Human-Meaningful: Choose Two">"Nomes: Descentralizado, Seguro, com Significado Humano: Escolha Dois"</a> dispensa não apenas a onipresença e importância desse problema, mas também a possibilidade de solução.<sup><a href="#fn4" id="ref4">[4]</a></sup> Como alternativa, <a href="http://www.erights.org/elib/capability/pnml.html">petnames</a> (nomes de animais) são propostos. Esses são, na melhor das hipóteses, meros mnemônicos para traduzir nomes humanamente legíveis em nomes criptográficos; petnames não fazem nada para garantir a nomeação através dos limites de confiança. Todos os três atributos &ndash; descentralizado, seguro e com significado humano &ndash; deve ser fornecido para que as pessoas se comuniquem e sejam comunicadas com segurança pela Internet, e este documento, juntamente com o artigo <a href="{{url_for('slugview', slug='advances-in-distributed-security')}}" title="Advances in Distributed Security">Avanços na Segurança Distribuída</a>, mostram como fornecer todos os três.
   </p>
 
   <p>
-    More generally, we show how to implement transferable global rights, enforced entirely by protocol, to names, attributions, <a href="{{url_for('slugview', slug='bit-gold')}}">bit gold</a>, and similar purely informatic property owned by a particular entity but possessed and relied upon by the public, and how to implement a secure title database for other kinds of property. For a particular example of cross-trust-boundary rights enforced entirely by protocol, see my proposal for <a href="http://szabo.best.vwh.net/nameintegrity.html">name integrity in cross-trust-boundary file systems</a>.
+    De maneira mais geral, mostramos como implementar direitos globais transferíveis, aplicados inteiramente por protocolo, a nomes, atribuições, <a href="{{url_for('slugview', slug='bit-gold')}}">bit gold</a>, e propriedade puramente informatizada de uma entidade específica, mas possuídos e invocados pelo público, e como implementar banco de dados de títulos para outros tipos de propriedade. Para um exemplo específico de direitos de limite de confiança cruzada aplicados inteiramente por protocolo, consulte minha proposta de <a href="http://szabo.best.vwh.net/nameintegrity.html">integridade de nome em sistemas de arquivos com limite de confiança cruzado</a>.
   </p>
 
   <p>
-    In all cases of property rights there is a defined space, whether a namespace or physical space, and the task is to agree on simple attributes of or rights to control subdivisions of that space. In some cases a name or other symbol corresponds to a person or object owned or controlled by that person. For example, Internet users must agree on which domain name corresponds to which web site operator. In other cases we are simply concerned with control over a subdivision of the space. With real estate we must agree on who owns various rights (to occupy the surface, to mine the minerals under, etc.) to a piece of land. With radio spectrum we must agree on who owns what range of frequencies and in what physical space (or transmitting power as an easily observed approximation of physical space used).
+    Em todos os casos de direitos de propriedade, há um espaço definido, seja um namespace ou espaço físico, e a tarefa é concordar com atributos simples ou direitos para controlar subdivisões desse espaço. Em alguns casos, um nome ou outro símbolo corresponde a uma pessoa ou objeto pertencente ou controlado por essa pessoa. Por exemplo, os usuários da Internet devem concordar sobre qual nome de domínio corresponde a qual operador do site. Em outros casos, estamos simplesmente preocupados com o controle de uma subdivisão do espaço. Com o setor imobiliário, devemos concordar com quem possui vários direitos (ocupar a superfície, minerar os minerais, etc.) em um pedaço de terra. Com o espectro de rádio, devemos concordar sobre quem possui qual faixa de freqüências e em qual espaço físico (ou poder de transmissão, como uma aproximação facilmente observada do espaço físico usado).
   </p>
 
   <p>
-    It is the author's hypothesis that all such agreements of control, including control over the semantics of symbols, to be made and respected across trust boundaries are problems of agreeing on and maintaining property rights. Thus the results of this paper are far more general than they might first appear &ndash; I believe this paper provides a solution to secure namespaces and similar problems as well as the problem of securely recording agreements on traditional property rights. Highlighting the property rights nature of public directories also highlights the limitations of these mappings &ndash; for example that names, addresses, and other symbols whose semantics are controlled by a person can often be delegated, just as property can be given or rented.
+    É a hipótese do autor de que todos esses acordos de controle, incluindo o controle sobre a semântica dos símbolos, a serem feitos e respeitados através dos limites da confiança são problemas de concordância e manutenção dos direitos de propriedade. Assim, os resultados deste artigo são muito mais gerais do que podem parecer pela primeira vez. Acredito que este documento forneça uma solução para proteger namespaces e problemas semelhantes, bem como o problema de registrar com segurança acordos sobre os direitos tradicionais de propriedade. Destacar a natureza dos direitos de propriedade dos diretórios públicos também destaca as limitações desses mapeamentos &ndash; por exemplo, nomes, endereços e outros símbolos cuja semântica é controlada por uma pessoa podem frequentemente ser delegados, assim como a propriedade pode ser dada ou alugada.
   </p>
 
   <p>
-    New advances in replicated database technology will give us the ability to securely maintain and transfer ownership for a wide variety of kinds of property, including not only land but chattels, securities, names, and addresses. This technology will give us public records which can "survive a nuclear war", along the lines of the original design goal of the Internet. While thugs can still take physical property by force, the continued existence of correct ownership records will remain a thorn in the side of usurping claimants.
+    Novos avanços na tecnologia de bancos de dados replicados nos permitirão manter e transferir com segurança a propriedade de uma grande variedade de tipos de propriedade, incluindo não apenas terras, bens móveis, nomes e endereços. Essa tecnologia nos dará registros públicos que podem "sobreviver a uma guerra nuclear", nos moldes do objetivo original do design da Internet. Enquanto bandidos ainda podem tomar propriedade física à força, a existência continuada de registros de propriedade corretos ainda será uma dificuldade para os requerentes usurpadores.
   </p>
 
   <p>
-    I use political words in this essay as metaphors to describe how our hypothetical property title software, and especially its protocol for distributing the title database across a public network, could work. A group, called a property club, gets together on the Internet<sup><a href="#fn5" id="ref5">[5]</a></sup> and decides to  keep track of the ownership of some kind of property. The property is represented by titles: names referring to the property, and the public key corresponding to a private key held by its current owner, signed by the previous owner, along with a chain of previous such titles. Title names may "completely" describe the property, for example allocations in a namspace. (Of course, names always refer to something, the semantics, so such a description is not really complete). Or the title names might simply be labels referring to the property. Various descriptions and rules &ndash; maps, deeds, and so on &ndash; may be included.
+    Eu uso palavras políticas neste ensaio como metáforas para descrever como nosso software de título de propriedade hipotético, e especialmente seu protocolo para distribuir o banco de dados de títulos através de uma rede pública, poderia funcionar. Um grupo chamado clube de propriedade se reúne na Internet<sup><a href="#fn5" id="ref5">[5]</a></sup> e decide acompanhar o dono de alguma propriedade. A propriedade é representada por títulos: nomes referentes à propriedade e a chave pública correspondente a uma chave privada mantida pelo seu proprietário atual, assinada pelo proprietário anterior, juntamente com uma cadeia de títulos anteriores. Os nomes dos títulos podem descrever "completamente" a propriedade, por exemplo, alocações em um namspace. (Claro, nomes sempre se referem a algo, a semântica, então tal descrição não é realmente completa). Ou os nomes dos títulos podem ser simplesmente rótulos referentes à propriedade. Várias regras e descrições &ndash; mapas, ações e assim por diante &ndash; podem ser incluídos.
   </p>
 
   <p>
-    The property club can be thought of as a "microgovernment", an entity that performs globally and independently one narrow function normally associated with government. In particular it is a "constitutional microdemocracy" with low entry and exit costs. After the rules of property transfer have been decided, each vote should stay within this constitution &ndash; so that normally the vote will simply implement a distributed operation according to the property rules. The voting is necessary not due to a democratic political ideology but because it is the optimal result in analysis of distributed databases with malicious attackers.<sup><a href="#fn6" id="ref6-1">[6]</a></sup> If the rules are violated by the winning voters, the correct losers can exit the group and reform  a new group, inheriting the old titles. Users of the titles (relying parties) who wish to maintain correct titles can securely verify for themselves which splinter group has correctly followed the rules and switch to the correct group. If the rules are violated by losing voters, they can be excluded from further participation both by correct winners and rule-following relying parties.
+    O clube de propriedade pode ser pensado como um "microgoverno", uma entidade que desempenha globalmente e de forma independente uma função limitada normalmente associada ao governo. Em particular, é uma "microdemocracia constitucional" com baixos custos de entrada e saída. Após as regras de transferência de propriedade terem sido decididas, cada voto deve permanecer dentro desta constituição &ndash; de modo que normalmente o voto simplesmente implementará uma operação distribuída de acordo com as regras de propriedade. A votação é necessária não devido a uma ideologia política democrática, mas porque é o resultado ideal na análise de bancos de dados distribuídos com invasores mal-intencionados.<sup><a href="#fn6" id="ref6-1">[6]</a></sup> Se as regras forem violadas pelos eleitores vencedores, os perdedores corretos podem sair do grupo e reformar um novo grupo, herdando os títulos antigos. Os usuários dos títulos (partes confiantes) que desejam manter os títulos corretos podem verificar com segurança para si mesmos qual grupo dissidente seguiu corretamente as regras e alternou para o grupo correto. Se as regras forem violadas pela perda de eleitores, elas podem ser excluídas da participação adicional tanto dos vencedores corretos quanto das partes confiáveis que seguem as regras.
   </p>
 
   <p>
-    This voting-or-reformation method works well where exit costs are low. Thus in practice users should not "put all their eggs in one basket", but different title clubs should be used for different kinds of property. Note that the key security feature of the club is not the voting, but a set of objective, often automated, rules and an unforgeable audit trail that allows both club members and relying parties to check whether each vote followed the rules. So, to go further with the political metaphor, a property club is a "constitutional microdemocracy" with most of the emphasis on the "constitutional". The voting is necessary, but is quite regulated.
+    Este método de votação ou reforma funciona bem onde os custos de saída são baixos. Assim, na prática, os usuários não devem "colocar todos os ovos na mesma cesta", mas clubes de títulos diferentes devem ser usados para diferentes tipos de propriedade. Observe que o principal recurso de segurança do clube não é a votação, mas um conjunto de regras objetivas, muitas vezes automatizadas, e uma trilha de auditoria não comprovada que permite que tanto os membros do clube quanto as partes confiantes verifiquem se cada votação seguiu as regras. Então, para ir mais longe com a metáfora política, um clube de propriedade é uma "microdemocracia constitucional", com ênfase no "constitucional". A votação é necessária, mas é bastante regulamentada.
   </p>
 
   <p>
-    To implement a property club, we set up a replicated database so that the club members, hereafter "servers", can securely maintain titles  of ownership, and securely transfer them upon the request of current owners. Actually getting end users to respect the property rights agreed upon by this system will be dependent on the specific nature of the property, and is beyond the scope of the current inquiry. The purpose of the replicated database is simply to securely agree on who owns what. The entire database is public.
+    Para implementar um clube de propriedade, montamos um banco de dados replicado para que os membros do clube, de agora em diante "servidores", possam manter com segurança os títulos de propriedade e transferi-los com segurança mediante solicitação dos proprietários atuais. Na verdade, fazer com que os usuários finais respeitem os direitos de propriedade acordados por este sistema dependerá da natureza específica da propriedade e está além do escopo da consulta atual. O objetivo do banco de dados replicado é simplesmente concordar com segurança sobre quem possui o quê. O banco de dados inteiro é público.
   </p>
 
   <!--
   <p class="text-muted">
-    Confidentiality will be addressed below.
+    Confidencialidade será abordada abaixo.
   </p>
   -->
 
   <p>
-    The ideal title database would have the following  properties:
+    O banco de dados de títulos ideal teria as seguintes propriedades:
   </p>
 
   <ol>
     <li>
       <p>
-        Current owner Alice should be able transfer her title to only a single relying counterparty (similar to the "double spending" problem in digital cash)
+        A atual proprietária Alice deve poder transferir seu título para apenas uma única contraparte confiável (semelhante ao problema de "gasto duplo" em dinheiro digital)
       </p>
     </li>
 
     <li>
       <p>
-        Servers should not be able to forge transfers
+        Os servidores não devem conseguir falsificar transferências
       </p>
     </li>
 
     <li>
       <p>
-        Servers should not be able to block transfers to or from politically incorrect parties.
+        Os servidores não devem poder bloquear transferências de ou para partes politicamente incorretas.
       </p>
     </li>
   </ol>
 
   <p>
-    We cannot achieve ideals (1) and (3), so we introduce "voting" as follows. A good model of secure replicated databases is the "Byzantine Quorum System" of <a href="http://www.research.att.com/~dalia/">Malkhi &amp; Reiter</a><sup><a href="#fn6" id="ref6-2">[6]</a></sup>. In contrast to most recent work in peer-to-peer software, our design is based on mathematical proofs of security rather than hand-waving. For a short discussion of such threshold-of-servers approaches, see my essay <a href="http://szabo.best.vwh.net/coalition.html">"Coalition Design for Secure Protocols"</a>. The database is replicated across a universe of servers U, |U|=n. The "quorum system" is a collection of  subsets (quora) of these servers, each pair of which intersect. Each quorum can operate on behalf of the system; intersection guarantees that operations done on distinct quora preserve consistency. A quorum system tolerant of Byzantine (unconditionally malicious) server failures is a collection of subsets of servers, each pair of which intersect in a set containing sufficiently many correct servers to guarantee the consistency of the replicated data. The authors construct a protocol such that any intersection contains at least  2f+1 servers, thus providing resilience against up to f malicious servers, n &gt; 4f.
+    Não podemos alcançar os ideais (1) e (3), por isso introduzimos o "voto" da seguinte maneira. Um bom modelo de bancos de dados replicados seguros é o "Sistema de Quorum Bizantino" de <a href="http://www.research.att.com/~dalia/">Malkhi &amp; Reiter</a><sup><a href="#fn6" id="ref6-2">[6]</a></sup>. Em contraste com o trabalho mais recente em software peer-to-peer, nosso design é baseado em provas matemáticas de segurança em vez de acenar com a mão. Para uma breve discussão sobre essas abordagens de limiar de servidores, veja meu ensaio <a href="http://szabo.best.vwh.net/coalition.html">"Design de Coalizão para Protocolos Seguros"</a>. O banco de dados é replicado em um universo de servidores U, |U|=n. O "sistema de quorum" é uma coleção de subconjuntos (quorum) desses servidores, cada um dos quais se cruza. Cada quórum pode operar em nome do sistema; a interseção garante que as operações feitas em quorums distintos preservam a consistência. Um sistema de quorum tolerante a falhas de servidor bizantinas (maliciosas incondicionalmente) é uma coleção de subconjuntos de servidores, cada um dos quais se cruza em um conjunto contendo muitos servidores corretos para garantir a consistência dos dados replicados. Os autores constroem um protocolo de tal forma que qualquer interseção contenha pelo menos 2f+1 servidores, fornecendo assim resiliência contra até f servidores maliciosos, n &gt; 4f.
   </p>
 
   <p>
-    Using these results it looks like we can approach our ideal title database as follows:
+    Usando esses resultados, parece que podemos abordar nosso banco de dados de títulos ideal da seguinte maneira:
   </p>
 
   <ol>
     <li>
       <p>
-        Alice signs the title and Bob's public key, and sends this message to 2f+1 servers, committing her to transfer title to Bob. Bob checks at least 2f+1 servers before relying on Alice's transfer.
+        Alice assina o título e a chave pública de Bob e envia esta mensagem para os servidores 2f+1, comprometendo-a a transferir o título para Bob. Bob verifica pelo menos 2f+1 servidores antes de confiar na transferência de Alice.
       </p>
     </li>
 
     <li>
       <p>
-        No collusion of servers can forge Alice's signature (we achieve at least this property ideally!)
+        Nenhuma conspiração de servidores pode forjar a assinatura de Alice (nós conseguimos pelo menos essa conquista idealmente!)
       </p>
     </li>
 
     <li>
       <p>
-        A conspiracy of  &gt;=(1/4)n servers can block a transfer. Alice's only recourse is to use some other channels to broadcast her intention, demonstrating that the registry did not follow her wishes, and hoping the alternative channels are more reliable.  Bob only has similar recourse if he signed a document with Alice demonstrating their intentions to transfer title from Alice to Bob. The most basic recourse is a correct subset of servers which exits the property club and establishes a new one, then advertises its correctness (and proves the incorrectness of its rival group) as described above.
+        Uma conspiração de  &gt;=(1/4)n servidores podem bloquear uma transferência. O único recurso de Alice é usar alguns outros canais para transmitir sua intenção, demonstrando que o registro não seguiu seus desejos e esperando que os canais alternativos sejam mais confiáveis. Bob só tem um recurso similar se ele assinou um documento com Alice demonstrando suas intenções de transferir o título de Alice para Bob. O recurso mais básico é um subconjunto correto de servidores que sai do clube de propriedades e estabelece um novo, e então anuncia sua correção (e prova a incorreção de seu grupo rival) como descrito acima.
       </p>
     </li>
   </ol>
 
   <p>
-    Sharing control over property, for example as security for a loan, could be accomplished by sharing the private key corresponding to the current owner's public key. Possession of this private key is required to sign over title; multiparty threshold signatures could also be handled. So it may be a good idea to use one keypair for each combination of title and current owner, rather than keypairs representing the identities of owners. When certain contractual conditions are met, such as the last payment on a loan, this could trigger the generation of a new keypair held solely by the owner, and transfer of title from the shared keypair to the new keypair.
+    O compartilhamento de controle sobre a propriedade, por exemplo, como garantia para um empréstimo, pode ser realizado compartilhando-se a chave privada correspondente à chave pública do proprietário atual. A posse dessa chave privada é necessária para assinar o título; assinaturas de múltiplas entradas também poderiam ser manipuladas. Por isso, pode ser uma boa ideia usar um par de chaves para cada combinação de título e proprietário atual, em vez de pares de chaves representando as identidades dos proprietários. Quando certas condições contratuais são atendidas, como o último pagamento de um empréstimo, isso pode desencadear a geração de um novo par de chaves mantido unicamente pelo proprietário e a transferência do título do par de chaves compartilhado para o novo par de chaves.
   </p>
 
-  <h2>Divisibility and Homesteading</h2>
+  <h2>Divisibilidade e Homesteading</h2>
 
   <p>
-    The initial allocations might occur by mapping existing property rights from their current institutional incarnation, or by using traditional methods of staking and negotiating mutual recognition of claims. Some methods less dependent on an existing legal regime for the rights will be discussed in this section.
-  </p>
-
-  <p>
-    For some kinds of allocation, such as spatial regions or a hierarchical namespace, we wish to be able to subdivided and re-merge properties. Current owner Alice should be able to transfer various fractional portions of her title to multiple single relying counterparties. One possibility is to have "divide" or "merge" messages whereby the current owner of a property can retire the old property specifications(s) and link them to new property spec(s), the whole message being signed by the owner. Then the new property spec(s) are introduced and considered active, and the old ones considered deactivated. It would be the responsibility subsequent transferees to ensure that the new specifications do not intersect, and are otherwise in good order.
+    As alocações iniciais podem ocorrer mapeando os direitos de propriedade existentes a partir de sua encarnação institucional atual, ou usando os métodos tradicionais de estacamento e negociação de reconhecimento mútuo de reivindicações. Alguns métodos menos dependentes de um regime legal existente para os direitos serão discutidos nesta seção.
   </p>
 
   <p>
-    One way to approach the homesteading, or initial allocation, problem, I call the "emergent respect" style: Alice claims the entire unallocated universe. Bob also claims it, the same property spec under a different digital signature. They then may choose to subdivide, sell, give away, etc. property. Each conflicting root grows like a tree into an allocation of all property.
+    Para alguns tipos de alocação, como regiões espaciais ou um namespace hierárquico, desejamos poder subdividir e re-mesclar propriedades. A atual proprietária Alice deve ser capaz de transferir várias partes fracionárias de seu título para várias contrapartes individuais e confiáveis. Uma possibilidade é ter mensagens "divididas" ou "mescladas", onde o proprietário atual de uma propriedade pode aposentar as especificações antigas da propriedade e vinculá-las a novas especificações de propriedade, sendo a mensagem inteira assinada pelo proprietário. Em seguida, as novas especificações de propriedade são introduzidas e consideradas ativas e as antigas consideradas desativadas. Seria responsabilidade dos remetentes subseqüentes garantir que as novas especificações não se cruzem e estejam em bom estado.
   </p>
 
   <p>
-    How to resolve trees with conflicting roots? Eventually, the thugs, mechanisms, or informal agreements which enforce property rights converge on a particular tree as the standard, proper allocation. Roots who give away more property to more people, or who actually deploy mechanisms to protect their property, will gain more respect for the tree they started.
+    Uma forma de abordar o problema do homesteading, ou alocação inicial, chamo de "respeito emergente": Alice reivindica todo o universo não alocado. Bob também o afirma, a mesma especificação de propriedade sob uma assinatura digital diferente. Eles podem então escolher subdividir, vender, dar, etc. propriedade. Cada raiz conflitante cresce como uma árvore em uma alocação de todas as propriedades.
   </p>
 
   <p>
-    In a namespace, conflicts may be resolved by giving names to the conflicting roots, and keeping track of those name-subtree mappings as property.
+    Como resolver árvores com raízes conflitantes? Eventualmente, os bandidos, mecanismos ou acordos informais que impõem direitos de propriedade convergem em uma árvore específica como a alocação padrão e apropriada. As raízes que distribuem mais propriedades a mais pessoas, ou que realmente implementam mecanismos para proteger sua propriedade, ganharão mais respeito pela árvore que começaram.
   </p>
 
   <p>
-    Usurpers may be able to steal property by setting up their own root and enforcing it, but they can't delete the alternative allocations. The history is always there as evidence for claims.
+    Em um namespace, os conflitos podem ser resolvidos dando nomes às raízes conflitantes e controlando esses mapeamentos de subtree de nomes como propriedade.
   </p>
 
   <p>
-    Those with no firsthand knowledge of conflicting claims may resolve them by consulting authorities, and weighing the opinions of these authorities according to trust metrics, similar to trust metrics sometimes used for public key certificates.
+    Os usurpadores podem roubar propriedade configurando sua própria raiz e aplicando-a, mas não podem excluir as alocações alternativas. A história está sempre presente como evidência de reivindicações.
   </p>
 
   <p>
-    With secure timestamps, homesteading could be done on a first-come rather than emergent respect basis.
+    Aqueles sem conhecimento em primeira mão de reivindicações conflitantes podem resolvê-los consultando as autoridades e ponderando as opiniões dessas autoridades de acordo com as métricas de confiança, semelhantes às métricas de confiança usadas às vezes para certificados de chave pública.
   </p>
 
-  <h2>Adverse Possession</h2>
+  <p>
+    Com carimbos de data e hora seguros, a homesteading poderia ser feita com base no respeito de um primeiro a chegar, e não no emergente.
+  </p>
+
+  <h2>Possessão adversa</h2>
 
   <p>
-    For some kinds of property we might want to add the right of adverse possession, or formalized squatting. Here's one general way to implement a kind of adverse possession:
+    Para alguns tipos de propriedade, poderíamos querer acrescentar o direito de posse adversa, ou agachamento formalizado. Aqui está uma maneira geral de implementar um tipo de posse adversa:
 
     <ol>
       <li>
-        Transfers must be securely timestamped.
+        As transferências devem ser marcadas com segurança.
       </li>
 
       <li>
-        Transfers expire. To maintain ownership, the owner must issue a new transfer to self before expiration.
+        As transferências expiram. Para manter a propriedade, o proprietário deve emitir uma nova transferência para si antes da expiração.
       </li>
 
       <li>
-        Upon expiration, the property may be homestead on a first-come or emergent respect basis.
+        Após a expiração, a propriedade pode ser de quem chegar primeiro ou de quem estiver acima considerando uma base de respeito.
       </li>
     </ol>
 
   <p>
-    This method doesn't attempt to define or utilize a state of "disuse". Instead it equates activity of the property with the ongoing active online presence of an owner who knows about the title and wishes to continue ownership. Cost of maintaining the title might be made high by requiring a periodic registry fee from owners. However, this introduces the problem of who obtains the benefit, by property club rules, of the profits from this fee, and the problem of that the fee lowers the profit of owning the property, even perhaps making it negative. One possibility, where costs of protecting the property are high, is to charge a "Georgian tax" based on some imprecise but objective estimate of the value potential of the property, and allocate the fees to the task of securing the property. To come up with this estimate, or to account for usage of the property itself, would involve mechanisms or observation of characteristics specific to the kind of property, to which subject we now turn.
+    Este método não tenta definir ou utilizar um estado de "desuso". Em vez disso, equaciona a atividade da propriedade com a presença on-line ativa de um proprietário que conhece o título e deseja continuar com a propriedade. O custo de manutenção do título pode ser alto, exigindo uma taxa de registro periódica dos proprietários. No entanto, isso introduz o problema de quem obtém o benefício, pelas regras do clube de propriedade, dos lucros dessa taxa e o problema de que a taxa reduz o lucro de possuir a propriedade, mesmo que seja negativa. Uma possibilidade, em que os custos de proteção da propriedade são altos, é cobrar uma "taxa georgiana" com base em alguma estimativa imprecisa, mas objetiva do valor potencial da propriedade, e alocar as taxas para a tarefa de proteger a propriedade. Para chegar a esta estimativa, ou para explicar o uso da propriedade em si, envolveria mecanismos ou observação de características específicas para o tipo de propriedade, como vamos tratar a seguir.
   </p>
 
-  <h2>Correspondence to Ground</h2>
+  <h2>Correspondência do Terreno</h2>
 
   <p>
-    Largely unaddressed above is the problem of divergence between actual conditions and directory rights. For example, squatters might legitimately, in the eyes of most property rights enforcers, occupy and improve unused land which a title registry indicates is owned by others. De Soto<sup><a href="#fn2" id="ref2-2">[2]</a></sup> describes squatters and emergent property rights on the American frontier and today's developing world. When names are property, a name may violate a pre-existing trademark, causing the confusion that both the new namespace and the old trademark namespace were designed to solve.
-  </p>
-
-  <p>
-    When divergence becomes too great, a solution to address the unreality of the title registry is needed. One such solution is for the squatters to set up their own rival registry, and then prove the superior correspondence of their registry to actual reality over control and use of the resources. Another solution for squatters is to use the adverse possession mechanism described above &ndash; but this works only if the cost of maintaining the title is sufficiently high.
+    Grande parte dos problemas não abordados acima são de divergência entre as condições reais e direitos de diretório. Por exemplo, posseiros podem legitimamente, aos olhos da maioria dos aplicadores de direitos de propriedade, ocupar e melhorar a terra não utilizada que um registro de título indica ser de propriedade de outros. De Soto<sup><a href="#fn2" id="ref2-2">[2]</a></sup> descreve posseiros e direitos de propriedade emergentes na fronteira americana e no mundo em desenvolvimento de hoje. Quando nomes são propriedade, um nome pode violar uma marca registrada preexistente, causando a confusão de que tanto o novo namespace quanto o antigo namespace de marca registrada foram projetados para resolver.
   </p>
 
   <p>
-    Another solution is to examine the incentives of the titled owner, to see if they correspond to truthfully claiming control over a resource. In most cases there may be incentive to lie, and we can't use this method. In some cases there is incentive to tell the truth and we can, with caveats, rely on it. Any such incentive assumption in the property rules should be explicated, so that relying parties can examine whether the conditions creating the incentive still hold.
+    Quando a divergência se torna muito grande, é necessária uma solução para lidar com a irrealidade do registro de títulos. Uma dessas soluções é que os posseiros estabeleçam seu próprio registro rival e, em seguida, comprovem a correspondência superior de seu registro com a realidade real em relação ao controle e uso dos recursos. Outra solução para posseiros é usar o mecanismo de posse adversa descrito acima &ndash; mas isso só funciona se o custo de manter o título for suficientemente alto.
   </p>
 
   <p>
-    Another solution is for property club rules and the registry to originally incorporate rich information about the actual state of property, and modify the actual ownership and transfer on this property based on that state, in a way that leaves few ambiguities so it can be fully audited by club members and third parties. It is most advantageous when this auditing can remain automated, as envisioned above. However the introduction as rule criteria of unrecorded (or unsecurely recorded) transient states common in physical property causes auditing, and thus the titles, to become both less secure and more expensive.
+    Outra solução é examinar os incentivos do proprietário do título, para ver se eles correspondem a um controle verdadeiro sobre um recurso. Na maioria dos casos, pode haver incentivo para mentir e não podemos usar esse método. Em alguns casos, há incentivo para dizer a verdade e podemos, com ressalvas, confiar nela. Qualquer pressuposto de incentivo nas regras de propriedade deve ser explicado, para que as partes confiantes possam examinar se as condições que criam o incentivo ainda são válidas.
+  </p>
+
+  <p>
+    Outra solução é que as regras do clube de propriedade e o registro incorporem originalmente informações ricas sobre o estado real da propriedade e modifiquem a propriedade e a transferência reais dessa propriedade com base nesse estado, deixando poucas ambiguidades para que possam ser totalmente auditadas por sócios do clube e terceiros. É mais vantajoso quando esta auditoria pode permanecer automatizada, conforme previsto acima. No entanto, a introdução como critério de regra de estados transitórios não registrados (ou não registrados de forma segura) comuns em propriedades físicas faz com que a auditoria, e portanto os títulos, se tornem menos seguros e mais caros.
 
   <!--
-  <h2 class="text-muted">Confidential Ownership</h2>
+  <h2 class="text-muted">Propriedade Confidencial</h2>
 
   <p class="text-muted">
-    Using a new key pair for each transfer, besides facilitating shared control over property, can also help solve the confidentiality problem, and make it so that servers cannot discriminate against politically incorrect parties. This takes advantage of the "blindfolded justice" effect provided by anonymity. The holder of the unique key can remain anonymous (to some extent, see caveats below) and still transfer the title to others. One could contact the owners if they incorporate remailer-return envelopes with the title.
+    O uso de um novo par de chaves para cada transferência, além de facilitar o controle compartilhado da propriedade, também pode ajudar a resolver o problema de confidencialidade e fazer com que os servidores não possam discriminar as partes politicamente incorretas. Isso tira proveito do efeito de "justiça vendada" fornecido pelo anonimato. O detentor da chave exclusiva pode permanecer anônimo (até certo ponto, ver as advertências abaixo) e ainda transferir o título para outras pessoas. Pode-se contatar os proprietários se eles incorporarem envelopes de retorno ao reencaminhador com o título.
   </p>
 
   <p class="text-muted">
-    Anonymous property titles would have some other interesting consequences. Let's say there's a public good which nobody has incentive to fund unless they own most of a certain kind of property. (For example, the classic stock market takeover, where only holders of large voting blocks will put in the oversight needed to straighten out management). They could purchase property under different keys without raising suspicion that a takeover is underway. Of course, the same strategy could be used to create monopolies for less useful purposes.
+    Títulos de propriedade anônimos teriam outras consequências interessantes. Digamos que há um bem público que ninguém tem incentivo para financiar, a menos que seja o proprietário de um determinado tipo de propriedade. (Por exemplo, a aquisição clássica do mercado de ações, em que somente os detentores de grandes blocos de votação colocarão a supervisão necessária para endireitar a administração). Eles poderiam comprar propriedades sob chaves diferentes sem levantar suspeitas de que uma aquisição estava em andamento. É claro que a mesma estratégia poderia ser usada para criar monopólios para fins menos úteis.
   </p>
 
   <p class="text-muted">
-    If potential users of a property don't know who the owner of the property is, that might make practical enforcement of some kinds of property rights difficult. To enforce Alice's rights, she may have to prove to a jurisdiction that she owns the property. She can prove that the titled owner claims that she owns (not the same thing as proving that she owns, but perhaps good enough for enforcement purposes) by signing her jurisdictional name with the current owner's key. To completely prove that she owns, she would have to transfer the title to her jurisdictional name. (The jurisdiction being the entity that actually physically enforces the property rights, where this is necessary). In either case, it seems she has to reveal her jurisdictional identity in order to enforce her rights.
+    Se os usuários em potencial de uma propriedade não souberem quem é o proprietário da propriedade, isso pode dificultar a aplicação prática de alguns tipos de direitos de propriedade. Para reforçar os direitos de Alice, ela pode ter que provar a uma jurisdição que é dona da propriedade. Ela pode provar que o proprietário do título alega que ela é proprietária (não é a mesma coisa que provar que é dona dela, mas talvez seja boa o suficiente para fins de execução) assinando seu nome jurisdicional com a chave do proprietário atual. Para provar completamente que ela é dona, ela teria que transferir o título para seu nome jurisdicional. (A jurisdição é a entidade que realmente aplica fisicamente os direitos de propriedade, quando isso é necessário). Em ambos os casos, parece que ela tem que revelar sua identidade jurisdicional para impor seus direitos.
   </p>
 
   <p class="text-muted">
-    Self-enforcing property protection protocols might allow more anonymity, where these are feasible.
+    Protocolos de proteção de propriedade auto-aplicáveis podem permitir mais anonimato, quando estes são viáveis.
   </p>
 
   <p class="text-muted">
-    Some kinds of property would naturally be associated with some physical location, and thereby not be very anonymous. Furthermore, a mass of transaction detail can accumulate in the public database, revealing unique patterns of behavior. So overall the anonymity is pretty weak even with use-once keys, and may raise problems with hidden monopolies and enforcement.
+    Alguns tipos de propriedade seriam naturalmente associados a alguma localização física e, portanto, não seriam muito anônimos. Além disso, um conjunto de detalhes de transação pode se acumular no banco de dados público, revelando padrões únicos de comportamento. Portanto, no geral, o anonimato é bastante fraco, mesmo com chaves de uso único, e pode causar problemas com monopólios e coação oculta.
   </p>
 
   <p class="text-muted">
-    So it would be nice if the servers could be trusted not to block trades even when they know the identities of the owners. In the design I suggested a conspiracy of >=1/4 of the servers can so block. It might also be nice if some sort of blinding/mixing mechanism (a la digital cash) could be introduced to unlink trades between these identities while maintaining the integrity of ownership transfer, so that the public database doesn't reveal so much traffic information.
+    Por isso, seria bom se os servidores pudessem ser confiáveis para não bloquear negócios, mesmo quando eles conhecem as identidades dos proprietários. No design eu sugeri uma conspiração de >=1/4 dos servidores podem dessa forma bloquear. Também poderia ser bom se algum tipo de mecanismo de ofuscamento/mistura pudesse ser introduzido para desvincular negociações entre essas identidades, mantendo a integridade da transferência de propriedade, para que o banco de dados público não revelasse tanta informação de tráfego.
   </p>
 
-  <h2 class="text-muted">Keeping Servers Honest</h2>
+  <h2 class="text-muted">Mantendo Servidores Honestos</h2>
 
   <p class="text-muted">
-    The two theoretical areas dealing with this are Byzantine agreement (used here) and multiparty secure computation. Some recent work in these areas has been done by:
+    As duas áreas teóricas que tratam disso são a concordância bizantina (usada aqui) e a computação segura multipartidária. Alguns trabalhos recentes nessas áreas foram feitos por:
   </p>
 
     <ul class="text-muted">
@@ -234,41 +234,41 @@
     </ul>
 
   <p class="text-muted">
-    The Byzantine agreement and related results typically require n>3f. (n is the number of servers and f is the number of maliciously faulty, or "Byzantine", servers that can be tolerated). Multiparty secure comptutions achieve n>2f but assume Byzantine agreement for synchronization, so they have in theory a 3f "security hole".
+    O acordo bizantino e os resultados relacionados normalmente requerem n>3f. (n é o número de servidores e f é o número de servidores com falhas maliciosas ou "Bizantino" que podem ser tolerados). As implementações seguras multipartidárias alcançam n>2f, mas assumem um acordo bizantino para sincronização, então elas têm, em teoria, uma "abertura de segurança" 3f.
   </p>
 
   <p class="text-muted">
-    Variations don't always achieve such numbers. The Malkhi/Meiter replicated database achieved only n>4f. (They do have a newer paper I haven't read which may improve upon this by going to "highly probable" security).
+    Variações nem sempre atingem esses números. O banco de dados replicado Malkhi/Meiter alcançou apenas n>4f. (Eles têm um artigo mais recente que eu não li, o que pode melhorar isso indo para a segurança "altamente provável").
   </p>
 
   <p class="text-muted">
-    Under the assumption of digital signatures, agreement can be reached in n > f. This gives the same abstract trust model as the untraceability of anonymous remailers. (Of course, actually getting the message through requires all n remailers to work properly, so in that sense even cf reliability is better than remailers). It would be neat if one could do a replicated database with such a high trust threshold, but I haven't seen anything like that in the literature and there may be good reasons why we can't.
+    Sob a hipótese de assinaturas digitais, a concordância pode ser alcançada em n > f. Isso fornece o mesmo modelo abstrato de confiança que a impossibilidade de rastreamento de remailers anônimos. (É claro que, na verdade, a transmissão da mensagem requer que todos os remailers funcionem corretamente, portanto, nesse sentido, até mesmo a confiabilidade é melhor do que os remailers). Seria legal se alguém pudesse fazer um banco de dados replicado com um limite de confiança tão alto, mas não vi nada parecido na literatura e pode haver boas razões para que não possamos.
   </p>
 
   <p class="text-muted">
-    Economic security models would be desirable here, but are not ready for prime time. Deciding what the preferences and resources of the attacker should be is tough. Economists assume some typical probability distribution of preferences, and some constant amount of wealth. Cryptographers, and even some people studying fault tolerance, assume a much more powerful and malicious adversary: with polynomial computational resources, and preferring to do the most damage possible to the user. The Byzantine attacker's utility is precisely the negative utility of the user!
+    Modelos de segurança econômica seriam desejáveis aqui, mas não estão prontos para o horário nobre. Decidir quais devem ser as preferências e os recursos do invasor é difícil. Os economistas assumem uma distribuição de probabilidade típica de preferências e alguma quantidade constante de riqueza. Criptógrafos, e até mesmo algumas pessoas que estudam tolerância a falhas, assumem um adversário muito mais poderoso e malicioso: com recursos computacionais polinomiais, e preferindo causar o maior dano possível ao usuário. A utilidade do atacante bizantino é precisamente a utilidade negativa do usuário!
   </p>
 
   <p class="text-muted">
-    Economic models tend to look at linear or constant differences (Mallet can't make more money than it costs him to crack the security, so Mallet won't try to crack it) whereas cryptographers prefer super-polynomial differences (the cost to Mallet is super-polynomial in a security parameter controlled by the defender). Economic models bear some similiarity to the "benign" models of statistically distributed error in fault tolerance (as opposed to the "Byzantine" models of maximally malicious faults). However, once security models bubble up to the level of trading off f vs. 2f vs. 3f security, we have the same linear structure as an economic model. So it would make sense to introduce economics at that level of analysis.
+    Modelos econômicos tendem a olhar para diferenças lineares ou constantes (Mallet não pode ganhar mais dinheiro do que custa a ele quebrar a segurança, então Mallet não vai tentar quebrá-lo) enquanto criptógrafos preferem diferenças super-polinomiais (o custo para Mallet é super-polinomial em um parâmetro de segurança controlado pelo defensor). Os modelos econômicos apresentam alguma semelhança com os modelos "benignos" de erro estatisticamente distribuído na tolerância a falhas (em oposição aos modelos "Bizantinos" de falhas maximamente maliciosas). No entanto, uma vez que os modelos de segurança atingem o nível de negociação f versus 2f versus 3f, temos a mesma estrutura linear que um modelo econômico. Portanto, faria sentido introduzir a economia nesse nível de análise.
   </p>
 
   <p class="text-muted">
-    Economic security ideas like "exposure" make a lot of sense, especially for financial security. An example is the the ATM limit of $300/day: this is the user's "exposure", the most she can lose, to a crack of the ATM system. This is a "knob" which can be adjusted to reflect the current costs of cracking the security.
+    Idéias de segurança econômica como "exposição" fazem muito sentido, especialmente para a segurança financeira. Um exemplo é o limite de caixa eletrônico de US$300/dia: essa é a "exposição" do usuário, o máximo que ela pode perder, para uma falha no sistema de caixa eletrônico. Este é um "botão" que pode ser ajustado para refletir os custos atuais de quebrar a segurança.
   </p>
 
   <p class="text-muted">
-    So it would be nice to come up with good theories along these lines at some point. Another nice thing might be a theoretical regime "in between" economics and cryptography, dealing with resource and preference differences within the polynomial range (e.g., O(n<sup>4</sup>) vs. O(n)).
+    Por isso, seria bom apresentar boas teorias ao longo destas linhas em algum momento. Outra coisa interessante pode ser um regime teórico "entre" economia e criptografia, lidando com diferenças de recursos e preferências dentro da faixa polinomial (por exemplo, O(n<sup>4</sup>) vs. O(n)).
   </p>
   -->
 
-  <h2>Acknowledgements</h2>
+  <h2>Agradecimentos</h2>
 
   <p>
-    My thanks to Gregory Burch, J.D., Eileen O'Connor, J.D., Melora Svoboda, and many others for their helpful comments.
+    Meus agradecimentos a Gregory Burch, J.D., Eileen O'Connor, J.D., Melora Svoboda, e muitos outros por seus comentários úteis.
   </p>
 
-  <h2>References</h2>
+  <h2>Referências</h2>
 
     <ol>
       <li id="fn1">
@@ -336,12 +336,12 @@
 
   <hr>
   <p>
-    Please send your comments to nszabo (at) law (dot) gwu (dot) edu
+    Por favor, envie seus comentários para nszabo (at) law (dot) gwu (dot) edu
   </p>
 
   <p>
     Copyright &copy; 1998,1999,2002,2005 by Nick Szabo<br>
-    Permission to redistribute without alteration hereby granted
+    Permissão para redistribuir sem alteração por este concedida
   </p>
 
 </div>
