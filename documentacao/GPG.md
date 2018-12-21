@@ -270,10 +270,10 @@ O ```83048A80F80A2DB5``` é o ID da chave de exemplo.
 
 
 **Servidores famosos:**
-pgp.mit.edu
-keys.gnupg.net
-subkeys.pgp.net
-keyserver.pgp.com
-keyserver.ubuntu.com
-sks-keyservers.net
-[outros](https://sks-keyservers.net/status/)
+* [pgp.mit.edu](pgp.mit.edu)
+* [keys.gnupg.net](keys.gnupg.net)
+* [subkeys.pgp.net](subkeys.pgp.net)
+* [keyserver.pgp.com](keyserver.pgp.com)
+* [keyserver.ubuntu.com](keyserver.ubuntu.com)
+* [sks-keyservers.net](sks-keyservers.net)
+* [outros](https://sks-keyservers.net/status/)
