@@ -262,7 +262,7 @@ gpg --keyserver pgp.mit.edu --send-keys ID_da_chave
 ```
 
 Ao teclar ```Enter``` aparecerá
-````
+```
 gpg: enviando chave 83048A80F80A2DB5 para hkp://pgp.mit.edu
 ```
 
