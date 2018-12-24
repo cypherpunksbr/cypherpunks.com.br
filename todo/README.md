@@ -38,6 +38,8 @@
 
 :pencil2: Cartas do Ross Ulbricht - [@MarlonX19](https://github.com/MarlonX19)
 
+ :pencil2: [trusted third parties](../todo/trusted-third-parties.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
+
 
 
 ### Textos traduzidos: 
@@ -50,11 +52,11 @@
 
 :ok: [Contratos com Titular](https://cypherpunks.com.br/contratos-com-titular/ "ver publicação traduzida") - [Matheus Bach](https://github.com/matheusbach/ "perfil de Matheus Bach no github")
 
-:ok: [Criptoanarquia_e_Comunidades_Virtuais](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/Criptoanarquia_e_Comunidades_Virtuais.html)
+:ok: [Criptoanarquia e Comunidades Virtuais](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/Criptoanarquia_e_Comunidades_Virtuais.html)
 
 :ok: [Criptografia Intrapolinomial](cypherpunks.com.br/posts/intrapolynomial-cryptography.html) - [Davi Figueiredo](https://github.com/davimello28)
 
-:ok: [Feliz_Aniversário_Bitcoin](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/Feliz_Anivers%C3%A1rio_Bitcoin.html)
+:ok: [Feliz Aniversário Bitcoin](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/Feliz_Anivers%C3%A1rio_Bitcoin.html)
 
 :ok: [Porque eu escrevi o PGP](https://cypherpunks.com.br/porque-eu-escrevi-o-pgp/ "ver publicação traduzida") - [@Deephi]()
 
@@ -64,15 +66,15 @@
 
 :ok: [Cripto Glossário](https://cypherpunks.com.br/cripto-glossario/ "ver publicação traduzida") - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 
-:ok: [Libertária_no_Ciberespaço](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/libertaria_no_ciberespa%C3%A7o.html)
+:ok: [Libertária no Ciberespaço](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/libertaria_no_ciberespa%C3%A7o.html)
 
 :ok: [O Manifesto Criptoanarquista](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/o_manifesto_criptoanarquista.html)
 
 :ok: [O Manifesto Cypherpunk](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/o_manifesto_cypherpunk.html)
 
-:ok: [O_Manifesto_libbitcoin](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/O_Manifesto_libbitcoin.html) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
+:ok: [O Manifesto libbitcoin](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/O_Manifesto_libbitcoin.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
-:ok: [politica_vs_tecnologia](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/politica_vs_tecnologia.html)
+:ok: [Politica vs Tecnologia](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/politica_vs_tecnologia.html)
 
 :ok: [A Catedral e o Bazar](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/a-catedral-e-o-bazar.html) - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 
@@ -80,9 +82,9 @@
 
 :ok: [rpow](../todo/rpow.html) - [Marcos]()
 
-:ok: [Os Protocolos de Deus](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/os-protocolos-de-deus.html) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
+:ok: [Os Protocolos de Deus](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/os-protocolos-de-deus.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
-:ok: [Auditoria Confidencial](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/auditoria-confidencial.html) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
+:ok: [Auditoria Confidencial](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/auditoria-confidencial.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
 :ok: [Títulos Seguros de Propriedade]() - [Matheus Bach](https://github.com/matheusbach/ "Ver perfil no GitHub")
 
@@ -144,8 +146,6 @@
  :clock3: [triple entry accounting](../todo/triple-entry-accounting.html)
  
  :clock3: [truledger](../todo/truledger.html)
- 
- :clock3: [trusted third parties](../todo/trusted-third-parties.html)
  
 * Você pode sugerir ou traduzir um texto que não esteja nessa lista. Basta submeter uma "pull request" pelo GitHub
 
