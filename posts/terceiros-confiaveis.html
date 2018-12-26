@@ -1,0 +1,243 @@
+  <div class="page-header">
+    <h1 style="text-align: center;">
+  	  Terceiros confiáveis são brechas de segurança <br><small>Nick Szabo</small>
+  	</h1>
+  	<h4 style="text-align: center;">
+  	  Originalmente publicado em 2001<br>
+    </h4>
+  </div>
+
+  <h2>Introdução</h2>
+    <p style="text-align: justify;">
+      A segurança comercial é uma questão de resolver os problemas práticos de relações comerciais, como privacidade, integridade, proteção de propriedade ou detecção de quebra de contrato. Uma brecha de segurança é qualquer fraqueza que aumenta o risco de violar esses objetivos. Nesta visão de mundo real da segurança, um problema não desaparece porque um designer supõe que não tenha. A invocação ou suposição em um projeto de protocolo de segurança de um “terceiro confiável” (TTP) ou uma “base computacional confiável” (TCB) controlada por um terceiro constitui a introdução de uma falha de segurança nesse desenho. A falha de segurança precisará então ser conectada por outros meios.
+    </p>
+    <p style="text-align: justify;">
+      Se os riscos e custos das alternativas institucionais de TTP não forem contabilizados no desenho do protocolo, o protocolo resultante será, na maioria dos casos, muito caro ou arriscado para ser prático. Se o protocolo superar essas probabilidades e se mostrar prático, ele só será bem-sucedido depois que um grande esforço for feito para tapar a(s) brecha(s) de segurança do TTP. As suposições do TTP causam a maior parte dos custos e riscos em um protocolo de segurança, e a obstrução dos furos de segurança do TTP produz o máximo benefício e lucro.
+    </p>
+    <p style="text-align: justify;">
+      Como resultado, propomos uma metodologia de design de protocolo de segurança na qual a(s) parte(s) mais arriscada(s) e mais cara (s) de um protocolo de segurança sejam projetadas em paralelo com protocolo(s) de segurança usando essas partes. Os objetivos de minimização de custos e riscos são focados nos TTPs e não nos próprios protocolos de segurança, que devem ser projetados para atender às TTPs de custo e risco minimizadas.
+    </p>
+    <p style="text-align: justify;">
+      Também discutimos e fazemos uma breve referência à pesquisa e implementação em mecanismos de segurança que reduzem radicalmente os custos e riscos de terceiros ao distribuir TTPs automatizados entre várias partes, sendo que apenas uma parte deles precisa agir de maneira confiável ou honesta para que o protocolo seja confiável ou honesto.
+    </p>
+
+  <h2>Novos terceiros confiáveis são caros e arriscados</h2>
+
+    <p style="text-align: justify;">
+      Este autor tem experiência profissional implementando um TTP que foi assumido pelos primeiros defensores da criptografia de chave pública. Esse TTP passou a ser chamado de "autoridade de certificação" (CA). Foi-lhe dada a responsabilidade de atestar a "identidade" dos participantes. (Aqui me concentro nos custos impostos pelo TTP; alternativas como Web of Trust e SPKI do PGP foram discutidas amplamente em outros lugares).
+    </p>
+
+    <p style="text-align: justify;">
+      A autoridade de certificação provou ser, de longe, o componente mais caro dessa infraestrutura de chave pública centralizada (PKI). Isto é exacerbado quando a necessidade de um TTP considerado por projetistas de protocolo é traduzido, em padrões de PKI como SSL e S/MIME, em um <em>requisito</em> para um TTP. Um TTP que deve ser confiado por todos os usuários de um protocolo torna-se um árbitro de quem pode e não pode usar o protocolo. Assim, por exemplo, para executar um servidor Web SSL seguro ou para participar do S/MIME, é necessário obter um certificado de uma autoridade de certificação confiável mutuamente. O mais antigo e mais popular deles foi a Verisign. Ele foi capaz de cobrar várias centenas de dólares por certificados de usuário final &ndash; superando em muito os poucos dólares cobrados (implicitamente no custo do software do usuário final) pelo próprio código de protocolo de segurança. O processo burocrático de solicitar e renovar certificados consome muito mais tempo do que configurar as opções SSL, e o processo de identificação da CA está sujeito a uma exposição muito maior do que o próprio protocolo SSL. A Verisign acumulou uma avaliação do mercado de ações na casa dos 10 <i>bilhões</i> de dólares americanos (mesmo antes de entrar em outro negócio da TTP, o Sistema de Nomes de Domínio na Internet (DNS), adquirindo a Network Solutions). Como? Ao apresentar uma solução &ndash; <em>qualquer</em> solução, quase, como sua segurança é bastante grosseira e dispendiosa em comparação com os componentes criptográficos de uma PKI &ndash; à suposição aparentemente inócua de uma "terceira parte confiável" feita pelos projetistas de protocolos de chave pública para e-mail e Web.
+    </p>
+
+    <p style="text-align: justify;">
+      Mais alguns problemas com CAs são tratados <a href="http://iang.org/ssl/pki_considered_harmful.html">aqui</a>.
+    </p>
+
+    <p style="text-align: justify;">
+      O DNS da Internet é outro exemplo dos altos custos e riscos impostos por um TTP. Esta pequena parte da pilha do protocolo TCP/IP foi responsável pela maioria das disputas e longos debates envolvendo esse protocolo. Por quê? Porque é uma das poucas áreas da pilha TCP/IP que depende de uma hierarquia centralizada de TTPs em vez de negociações de protocolo entre nós individuais da Internet. O DNS também é o único componente da Internet que provavelmente falhará mesmo quando seus nomes não estiverem sendo contestados ou falsificados.
+    </p>
+
+    <p style="text-align: justify;">
+      Os altos custos de implementação de um TTP ocorrem principalmente porque as soluções tradicionais de segurança, que devem ser invocadas quando o próprio protocolo deixa de existir, envolvem altos custos de pessoal. Para obter mais informações sobre os benefícios de necessidade e segurança dessas soluções de segurança tradicionais, especialmente controles de pessoal, ao implementar organizações de TTP, consulte o ensaio deste autor em <a href="http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/groupcontrols.html">controles de grupo</a>. Os riscos e custos assumidos pelos usuários do protocolo também passam a ser dominados pela falta de confiabilidade do TTP &ndash; o DNS e as autoridades de certificação são duas fontes bastante comuns de falta de confiabilidade e frustração com a Internet e PKIs, respectivamente.
+    </p>
+  
+  <h2>Terceiros confiáveis ​​existentes são valiosos</h2>
+
+    <p style="text-align: justify;">
+      Empresas como Visa, Dun e Bradstreet, Underwriter's Laboratories, entre outras, conectam estranhos desconfiados em uma rede de confiança comum. Nossa economia depende deles. Muitos países em desenvolvimento não têm esses <a href="http://www.erights.org/talks/pisa/paper/index.html">centros de confiança</a> e se beneficiariam muito da integração com os centros mundiais desenvolvidos como esses. Enquanto essas organizações muitas vezes têm muitos defeitos e fraquezas, &ndash; empresas de cartão de crédito, por exemplo, têm problemas crescentes com fraudes, roubo de identidade e relatórios imprecisos, e os Barings recentemente foram à falência porque seus sistemas de controle não se adaptaram adequadamente à negociação de títulos digitais &ndash; de modo geral, essas instituições estarão conosco por um longo tempo.
+    </p>
+
+    <p style="text-align: justify;">
+      Isso não nos ajuda a obter TTPs para novos protocolos. Essas instituições têm um modo particular de fazer negócios altamente evoluídos e especializados. Eles geralmente não podem "subir" a uma maneira substancialmente diferente de fazer negócios. Inovações substanciais em novas áreas, por ex. e-commerce e segurança digital, deve vir de outro lugar. Qualquer projeto de novo protocolo, especialmente áreas paradigmaticamente diferentes, como capacidades ou cálculos criptográficos, será um descompasso entre as instituições existentes. Como a construção de novos TTPs a partir do zero é tão cara, é muito mais barato introduzir protocolos dessas tecnologias de segurança institucionalmente inovadoras para minimizar suas dependências em TTPs.
+    </p>
+
+  <h2>Novos terceiros confiáveis ​​podem ser tentadores</h2>
+
+    <p style="text-align: justify;">
+      Muitas são as razões pelas quais as organizações podem vir a favorecer a segurança dispendiosa baseada em TTP sobre uma segurança mais eficiente e eficaz que minimize o uso de TTPs:
+    </p>
+    
+    <p style="text-align: justify;">
+      <strong>Limitações de imaginação, esforço, conhecimento ou tempo entre os projetistas de protocolos</strong> &ndash; é muito mais fácil projetar protocolos de segurança que dependem de TTPs do que aqueles que não o fazem (ou seja, para evitar o problema em vez de resolvê-lo). Os custos de projeto natural são um fator importante que limita o progresso no sentido de minimizar os TTPs nos protocolos de segurança. Um fator maior é a falta de consciência da importância do problema entre muitos arquitetos de segurança, especialmente os arquitetos corporativos que elaboram padrões de segurança para Internet e sem fio.
+    </p>
+
+    <p style="text-align: justify;">
+      <strong>A tentação de reivindicar o "terreno alto" como opção de compra é grande.</strong> A ambição de se tornar a próxima Visa ou Verisign é uma viagem de poder difícil de recusar. As barreiras para realmente construir um negócio bem sucedido de TTP são, no entanto, muitas vezes severas &ndash; os custos iniciais são substanciais, os custos contínuos permanecem altos, os riscos de responsabilidade são grandes e, a menos que haja uma vantagem substancial de "pioneirismo", as barreiras à entrada de concorrentes são poucas. Ainda assim, se ninguém resolver os problemas de TTP no protocolo, isso pode ser um negócio lucrativo, e é fácil invejar grandes vencedores como a Verisign, em vez de lembrar de todas as empresas agora obscuras que tentaram, mas perderam. Também é fácil imaginar-se como o TTP bem-sucedido e defender o protocolo de segurança que exige o TTP, em vez de tentar de fato resolver o problema de segurança.
+    </p>
+    
+    <p align="middle">
+    <img alt="miracle" src="../pages/img/miracle.jpg">
+    </p>
+    
+    <p style="text-align: justify;">
+      <strong>Interesses arraigados.</strong> Grandes números de profissionais articulados ganham a vida usando as habilidades necessárias em organizações de TTP. Por exemplo, as legiões de auditores e advogados que criam e operam estruturas tradicionais de controle e proteções legais. Eles naturalmente favorecem os modelos de segurança que assumem que devem intervir e implementar a segurança real. Em novas áreas, como o comércio eletrônico, elas favorecem novos modelos de negócios baseados em TTPs (por exemplo, provedores de serviços de aplicativos), em vez de dedicarem tempo para aprender novas práticas que possam ameaçar suas antigas habilidades.
+    </p>
+
+    <p style="text-align: justify;">
+      <strong>Custos de transação mental.</strong> Confiança, como <a href="http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/micropayments.html">sabor</a>, é um <a href="http://www.eros-os.org/pipermail/e-lang/2004-Fevereiro/009555.html">julgamento subjetivo</a>. Fazer tal julgamento requer esforço mental. Um terceiro com boa reputação, e que é realmente confiável, pode evitar que seus clientes tenham que fazer muita pesquisa ou arcar com outros custos associados a essas avaliações. No entanto, entidades que afirmam ser confiáveis, mas acabam não sendo confiáveis, impõem custos não apenas de natureza direta, quando violam a confiança, mas aumentam o custo geral de tentar escolher entre dignos de confiança e terceiros confiáveis traiçoeiros.
+    </p>
+
+  <h2>Propriedade pessoal não tem e não deve depender de TTPs</h2>
+
+    <p style="text-align: justify;">
+      Durante a maior parte da história humana, a forma dominante de propriedade foi propriedade pessoal. A funcionalidade da propriedade pessoal nunca dependeu de terceiros confiáveis ​​em condições normais. As propriedades de segurança de bens simples poderiam ser verificadas na venda ou no primeiro uso, e não havia necessidade de interação contínua com o fabricante ou outros terceiros (exceto ocasionalmente reparos pessoais após uso excepcional e de forma voluntária e temporária). Os direitos de propriedade para muitos tipos de bens móveis (propriedade portátil) eram apenas minimamente dependentes de terceiros &ndash; o único problema em que os TTPs eram necessários era defender-se contra as depredações de outros terceiros. A principal propriedade de segurança dos bens móveis não costumava ser outros TTPs como protetores, mas sim sua portabilidade e intimidade.
+    </p>
+
+    <p style="text-align: justify;">
+      Aqui estão alguns exemplos da onipresença da propriedade pessoal em que havia uma realidade ou pelo menos um forte desejo por parte dos proprietários de estar livre da dependência de TTPs para funcionalidade ou segurança:
+    </p>
+
+    <p style="text-align: justify;">
+      <ul>
+        <li>
+          Jóias (muito mais frequentemente usadas para dinheiro em culturas tradicionais do que moedas, por exemplo, Europa do Norte até 1000 dC, e usadas no corpo para melhor proteção da propriedade, bem como decoração)
+        </li>
+        <li>
+          Automóveis operados por e portas de casas abertas por chaves pessoais.
+        </li>
+        <li>
+          Computadores pessoais &ndash; nas visões originais de muitos pioneiros da computação pessoal (por exemplo, muitos membros do Homebrew Computer Club), o PC foi concebido como propriedade pessoal & ndash; o proprietário teria controle total (e compreensão) do software em execução no PC, incluindo a capacidade de copiar bits no PC à vontade. A complexidade do software, a conectividade com a Internet e as incompatibilidades de incentivos não resolvidas entre editores de software e usuários (proprietários de PCs) corroeram substancialmente a realidade do computador pessoal como propriedade pessoal.
+        </li>
+      </ul>
+    </p>
+
+    <p style="text-align: justify;">
+      Esse desejo é instintivo e permanece até hoje. Ele se manifesta na resistência do consumidor quando eles descobrem dependência inesperada e vulnerabilidade a terceiros nos dispositivos que usam. Sugere que a funcionalidade dos bens pessoais seja dependente de terceiros, mesmo que sejam acordados sob condições estritas, como credores, até que um empréstimo de bens móveis seja pago (a <a href="http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_idea.html">garantia inteligente</a>) são recebidos com forte resistência. Tornar a propriedade de propriedade pessoal dependente de terceiros <em>confiáveis</em>​ (ou seja, confiável em vez de forçada pelo protocolo a manter o contrato que rege o protocolo de segurança e a propriedade) é, na maioria dos casos, inaceitável.
+    </p>
+
+  <h2>Metodologia Minimizadora de TTP</h2>
+
+    <p style="text-align: justify;">
+      Propomos agora uma metodologia de projeto de protocolo de segurança em que o(s0 protocolo(s) são projetados para minimizar esses custos e riscos dos TTPs. Minimizar os custos e riscos do(s) protocolo(s) de segurança em si é uma prioridade importante, mas secundária.
+    </p>
+
+    <p style="text-align: justify;">
+      Atualmente, os projetistas de segurança geralmente invocam ou assumem os TTPs para se adequar ao protocolo de segurança mais elegante e seguro, ou menos computacionalmente caro. Esses TTPs ingênuos são então usados ​​em uma prova de conceito de uma arquitetura geral de protocolo. Mas isso não descobre as coisas importantes que precisam ser descobertas. Uma vez que um protocolo de segurança é implementado, o próprio código custa muito pouco, e as funções de custo exponencial, como a lei de Moore, continuam reduzindo a computação, a largura de banda e muitos outros custos tecnológicos. Os custos do protocolo de segurança em si (exceto os custos das rodadas de mensagens, limitados pela velocidade da luz e os custos da interface do usuário, limitados por <a href="http://www.berlecon.de/services/en/iew2/papers/szabo.pdf">custos de transação mental</a>) aproximam-se de zero. De longe, o maior custo a longo prazo do sistema (como aprendemos com a PKI) é o custo de implementação dos TTPs.   
+    </p>
+
+    <p style="text-align: justify;">
+      É muito mais proveitoso estimar desde o início o que os TTPs custarão, em vez de tentar projetar os protocolos de segurança para minimizar os custos dos TTPs. Isso provavelmente levará o projetista a pressupostos de confiança bem diferentes e, portanto, a protocolos de segurança, do que se ele(a) assumir TTPs puros e não analisados ​​em determinados locais, a fim de simplificar o protocolo de segurança. Um corolário natural é que se existe um protocolo de segurança que possa eliminar ou reduzir grandemente os custos de um TTP, então vale a pena implementá-lo em vez de um que pressupõe um TTP dispendioso. Mesmo se o último protocolo de segurança for mais simples e muito mais computacionalmente eficiente.
+    </p>
+
+    <p style="text-align: justify;">
+      Um corolário de "terceiros confiáveis ​​são brechas de segurança" é "todos os protocolos de segurança têm brechas de segurança", já que nenhum protocolo está totalmente livre de tais suposições. Os principais passos para estimar os custos e riscos da TTP são: (1) examinar completamente as suposições para descobrir todas as suposições da TTP e caracterizar especificamente o que cada TTP é ou não esperado, (2) observar que cada brecha e tarefa específicos tem um custo e risco associados.
+    </p>
+
+    <p style="text-align: justify;">
+      Existem várias outras considerações importantes, incluindo:
+    </p>
+
+    <p style="text-align: justify;">
+      <ul>
+        <li>
+          Custos de design. Minimizar TTPs envolve frequentemente o aprendizado e a aplicação de técnicas não-intuitivas e complexas de criptografia e tolerância a falhas, como algumas das mencionadas abaixo. Isso pode ser um grande fardo ou impraticável para um projeto de pequenos contratos inteligentes. Por outro lado, os custos de projeto de uma nova instituição TTP são geralmente muito mais altos do que os custos de projeto de um novo protocolo, tão caro quanto este último. Determinar se a nova instituição é robusta a longo prazo é ainda mais cara, enquanto os protocolos podem ser formalmente analisados ​​e as implementações auditadas contra essa análise para alcançar um nível muito alto de confiança em um período de tempo típico de desenvolvimento de produto.
+        </li>
+        <li>
+          Custos de transação mental do usuário &ndash; a multiplicação de TTPs, mesmo aqueles com função razoavelmente limitada, pode rapidamente sobrecarregar a capacidade dos usuários finais de rastrear a reputação e a qualidade das diferentes marcas confiáveis. Quando os TTPs são distribuídos (como na tecnologia descrita abaixo), o rastreamento de reputação deve ser automatizado, o que é muito mais fácil quando os TTPs executam redundantemente a mesma função.
+        </li>
+      </ul>
+    </p>
+
+    <p style="text-align: justify;">
+      Se para um novo contexto como e-commerce podemos encontrar um protocolo de segurança que substitui uma organização TTP (um conjunto complexo de tradições pouco comprovadas no novo contexto) com matemática (que pelo menos em si mesma é bastante clara e demonstrável) muitas vezes será uma grande vitória fazê-lo. Mais frequentemente, substituiremos um TTP caro e complexo por um ou mais TTPs mais simples, além de matemática. Isso também é uma grande vitória. Só podemos dizer se e por quanto é uma vitória, concentrando-se nas suposições de confiança e nos custos resultantes das TTPs, em vez de focar na eficiência do protocolo de segurança. A chave é se concentrar no custo dos TTPs e projetar o protocolo de segurança para minimizá-los, em vez de assumir TTPs para simplificar ou otimizar a eficiência do protocolo de segurança.
+    </p>
+    
+    <p style="text-align: justify;">
+      Um bom designer de protocolo de segurança digital não é apenas um especialista em ciência da computação e criptografia, mas também conhece muito bem as técnicas tradicionais e caras de segurança física, auditoria, lei e relações comerciais a serem protegidas. Esse conhecimento não é usado para substituir esses métodos de segurança dispendiosos por segurança digital mais econômica, mas para minimizar a dependência oculta de métodos onerosos para a segurança real. Um bom projetista de protocolos também projeta, em vez de simplesmente assumir, TTPs que trabalham com uso mínimo de técnicas caras.
+    </p>
+
+  <h2>Protocolos de Minimização de TTP</h2>
+
+    <p style="text-align: justify;">
+      Vimos acima que as chaves para minimizar os TTPs são identificá-los, caracterizá-los, estimar seus custos e riscos e, em seguida, projetar protocolos em torno de TTPs de custo e risco mínimos. Quando o risco é mitigado com técnicas como as desta sessão, ele pode ser substancialmente reduzido.
+    </p>
+
+    <p style="text-align: justify;">
+      Três áreas de pesquisa e implementação mostram uma promessa especial em melhorar a confiança. Duas delas envolvem a particularmente espinhosa área da privacidade, onde a quebra de confiança é muitas vezes irreversível &ndash; uma vez que os dados vazam, pode ser impossível voltar atrás.
+    </p>
+
+    <p style="text-align: justify;">
+      A primeira família de protocolo na qual a confiança pode ser distribuída para preservar a privacidade é a <a href="http://www.onion-router.net/Publications.html">mix (mescla) de Chaum</a>. As mixagens permitem que as comunicações sejam imunes ao rastreio de terceiros. Apenas qualquer um dos <var>N</var> proxies em uma cadeia de proxy precisa ser confiável para que a privacidade seja preservada. Infelizmente, todos os <var>N</var> dos proxies precisam ser confiáveis ​​ou a mensagem será perdida e deve ser reenviada. O tradeoff do protocolo de mix digital é aumentar os atrasos no envio de mensagens (reenvios) para minimizar um irreversível risco de perda de privacidade.
+    </p>
+
+    <p style="text-align: justify;">
+      Outra família de protocolo na qual a confiança pode ser distribuída para preservar a privacidade são os <a href="https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/os-protocolos-de-deus.html">cálculos privados multipartidários</a>. Aqui, um computador virtual é distribuído entre as <var>N</var> partes que fornecem entrada especialmente criptografada entre si e não para uma terceira parte confiável. O computador distribuído recebe entradas de cada uma das <var>N</var> partes, calcula um algoritmo acordado e produz a resposta. Cada parte aprende apenas a resposta e não as informações de qualquer outra parte. O limiar das partes que devem conspirar para violar a privacidade ou ameaçar a confiabilidade pode ser negociado e ter sido estudado em detalhes na ampla literatura sobre esse assunto. Cálculos privados multipartidários podem ser usados ​​para auditoria confidencial, coleta de preferência confidencial e mineração de dados, leilões e trocas com lances confidenciais e assim por diante.
+    </p>
+
+    <p style="text-align: justify;">
+      Uma família de protocolos que replica dados e distribui operações nesses dados, preservando a integridade desses dados, são os <a href="http://www.research.att.com/~dalia/">bancos de dados replicados resilientes bizantinos</a>. Implementações de bancos de dados replicados resilientes bizantinos incluem <a href="http://www.cs.huji.ac.il/~dalia/fleet/">Fleet</a> e <a href = "http://www.belllabs.com/user/reiter/#Phalanx">Phalanx</a>. Fleet implementa a persistência replicada de objetos de uso geral. Algumas implementações de código aberto, que abordam, mas não atingem a resiliência bizantina, a finalidade geral ou a descentralização completa incluem <a href="http://www.mojonation.net/docs/technical_overview.shtml">Mojo Nation</a> e <a href="http://freenetproject.org/">Freenet</a>. Os aplicativos incluem <a href="http://nakamotoinstitute.org/secure-property-titles.html">registros de nomes seguros e títulos de propriedade</a>, bem como conteúdo publicado com segurança no Mojo Nation e Freenet. O trabalho mais avançado nessa área envolve <a href="http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/coalition.html">Sistemas de quorum tolerantes a falhas bizantinos</a> e outro <a href="http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/distributed.html">avanço recente em segurança distribuída</a>.
+    </p>
+
+    <p style="text-align: justify;">
+      É importante observar que essas técnicas de limite servem apenas para melhorar a integridade de um <em>único passo ou executar</em> o protocolo. Sistemas práticos, como o <a href="http://www.mojonation.net/docs/technical_overview.shtml">Mojo Nation</a>, combinam uma maioria ou super-maioria em uma corrida específica com <em>detecção de falhas</em> e <em>escolha</em> por clientes de servidores entre execuções. Assim, podemos adicionar de volta todos os sistemas de reputação, auditoria e assim por diante, que acrescentam robustez a longo prazo aos sistemas distribuídos. As maiorias ou super-maiorias dentro de uma invocação criam uma boa robustez de curto prazo que está faltando em sistemas atuais como Freenet e Mojo Nation. (É apenas uma festa em falta no Mojo, que tem um esquema de votação de 4-de-8, mas isso não tem mostrado ser bizantino resiliente até 4-de-8).
+    </p>
+
+  <h2>Atestado Remoto do Código de Servidor</h2>
+
+    <p style="text-align: justify;">
+      Um atestado remoto foi proposto para verificar o estado do software em execução em <a href="https://pt.wikipedia.org/wiki/Computa%C3%A7%C3%A3o_confi%C3%A1vel#Atestado_Remoto">clientes</a> para proteger a propriedade intelectual. Um uso mais valioso para o atestado remoto é verificar o comportamento dos servidores. Isso também é chamado de abordagem <a href="http://c2.com/cgi/wiki?TransparentServer">servidor transparente</a>. Por meio de atestado remoto, os clientes podem verificar se o código específico desejado está sendo executado em um servidor. Combinado com a capacidade de auditar esse código como código aberto, o atestado remoto de servidores pode diminuir bastante a vulnerabilidade de clientes e usuários para o servidor. Dada a importância do problema de terceiros confiáveis que discutimos aqui, essa abordagem tem um grande potencial para converter protocolos de terceiros confiáveis ​​em protocolos seguros e possibilitar uma ampla variedade de protocolos seguros que até então eram impossíveis. Por exemplo, Hal Finney implementou uma versão do <a href="https://cypherpunks.com.br/bitgold/">bit gold</a> chamado de <a href="https://cypherpunks.com.br/rpow/">provas reutilizáveis ​​de trabalho</a>, baseadas em uma placa de coprocessador segura que permite aos usuários atestar remotamente o código em execução no cartão. Enquanto um ainda precisa confiar no fabricante do cartão, este fabricante é <a href="http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/separationofduties.html">separado</a> da instalação do código do servidor e da operação do servidor no cartão.
+
+  <h2>Deixando pequenas brechas sem solução</h2>
+
+    <p style="text-align: justify;">
+      Geralmente, o designer de protocolo não consegue descobrir como consertar uma vulnerabilidade. Se o ataque que se precisa de um TTP para proteger não é uma séria ameaça real no contexto do aplicativo que o projetista está tentando proteger, é melhor simplesmente deixar a pequena brecha sem solução do que atribuir a tarefa a um TTP. No caso da criptografia de chave pública, por exemplo, os designers de protocolo não descobriram como evitar um ataque "man-in-the-middle" (MITM) durante a troca de chave inicial. O SSL tentou impedir isso exigindo as CAs como terceiros confiáveis, conforme descrito acima, e essa solução custou à comunidade da Web bilhões de dólares em taxas de certificados e oportunidades perdidas de proteger as comunicações. O <a href="http://www.openssh.com/">SSH</a>, por outro lado, decidiu simplesmente deixar esta pequena brecha sem solução. A brecha do MITM nunca foi, até onde sei, explorado para comprometer a privacidade de um usuário de SSH, mas o SSH é muito mais usado para proteger a privacidade do que o SSL, por uma pequena fração do custo. Essa abordagem econômica da segurança foi examinada mais detalhadamente por <a href="http://iang.org/papers/spock.html">Ian Grigg</a>.
+    </p>
+
+  <h2>Decifrando a terminologia</h2>
+    
+    <p style="text-align: justify;">
+      <a href="http://www.eros-os.org/pipermail/cap-talk/2005-February/003128.html">Alan Karp</a>, <a href="http://www.eros-os.org/pipermail/e-lang/2004-February/009555.html">Mark Miller</a>, e outros observaram a confusão sobre palavras como "confiança" e "confiável" como usadas na comunidade de segurança e propôs a substituição do verbo "confiar" por "é vulneravel a". Essa substituição é uma ótima maneira de esclarecer radicalmente os projetos de protocolo de segurança. "Terceiro confiável", conforme usado neste ensaio, torna-se "terceiro vulnerável", e o ponto deste artigo, que se trata de uma brecha de segurança, torna-se óbvio.
+    </p>
+
+    <p style="text-align: justify;">
+      No contexto dos designs de protocolo, em vez de dizer que o designer de protocolo confia em alguma classe genérica pouco conhecida de partes (mencionada no singular como "uma terceira parte confiável") com uma determinada autorização (o que provavelmente significa que o designer de protocolo apenas pode não descobrir como consertar uma falha de segurança), um designer de protocolo honesto admitirá que há uma vulnerabilidade aqui &ndash; e que cabe aos mecanismos "fora da banda" consertar ou minimizar, ou até os usuários ignorarem, essa falha. A classe das partes é pouco conhecida porque os projetistas de protocolos de segurança normalmente não sabem muito sobre as soluções tradicionais de segurança, legais e institucionais não digitais necessárias para tornar essa parte confiável. A substituição de "confiável" por “vulnerável” funciona bem no design do protocolo e na comunicação honesta sobre a segurança de um protocolo.
+    </p>
+
+    <p style="text-align: justify;">
+      Infelizmente, os projetistas de segurança e vendedores de sistemas de segurança que invocam "terceiros confiáveis", "computação confiável" e coisas assim realmente vão sair e admitir que seus protocolos são "vulneráveis"? Os projetos de segurança soam muito mais seguros quando usam o eufemismo "confiança".
+    </p>
+
+    <p style="text-align: justify;">
+      No mundo real, além do contexto técnico do projeto de protocolo de segurança, a "confiança" tem uma variedade de significados. Um uso diferente de "confiança" é confiança bem informada, por exemplo "Eu confio nessa armadura para me proteger de balas normais, porque ela tem sido muito bem testada", "Eu confio neste site com essa autorização porque estamos usando um forte protocolo de segurança para proteger-me quando eu conceder essa autorização ", ou "Eu confio em minha esposa com as crianças", em que casos traduzindo "confiança" para "estou vulnerável a" seria para inverter o seu significado. Essa "confiança" pode assumir significados praticamente opostos, dependendo do contexto, é outro forte argumento para evitar o uso da palavra ao descrever as vulnerabilidades, ou a falta dela, dos protocolos de segurança. Se um designer pensa que ele confia ou deve confiar em alguma classe genérica de partes é uma coisa. Se um usuário em particular realmente confiará em uma determinada entidade nessa classe quando o protocolo for realmente executado é outra questão. Se a confiança do usuário ou a confiança do designer está bem informada, ainda é outra questão.
+    </p>
+
+  <h2>Conclusão</h2>
+
+    <p style="text-align: justify;">
+      A segurança tradicional é dispendiosa e arriscada. A segurança digital, quando bem projetada, diminui drasticamente em custo ao longo do tempo. Quando um designer de protocolo invoca ou assume um TTP, ele(a) está criando a necessidade de uma nova organização para tentar resolver um problema de segurança não resolvido por meio de métodos tradicionais de segurança e controle. Especialmente em um contexto digital, esses métodos exigem gastos elevados contínuos pelo TTP e o TTP cria um gargalo que impõe altos custos e riscos contínuos ao usuário final.
+    </p>
+
+    <p style="text-align: justify;">
+      Uma metodologia muito melhor é trabalhar a partir de TTPs que são bem conhecidos, ou fáceis de caracterizar, e de custo mínimo. O melhor "TTP" de todos é aquele que não existe, mas cuja necessidade foi eliminada pelo design do protocolo, ou que foi automatizado e distribuído entre as partes de um protocolo. A última estratégia deu origem às áreas mais promissoras da pesquisa de protocolo de segurança, incluindo mixagens digitais, cálculos privados multipartidários e bancos de dados resilientes bizantinos. Essas e outras implementações similares serão usadas para reduzir radicalmente o custo dos TTPs atuais e resolver os muitos problemas pendentes em privacidade, integridade, direitos de propriedade e cumprimento de contratos, minimizando os custos muito altos de criação e operação de novas instituições de TTP.
+    </p>
+
+  <h2>Referências</h2>
+
+    <p style="text-align: justify;">
+      Links no texto.
+    </p>
+
+  <h2>Agradecimentos</h2>
+
+    <p style="text-align: justify;">
+      Meus agradecimentos a Mark Miller, que me incentivou a escrever esses pensamentos e forneceu muitos bons comentários. Meus agradecimentos também a Hal Finney, Marc Stiegler, David Wager e Ian Grigg por seus comentários.
+    </p>
+
+  <hr>
+
+    <p style="text-align: justify;">
+      Por favor, envie seus comentários para nszabo (arroba) law (ponto) gwu (ponto) edu
+    </p>
+
+    <p style="text-align: justify;">
+      Copyright &copy; 2001, 2004, 2005 por Nick Szabo<br>
+      Permissão para redistribuir sem alteração por este concedida
+    </p>
+
+    <pre>
+    <p style="text-align: justify;">
+      Fonte: <a href="https://nakamotoinstitute.org/trusted-third-parties/">https://nakamotoinstitute.org/trusted-third-parties/</a>
+    </p>
+  </pre>
