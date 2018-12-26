@@ -38,8 +38,6 @@
 
 :pencil2: Cartas do Ross Ulbricht - [@MarlonX19](https://github.com/MarlonX19)
 
- :pencil2: [trusted third parties](../todo/trusted-third-parties.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
-
 
 
 ### Textos traduzidos: 
