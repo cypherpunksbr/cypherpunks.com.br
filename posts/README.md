@@ -21,7 +21,7 @@ Textos traduzidos:
 
 -  [ ] (2) [Cripto Glossário](https://cypherpunks.com.br/cripto-glossario-em-edicao/) – Timothy C. May e Eric Hughes (1992)
 
-//Criado por [OneTimePad](https://cypherpunks.com.br/author/onetimepad/) Revisado por [jeffeson](https://cypherpunks.com.br/author/j2ff/)
+//Criado por [OneTimePad](https://cypherpunks.com.br/author/onetimepad/) Revisado por [jeffeson](https://github.com/jeffesonjp)
 
 -  [ ] (1) [O manifesto cypherpunk](https://cypherpunks.com.br/o-manifesto-cypherpunk/)  – Eric Hughes (1993)
 
@@ -41,7 +41,7 @@ Textos traduzidos:
 
 -  [ ] (2) [O manifesto libbitcoin](https://cypherpunks.com.br/o-manifesto-libbitcoin/) - Amir Taaki (2013)
 
-//Criado por [jeffeson](https://cypherpunks.com.br/author/j2ff/) Revisado por [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
+//Criado por [jeffeson](https://github.com/jeffesonjp) Revisado por [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 
 -  [ ] (0) A ideia de Contratos Inteligentes - Nick Szabo (1997)
 
@@ -53,4 +53,8 @@ Textos traduzidos:
 
 -  [ ] (0) [Os protocolos de Deus](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/os-protocolos-de-deus.html) - Nick Szabo (1999)
 
-//Criado por [jeffeson](https://cypherpunks.com.br/author/j2ff/)
+//Criado por [jeffeson](https://github.com/jeffesonjp)
+
+-  [ ] (1) [Terceiros confiáveis](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/terceiros-confiaveis.html) - Nick Szabo (2001)
+
+//Criado por [Henry](https://github.com/henur) Revisado por [jeffeson](https://github.com/jeffesonjp)
