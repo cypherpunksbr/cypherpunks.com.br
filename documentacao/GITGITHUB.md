@@ -124,7 +124,7 @@ O primeiro comando cria a _branch_. O segundo comando troca da _branch_ **master
 Mas o primeiro comando que executamos (```git checkout -b Atualiza_glossario```), já faz essas duas coisas em um comando só: cria a _branch_ (```-b```) e já muda para a _branch_ criada (```git checkout```).
 
 _Tá, mas porque eu preciso criar uma nova branch? Se tudo irá para a master, porque não posso modificar direto ali?_
-Como eu disse, a _branch_ **master** é a_ branch_ com o código final do projeto, estável. Criando uma nova _branch_, se você submeter o _pull request_ para o repositório original, mas ele não for aceito, as alterações não estarão na sua **branch master**. Dessa forma, se você quiser manter sempre os dois repositórios atualizados e sincronizados, você só precisa apagar a branch que você criou e fez a _feature. As duas **master** vão continuar iguaizinhas :smile:
+Como eu disse, a _branch_ **master** é a _branch_ com o código final do projeto, estável. Criando uma nova _branch_, se você submeter o _pull request_ para o repositório original, mas ele não for aceito, as alterações não estarão na sua **branch master**. Dessa forma, se você quiser manter sempre os dois repositórios atualizados e sincronizados, você só precisa apagar a branch que você criou e fez a _feature_. As duas **master** vão continuar iguaizinhas :smile:
 
 **4.** Após fazer sua alteração, é hora de enviar para o seu _fork_. Primeiro você precisa _commitar_ sua alteração:
 ```

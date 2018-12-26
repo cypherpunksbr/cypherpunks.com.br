@@ -43,6 +43,8 @@ mercado de criptomoedas.
 - [Ross Ulbrich](https://freeross.org/writings-from-ross/) 
 - [GNU/Linux Crypto](https://sanctum.geek.nz/arabesque/series/gnu-linux-crypto/)
 - [GNU/Linux Crypto pt br](https://cabaladada.org/2013/09/16/linux_cripto_intro/)
+- [crypto.is](https://crypto.is/)
+- [La Quadrute du Net en](https://www.laquadrature.net/en/)
 
 ### Livros recomendados:
 
