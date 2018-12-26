@@ -86,7 +86,7 @@
 
 :ok: [Títulos Seguros de Propriedade]() - [Matheus Bach](https://github.com/matheusbach/ "Ver perfil no GitHub")
 
-:ok: [trusted third parties](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/trusted-third-parties.html)
+:ok: [Terceiros confiáveis](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/terceiros-confiaveis.html) - [Henry](https://github.com/henur)
 
 * Mais publicações você pode encontrar em nossa [biblioteca](https://cypherpunks.com.br/biblioteca/)
 
