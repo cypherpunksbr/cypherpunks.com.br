@@ -15,9 +15,9 @@ Textos traduzidos:
 
 //Criado por [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 
--  [ ] (2) [bmoney](https://cypherpunks.com.br/b-money/) – Wei Dai (1998)
+-  [ ] (3) [bmoney](https://cypherpunks.com.br/b-money/) – Wei Dai (1998)
 
-//Criado por [accela](https://cypherpunks.com.br/author/accela/) Revisado por  [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
+//Criado por [accela](https://cypherpunks.com.br/author/accela/) Revisado por  [OneTimePad](https://cypherpunks.com.br/author/onetimepad/), [jeffeson](https://github.com/jeffesonjp)
 
 -  [ ] (2) [Cripto Glossário](https://cypherpunks.com.br/cripto-glossario-em-edicao/) – Timothy C. May e Eric Hughes (1992)
 
@@ -27,13 +27,13 @@ Textos traduzidos:
 
 //Criado por [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 
--  [ ] (2) [Libertária no Ciberespaço](https://cypherpunks.com.br/libertaria-no-ciberespaco/) – Tim May (1988)
+-  [ ] (3) [Libertária no Ciberespaço](https://cypherpunks.com.br/libertaria-no-ciberespaco/) – Tim May (1988)
 
-//Criado por [Disruptivas](https://cypherpunks.com.br/author/deep/) Revisado por [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
+//Criado por [Disruptivas](https://cypherpunks.com.br/author/deep/) Revisado por [OneTimePad](https://cypherpunks.com.br/author/onetimepad/), [jeffeson](https://github.com/jeffesonjp)
 
--  [ ] (2) [Política vs Tecnologia](https://cypherpunks.com.br/politica-vs-tecnologia/) – Hal Finney (1994)
+-  [ ] (3) [Política vs Tecnologia](https://cypherpunks.com.br/politica-vs-tecnologia/) – Hal Finney (1994)
 
-//Criado por [Disruptivas](https://cypherpunks.com.br/author/deep/) Revisado por  [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
+//Criado por [Disruptivas](https://cypherpunks.com.br/author/deep/) Revisado por  [OneTimePad](https://cypherpunks.com.br/author/onetimepad/), [jeffeson](https://github.com/jeffesonjp)
 
 -  [ ] (1) [Criptoanarquia e Comunidades Virtuais](https://cypherpunks.com.br/criptoanarquia-e-comunidades-virtuais/) - Timothy C. May (1994) 
 
