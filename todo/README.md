@@ -38,6 +38,8 @@
 
 :pencil2: Cartas do Ross Ulbricht - [@MarlonX19](https://github.com/MarlonX19)
 
+:pencil2: The case for privacy - [@gabgrin](https://github.com/gabgrin)
+
 
 
 ### Textos traduzidos: 
