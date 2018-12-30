@@ -72,8 +72,6 @@
 
 :ok: [O Manifesto Cypherpunk](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/o_manifesto_cypherpunk.html)
 
-:ok: [O Manifesto libbitcoin](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/O_Manifesto_libbitcoin.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
-
 :ok: [Politica vs Tecnologia](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/politica_vs_tecnologia.html)
 
 :ok: [A Catedral e o Bazar](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/a-catedral-e-o-bazar.html) - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
@@ -82,9 +80,15 @@
 
 :ok: [rpow](../todo/rpow.html) - [Marcos]()
 
+:ok: [O Manifesto Libbitcoin](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/O_Manifesto_libbitcoin.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
+
 :ok: [Os Protocolos de Deus](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/os-protocolos-de-deus.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
 :ok: [Auditoria Confidencial](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/auditoria-confidencial.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
+
+:ok: [A Barreira da Contabilidade Mental aos Micropagamentos](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/barreira-contabilidade-mental-micropagamentos.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
+
+:ok: [Micropagamentos e Custos de Transação Mental](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/berlim-micropagamentos-custos-transacao-mental.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
 :ok: [Títulos Seguros de Propriedade]() - [Matheus Bach](https://github.com/matheusbach/ "Ver perfil no GitHub")
 
