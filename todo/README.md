@@ -14,7 +14,7 @@
 
 :pencil2: Advanced in distributed security - [@Vinicius]()
 
-:pencil2: Areopagitica [Gustavo]()
+:pencil2: Areopagitica - [Gustavo]()
 
 :pencil2: Bitcoin Whitepaper - [OneTimePad]()
 
@@ -99,8 +99,6 @@
 
 
 ### Textos aguardando tradução:
- 
-:clock3: [areopagitica](../todo/areopagitica.html)
  
 :clock3: [bitcoin](../todo/bitcoin.html)
 
