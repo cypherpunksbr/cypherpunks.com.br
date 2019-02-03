@@ -85,7 +85,7 @@ git clone git@github.com:jeffesonjp/cypherpunks.com.br.git
 ```
 
 Neste momento você deve clonar o seu fork e não o repositório oficial.
-O comando ```git clone``` pega o repositório como ele está no Github, já iniciado e com todo o histórico de commits atualizado. Seria o mesmo que você executar os comandos:
+O comando ```git clone``` pega o repositório como ele está no GitHub, já iniciado e com todo o histórico de commits atualizado. Seria o mesmo que você executar os comandos:
 
 ```
 git init
