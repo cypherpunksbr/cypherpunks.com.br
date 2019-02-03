@@ -81,14 +81,15 @@ Confira se o texto destacado está como ```Clone with SSH```. Se não estiver, c
 Após copiar a URL, abra seu terminal, crie um diretório onde você vai guardar o projeto e digite ```git clone <url-do-repositorio>```:
 
 ```
-git clone git@github.com:cypherpunksbr/cypherpunks.com.br.git
+git clone git@github.com:jeffesonjp/cypherpunks.com.br.git
 ```
 
+Neste momento você deve clonar o seu fork e não o repositório oficial.
 O comando ```git clone``` pega o repositório como ele está no Github, já iniciado e com todo o histórico de commits atualizado. Seria o mesmo que você executar os comandos:
 
 ```
 git init
-git remote add origin git@github.com:cypherpunksbr/cypherpunks.com.br.git
+git remote add origin git@github.com:jeffesonjp/cypherpunks.com.br.git
 git pull origin master
 ```
 
