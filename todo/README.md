@@ -42,6 +42,8 @@
 
 :pencil2: [The Gentleperson's Guide To Forum Spies](https://cryptome.org/2012/07/gent-forum-spies.htm) - [@EuSouRye](https://github.com/EuSouRye)
 
+:pencil2: Truledger - [Matheus Bach](https://github.com/matheusbach)
+
 
 ### Textos traduzidos: 
 
@@ -147,8 +149,6 @@
 :clock3: [the ricardian contract](../todo/the-ricardian-contract.html)
 
 :clock3: [triple entry accounting](../todo/triple-entry-accounting.html)
-
-:clock3: [truledger](../todo/truledger.html)
 
  
 * Você pode sugerir ou traduzir um texto que não esteja nessa lista. Basta submeter uma "pull request" pelo GitHub
