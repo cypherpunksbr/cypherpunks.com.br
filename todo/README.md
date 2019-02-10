@@ -36,8 +36,6 @@
 
 :pencil2: Shelling Out: Money, Blockchains, and Social Scalability - [@hanelore](https://github.com/hanelore)
 
-:pencil2: Shelling Out: The Origins of Money 
-
 :pencil2: The case for privacy - [@gabgrin](https://github.com/gabgrin)
 
 :pencil2: [The Gentleperson's Guide To Forum Spies](https://cryptome.org/2012/07/gent-forum-spies.htm) - [@EuSouRye](https://github.com/EuSouRye)
@@ -92,6 +90,8 @@
 :ok: [Porque eu escrevi o PGP](https://cypherpunks.com.br/porque-eu-escrevi-o-pgp/ "ver publicação traduzida") - [@Deephi]()
 
 :ok: [rpow](../todo/rpow.html) - [Marcos]()
+
+:ok: [Shelling Out: As Origens do Dinheiro]() - [@leonardobjahn]()
 
 :ok: [Terceiros confiáveis](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/terceiros-confiaveis.html) - [Henry](https://github.com/henur)
 
