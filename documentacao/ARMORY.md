@@ -44,6 +44,16 @@ Copie o hash que aparece e, então, abra o sha256sum.asc com um editor de texto 
 
 ![hash](img/armory-02.png)
 
+Uma forma de verificar o arquivo rapidamente é digitando:
+```
+sha256sum -c sha256sum.asc armory_0.96.4_amd64_gcc7.2.deb 
+```
+
+Isto irá gerar uma saída em que a linha que nos interessa contém:
+```
+armory_0.96.4_amd64_gcc7.2.deb: SUCESSO
+```
+
 Com tudo verificado podemos instalar.
 
 ![instalacao](img/armory-03.png)
