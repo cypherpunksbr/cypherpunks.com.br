@@ -102,13 +102,13 @@ Esse é outro modo comum de verificar arquivos, se disponível no site do arquiv
 * Calcular o **hash** do arquivo e comparar com o conteúdo do arquivo de **hash** assinado
 
 
-[Kodachi]:(https://www.digi77.com/index.php)
-[Kodachi ISO]:(https://sourceforge.net/projects/linuxkodachi/files/latest/download)
-[Kodachi hash]:(https://www.digi77.com/software/kodachi/Kodachi-hash.txt)
-[Hash Generator]:(https://securityxploded.com/hashgenerator.php)
-[KeePassXC]:(https://keepassxc.org)
-[KeePassXC Program]:(https://github.com/keepassxreboot/keepassxc/releases/download/2.3.4/KeePassXC-2.3.4-Win64.exe)
-[KeePassXC Public Key]:(https://keepassxc.org/keepassxc_master_signing_key.asc)
-[KeePassXC Signature]:(https://github.com/keepassxreboot/keepassxc/releases/download/2.3.4/KeePassXC-2.3.4-Win64.exe.sig)
-[GPG4Win]:(https://www.gpg4win.org/)
-[programa GPG4Win]:(https://www.gpg4win.org/thanks-for-download.html)
+[Kodachi]: https://www.digi77.com/index.php
+[Kodachi ISO]: https://sourceforge.net/projects/linuxkodachi/files/latest/download
+[Kodachi hash]: https://www.digi77.com/software/kodachi/Kodachi-hash.txt
+[Hash Generator]: https://securityxploded.com/hashgenerator.php
+[KeePassXC]: https://keepassxc.org
+[KeePassXC Program]: https://github.com/keepassxreboot/keepassxc/releases/download/2.3.4/KeePassXC-2.3.4-Win64.exe
+[KeePassXC Public Key]: https://keepassxc.org/keepassxc_master_signing_key.asc
+[KeePassXC Signature]: https://github.com/keepassxreboot/keepassxc/releases/download/2.3.4/KeePassXC-2.3.4-Win64.exe.sig
+[GPG4Win]: https://www.gpg4win.org/
+[programa GPG4Win]: https://www.gpg4win.org/thanks-for-download.html
