@@ -101,6 +101,76 @@ Esse é outro modo comum de verificar arquivos, se disponível no site do arquiv
 * Verificar primeiro a assinatura do arquivo contendo o **checksum**
 * Calcular o **hash** do arquivo e comparar com o conteúdo do arquivo de **hash** assinado
 
+De modo geral é assim que se verifica. Aqui como exemplo usaremos uma ISO do Debian. Para verificar qualquer ISO do Debian há um procedimento um pouco diferente, mas que se mostra igualmente útil.
+
+Primeiramente baixe os arquivos de exemplo:
+
+* [Debian ISO]
+* [Debian hash]
+* [Debian hash sign]
+* Certificado será importado depois
+
+No Linux digite no terminal no mesmo diretório dos arquivos baixados:
+```
+sha512sum -c SHA512SUMS debian-9.8.0-amd64-netinst.iso
+```
+Também tem o mesmo efeito o comando:
+```
+sha512sum -c SHA512SUMS | grep debian-9.8.0-amd64-netinst.iso
+```
+
+A saída que aparecerá é:
+```
+debian-9.8.0-amd64-netinst.iso: OK
+```
+Isso mostra apenas que o download não corrompeu o arquivo. 
+No Windows o passo a passo já sabemos: verificar os **hashes** através do Hash Generator e conferir usando o bloco de notas.
+
+Agora será necessário verificar se o **hash** foi realmente assinado pelo desenvolvedor. Para isso, digite:
+```
+gpg --verify SHA512SUMS.sign
+```
+
+A saída que aparecerá é a seguinte:
+```
+gpg: assuming signed data in 'SHA512SUMS'
+gpg: Signature made dom 17 fev 2019 12:10:30 -03
+gpg:                using RSA key DF9B9C49EAA9298432589D76DA87E80D6294BE9B
+gpg: Can't check signature: No public key
+```
+
+A mensagem mostra o ID da chave pública (```DF9B9C49EAA9298432589D76DA87E80D6294BE9B```) e diz que não existe essa chave no nosso chaveiro. Vamos verificar se existe essa chave no keyring server do Debian e importá-la. Para isso digite:
+```
+gpg --keyserver keyring.debian.org --recv DF9B9C49EAA9298432589D76DA87E80D6294BE9B
+````
+
+A saída será algo assim:
+```
+gpg: key DA87E80D6294BE9B: 5 signatures not checked due to missing keys
+gpg: key DA87E80D6294BE9B: public key "Debian CD signing key <debian-cd@lists.debian.org>" imported
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
+gpg: Total number processed: 1
+gpg:               imported: 1
+```
+
+Agora verificaremos a assinatura do **hash** com o comando:
+```
+gpg --verify SHA512SUMS.sign SHA512SUMS
+```
+
+A saída será:
+```
+gpg: Signature made dom 17 fev 2019 12:10:30 -03
+gpg:                using RSA key DF9B9C49EAA9298432589D76DA87E80D6294BE9B
+gpg: Good signature from "Debian CD signing key <debian-cd@lists.debian.org>" [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: DF9B 9C49 EAA9 2984 3258  9D76 DA87 E80D 6294 BE9B
+```
+
+O que nos importa é a linha ```gpg: Good signature from "Debian CD signing key <debian-cd@lists.debian.org>" [unknown]```, mostrando que a verificação deu certo.
+
 
 [Kodachi]: https://www.digi77.com/index.php
 [Kodachi ISO]: https://sourceforge.net/projects/linuxkodachi/files/latest/download
@@ -112,3 +182,6 @@ Esse é outro modo comum de verificar arquivos, se disponível no site do arquiv
 [KeePassXC Signature]: https://github.com/keepassxreboot/keepassxc/releases/download/2.3.4/KeePassXC-2.3.4-Win64.exe.sig
 [GPG4Win]: https://www.gpg4win.org/
 [programa GPG4Win]: https://www.gpg4win.org/thanks-for-download.html
+[Debian ISO]: https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-9.8.0-amd64-netinst.iso
+[Debian hash]: https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/SHA512SUMS
+[Debian hash sign]: https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/SHA512SUMS.sign
