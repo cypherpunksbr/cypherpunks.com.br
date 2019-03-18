@@ -112,12 +112,9 @@ Primeiramente baixe os arquivos de exemplo:
 
 No Linux digite no terminal no mesmo diretório dos arquivos baixados:
 ```
-sha512sum -c SHA512SUMS debian-9.8.0-amd64-netinst.iso
+sha512sum --ignore-missing -c SHA512SUMS debian-9.8.0-amd64-netinst.iso
 ```
-Também tem o mesmo efeito o comando:
-```
-sha512sum -c SHA512SUMS | grep debian-9.8.0-amd64-netinst.iso
-```
+O parâmetro ```--ignore-missing``` serve para evitar que se verifique qualquer outro arquivo cuja soma de verificação esteja neste arquivo e faltando no diretório, evitando uma saída desnecessariamente longa no terminal.
 
 A saída que aparecerá é:
 ```
@@ -139,7 +136,7 @@ gpg:                using RSA key DF9B9C49EAA9298432589D76DA87E80D6294BE9B
 gpg: Can't check signature: No public key
 ```
 
-A mensagem mostra o ID da chave pública (```DF9B9C49EAA9298432589D76DA87E80D6294BE9B```) e diz que não existe essa chave no nosso chaveiro. Vamos verificar se existe essa chave no keyring server do Debian e importá-la. Para isso digite:
+A mensagem mostra o ID da chave pública (```DF9B9C49EAA9298432589D76DA87E80D6294BE9B```) e diz que não existe essa chave no nosso chaveiro. Vamos verificar se existe essa chave no _keyring server_ do Debian e importá-la. Para isso digite:
 ```
 gpg --keyserver keyring.debian.org --recv DF9B9C49EAA9298432589D76DA87E80D6294BE9B
 ````
