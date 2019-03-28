@@ -34,6 +34,8 @@
 
 :pencil2: Right to read - [@exslave]()
 
+:pencil2: [Satoshi Mails](https://satoshi.nakamotoinstitute.org/emails/) - [@MamãeCrypto]()
+
 :pencil2: Shelling Out: Money, Blockchains, and Social Scalability - [@hanelore](https://github.com/hanelore)
 
 :pencil2: The case for privacy - [@gabgrin](https://github.com/gabgrin)
@@ -179,8 +181,6 @@
 :speech_balloon: [Nick Szabo's Essays, Papers, and Concise Tutorials](http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/)
 
 :speech_balloon: [Paralelni Polis](https://www.paralelnipolis.cz/o-nas/en/)
-
-:speech_balloon: [Satoshi Mails](https://satoshi.nakamotoinstitute.org/emails/)
 
 :speech_balloon: [The Gnu/Linux Crypto PT-BR](https://cabaladada.org/2013/09/16/linux_cripto_intro/)
 
