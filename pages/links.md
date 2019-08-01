@@ -44,8 +44,7 @@ mercado de criptomoedas.
 - [GNU/Linux Crypto](https://sanctum.geek.nz/arabesque/series/gnu-linux-crypto/)
 - [GNU/Linux Crypto pt br](https://cabaladada.org/2013/09/16/linux_cripto_intro/)
 - [crypto.is](https://crypto.is/)
-- [La Quadrature du Net en](https://www.laquadrature.net/en/)
-- [P2P Foundation](p2pfoundation.net/)
+- [La Quadrute du Net en](https://www.laquadrature.net/en/)
 
 ### Livros recomendados:
 
