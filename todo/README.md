@@ -180,6 +180,8 @@
 
 :speech_balloon: [Nick Szabo's Essays, Papers, and Concise Tutorials](http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/)
 
+:speech_balloon: [P2P Foundation](https://p2pfoundation.net/)
+
 :speech_balloon: [Paralelni Polis](https://www.paralelnipolis.cz/o-nas/en/)
 
 :speech_balloon: [The Gnu/Linux Crypto PT-BR](https://cabaladada.org/2013/09/16/linux_cripto_intro/)
