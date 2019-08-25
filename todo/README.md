@@ -36,6 +36,8 @@
 
 :pencil2: [Satoshi Mails](https://satoshi.nakamotoinstitute.org/emails/) - [@MamãeCrypto]()
 
+:pencil2: [Scarce Objects](../todo/scarce-objects.html)
+
 :pencil2: Shelling Out: Money, Blockchains, and Social Scalability - [@hanelore](https://github.com/hanelore)
 
 :pencil2: The case for privacy - [@gabgrin](https://github.com/gabgrin)
@@ -135,8 +137,6 @@
 :clock3: [online cash checks](../todo/online-cash-checks.html)
 
 :clock3: [reciprocal altruism in the theory of money](../todo/reciprocal-altruism-in-the-theory-of-money.html)
-
-:clock3: [scarce objects](../todo/scarce-objects.html)
 
 :clock3: [secure property titles](../todo/secure-property-titles.html)
 
