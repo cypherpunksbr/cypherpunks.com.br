@@ -26,6 +26,8 @@
 
 :pencil2: [Cyphernomicon](https://nakamotoinstitute.org/static/docs/cyphernomicon.txt) - [OneTimePad]()
 
+:pencil2: [A Measure of Sacrifice]() - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
+
 :pencil2: "Multinational Small Business" - [@Deephi]()
 
 :pencil2: Origins of Bitcoin - [@aferreira44]()
