@@ -36,7 +36,7 @@
 
 :pencil2: [Satoshi Mails](https://satoshi.nakamotoinstitute.org/emails/) - [@MamãeCrypto]()
 
-:pencil2: [Scarce Objects](../todo/scarce-objects.html)
+:pencil2: [Scarce Objects](../todo/scarce-objects.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
 :pencil2: Shelling Out: Money, Blockchains, and Social Scalability - [@hanelore](https://github.com/hanelore)
 
