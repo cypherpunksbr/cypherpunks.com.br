@@ -14,9 +14,9 @@ Se você tiver interesse em ajudar, criamos um [guia] sobre como você pode faze
 Este trabalho não seria possível sem a contribuição de diversas pessoas que ajudaram a traduzir, revisar, escrever código, configurar servidores entre muitas outras coisas. São eles/elas:
     
 Colaboradores:
--  [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
--  [accela](https://cypherpunks.com.br/author/accela/)
--  [Disruptivas](https://cypherpunks.com.br/author/deep/)
+-  [OneTimePad](https://twitter.com/AvelinoMorganti)
+-  [accela](https://#)
+-  [Disruptivas](https://#)
 -  [jeffeson](https://github.com/jeffesonjp)
 -  [Matheus Bach](https://github.com/matheusbach/)
 -  [pr1mx](https://github.com/pr1mx)
