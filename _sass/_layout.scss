@@ -1,0 +1,135 @@
+.lead {
+  font-size: 1.25rem;
+}
+
+.container {
+  max-width: 38rem;
+  padding: 2rem 1.5rem;
+  margin-left:  auto;
+  margin-right: auto;
+
+  @media (min-width: 38rem){
+    padding: 5rem 1rem;
+  }
+}
+
+.masthead {
+
+  &-title {
+    font-weight: 300;
+
+    a {
+      color: rgb(216, 216, 216);
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+
+    span {
+      color: #ddd;
+    }
+
+  }
+
+  &-title--small {
+    margin-bottom: .75rem;
+    font-size: .75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    a {
+      color: rgb(255, 255, 255);
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .masthead-nav {
+    margin-bottom: 2rem;
+
+    a {
+      color: #aaa;
+      font-weight: 300;
+      text-transform: lowercase;
+      -webkit-transition: all .2s ease;
+         -moz-transition: all .2s ease;
+              transition: all .2s ease;
+
+      &:hover,
+      &:focus {
+        color: rgb(255, 249, 215);
+        text-decoration: none;
+      }
+
+      + a {
+        margin-left: .25rem;
+      }
+    }
+  }
+
+}
+
+.page {
+  &-title {
+    margin-bottom: 2rem;
+  }
+}
+
+.post {
+  &-title {
+    margin-bottom: .25rem;
+  }
+  &-date {
+    margin-bottom: 2rem;
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+}
+
+.list {
+  &-post-title {
+    margin: 1rem 0 .25rem;
+
+    a {
+      color: rgb(230, 230, 230);
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+  &-post-date {
+    margin-bottom: 1rem;
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+}
+
+.projects-list {
+  a {
+    color: rgb(252, 252, 252);
+  }
+}
+
+footer{
+  display: block;
+  position: relative;
+  width: 100%;
+  clear: both;
+  height: 5em;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#2c2c2c;
+  background-color: #c0bdbd;
+}
+#footer{
+  margin: 0;
+}

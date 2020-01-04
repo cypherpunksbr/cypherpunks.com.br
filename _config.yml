@@ -1,0 +1,15 @@
+# Site inspirado no minimal blog de Willian Justen
+
+# Site settings
+title: Cypherpunks Brasil
+email: contato@cyphepunks.com.br
+description: "Saudações criptoanarquistas, cypherpunks e demais amigos da criptosfera.
+
+cypherpunks é um site dedicado a tradução de textos históricos e compartilhamento de conteúdo relacionado a criptoanarquismo, cypherpunk, criptologia, agorismo, sistemas descentralizados, hardware, moedas digitais e mais."
+baseurl: ""
+url: "http://cyperpunks.com.br"
+github_username:  cypherpunksbr
+
+# Build settings
+markdown: kramdown
+permalink: /:title/
