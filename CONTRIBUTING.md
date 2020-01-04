@@ -42,7 +42,7 @@ Obrigado! :heart: :heart: :heart:
 [melhorias]: https://github.com/cypherpunksbr/cypherpunks.com.br/issues?q=is%3Aopen+is%3Aissue+label%3Amelhorias
 [Git e GitHub]: https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/documentacao/GITGITHUB.md
 [traduzir]: https://github.com/cypherpunksbr/cypherpunks.com.br/tree/master/todo
-[revisar]: https://github.com/cypherpunksbr/cypherpunks.com.br/tree/master/posts
+[revisar]: https://github.com/cypherpunksbr/cypherpunks.com.br/tree/master/site
 [README.md]: https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/README.md
 [glossário]: https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/GLOSSARIO.md
 [grupo de telegram]: https://t.me/criptologia
