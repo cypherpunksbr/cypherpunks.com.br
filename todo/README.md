@@ -12,7 +12,6 @@
 
 ### Textos sendo traduzidos:
 
-<<<<<<< HEAD
 :pencil2: Areopagitica [Gustavo]()
 
 :pencil2: Bitcoin Whitepaper - [OneTimePad]()
@@ -21,14 +20,7 @@
 
 :pencil2: "Multinational Small Business" - [@Deephi]()
 
-=======
-:pencil2: Advanced in distributed security - [@Vinicius]()
-
-:pencil2: Areopagitica - [Gustavo]()
-
-:pencil2: Bitcoin Whitepaper - [OneTimePad]()
-
-:pencil2: Cartas do Ross Ulbricht - [@MarlonX19](https://github.com/MarlonX19)
+:pencil2: Advanced in distributed security - [@viniciusyaunner]()
 
 :pencil2: Contract Language, Nick Szabo - [Davi Figueiredo](https://github.com/davimello28/)
 
@@ -42,15 +34,9 @@
 
 :pencil2: Origins of Bitcoin - [@aferreira44]()
 
->>>>>>> mudanças de template
 :pencil2: PGP Web of Trust Misconceptions- [@anonymous]()
 
 :pencil2: Right to read - [@exslave]()
-
-<<<<<<< HEAD
-:pencil2: Advanced in distributed security - [@Vinicius]()
-
-:pencil2: Crypto-Anarchy and Libertarian Entrepreneurship Chapter: 1-4 - [Pedro Reck](https://github.com/r3ck/)
 
 :pencil2: Intrapolynomial Cryptography [Davi Figueiredo](https://github.com/davimello28)
 
@@ -71,7 +57,6 @@
 
 :ok: [BitGold](https://cypherpunks.com.br/bitgold/ "ver texto traduzido") - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 
-=======
 :pencil2: [Satoshi Mails](https://satoshi.nakamotoinstitute.org/emails/) - [@MamãeCrypto]()
 
 :pencil2: [Scarce Objects](../todo/scarce-objects.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
@@ -91,8 +76,6 @@
 
 :ok: [A Barreira da Contabilidade Mental aos Micropagamentos](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/barreira-contabilidade-mental-micropagamentos.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
-:ok: [A Catedral e o Bazar](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/a-catedral-e-o-bazar.html) - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
-
 :ok: [A ideia de Contratos Inteligentes](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/a_ideia_de_contratos_inteligentes.html "ver texto traduzido") - [pr1mx](https://github.com/pr1mx)
 
 :ok: [Bitcoin e eu](../todo/bitcoin-and-me.html) - [Marcos]()
@@ -101,12 +84,10 @@
 
 :ok: [bmoney](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/bmoney.html)
 
->>>>>>> mudanças de template
 :ok: [Contratos no Ciberespaço](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/Contratos%20no%20Ciberespa%C3%A7o.html)
 
 :ok: [Contratos com Titular](https://cypherpunks.com.br/contratos-com-titular/ "ver publicação traduzida") - [Matheus Bach](https://github.com/matheusbach/ "perfil de Matheus Bach no github")
 
-<<<<<<< HEAD
 :ok: [Criptoanarquia_e_Comunidades_Virtuais](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/Criptoanarquia_e_Comunidades_Virtuais.html)
 
 :ok: [Feliz_Aniversário_Bitcoin](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/Feliz_Anivers%C3%A1rio_Bitcoin.html)
@@ -120,7 +101,7 @@
 :ok: [Cripto Glossário](https://cypherpunks.com.br/cripto-glossario/ "ver publicação traduzida") - [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
 
 :ok: [Libertária_no_Ciberespaço](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/libertaria_no_ciberespa%C3%A7o.html)
-=======
+
 :ok: [Criptoanarquia e Comunidades Virtuais](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/Criptoanarquia_e_Comunidades_Virtuais.html)
 
 :ok: [Criptografia Intrapolinomial](cypherpunks.com.br/posts/intrapolynomial-cryptography.html) - [Davi Figueiredo](https://github.com/davimello28)
@@ -136,13 +117,7 @@
 :ok: [Micropagamentos e Custos de Transação Mental](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/berlim-micropagamentos-custos-transacao-mental.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
 :ok: [Os Protocolos de Deus](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/os-protocolos-de-deus.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
->>>>>>> mudanças de template
 
-:ok: [O Manifesto Criptoanarquista](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/o_manifesto_criptoanarquista.html)
-
-:ok: [O Manifesto Cypherpunk](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/o_manifesto_cypherpunk.html)
-
-<<<<<<< HEAD
 :ok: [O_Manifesto_libbitcoin](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/O_Manifesto_libbitcoin.html)
 
 :ok: [politica_vs_tecnologia](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/politica_vs_tecnologia.html)
@@ -155,8 +130,6 @@
 
 :ok: [Os Protocolos de Deus](https://github.com/jeffesonjp/cypherpunks.com.br/tree/master/todo) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
-:ok: [Auditoria Confidencial](https://github.com/jeffesonjp/cypherpunks.com.br/tree/master/todo) - [jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
-=======
 :ok: [O Manifesto Libbitcoin](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/O_Manifesto_libbitcoin.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
 :ok: [Politica vs Tecnologia](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/politica_vs_tecnologia.html)
@@ -170,14 +143,12 @@
 :ok: [Terceiros confiáveis](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/terceiros-confiaveis.html) - [Henry](https://github.com/henur)
 
 :ok: [Títulos Seguros de Propriedade]() - [Matheus Bach](https://github.com/matheusbach/ "Ver perfil no GitHub")
->>>>>>> mudanças de template
 
 * Mais publicações você pode encontrar em nossa [biblioteca](https://cypherpunks.com.br/biblioteca/)
 
 
 ### Textos aguardando tradução:
  
-<<<<<<< HEAD
  :clock3: [areopagitica](../todo/areopagitica.html)
  
  :clock3: [bitcoin](../todo/bitcoin.html)
@@ -233,7 +204,7 @@
  :clock3: [truledger](../todo/truledger.html)
  
  :clock3: [trusted third parties](../todo/trusted-third-parties.html)
-=======
+
 :clock3: [bitcoin](../todo/bitcoin.html)
 
 :clock3: [cyberspace crypto anarchy and pushing limits](../todo/cyberspace-crypto-anarchy-and-pushing-limits.html)
@@ -280,14 +251,12 @@
 
 :clock3: [triple entry accounting](../todo/triple-entry-accounting.html)
 
->>>>>>> mudanças de template
  
 * Você pode sugerir ou traduzir um texto que não esteja nessa lista. Basta submeter uma "pull request" pelo GitHub
 
 
 ### Aqui algumas sugestões de textos para tradução:
 
-<<<<<<< HEAD
  :speech_balloon: [Nakamoto Institute](https://nakamotoinstitute.org/literature/)
 
  :speech_balloon: [Activism.net](https://www.activism.net/)
@@ -308,7 +277,7 @@
 :speech_balloon:  [The GNU/Linux Crypto Series](https://sanctum.geek.nz/arabesque/series/gnu-linux-crypto/)
 
 :speech_balloon: [The Gnu/Linux Crypto PT-BR](https://cabaladada.org/2013/09/16/linux_cripto_intro/)
-=======
+
 :speech_balloon: [Activism.net](https://www.activism.net/)
 
 :speech_balloon: [Cartas do Ross Ulbricht](https://freeross.org/writings-from-ross/)
@@ -338,4 +307,3 @@
 :speech_balloon: [The Gnu/Linux Crypto PT-BR](https://cabaladada.org/2013/09/16/linux_cripto_intro/)
 
 :speech_balloon: [The GNU/Linux Crypto Series](https://sanctum.geek.nz/arabesque/series/gnu-linux-crypto/)
->>>>>>> mudanças de template
