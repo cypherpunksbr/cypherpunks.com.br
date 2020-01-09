@@ -20,73 +20,73 @@
     </div>
   
   <p>
-    <a href="http://truledger.com/">Truledger</a> is an anonymous, digitally-signed vault and trading system. Like <a href="https://loom.cc/">Loom</a>, it allows anyone to issue assets (digital currencies). Unlike Loom, which relies entirely on (very good) obscurity for security, Truledger's digital signatures allow the server and the customer to prove to each other that they agreed at a particular time on their balances. It does this while allowing destruction of transaction history for closed trades. Truledger will initially provide server-based trading. Eventually, it will provide digital checks and bearer certificates. These, however, WILL require permanent storage of transaction history (unless they expire).
+    <a href="http://truledger.com/">Truledger</a> é um cofre e um sistema de negociação anônimo digitalmente assinado. Assim como <a href="https://loom.cc/">Loom</a>, ele permite que qualquer pessoa publique ativos (moedas digitais). Ao contrário do Loom, que se baseia inteiramente em uma (muito boa) obscuridade para segurança, as assinaturas digitais da Truledger permitem que o servidor e o cliente comprovem entre si que concordaram com seus respectivos saldos em um determinado momento. Isso é feito enquanto permite a destruição do histórico de transações de negociações concluídas. O Truledger fornecerá inicialmente negociação baseada em servidor. Eventualmente, fornecerá contas digitais e certificados ao titular. No entanto, estes exigirão armazenamento permanente do histórico de transações (a menos que expirem).
   </p>
 
   <p>
-    <a href="http://truledger.com/doc/db.txt">doc/db.txt</a> gives a terse description of the Truledger server database and protocol. This page attempts to render the protocol in plain English.
+    <a href="http://truledger.com/doc/db.txt">doc/db.txt</a> fornece uma descrição concisa do banco de dados e do protocolo do servidor Truledger. Esta página tenta apresentar o protocolo em inglês puro.
   </p>
 
   <p>
-    Truledger uses public key cryptography to sign all messages passed back and forth between its web interface and the Truledger server. Digital signatures are a virtually unforgeable way to ensure that a message was written by its purported author. Truledger uses OpenSSL for its public key cryptography. You probably use OpenSSL every time you visit a secure web site, https://somewhere.com/, as does the web server. I didn't roll my own. Just used the same tried and true technology that secures the web. You can read more about public key cryptography, digital signatures, and hashing <a href="http://en.wikipedia.org/wiki/Public-key_cryptography">here</a> and <a href="http://www.pgpi.org/doc/pgpintro/">here</a>.
+    O Truledger usa criptografia de chave pública para assinar todas as mensagens passadas entre sua interface da web e o servidor Truledger. As assinaturas digitais são uma maneira praticamente infalsificável de garantir que uma mensagem tenha sido escrita por seu suposto autor. O Truledger usa OpenSSL para sua criptografia de chave pública. Você provavelmente usa OpenSSL toda vez que visita um site seguro, https://qualquersitecomhttps.com/, assim como o servidor da web. Eu não fiz sozinho. Acabei de usar a mesma tecnologia comprovada e segura que protege a web. Você pode ler mais sobre criptografia de chave pública, assinaturas digitais e hash <a href="http://en.wikipedia.org/wiki/Public-key_cryptography">aqui</a> e <a href="http://www.pgpi.org/doc/pgpintro/">aqui</a>.
   </p>
 
   <p>
-    I'm going to use four actors in the scenarios that follow. "Server" is the name of the Truledger server. "Bob" and "Sue" are two customers, who will trade with each other. "Spammer" is a third customer, unknown to Bob or Sue.
+    Vou usar quatro atores nos cenários a seguir. "Servidor" é o nome do servidor Truledger. "Bob" e "Sue" são dois clientes, que negociarão entre si. "Spammer" é um terceiro cliente, desconhecido por Bob ou Sue.
   </p>
 
-  <h2>Scenario: Opening an Account</h2>
+  <h2>Cenário: Abrindo uma Conta</h2>
 
   <p>
-    Sue (via email or IM): Hey, Bob. Check out Truledger. Go to Truledger.com, download the client, and install it on your computer. Then create a private key, and send me your ID, and I'll give you some usage tokens so that you can create an account.
-  </p>
-
-  <p>
-    Bob (via email or IM): Thanks, Sue! I installed the Truledger client and created a private key. Here's my ID.
+    Sue (via e-mail ou mensagem instantânea): Eai, Bob. Dê uma olhada na Truledger. Vá para Truledger.com, faça o download do client e instale-o no seu computador. Em seguida, crie uma chave privada e me envie seu ID, e eu darei alguns tokens de uso para que você possa criar uma conta.
   </p>
 
   <p>
-    Sue (via her Truledger client): Hey server, Here's a new request number. Give me a transaction number please.<br>
-    Signed: Sue
+    Bob (via e-mail ou mensagem instantânea): Obrigado, Sue! Instalei o client Truledger e criei uma chave privada. Aqui está o meu ID.
   </p>
 
   <p>
-    Server: Here's a new transaction number.<br>
-    Signed: Server
+    Sue (através do client Truledger): Ei, Servidor, aqui está uma nova solicitação. Dê-me um número de transação, por favor.
+    Assinado: Sue
   </p>
 
   <p>
-    Sue: Hey server, here's that transaction number you gave me. Please spend 50 usage tokens to Bob's ID, with a message of "Hey Bob. Welcome to Truledger!" I'm paying 2 usage tokens as a transaction fee, which I'll get back when Bob accepts the spend. My balance after this transaction will be 1025 usage tokens. My outbox hash after this transaction will be X.<br>
-    Signed: Sue
+    Servidor: aqui está um novo número de transação.<br>
+    Assinado: Servidor
   </p>
 
   <p>
-    Server: I processed your spend of 50 usage tokens to Bob's ID. I agree that the transaction fee at the time of this transaction is 2 usage tokens, and that your balance after this transaction is 1025 usage tokens. I agree with you on your outbox hash.<br>
-    Signed: Server
+    Sue: Ei, Servidor, aqui está o número da transação que você me deu. Por favor, gaste 50 tokens de uso no ID de Bob, com uma mensagem de "Hey Bob. Bem-vindo ao Truledger!" Pago 2 tokens de uso como taxa de transação, que retornarei quando Bob aceitar o pagamento. Meu saldo após esta transação será 1025 tokens de uso. O hash da minha caixa de saída após esta transação será X.<br>
+    Assinado: Sue
   </p>
 
   <p>
-    Sue (via email or IM): OK, Bob. I've given you 50 usage tokens. You should now be able to create an account at Truledger.com. Send me a message via Truledger when you've registered.
+    Servidor: processei seu gasto de 50 tokens de uso no ID de Bob. Concordo que a taxa de transação no momento desta transação seja 2 tokens de uso e que seu saldo após esta transação seja 1025 tokens de uso. Concordo com você no seu hash da caixa de saída.<br>
+    Assinado: Servidor
   </p>
 
   <p>
-    Bob (via his Truledger client): Hello server. Here's my ID and my public key. What's your ID and public key?<br>
-    Signed: Bob
+    Sue (via e-mail ou mensagem instantânea): OK, Bob. Dei 50 tokens de uso para você. Agora você pode criar uma conta no Truledger.com. Envie-me uma mensagem via Truledger quando você se registrar.
   </p>
 
   <p>
-    Server: Here's my ID and public key.<br>
-    Signed: Server
+    Bob (via seu cliente Truledger): Olá Servidor. Aqui está meu ID e minha chave pública. Qual é o seu ID e chave pública?<br>
+    Assinado: Bob
   </p>
 
   <p>
-    Bob: Here's my ID and my public key, please create an account for me.<br>
-    Signed: Bob
+    Servidor: aqui está minha identificação (ID) e chave pública.<br>
+    Assinado: Servidor
   </p>
 
   <p>
-    Server: I've registered your ID and public key. Somebody gave you enough tokens to register. Welcome to Truledger.<br>
-    Signed: Server
+    Bob: Aqui está meu ID e minha chave pública, por favor crie uma conta para mim.<br>
+    Assinado: Bob
+  </p>
+
+  <p>
+    Servidor: registrei seu ID e chave pública. Alguém lhe deu fichas suficientes para se registrar. Bem-vindo ao Truledger.<br>
+    Assinado: Servidor
   </p>
 
   <hr>
