@@ -150,7 +150,7 @@ abbr[title] {
 blockquote {
   padding: 0 0 0 1.5rem;
   margin: 0 2rem 1rem 0;
-  color: #999;
+  color: rgb(170, 92, 92);
   border-left: .5rem solid #e5e5e5;
 
   p:last-child {
@@ -167,7 +167,7 @@ code {
   padding: .25em .5em;
   font-size: 85%;
   color: #bf616a;
-  background-color: #f9f9f9;
+  background-color: #000000;
   border-radius: 3px;
 }
 
@@ -182,13 +182,13 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   // word-wrap: break-word;
-  background-color: #f9f9f9;
+  background-color: #242323;
 }
 
 pre code {
   padding: 0;
   font-size: 100%;
-  color: inherit;
+  color: #91ffa3;
   background-color: transparent;
 }
 
