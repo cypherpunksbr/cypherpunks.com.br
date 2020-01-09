@@ -1,3 +1,8 @@
 _site
 .sass-cache
 .jekyll-metadata
+<<<<<<< HEAD
+=======
+site 
+.jekyll-cache
+>>>>>>> 7011aa3... ok

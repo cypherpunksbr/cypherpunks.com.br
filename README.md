@@ -37,7 +37,7 @@ Colaboradores:
 -  [Hanerone](https://github.com/hanelore)
 -  [steffandsv](https://github.com/steffandsv)
 -  [das_rm](https://github.com/rdsm)
--  [Vinicius Yaunner](https://github.com/viniciusyaunner)
+-  [Vinicius F. Yaunner](https://github.com/viniciusyaunner)
 -  [MamãeCrypto](https://mamaecrypto.blogspot.com)
 
 Menções:
