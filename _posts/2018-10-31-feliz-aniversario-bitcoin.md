@@ -28,4 +28,7 @@ Ross Ulbricht.
 
 Fonte: [Happy Birthday, Bitcoin! A Letter From Ross Ulbricht](https://bitcoinmagazine.com/articles/happy-birthday-bitcoin-letter-ross-ulbricht/)
 
-![carta 1](https://fs.bitcoinmagazine.com/img/images/ross_letter_1-2.original.jpg)
+![carta 1-2](https://fs.bitcoinmagazine.com/img/images/ross_letter_1-2.original.jpg)
+![Carta 3](https://fs.bitcoinmagazine.com/img/images/ross_letter_3.original.jpg)
+
+*Este é um post a convite por Ross Ulbricht. Foi compartilhado, com permissão, para a Bitcoin Magazine pela mãe de Ross, Lyn Ulbricht. Para saber mais sobre Ross, assine sua petição por clemência e apoie a campanha para libertá-lo, visite [https://freeross.org](freeross.org). Siga @free_ross, @RealRossU e a hashtag #freeross no Twitter. Visite Free Ross no Facebook e freerossulbricht no Instagram.*
