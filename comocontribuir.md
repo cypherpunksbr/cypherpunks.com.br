@@ -102,4 +102,4 @@ Quando estiver em uma situação em que você não sabe exatamente como traduzir
 
 ***
 
-Obrigado! :heart: :heart: :heart:
+Obrigado!
