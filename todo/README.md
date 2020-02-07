@@ -160,6 +160,8 @@
 
 ### Aqui algumas sugestões de textos para tradução:
 
+:speech_balloon: [Opaque](https://opaque.link/)
+
 :speech_balloon: [Activism.net](https://www.activism.net/)
 
 :speech_balloon: [Cartas do Ross Ulbricht](https://freeross.org/writings-from-ross/)
