@@ -48,6 +48,7 @@
 
 :pencil2: Truledger - [Matheus Bach](https://github.com/matheusbach)
 
+:pencil2: [smart contracts glossary](../todo/smart-contracts-glossary.html) - [Yuri CW](https://github.com/yuricwe)
 
 ### Textos traduzidos: 
 
@@ -141,8 +142,6 @@
 :clock3: [reciprocal altruism in the theory of money](../todo/reciprocal-altruism-in-the-theory-of-money.html)
 
 :clock3: [secure property titles](../todo/secure-property-titles.html)
-
-:clock3: [smart contracts glossary](../todo/smart-contracts-glossary.html)
 
 :clock3: [the case for privacy](../todo/the-case-for-privacy.html)
 
