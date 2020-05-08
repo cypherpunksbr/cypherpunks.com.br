@@ -103,6 +103,8 @@
 
 :ok: [Títulos Seguros de Propriedade]() - [Matheus Bach](https://github.com/matheusbach/ "Ver perfil no GitHub")
 
+:ok: [smart contracts glossary](../todo/smart-contracts-glossary.html) - [Yuri CW](https://github.com/yuricwe)
+
 * Mais publicações você pode encontrar em nossa [biblioteca](https://cypherpunks.com.br/biblioteca/)
 
 
@@ -141,8 +143,6 @@
 :clock3: [reciprocal altruism in the theory of money](../todo/reciprocal-altruism-in-the-theory-of-money.html)
 
 :clock3: [secure property titles](../todo/secure-property-titles.html)
-
-:clock3: [smart contracts glossary](../todo/smart-contracts-glossary.html)
 
 :clock3: [the case for privacy](../todo/the-case-for-privacy.html)
 
