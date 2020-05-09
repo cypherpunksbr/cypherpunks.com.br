@@ -160,6 +160,7 @@
 
 ### Aqui algumas sugestões de textos para tradução:
 
+<<<<<<< HEAD
 :speech_balloon: [Opaque](https://opaque.link/)
 
 :speech_balloon: [Activism.net](https://www.activism.net/)
@@ -176,6 +177,22 @@
 
 :speech_balloon: [Cryptography Mail Archive II](http://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html)
 
+=======
+:speech_balloon: [Activism.net](https://www.activism.net/)
+
+:speech_balloon: [Cartas do Ross Ulbricht](https://freeross.org/writings-from-ross/)
+
+:speech_balloon: [Cypherpunks Archive mail list](https://lists.cpunks.org/pipermail/cypherpunks/)
+
+:speech_balloon: [Cypherspace Articles](http://www.cypherspace.org/)
+
+:speech_balloon: [Cryptoanarchy Wiki](https://cryptoanarchy.wiki)
+
+:speech_balloon: [Cryptography Mail Archive I](https://www.mail-archive.com/cryptography@metzdowd.com/msg10152.html)
+
+:speech_balloon: [Cryptography Mail Archive II](http://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html)
+
+>>>>>>> 85094e4f63ca7530dd34ae08467f0765a3317ef5
 :speech_balloon: [Cryptome](https://cryptome.org)
 
 :speech_balloon: [La Quadrature du Net](https://www.laquadrature.net/en/)
