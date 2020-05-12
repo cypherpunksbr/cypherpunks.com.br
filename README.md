@@ -28,11 +28,7 @@ Colaboradores:
 -  [Hanerone](https://github.com/hanelore)
 -  [steffandsv](https://github.com/steffandsv)
 -  [das_rm](https://github.com/rdsm)
-<<<<<<< HEAD
--  [Vinicius Figueiredo](https://github.com/ViniciusFigueiredo)
-=======
 -  [Vinicius F. Yaunner](https://github.com/viniciusyaunner)
->>>>>>> 85094e4f63ca7530dd34ae08467f0765a3317ef5
 -  [MamãeCrypto](https://mamaecrypto.blogspot.com)
 
 Menções:
