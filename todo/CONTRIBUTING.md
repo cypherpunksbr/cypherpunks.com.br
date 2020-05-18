@@ -8,7 +8,7 @@
 
 **1.** Escolha um arquivo para [traduzir] ou [revisar]. Sempre verifique se o arquivo não está sendo traduzido para evitar trabalho dobrado desnecessário.
 
-**2.** Atualize este [TODO.md], informando que você está traduzindo determinado artigo. Após terminar a tradução, atualize-o novamente.
+**2.** Atualize este [README.md], informando que você está traduzindo determinado artigo. Após terminar a tradução, atualize-o novamente.
 
 **3.** Siga o passo a passo do uso do [Git] e [GitHub].
 
@@ -46,7 +46,7 @@ Obrigado! :heart: :heart: :heart:
 [GitHub]: ../documentacao/GITGITHUB.md
 [traduzir]: https://github.com/cypherpunksbr/cypherpunks.com.br/tree/master/todo
 [revisar]: https://github.com/cypherpunksbr/cypherpunks.com.br/tree/master/site
-[TODO.md]: README.md
+[README.md]: README.md
 [fluxo de tradução]: FLUXO-TRADUCAO.md
 [grupo de telegram]: https://t.me/criptologia
 [glossário]: GLOSSARIO.md
