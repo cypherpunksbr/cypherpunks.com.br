@@ -1,13 +1,12 @@
+s## Traduções
 
-## Traduções
+:pencil2: Em processo de tradução por @
 
- :pencil2: Em processo de tradução por @  
- 
- :ok: Tradução finalizada  
- 
- :clock3: Aguarda tradução  
+:ok: Tradução finalizada
 
- :speech_balloon: Sugestão para tradução
+:clock3: Aguarda tradução
+
+:speech_balloon: Sugestão para tradução
 
 
 ### Textos sendo traduzidos:
@@ -50,7 +49,7 @@
 
 :pencil2: [smart contracts glossary](../todo/smart-contracts-glossary.html) - [Yuri CW](https://github.com/yuricwe)
 
-### Textos traduzidos: 
+### Textos traduzidos:
 
 :ok: [Auditoria Confidencial](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/auditoria-confidencial.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
@@ -108,7 +107,7 @@
 
 
 ### Textos aguardando tradução:
- 
+
 :clock3: [bitcoin](../todo/bitcoin.html)
 
 :clock3: [cyberspace crypto anarchy and pushing limits](../todo/cyberspace-crypto-anarchy-and-pushing-limits.html)
@@ -153,13 +152,12 @@
 
 :clock3: [triple entry accounting](../todo/triple-entry-accounting.html)
 
- 
+
 * Você pode sugerir ou traduzir um texto que não esteja nessa lista. Basta submeter uma "pull request" pelo GitHub
 
 
 ### Aqui algumas sugestões de textos para tradução:
 
-<<<<<<< HEAD
 :speech_balloon: [Opaque](https://opaque.link/)
 
 :speech_balloon: [Activism.net](https://www.activism.net/)
@@ -176,7 +174,6 @@
 
 :speech_balloon: [Cryptography Mail Archive II](http://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html)
 
-=======
 :speech_balloon: [Activism.net](https://www.activism.net/)
 
 :speech_balloon: [Cartas do Ross Ulbricht](https://freeross.org/writings-from-ross/)
@@ -191,7 +188,6 @@
 
 :speech_balloon: [Cryptography Mail Archive II](http://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html)
 
->>>>>>> 85094e4f63ca7530dd34ae08467f0765a3317ef5
 :speech_balloon: [Cryptome](https://cryptome.org)
 
 :speech_balloon: [La Quadrature du Net](https://www.laquadrature.net/en/)

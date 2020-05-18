@@ -2,17 +2,19 @@
 
 ### Fluxo
 
-É muito fácil contribuir para o projeto. Qualquer tipo de ajuda (seja ela grande ou pequena) é bem-vinda. Se encontrar qualquer parte dos posts/artigos que possam ser melhoradas, essa é uma grande oportunidade para participar. Aqui em [melhorias] é um ótimo lugar para achar coisas que possam ser melhoradas). Caso não saiba por onde começar, veja o passo a passo usando [Git e GitHub].
+É muito fácil contribuir para o projeto. Qualquer tipo de ajuda (seja ela grande ou pequena) é bem-vinda. Se encontrar qualquer parte dos posts/artigos que possa ser melhorada, essa é uma grande oportunidade para participar. Aqui em [melhorias] é um ótimo lugar para achar coisas que possam ser melhoradas. Caso não saiba por onde começar, veja o passo a passo usando [Git e GitHub].
 
 ### Por onde começar?
 
 **1.** Escolha um arquivo para [traduzir] ou [revisar]. Sempre verifique se o arquivo não está sendo traduzido para evitar trabalho dobrado desnecessário.
 
-**2. [Importante]** Atualize este [README.md], informando que você está traduzindo um determinado artigo. Após terminar a tradução, atualize-o novamente. O motivo foi dito no item anterior, evitar que duas pessoas façam o mesmo artigo :smile:
+**2.** Atualize este [TODO.md], informando que você está traduzindo determinado artigo. Após terminar a tradução, atualize-o novamente.
 
-**3.** Siga o passo a passo do uso do [Git e GitHub].
+**3.** Siga o passo a passo do uso do [Git] e [GitHub].
 
-**4.** Parabéns! Você acaba de contribuir para o projeto :) Seu nome será adicionado na lista de contribuintes em breve por algum moderador.
+**4.** Siga o passo a passo do [fluxo de tradução].
+
+**5.** Parabéns! Você acaba de contribuir para o projeto :) Seu nome será adicionado na lista de contribuintes em breve por algum moderador.
 
 ### Complicado?
 
@@ -30,7 +32,7 @@ Quando estiver em uma situação em que você não sabe exatamente como traduzir
 
 **4.** Como mantemos um arquivo de [glossário], faça um _Pull Request_ adicionando o novo termo, colocando a referência `#<número-da-issue>` no termo/palavra em questão para fácil acesso no futuro.
 
-**5** Deixe o termo do modo como está escrito nos seguintes casos:
+**5.** Deixe o termo do modo como está escrito nos seguintes casos:
 -  São termos comuns que usamos em inglês sem problemas de entendimento;
 -  Termos que ficam estranhos quando traduzidos. Nesse caso, pode-se colocar a tradução ao lado do que se está traduzindo entre parêntesis, somente na primeira vez que aparece no texto.
 
@@ -40,9 +42,11 @@ Obrigado! :heart: :heart: :heart:
 
 
 [melhorias]: https://github.com/cypherpunksbr/cypherpunks.com.br/issues?q=is%3Aopen+is%3Aissue+label%3Amelhorias
-[Git e GitHub]: https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/documentacao/GITGITHUB.md
+[Git]: ../documentacao/GIT.md
+[GitHub]: ../documentacao/GITGITHUB.md
 [traduzir]: https://github.com/cypherpunksbr/cypherpunks.com.br/tree/master/todo
 [revisar]: https://github.com/cypherpunksbr/cypherpunks.com.br/tree/master/site
-[README.md]: https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/README.md
-[glossário]: https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/GLOSSARIO.md
+[TODO.md]: README.md
+[fluxo de tradução]: FLUXO-TRADUCAO.md
 [grupo de telegram]: https://t.me/criptologia
+[glossário]: GLOSSARIO.md
