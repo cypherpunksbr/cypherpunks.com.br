@@ -47,6 +47,6 @@ Seu nome não aparece na lista acima? Lamentamos que isso tenha ocorrido. Por fa
 **Pode copiar livremente. Propriedade Intelectual não é legítima.**
 
 
-[guia]: https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/CONTRIBUTING.md
+[guia]: todo/CONTRIBUTING.md
 [issue]: https://github.com/cypherpunksbr/cypherpunks.com.br/issues
 [neste link]: https://cypherpunks.com.br/transparencia/
