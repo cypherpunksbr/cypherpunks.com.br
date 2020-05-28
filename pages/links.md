@@ -46,7 +46,8 @@ mercado de criptomoedas.
 - [crypto.is](https://crypto.is/)
 - [La Quadrature du Net en](https://www.laquadrature.net/en/)
 - [Collected writings of Samuel Edward Konkin III](https://www.sek3.net/)
-- [https://www.saltheagorist.com/](SAL THE AGORIST)
+- [SAL THE AGORIST](https://www.saltheagorist.com/)
+- [ANARPLEX.NET](https://anarplex.net/files/)
 
 ### Livros recomendados:
 
