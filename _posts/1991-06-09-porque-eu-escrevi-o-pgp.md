@@ -1,8 +1,10 @@
 ---
-layout: post
 title:  "Por que eu escrevi o PGP"
 date:   09-06-1991 -0300
-categories: Philip R. Zimmermann
+categories: 
+  - Biblioteca
+tags:
+  - Philip R. Zimmermann
 ---
 
 ## Philip R. Zimmermann  

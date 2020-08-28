@@ -1,8 +1,10 @@
 ---
-layout: post
 title:  "Feliz Aniversário, Bitcoin!"
 date:   31-10-2018 -0300
-categories: Ross Ulbritch
+categories:
+  - Biblioteca
+tags:
+  - Ross Ulbricht
 ---
 
 ### Ross Ulbritch

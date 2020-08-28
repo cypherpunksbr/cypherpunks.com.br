@@ -2,7 +2,10 @@
 layout: post
 title:  "A Catedral e o Bazar"
 date:   02-08-2002 -0300
-categories: Eric S. Raymond
+categories:
+  - Biblioteca
+tags:
+  - Eric S. Raymond
 ---
 
 

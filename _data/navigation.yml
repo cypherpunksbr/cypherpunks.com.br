@@ -1,0 +1,13 @@
+# main links
+main:
+  - title: "Biblioteca"
+    url: /library/
+  - title: "Artigos"
+    url: /articles/
+  - title: "Autores"
+    url: /authors/
+  - title: "Posts por Ano"
+    url: /year-archive/
+  - title: "Sobre"
+    url: /about/
+

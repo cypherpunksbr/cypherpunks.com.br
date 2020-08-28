@@ -1,8 +1,10 @@
 ---
-layout: post
 title:  "O Manifesto Cypherpunk"
 date:   09-03-1997 -0300
-categories: Eric Hughes
+categories:
+  - Biblioteca 
+tags: 
+  - Eric Hughes
 ---
 
 <small>Eric Hughes  

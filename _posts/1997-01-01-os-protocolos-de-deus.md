@@ -1,8 +1,10 @@
 ---
-layout: post
 title:  "Os Protocolos de Deus"
 date:   01-01-1997 -0300
-categories: Nick Szabo
+categories:
+  - Biblioteca
+tags:
+  - Nick Szabo
 ---
 
 <small>Nick Szabo</small>  

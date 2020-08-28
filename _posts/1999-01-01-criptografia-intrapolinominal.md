@@ -1,8 +1,10 @@
 ---
-layout: post
 title:  "Criptografia Intrapolinomial"
 date:   01-01-1999 -0300
-categories: Nick Szabo
+categories:
+  - Biblioteca
+tags:
+  - Nick Szabo
 ---
 
 <small>Nick Szabo</small>

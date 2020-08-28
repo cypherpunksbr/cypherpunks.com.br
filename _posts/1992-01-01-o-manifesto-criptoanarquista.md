@@ -1,8 +1,10 @@
 ---
-layout: post
 title:  "O Manifesto Criptoanarquista"
 date:   01-01-1992 -0300
-categories: Timothy C. May
+categories:
+  - Biblioteca
+tags:
+  - Timothy C. May
 ---
 
 Cypherpunks do mundo,
