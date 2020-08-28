@@ -20,10 +20,8 @@ title                    : "Cypherpunks Brasil"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 #name                     : "Your Name"
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description: >- 
+    cypherpunks é um site dedicado a tradução de textos históricos e compartilhamento de conteúdo relacionado a criptoanarquismo, cypherpunk, criptologia, agorismo, sistemas descentralizados, hardware, moedas digitais e mais.
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
