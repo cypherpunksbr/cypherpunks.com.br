@@ -8,7 +8,7 @@ toc: true
 
 ## Submissão de traduções:
 
-Deseja contribuir com as traduções e ainda ser recompensado por isso? Aceitamos submissões de traduções e pagamos X satoshis por palavra do artigo traduzido sob as seguintes condições:
+Deseja contribuir com as traduções e ainda ser recompensado por isso? Aceitamos submissões de traduções e pagamos X quantidade de satoshis por palavra do artigo traduzido sob as seguintes condições:
 - O artigo deve estar completo, ou seja, vocẽ não ganha 50% do pagamento se traduzir metade do texto
 - O pagamento é feito uma vez por mês todo dia X
 - A tradução só vai para a fila de pagamentos após ser revisada
