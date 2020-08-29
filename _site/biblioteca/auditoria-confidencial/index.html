@@ -1,0 +1,659 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.20.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="pt" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Auditoria Confidencial - Cypherpunks Brasil</title>
+<meta name="description" content="Nick Szabo">
+
+
+  <meta name="author" content="#Cypherpunks Brasil">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cypherpunks Brasil">
+<meta property="og:title" content="Auditoria Confidencial">
+<meta property="og:url" content="http://localhost:4000/biblioteca/auditoria-confidencial/">
+
+
+  <meta property="og:description" content="Nick Szabo">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="1998-01-01T00:00:00-02:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/biblioteca/auditoria-confidencial/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Cypherpunks Brasil Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Cypherpunks Brasil
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/library/">Biblioteca</a>
+            </li><li class="masthead__menu-item">
+              <a href="/articles/">Artigos</a>
+            </li><li class="masthead__menu-item">
+              <a href="/authors/">Autores</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Posts por Ano</a>
+            </li><li class="masthead__menu-item">
+              <a href="/submission/">Submissões</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">Sobre</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">#Cypherpunks Brasil</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Saudações criptoanarquistas, cypherpunks e demais amigos da criptosfera.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Acompanhe no</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/cypherpunksbr/cypherpunks.com.br" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Auditoria Confidencial">
+    <meta itemprop="description" content="Nick Szabo">
+    <meta itemprop="datePublished" content="1998-01-01T00:00:00-02:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Auditoria Confidencial
+</h1>
+          
+
+
+  <p class="page__meta">
+
+    
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        3 minuto(s) de leitura
+      
+    
+
+  </p>
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h3 id="nick-szabo">Nick Szabo</h3>
+
+<p>Copyright © 1997-1999 por Nick Szabo<br />
+Permissão para redistribuir ;sem alteração por este concedida</p>
+
+<hr />
+
+<p>A função de auditoria é uma parte vasta e indispensável da economia moderna. Os controles de auditoria permitem, entre outras coisas, os empregadores delegarem recursos e autoridade aos funcionários, franqueadores delegarem aos franqueados, acionistas para delegarem à administração, anunciantes para contarem os globos oculares, os comerciantes para reunirem mais dados confiável sobre os clientes, e possibilitar uma ampla variedade de outros relacionamentos. Controles de auditoria podem ser chamados de protocolos de segurança do capitalismo..</p>
+
+<p>Uma recente pesquisa geral mostrou que <strong>83%</strong> dos americanos são “muito preocupados” com a sua privacidade na Internet. Pode-se esperar números ainda mais fortes dos clientes europeus, que têm mais experiência em primeira mão com dados privados, em grande parte originalmente compilado por razões inócuas, sendo usados para repressão política. As empresas reconhecem as deficiências de NDAs (termos de confidencialidade) e estão procurando maneiras mais confiáveis de proteger dados. A grande maioria dos clientes de e-commerce estão preocupados com a privacidade.</p>
+
+<p>A auditoria está em profundo conflito com os esforços em direção a privacidade. Os auditores têm uma ética de registro, investigação, e reportar o máximo possível, e muitas vezes ver os esforços de privacidade como tentativas de impedir a auditoria e potencialmente encobrir a fraude. De fato, os recentes fracassos de bilhões de dólares do Banco Baring e o fundo da divisão Long Term Capital, e mais geralmente os recentes problemas com o “capitalismo de compadrio”, que impediram os acionistas e credores de mais de US$ 1 trilhão, foram atribuídos a tais sigilos<sup>[3]</sup>. No topo da lista das atuais reformas do FMI está a “abertura”, uma palavra de ordem para a introdução de controles de auditoria e requisitos de relatórios.</p>
+
+<p>Desde que os controles de auditoria são usados para garantir trilhões de dólares de transações a cada ano, eles não estão indo embora, e de fato provavelmente vai crescer mais eficaz e intrusivo. Por outro lado, temos agora à nossa disposição as muitas inovações alcançadas nas últimas duas décadas na criptografia moderna. Podemos usar estes para obter um melhor equilíbrio entre auditoria e privacidade? Eu criei uma arquitetura que usa esses protocolos para melhorar muito essa troca: auditoria confidencial.</p>
+
+<p>Podemos conseguir registros de auditorias após o compromisso através de timestamps (carimbos de tempo) seguros<sup>[1]</sup>. Podemos então alcançar em grande medida imperturbabilidade antes do compromisso, com segregação de funções através de restrições de integridade multipartidárias<sup>[2]</sup>. Nós então auditamos esses compromissos através de cálculos privados multipartidários<sup>[4]</sup>. Essa combinação permite uma ampla variedade de transações, conduzidas com eficiência normal, a ser observada e verificada por árbitros ou auditores, através de cálculos privados mais caros aplicados a compromissos aleatoriamente amostrados. Isso mantém um alto grau de confidencialidade para as entradas.</p>
+
+<p>Os participantes deste protocolo de auditoria mutuamente confidencial podem verificar se os livros correspondem aos detalhes das transações armazenadas em um log de transação previamente confirmado e que os números adicionem corretamente. Os participantes podem calcular estatísticas de resumo em seus logs de transação compartilhados confidencialmente, incluindo verificação cruzada dos logs contra contrapartes de uma transação, sem revelar esses logs. Eles só aprendem o que pode ser inferido das estatísticas, não é possível ver os detalhes das transações.</p>
+
+<p>Assumindo muitos detalhes práticos que eu encarei neste esboço (como a eficiência dos cálculos de auditoria, a disponibilidade de registros de transações digitais em formato padrão, etc.), a auditoria confidencial pode trazer uma melhoria substancial sobre as práticas atuais. Atualmente os detalhes de todas as transações da organização, incluindo, por exemplo, registros em um HMO (Health Maintenance Organization) e transações nos programas ultra-secretos do governo, ou são expostos diretamente aos auditores, ou são imunes de auditoria, permitindo fraude.</p>
+
+<p>Com auditoria mutuamente confidencial, poderemos ganhar confiança na factualidade dos pedidos e relatórios das contrapartes sem revelar informações de identificação e outras informações detalhadas das transações subjacentes a esses relatórios. Isso fornecerá a base para sistemas sólidos de reputação e outros sistemas confiáveis de terceiros, que mantêm a integridade ao longo do tempo, comunicações, sumarização, e preservar a confidencialidade para os participantes da transação. Com auditoria confidencial, muitas vezes seremos capazes de ter abertura e privacidade.</p>
+
+<hr />
+
+<pre>    [1] BLLV98  A. Buldas, P. Laud, H. Lipmaa, J. Villemson, "Time-Stamping
+        with Binary Linking Schemes", Crypto 98
+    [2] Szabo, in progress
+    [3] See recent back issues of _The Wall Street Journal_
+    and _The Economist_
+    [4] Overview, [http://szabo.best.vwh.net/msc.html](http://szabo.best.vwh.net/msc.html)
+        Quorum systems model, [http://szabo.best.vwh.net/quorum.html](http://szabo.best.vwh.net/quorum.html)
+    B91     D. Beaver, "Efficient Multiparty Protocols Using Circuit
+                    Randomization", ACM STOC 91
+    RB89   T. Rabin &amp; M. Ben-Or, "Verifiable Secret Sharing
+            and Multiparty Protocols with Honest Majority", ACM STOC 89
+    GRR98   R. Gennaro, T. Rabin, &amp; M. Rabin: "Simplified VSS
+            and Fast-Track Multiparty Computations", PODC 98
+  </pre>
+
+<pre>  Fonte:[http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/confidential.html](http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/confidential.html)
+</pre>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#nick-szabo" class="page__taxonomy-item" rel="tag">Nick Szabo</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categorias: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#biblioteca" class="page__taxonomy-item" rel="tag">Biblioteca</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Atualizado em:</strong> <time datetime="1998-01-01T00:00:00-02:00">January 1, 1998</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Compartilhe</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Auditoria+Confidencial%20http%3A%2F%2Flocalhost%3A4000%2Fbiblioteca%2Fauditoria-confidencial%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fbiblioteca%2Fauditoria-confidencial%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fbiblioteca%2Fauditoria-confidencial%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/biblioteca/o-manifesto-cypherpunk/" class="pagination--pager" title="O Manifesto Cypherpunk
+">Anterior</a>
+    
+    
+      <a href="/biblioteca/bmoney/" class="pagination--pager" title="b-money
+">Próxima</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">Talvez você também goste</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/biblioteca/carta-de-agradecimentos-pelos-100k/" rel="permalink">Carta agradecendo pelas 100,000 assinaturas
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        menos que 1 minuto(s) de leitura
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">Ross Ulbricht
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/biblioteca/feliz-aniversario-bitcoin/" rel="permalink">Feliz Aniversário, Bitcoin!
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        2 minuto(s) de leitura
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">Ross Ulbritch
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/biblioteca/carta-de-agradecimento-pelas-50mil-assinaturas/" rel="permalink">Carta agradecendo pelas 50,000 assinaturas
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        menos que 1 minuto(s) de leitura
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">Ross Ulbricht
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/biblioteca/carta-de-ross-para-a-reason-conference/" rel="permalink">Carta de Ross para a Reason Conference
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        1 minuto(s) de leitura
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">Ross Ulbricht
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    <!-- 
+      <li><strong>Acompanhe no</strong></li>
+     -->
+    Pode copiar, propriedade intelectual não existe!
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <!-- <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li> -->
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Cypherpunks Brasil. Desenvolvido com <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> em conjumto com entusiastas.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

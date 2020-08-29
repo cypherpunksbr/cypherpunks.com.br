@@ -1,0 +1,643 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.20.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="pt" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>A ideia de Contratos Inteligentes - Cypherpunks Brasil</title>
+<meta name="description" content="Nick Szabo">
+
+
+  <meta name="author" content="#Cypherpunks Brasil">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cypherpunks Brasil">
+<meta property="og:title" content="A ideia de Contratos Inteligentes">
+<meta property="og:url" content="http://localhost:4000/biblioteca/a-ideia-de-contratos-inteligentes/">
+
+
+  <meta property="og:description" content="Nick Szabo">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="1997-01-01T00:00:00-02:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/biblioteca/a-ideia-de-contratos-inteligentes/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Cypherpunks Brasil Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Cypherpunks Brasil
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/library/">Biblioteca</a>
+            </li><li class="masthead__menu-item">
+              <a href="/articles/">Artigos</a>
+            </li><li class="masthead__menu-item">
+              <a href="/authors/">Autores</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Posts por Ano</a>
+            </li><li class="masthead__menu-item">
+              <a href="/submission/">Submissões</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">Sobre</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">#Cypherpunks Brasil</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Saudações criptoanarquistas, cypherpunks e demais amigos da criptosfera.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Acompanhe no</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/cypherpunksbr/cypherpunks.com.br" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="A ideia de Contratos Inteligentes">
+    <meta itemprop="description" content="Nick Szabo">
+    <meta itemprop="datePublished" content="1997-01-01T00:00:00-02:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">A ideia de Contratos Inteligentes
+</h1>
+          
+
+
+  <p class="page__meta">
+
+    
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        3 minuto(s) de leitura
+      
+    
+
+  </p>
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h3 id="nick-szabo">Nick Szabo</h3>
+
+<p>Qual o significado e o propósito de “segurança”? Como ela se relaciona com os relacionamentos que temos? Eu argumento que a formalização de nossos relacionamentos—especialmente contratos—fornece o modelo para a segurança ideal.</p>
+
+<p>Muitos tipos de cláusulas contratuais (tais como garantia, colaboração, delineação de direitos de propriedade, etc.) podem ser embutidas no hardware e software que convivemos, de uma forma a tornar a quebra de contrato cara (e se desejado, as vezes de forma proibitiva) para o infrator. Um exemplo regular da vida real, que podemos considerar como o ancestral primitivo de contratos inteligentes, é a máquina de venda automática. Dentro de uma quantidade limitada de perda potencial (a quantidade na caixa deve ser menor que o custo de violar o mecanismo), a máquina recebe moedas, e através de um mecanismo simples, o qual se utiliza de problema calouro de ciência da computação em um design mecênico limitado, dispensar mudanças e fornecer o produto de acordo com o preço exibido. A máquina de venda automática é um contrato com o portador: qualquer um com moedas pode participar de uma troca com o fornecedor. O cofre e outros mecanismos de segurança protegem as moedas armazenadas e os produtos de infratores, suficientemente para permitir a implantação lucrativa de máquinas de venda automática em uma ampla variedade de áreas.</p>
+
+<p>Contratos inteligentes vão além da máquinas de venda, propõe a incorporação de contratos em todas as formas de propriedades valiosas e controladas por meios digitais.</p>
+
+<p>Como outro exemplo, considere a hipótese de um sistema de segurança de automóveis. A estratégia de design do contrato inteligente sugere que nós refinamos protocolos de segurança suscetivamente para englobar em propriedades os termos que se aplicam a ela. Esses protocolos iriam dar a chave criptográfica para controlar a propriedade à pessoa que legitimamente é dona daquela propriedade, baseado nos termos do contrato. Em uma implementação direta, o carro seria inoperável a menos que o protocolo de resposta ao desafio correto seja concluído pelo seu legítimo proprietário, assim impedindo o roubo.</p>
+
+<p>Se o carro está sendo usado como garantia, implementações de segurança de forma tradicional iriam dar dor de cabeça para o credor – o cobrador não teria como confiscar a dívida do produto. Para corrigir esse problema, podemos criar um simples protocolo inteligente de garantia: se o dono não paga, o contrato inteligente chama o protocolo de garantia, que da o controle da chave do carro ao banco. Esse protocolo deve ser mais barato e mais efetivo que um cobrador. A possível reificação do produto removeria a garantia quando o aluguel for quitado, além de justificar as dificuldades e exceções operacionais. Por exemplo, seria errado revogar a operação do carro enquanto o mesmo estiver numa estrada.</p>
+
+<p>Nesse processo de refinamento constante, nós fomos de um sistema de segurança simples para um contrato refinado:</p>
+
+<pre>(1) Uma chave para seletivamente deixar o dono entrar e excluir terceiros;
+(2) Uma porta dos fundos para permitir a entrada do credor;
+(3a) Acesso ao credor liberado apenas com o não pagamento durante um certo período de tempo; e
+(3b) Um pagamento eletrônico final fecha completamente a porta dos fundos. 
+</pre>
+
+<p>Sistemas de segurança antigos terão comportamento diferente para contratos diferentes. Continuando com nosso exemplo, se o contrato do nosso automóvel for por locação, o pagamento final irá desligar o acesso a locação; em compras com crédito, iria desligar o acesso do credor. Um sistema de segurança, por ser constantemente redesenhado, alcança cada vez mais a lógica de um contrato que rege os direitos e obrigações de cada objeto, informação, ou cálculo a ser protegido. Termos contratuais qualitativamente diferentes, assim como diferenças tecnológicas entre propriedades, dão força a necessidade de protocolos diferentes.</p>
+
+<p>(Derivado de <a href="/formalizing-securing-relationships/">“Formalizando e protegendo relações em redes públicas”</a>, por Nick Szabo) Um <a href="/contract-language/">artigo relacionado discute uma linguagem</a> formal para analisar contratos e especificar contratos inteligentes.</p>
+
+<hr />
+
+<p>Por favor, envie seus comentários para nszabo (at) law (dot) gwu (dot) edu Copyright © 1997 por Nick Szabo Permissão para redistribuir sem nenhuma alteração por este concedida. Fonte: <a href="https://nakamotoinstitute.org/the-idea-of-smart-contracts/">https://nakamotoinstitute.org/the-idea-of-smart-contracts/</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#nick-szabo" class="page__taxonomy-item" rel="tag">Nick Szabo</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categorias: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#biblioteca" class="page__taxonomy-item" rel="tag">Biblioteca</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Atualizado em:</strong> <time datetime="1997-01-01T00:00:00-02:00">January 1, 1997</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Compartilhe</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=A+ideia+de+Contratos+Inteligentes%20http%3A%2F%2Flocalhost%3A4000%2Fbiblioteca%2Fa-ideia-de-contratos-inteligentes%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fbiblioteca%2Fa-ideia-de-contratos-inteligentes%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fbiblioteca%2Fa-ideia-de-contratos-inteligentes%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/biblioteca/Contratos-com-Titular/" class="pagination--pager" title="Contratos com Titular
+">Anterior</a>
+    
+    
+      <a href="/biblioteca/os-protocolos-de-deus/" class="pagination--pager" title="Os Protocolos de Deus
+">Próxima</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">Talvez você também goste</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/biblioteca/carta-de-agradecimentos-pelos-100k/" rel="permalink">Carta agradecendo pelas 100,000 assinaturas
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        menos que 1 minuto(s) de leitura
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">Ross Ulbricht
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/biblioteca/feliz-aniversario-bitcoin/" rel="permalink">Feliz Aniversário, Bitcoin!
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        2 minuto(s) de leitura
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">Ross Ulbritch
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/biblioteca/carta-de-agradecimento-pelas-50mil-assinaturas/" rel="permalink">Carta agradecendo pelas 50,000 assinaturas
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        menos que 1 minuto(s) de leitura
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">Ross Ulbricht
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/biblioteca/carta-de-ross-para-a-reason-conference/" rel="permalink">Carta de Ross para a Reason Conference
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        1 minuto(s) de leitura
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">Ross Ulbricht
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    <!-- 
+      <li><strong>Acompanhe no</strong></li>
+     -->
+    Pode copiar, propriedade intelectual não existe!
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <!-- <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li> -->
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Cypherpunks Brasil. Desenvolvido com <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> em conjumto com entusiastas.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<h1 id="contribuições">Contribuições</h1>
+
+<h3 id="por-onde-começar">Por onde começar?</h3>
+
+<p><strong>1.</strong> Escolha um <a href="https://github.com/cypherpunksbr/cypherpunks.com.br/tree/master/todo">arquivo</a> para traduzir ou <a href="https://github.com/cypherpunksbr/cypherpunks.com.br/tree/master/posts">revisar</a>. Verifique se o arquivo já não está sendo traduzido por alguém <a href="https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/README.md">aqui</a>.</p>
+
+<p><strong>2. [Importante]</strong> Atualize <a href="https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/README.md">este arquivo</a> informando que você está traduzindo um determinado artigo. Isto é muito importante, pois evita que duas pessoas traduzam o mesmo arquivo. Lembre-se de atualizá-lo também quando você terminar de traduzir :)</p>
+
+<p><strong>3.</strong> <a href="#fluxo">Entenda nosso fluxo</a>.</p>
+
+<p><strong>4.</strong> <a href="#boas-pr%C3%A1ticas">Leia e pratique as boas práticas</a>.</p>
+
+<p><strong>5.</strong> Submeta um pull request. Não sabe como fazer isto? Veja este <a href="https://#">tutorial</a> ou este <a href="https://#">vídeo</a>.</p>
+
+<p><strong>6.</strong> Parabéns! Você acaba de contribuir para o projeto :) Seu nome será adicionado na lista de contribuintes em breve por algum moderador.</p>
+
+<h3 id="complicado">Complicado?</h3>
+
+<p>Escolha um artigo para traduzir <a href="https://github.com/cypherpunksbr/cypherpunks.com.br/tree/master/todo">nesta página</a> e envie o seu artigo para avelino (at) cypherpunks.com.br ou informe da sua tradução no nosso <a href="https://t.me/criptologia">grupo de telegram</a></p>
+
+<h3 id="fluxo">Fluxo</h3>
+
+<p>É muito fácil contribuir para o projeto. Qualquer tipo de ajuda (seja ela grande ou pequena) é bem-vinda. Se encontrar qualquer parte dos posts/artigos que possam ser melhoradas, essa é uma grande oportunidade para participar (<a href="https://github.com/cypherpunksbr/cypherpunks.com.br/issues?q=is%3Aopen+is%3Aissue+label%3Amelhorias">aqui</a> é um ótimo lugar para achar coisas que possam ser melhoradas). Caso não saiba por onde começar:</p>
+
+<p><strong>1.</strong> Faça referência ao repositório oficial após o <em>fork</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add upstream git@github.com:cypherpunksbr/cypherpunks.com.br.git
+</code></pre></div></div>
+
+<p><strong>2.</strong> Antes de iniciar o processo de contribuição, crie uma nova branch para fazer suas alterações.</p>
+
+<p>Alguns exemplos:</p>
+
+<ul>
+  <li>Para tradução: <code class="language-plaintext highlighter-rouge">git checkout -b traducaoArtigoX</code></li>
+  <li>Para revisões: <code class="language-plaintext highlighter-rouge">git checkout -b traducaoArtigoX</code></li>
+  <li>Para erros: <code class="language-plaintext highlighter-rouge">git checkout -b traducaoArtigoX</code></li>
+</ul>
+
+<blockquote>
+  <p>Use qualquer nome que seja coerente com a contribuição que está sendo feita.
+<code class="language-plaintext highlighter-rouge">X</code> representa um nome de artigo.</p>
+</blockquote>
+
+<p><strong>3.</strong> Após realizar as alterações, é hora de fazer um commit com uma mensagem coerente do que foi feito. Exemplo:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add --all
+git commit -am ‘Adiciona tradução/revisão/melhoria artigo X linha/linhas Y’
+git push origin traducaoArtigoTal
+</code></pre></div></div>
+
+<p><strong>4.</strong> Envie um <em>Pull Request</em> com as alterações feitas, fazendo referência para o <code class="language-plaintext highlighter-rouge">master</code> do repositório oficial.</p>
+
+<p><strong>5.</strong> Sua contribuição será analisada pela comunidade. Em alguns casos pediremos algumas alterações antes de dar merge.</p>
+
+<p>Após o merge:</p>
+
+<ul>
+  <li>Delete a branch utilizada:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout master
+git push origin :traducaoArtigoX
+git branch -D traducaoArtigoX
+</code></pre></div></div>
+
+<ul>
+  <li>Atualize seu repositório com o repositório oficial:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git fetch upstream
+git rebase upstream/master
+git push -f origin master
+</code></pre></div></div>
+
+<p><strong>6.</strong> Quando iniciar uma nova contribuição, inicie repita o processo pelo passo 2.</p>
+
+<h3 id="boas-práticas">Boas práticas</h3>
+
+<ul>
+  <li>Antes de enviar sua contribuição, certifique-se de que está enviando apenas um <strong>único</strong> commit que represente o que foi feito. Caso tenha feito vários commits, <a href="http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html">esmague-os</a> antes de fazer o <em>Pull Request</em>.</li>
+  <li>Caso tenha qualquer tipo de dúvida, abre uma <a href="https://github.com/cypherpunksbr/cypherpunks.com.br/issues"><em>Issue</em></a> que faremos o possível para te ajudar.</li>
+  <li>Contribua com as discussões.</li>
+</ul>
+
+<h3 id="dúvidas-em-tradução-de-termos-palavras-expressões-etc">Dúvidas em tradução de termos, palavras, expressões etc…</h3>
+
+<p>Quando estiver em uma situação em que você não sabe exatamente como traduzir uma palavra, termo ou expressão, nós recomendamos que siga os seguintes passos:</p>
+
+<p><strong>1.</strong> Abra uma <em>Issue</em> com um título descritivo como por exemplo: “<em>Como traduzir a palavra/termo “x”?</em>” e coloque uma descrição fazendo referência à linha e o capítulo que esteja trabalhando.</p>
+
+<p><strong>2.</strong> Adicione uma tag <code class="language-plaintext highlighter-rouge">[TODO: ref #&lt;número-da-issue-da-discussão&gt;]&lt;palavra/termo não traduzido&gt;[/TODO]</code> e continue trabalhando no arquivo enquanto não há uma conclusão na <em>Issue</em>. Esse processo é importante para facilitar o acesso a itens pendentes e ter uma referência clara onde está ocorrendo a discussão.</p>
+
+<p><strong>3.</strong> Após a conclusão da discussão na <em>Issue</em>, feche-a. Em seguida, remova a tag adicionada no passo 2 e atualize a palavra/termo não traduzido.</p>
+
+<p><strong>4.</strong> Como mantemos um arquivo de <a href="https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/GLOSSARIO.md">glossário</a>, faça um <em>Pull Request</em> adicionando o novo termo, colocando a referência <code class="language-plaintext highlighter-rouge">#&lt;número-da-issue&gt;</code> no termo/palavra em questão para fácil acesso no futuro.</p>
+
+<p><strong>5</strong> Deixe o termo, palavra, expressões do modo como está escrito nos seguintes casos:</p>
+<ul>
+  <li>São termos comuns que usamos em inglês sem problemas de entendimento;</li>
+  <li>Termos, palavras, expressões etc que ficam estranhas quando traduzidas. Nesse caso, pode-se colocar a tradução ao lado do que se está traduzindo entre parêntesis, somente na primeira vez que aparece no texto.</li>
+</ul>
+
+<hr />
+
+<p>Obrigado! ❤️ ❤️ ❤️</p>

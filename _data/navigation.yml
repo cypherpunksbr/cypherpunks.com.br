@@ -8,6 +8,8 @@ main:
     url: /authors/
   - title: "Posts por Ano"
     url: /year-archive/
+  - title: "Submissões"
+    url: /submission/
   - title: "Sobre"
     url: /about/
 

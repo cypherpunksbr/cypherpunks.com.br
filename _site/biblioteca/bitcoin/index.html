@@ -1,0 +1,846 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.20.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="pt" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Bitcoin: Um sistema de dinheiro eletrônico peer-to-peer - Cypherpunks Brasil</title>
+<meta name="description" content="Satoshi Nakamoto 31 de outubro de 2008">
+
+
+  <meta name="author" content="#Cypherpunks Brasil">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cypherpunks Brasil">
+<meta property="og:title" content="Bitcoin: Um sistema de dinheiro eletrônico peer-to-peer">
+<meta property="og:url" content="http://localhost:4000/biblioteca/bitcoin/">
+
+
+  <meta property="og:description" content="Satoshi Nakamoto 31 de outubro de 2008">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2008-10-31T00:00:00-02:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/biblioteca/bitcoin/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Cypherpunks Brasil Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Cypherpunks Brasil
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/library/">Biblioteca</a>
+            </li><li class="masthead__menu-item">
+              <a href="/articles/">Artigos</a>
+            </li><li class="masthead__menu-item">
+              <a href="/authors/">Autores</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Posts por Ano</a>
+            </li><li class="masthead__menu-item">
+              <a href="/submission/">Submissões</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">Sobre</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">#Cypherpunks Brasil</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Saudações criptoanarquistas, cypherpunks e demais amigos da criptosfera.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Acompanhe no</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/cypherpunksbr/cypherpunks.com.br" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Bitcoin: Um sistema de dinheiro eletrônico peer-to-peer">
+    <meta itemprop="description" content="Satoshi Nakamoto31 de outubro de 2008">
+    <meta itemprop="datePublished" content="2008-10-31T00:00:00-02:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Bitcoin: Um sistema de dinheiro eletrônico peer-to-peer
+</h1>
+          
+
+
+  <p class="page__meta">
+
+    
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        17 minuto(s) de leitura
+      
+    
+
+  </p>
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>Satoshi Nakamoto
+31 de outubro de 2008</p>
+
+<hr />
+
+<h2 id="abstract">Abstract</h2>
+
+<p>Uma versão puramente peer-to-peer do dinheiro eletrônico permitiria que pagamentos on-line fossem enviados diretamente de uma parte para outra sem passar por uma instituição financeira. Assinaturas digitais fornecem parte da solução, mas os principais benefícios são perdidos se um terceiro confiável ainda for necessário para evitar o gasto duplo. Propomos uma solução para o problema do gasto duplo usando uma rede peer-to-peer. A rede registra as transações de data e hora, transformando-as em uma cadeia contínua de prova de trabalho baseada em hash, formando um registro que não pode ser alterado sem refazer a prova de trabalho. A cadeia mais longa não serve apenas como prova da sequência de eventos testemunhada, mas prova de que ela veio do maior conjunto de poder da CPU. Enquanto a maioria da energia da CPU é controlada por nós que não estão cooperando para atacar a rede, eles Vai gerar os atacantes de cadeia e de saída mais longos. A rede em si requer estrutura mínima. As mensagens são transmitidas com base no melhor esforço, e os nós podem sair e se juntar à rede à vontade, aceitando a mais longa cadeia de prova de trabalho como prova do que aconteceu enquanto eles estavam fora.</p>
+
+<h2 id="1-introdução">1. Introdução</h2>
+
+<p>O comércio na Internet passou a depender quase exclusivamente de instituições financeiras que servem como terceiros confiáveis ​​para processar pagamentos eletrônicos. Enquanto o sistema funciona bem o suficiente para a maioria das transações, ele ainda sofre com as fraquezas inerentes do modelo baseado em confiança. Transações completamente não reversíveis não são realmente possíveis, uma vez que as instituições financeiras não podem evitar a mediação de disputas. O custo da mediação aumenta os custos de transação, limitando o tamanho mínimo prático da transação e eliminando a possibilidade de pequenas transações casuais, e há um custo mais amplo na perda da capacidade de efetuar pagamentos não reversíveis para serviços não reversíveis. Com a possibilidade de reversão, a necessidade de confiança se espalha. Os comerciantes devem ter cuidado com seus clientes, pedindo mais informações do que precisariam. Uma certa porcentagem de fraude é aceita como inevitável. Esses custos e incertezas de pagamento podem ser evitados pessoalmente usando moeda física, mas não existe nenhum mecanismo para efetuar pagamentos em um canal de comunicação sem uma parte confiável.</p>
+
+<p>O que é necessário é um sistema de pagamento eletrônico baseado em prova criptográfica em vez de confiança, permitindo que duas partes interessadas negociem diretamente entre si sem a necessidade de um terceiro confiável. As transações que são computacionalmente impraticáveis ​​de reverter protegeriam os vendedores de fraude, e mecanismos de depósito de rotina poderiam ser facilmente implementados para proteger os compradores. Neste artigo, propomos uma solução para o problema do gasto duplo usando um servidor de timestamp distribuído peer-to-peer para gerar prova computacional da ordem cronológica das transações. O sistema é seguro desde que os nós honestos controlem coletivamente mais energia da CPU do que qualquer grupo colaborador de nós atacantes.</p>
+
+<h2 id="2-transações">2. Transações</h2>
+
+<p>Nós definimos uma moeda eletrônica como uma cadeia de assinaturas digitais. Cada proprietário transfere a moeda para a próxima assinando digitalmente um hash da transação anterior e a chave pública do próximo proprietário e adicionando-os ao final da moeda. Um beneficiário pode verificar as assinaturas para verificar a cadeia de propriedade.</p>
+
+<p><img src="https://nakamotoinstitute.org/static/img/bitcoin/transactions.svg" alt="" /></p>
+
+<p>O problema, é claro, é que o beneficiário não pode verificar se um dos donos não gastou duas vezes a moeda. Uma solução comum é introduzir uma autoridade central confiável, que verifica todas as transações para gastos duplicados. Após cada transação, a moeda deve ser devolvida à casa da moeda para emitir uma nova moeda, e somente as moedas emitidas diretamente da casa da moeda são confiáveis para não serem gastas duas vezes. O problema com esta solução é que o destino de todo o sistema monetário depende da empresa que opera a casa da moeda, com cada transação tendo que passar por eles, assim como um banco.</p>
+
+<p>Precisamos de uma maneira de o beneficiário saber que os proprietários anteriores não assinaram nenhuma transação anterior. Para nossos propósitos, a primeira transação é a que conta, por isso não nos importamos com as tentativas posteriores de gastar duas vezes. A única maneira de confirmar a ausência de uma transação é estar ciente de todas as transações. No modelo baseado em hortelã, a casa da moeda estava ciente de todas as transações e decidiu qual delas chegava primeiro. Para conseguir isso sem uma parte confiável, as transações devem ser anunciadas publicamente [1] , e precisamos de um sistema para os participantes concordarem em um único histórico da ordem em que foram recebidos. O beneficiário precisa comprovar que, no momento de cada transação, a maioria dos nós concordou que foi a primeira recebida.</p>
+
+<h2 id="3-servidor-de-registro-de-datahora">3. Servidor de registro de data/hora</h2>
+
+<p>A solução que propomos começa com um servidor de timestamp. Um servidor de timestamp trabalha pegando um hash de um bloco de itens a ser timestamped e publicando amplamente o hash, como em um jornal ou post Usenet<sup><a href="#fn2">[2-5]</a></sup>. O timestamp prova que os dados devem ter existido no momento, obviamente, para entrar no hash. Cada timestamp inclui o timestamp anterior em seu hash, formando uma cadeia, com cada timestamp adicional reforçando os anteriores.</p>
+
+<p><img src="https://nakamotoinstitute.org/static/img/bitcoin/timestamp-server.svg" alt="" /></p>
+
+<h2 id="4-prova-de-trabalho">4. Prova de trabalho</h2>
+
+<p>Para implementar um servidor de timestamp distribuído em uma base peer-to-peer, precisaremos usar um sistema de prova de trabalho semelhante ao Hashcash de Adam Back<sup><a href="#fn6">[6]</a></sup> , ao invés de postagens de jornal ou Usenet. A prova de trabalho envolve a verificação de um valor que, quando com hash, como no SHA-256, o hash começa com um número de bits zero. O trabalho médio necessário é exponencial no número de bits zero requerido e pode ser verificado pela execução de um único hash.</p>
+
+<p>Para nossa rede de registro de data e hora, implementamos a prova de trabalho incrementando um nonce no bloco até que seja encontrado um valor que forneça ao hash do bloco os bits zero necessários. Uma vez que o esforço da CPU tenha sido gasto para satisfazer a prova de trabalho, o bloco não pode ser alterado sem refazer o trabalho. Como os blocos posteriores são encadeados depois disso, o trabalho para mudar o bloco incluiria refazer todos os blocos depois dele.</p>
+
+<p><img src="https://nakamotoinstitute.org/static/img/bitcoin/proof-of-work.svg" alt="" /></p>
+
+<p>A prova de trabalho também resolve o problema de determinar a representação na tomada de decisão por maioria. Se a maioria fosse baseada em um endereço IP, um voto, ele poderia ser subvertido por qualquer pessoa capaz de alocar muitos IPs. Prova de trabalho é essencialmente um CPU-um-voto. A decisão da maioria é representada pela cadeia mais longa, que tem o maior esforço de prova de trabalho investido nela. Se a maioria da potência da CPU for controlada por nós honestos, a cadeia honesta crescerá mais rápido e ultrapassará as cadeias concorrentes. Para modificar um bloco anterior, um invasor teria que refazer a prova de trabalho do bloco e todos os blocos após ele e, em seguida, alcançar e superar o trabalho dos nós honestos. Nós mostraremos mais tarde que a probabilidade de um atacante mais lento se aproximar diminui exponencialmente à medida que os blocos subseqüentes são adicionados.</p>
+
+<p>Para compensar o aumento da velocidade do hardware e o interesse variável em executar nós ao longo do tempo, a dificuldade de prova de trabalho é determinada por uma média móvel visando um número médio de blocos por hora. Se eles são gerados muito rápido, a dificuldade aumenta.</p>
+
+<h2 id="5-rede">5. Rede</h2>
+
+<p>As etapas para executar a rede são as seguintes:</p>
+
+<ol>
+  <li>Novas transações são transmitidas para todos os nós.</li>
+  <li>Cada nó coleta novas transações em um bloco.</li>
+  <li>Cada nó trabalha para encontrar uma prova de trabalho difícil para o seu bloco.</li>
+  <li>Quando um nó encontra uma prova de trabalho, ele transmite o bloco para todos os nós.</li>
+  <li>Os nós aceitam o bloco somente se todas as transações nele forem válidas e já não tiverem sido gastas.</li>
+  <li>Os nós expressam sua aceitação do bloco trabalhando na criação do próximo bloco da cadeia, usando o hash do bloco aceito como o hash anterior.</li>
+</ol>
+
+<p>Os nós sempre consideram a cadeia mais longa a correta e continuarão trabalhando para estendê-la. Se dois nós transmitem versões diferentes do próximo bloco simultaneamente, alguns nós podem receber um ou outro primeiro. Nesse caso, eles trabalham no primeiro que receberam, mas salvam o outro ramo no caso dele se tornar mais longo. O empate será quebrado quando a próxima prova de trabalho for encontrada e uma ramificação ficar mais longa; os nós que estavam trabalhando na outra ramificação passarão para o mais longo.</p>
+
+<p>Novas transmissões de transmissões não precisam necessariamente atingir todos os nós. Contanto que eles atinjam muitos nós, eles entrarão em um bloco em pouco tempo. As transmissões de bloco também são tolerantes a mensagens descartadas. Se um nó não receber um bloco, ele o solicitará quando receber o próximo bloco e perceber que perdeu um.</p>
+
+<h2 id="6-incentivo">6. Incentivo</h2>
+
+<p>Por convenção, a primeira transação em um bloco é uma transação especial que inicia uma nova moeda pertencente ao criador do bloco. Isso adiciona um incentivo para que os nós suportem a rede e fornece uma maneira de distribuir moedas inicialmente em circulação, uma vez que não há autoridade central para emiti-las. A adição constante de uma constante de quantidade de novas moedas é análoga aos mineradores de ouro que gastam recursos para adicionar ouro à circulação. No nosso caso, é o tempo de CPU e a eletricidade que é gasta.</p>
+
+<p>O incentivo também pode ser financiado com taxas de transação. Se o valor de saída de uma transação for menor que seu valor de entrada, a diferença será uma taxa de transação que é adicionada ao valor de incentivo do bloco que contém a transação. Uma vez que um número predeterminado de moedas tenha entrado em circulação, o incentivo pode transitar inteiramente para as taxas de transação e ser completamente livre de inflação.</p>
+
+<p>O incentivo pode ajudar a encorajar os nós a permanecerem honestos. Se um atacante ganancioso é capaz de reunir mais poder de CPU do que todos os nós honestos, ele teria que escolher entre usá-lo para fraudar as pessoas, roubando seus pagamentos, ou usando-o para gerar novas moedas. Ele deveria achar mais lucrativo jogar de acordo com as regras, regras que o favorecem com mais moedas novas do que todos os demais, do que prejudicar o sistema e a validade de sua própria riqueza.</p>
+
+<h2 id="7-recuperando-espaço-em-disco">7. Recuperando espaço em disco</h2>
+
+<p>Depois que a transação mais recente em uma moeda é enterrada em blocos suficientes, as transações gastas antes dela podem ser descartadas para economizar espaço em disco. Para facilitar isso sem quebrar o hash do bloco, as transações são divididas em uma árvore Merkle <sup><a href="#fn7">[7]</a></sup><sup><a href="#fn2">[2]</a></sup><sup><a href="#fn5">[5]</a></sup> , com apenas a raiz incluída no hash do bloco. Blocos antigos podem então ser compactados arrancando galhos da árvore. Os hashes interiores não precisam ser armazenados.</p>
+
+<p><img src="https://nakamotoinstitute.org/static/img/bitcoin/reclaiming-disk-space.svg" alt="" /></p>
+
+<p>Um cabeçalho de bloco sem transações seria de cerca de 80 bytes. Se supusermos que blocos são gerados a cada 10 minutos, 80 bytes * 6 * 24 * 365 = 4,2 MB por ano. Com os sistemas de computador vendendo normalmente com 2 GB de RAM a partir de 2008, e a Lei de Moore prevendo um crescimento atual de 1,2 GB por ano, o armazenamento não deve ser um problema, mesmo que os cabeçalhos dos blocos sejam mantidos na memória.</p>
+
+<h2 id="8-verificação-simplificada-de-pagamento">8. Verificação Simplificada de Pagamento</h2>
+
+<p>É possível verificar pagamentos sem executar um nó de rede completo. Um usuário só precisa manter uma cópia dos cabeçalhos de bloco da maior cadeia de prova de trabalho, o que ele pode fazer consultando os nós da rede até convencê-lo de ter a cadeia mais longa e obter a ramificação Merkle que vincula a transação ao bloco Ele não pode verificar a transação por si mesmo, mas ligando-a a um lugar na cadeia, ele pode ver que um nó de rede aceitou e bloqueou adicionado depois de confirmar que a rede aceitou a transação.</p>
+
+<p><img src="https://nakamotoinstitute.org/static/img/bitcoin/simplified-payment-verification.svg" alt="" /></p>
+
+<p>Como tal, a verificação é confiável desde que os nós honestos controlem a rede, mas seja mais vulnerável se a rede for dominada por um invasor. Embora os nós de rede possam verificar as transações por conta própria, o método simplificado pode ser enganado pelas transações fabricadas por um invasor enquanto o invasor puder continuar a dominar a rede. Uma estratégia para proteger contra isso seria aceitar alertas de nós de rede quando detectarem um bloco inválido, solicitando que o software do usuário baixe o bloco inteiro e alertou as transações para confirmar a inconsistência. As empresas que recebem pagamentos freqüentes provavelmente ainda precisarão executar seus próprios nós para obter uma segurança mais independente e uma verificação mais rápida.</p>
+
+<h2 id="9-combinando-e-dividindo-valor">9. Combinando e dividindo valor</h2>
+
+<p>Embora fosse possível lidar com moedas individualmente, seria difícil fazer uma transação separada para cada centavo em uma transferência. Para permitir que o valor seja dividido e combinado, as transações contêm várias entradas e saídas. Normalmente, haverá uma única entrada de uma transação anterior maior ou várias entradas combinando quantidades menores e no máximo duas saídas: uma para o pagamento e outra retornando a alteração, se houver, de volta ao remetente.</p>
+
+<p><img src="https://nakamotoinstitute.org/static/img/bitcoin/combining-splitting-value.svg" alt="" /></p>
+
+<p>Deve-se notar o espalhamento, onde uma transação depende de várias transações, e essas transações dependem de muito mais, não é um problema aqui. Nunca há a necessidade de extrair uma cópia autônoma completa do histórico de uma transação.</p>
+
+<h2 id="10-privacidade">10. Privacidade</h2>
+
+<p>O modelo bancário tradicional atinge um nível de privacidade ao limitar o acesso à informação às partes envolvidas e ao terceiro de confiança. A necessidade de anunciar todas as transações exclui publicamente esse método, mas a privacidade ainda pode ser mantida quebrando o fluxo de informações em outro lugar: mantendo as chaves públicas anônimas. O público pode ver que alguém está enviando uma quantia para outra pessoa, mas sem informações vinculando a transação a ninguém. Isso é semelhante ao nível de informações divulgadas pelas bolsas de valores, onde o tempo e o tamanho dos negócios individuais, a “fita”, são tornados públicos, mas sem dizer quem eram as partes.</p>
+
+<p><img src="https://nakamotoinstitute.org/static/img/bitcoin/privacy.svg" alt="" /></p>
+
+<p>Como um firewall adicional, um novo par de chaves deve ser usado para cada transação para impedir que elas sejam vinculadas a um proprietário comum. Algumas ligações ainda são inevitáveis ​​com transações com múltiplos inputs, que necessariamente revelam que suas entradas eram de propriedade do mesmo proprietário. O risco é que, se o proprietário de uma chave for revelado, a vinculação poderá revelar outras transações pertencentes ao mesmo proprietário.</p>
+
+<h2 id="11-cálculos">11. Cálculos</h2>
+
+<p>Consideramos o cenário de um invasor tentando gerar uma cadeia alternativa mais rapidamente que a cadeia honesta. Mesmo que isso seja feito, ele não abre o sistema para mudanças arbitrárias, como a criação de valor a partir do nada ou a obtenção de dinheiro que nunca pertenceu ao invasor. Os nós não aceitarão uma transação inválida como pagamento e os nós honestos nunca aceitarão um bloco que os contenha. Um invasor só pode tentar alterar uma de suas transações para receber o dinheiro que gastou recentemente.</p>
+
+<p>A corrida entre a cadeia honesta e uma cadeia atacante pode ser caracterizada como uma Caminhada Aleatória Binomial. O evento de sucesso é a cadeia honesta sendo estendida por um bloco, aumentando sua liderança em +1, e o evento de falha é a cadeia do atacante sendo estendida por um bloco, reduzindo o intervalo em -1.</p>
+
+<p>A probabilidade de um atacante se recuperar de um dado déficit é análoga ao problema da Ruína do Jogador. Suponha que um jogador com crédito ilimitado comece com um déficit e jogue potencialmente um número infinito de tentativas para tentar alcançar o ponto de equilíbrio. Podemos calcular a probabilidade de ele chegar ao ponto de equilíbrio, ou de que um atacante alcança a cadeia honesta, como segue [8] :</p>
+
+\[\begin{eqnarray*}
+\large p &amp;=&amp; \text{probabilidade de um nó honesto encontrar o próximo bloco} \\
+\large q &amp;=&amp; \text{probabilidade de um atacante encontrar o próximo bloco}\\
+\large q_z &amp;=&amp; \text{probabilidade que o atacante irá recuperar $z$ blocos}
+\end{eqnarray*}\]
+
+\[\large q_z = \begin{Bmatrix}
+1 &amp; \textit{if}\; p \leq q\\
+(q/p)^z &amp; \textit{if}\; p &gt; q
+\end{Bmatrix}\]
+
+<p>Considerando nossa suposição de que $p \gt q$, a probabilidade cai exponencialmente à medida que o número de bloqueios que o invasor tem para alcançar aumenta. Com as probabilidades contra ele, se ele não der um golpe de sorte para a frente logo no início, suas chances se tornam cada vez menores, já que ele fica ainda mais para trás.</p>
+
+<p>Consideramos agora quanto tempo o destinatário de uma nova transação precisa esperar antes de ter certeza de que o remetente não pode alterar a transação. Assumimos que o remetente é um invasor que quer fazer com que o destinatário acredite que ele o pagou por um tempo, depois o substitui para pagar a si mesmo após algum tempo. O receptor será alertado quando isso acontecer, mas o remetente espera que seja tarde demais.</p>
+
+<p>O receptor gera um novo par de chaves e fornece a chave pública ao remetente logo antes de assinar. Isso evita que o remetente prepare uma cadeia de blocos com antecedência, trabalhando nela continuamente até que tenha a sorte de chegar longe o suficiente e depois executar a transação naquele momento. Depois que a transação é enviada, o remetente desonesto começa a trabalhar em segredo em uma cadeia paralela contendo uma versão alternativa de sua transação.</p>
+
+<p>O destinatário aguarda até que a transação seja adicionada a um bloco e $z$ blocos foram ligados depois. Ele não sabe a quantidade exata de progresso que o invasor fez, mas supondo que os blocos honestos tenham demorado o tempo médio esperado por bloco, o progresso potencial do atacante será uma distribuição de Poisson com o valor esperado:</p>
+
+<p>$\large \lambda = z \frac qp$</p>
+
+<p>Para obter a probabilidade que o atacante ainda pode alcançar agora, multiplicamos a densidade de Poisson para cada quantidade de progresso que ele poderia ter feito pela probabilidade que ele poderia alcançar a partir desse ponto:</p>
+
+<p>$\large \sum_{k=0}^{\infty} \frac{\lambda^k e^{-\lambda}}{k!} \cdot \begin{Bmatrix} (q/p)^{(z-k)} &amp; \textit{if}\;k\leq z\ 1 &amp; \textit{if} \; k &gt; z \end{Bmatrix}$</p>
+
+<p>Reorganizando para evitar somar a cauda infinita da distribuição …</p>
+
+<p>$\large 1 - \sum_{k=0}^{z} \frac{\lambda^k e^{-\lambda}}{k!} \left ( 1-(q/p)^{(z-k)} \right )$</p>
+
+<p>Convertendo em código C…</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include double AttackerSuccessProbability(double q, int z)
+{
+	double p = 1.0 - q;
+	double lambda = z * (q / p);
+	double sum = 1.0;
+	int i, k;
+	for (k = 0; k &lt;= z; k++)
+	{
+		double poisson = exp(-lambda);
+		for (i = 1; i &lt;= k; i++)
+			poisson *= lambda / i;
+		sum -= poisson * (1 - pow(q / p, z - k));
+	}
+	return sum;
+}
+</code></pre></div></div>
+
+<p>Depois de alguns resultados, podemos ver a probabilidade cair exponencialmente com $z$.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>q=0.1
+z=0    P=1.0000000
+z=1    P=0.2045873
+z=2    P=0.0509779
+z=3    P=0.0131722
+z=4    P=0.0034552
+z=5    P=0.0009137
+z=6    P=0.0002428
+z=7    P=0.0000647
+z=8    P=0.0000173
+z=9    P=0.0000046
+z=10   P=0.0000012
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>q=0.3
+z=0    P=1.0000000
+z=5    P=0.1773523
+z=10   P=0.0416605
+z=15   P=0.0101008
+z=20   P=0.0024804
+z=25   P=0.0006132
+z=30   P=0.0001522
+z=35   P=0.0000379
+z=40   P=0.0000095
+z=45   P=0.0000024
+z=50   P=0.0000006
+</code></pre></div></div>
+
+<p>Resolvendo para P menores que 0.1%…</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>P &lt; 0.001
+q=0.10   z=5
+q=0.15   z=8
+q=0.20   z=11
+q=0.25   z=15
+q=0.30   z=24
+q=0.35   z=41
+q=0.40   z=89
+q=0.45   z=340
+</code></pre></div></div>
+
+<h2 id="12-conclusão">12. Conclusão</h2>
+
+<p>Propusemos um sistema para transações eletrônicas sem depender da confiança. Começamos com a estrutura usual de moedas feitas a partir de assinaturas digitais, que fornece um forte controle de propriedade, mas é incompleta sem uma maneira de evitar o gasto duplo. Para resolver isso, propusemos uma rede peer-to-peer usando prova de trabalho para registrar um histórico público de transações que rapidamente se torna impraticável para um invasor mudar se os nós honestos controlarem a maior parte da energia da CPU. A rede é robusta em sua simplicidade não estruturada. Os nós trabalham todos de uma vez com pouca coordenação. Eles não precisam ser identificados, pois as mensagens não são roteadas para nenhum lugar específico e precisam ser entregues apenas com base no melhor esforço. Os nós podem sair e se juntar à rede à vontade, aceitando a cadeia de prova de trabalho como prova do que aconteceu enquanto estiveram fora. Eles votam com seu poder de CPU, expressando sua aceitação de blocos válidos trabalhando em estendê-los e rejeitando blocos inválidos, recusando-se a trabalhar neles. Quaisquer regras e incentivos necessários podem ser aplicados com este mecanismo de consenso.</p>
+
+<h2 id="referências">Referências</h2>
+
+<ol>
+  <li>
+    <p>W. Dai, <a href="http://nakamotoinstitute.org/b-money/">“b-money,”</a> <a href="http://www.weidai.com/bmoney.txt">http://www.weidai.com/bmoney.txt</a>, 1998. <a href="#ref1" title="Jump back to [1]">↩</a></p>
+  </li>
+  <li>
+    <p>H. Massias, X.S. Avila, and J.-J. Quisquater, <a href="http://nakamotoinstitute.org/secure-timestamping-service.pdf">“Design of a secure timestamping service with minimal trust requirements,”</a> In <em>20th Symposium on Information Theory in the Benelux</em>, May 1999. <a href="#ref2" title="Jump back to [2-5]">↩</a> <a href="#ref2-2" title="Jump back to [2]">↩</a></p>
+  </li>
+  <li>
+    <p>S. Haber, W.S. Stornetta, <a href="http://nakamotoinstitute.org/time-stamp-digital-document.pdf">“How to time-stamp a digital document,”</a> In <em>Journal of Cryptology</em>, vol 3, no 2, pages 99-111, 1991. <a href="#ref2" title="Jump back to [2-5]">↩</a></p>
+  </li>
+  <li>
+    <p>D. Bayer, S. Haber, W.S. Stornetta, <a href="http://nakamotoinstitute.org/improving-time-stamping.pdf">“Improving the efficiency and reliability of digital time-stamping,”</a> In <em>Sequences II: Methods in Communication, Security and Computer Science</em>, pages 329-334, 1993. <a href="#ref2" title="Jump back to [2-5]">↩</a></p>
+  </li>
+  <li>
+    <p>S. Haber, W.S. Stornetta, <a href="http://nakamotoinstitute.org/secure-names-bit-strings.pdf">“Secure names for bit-strings,”</a> In <em>Proceedings of the 4th ACM Conference on Computer and Communications Security</em>, pages 28-35, April 1997. <a href="#ref2" title="Jump back to [2-5]">↩</a> <a href="#ref5" title="Jump back to [5]">↩</a></p>
+  </li>
+  <li>
+    <p>A. Back, <a href="http://nakamotoinstitute.org/hashcash.pdf">“Hashcash - a denial of service counter-measure,”</a> <a href="http://www.hashcash.org/papers/hashcash.pdf">http://www.hashcash.org/papers/hashcash.pdf</a>, 2002. <a href="#ref6" title="Jump back to [6]">↩</a></p>
+  </li>
+  <li>
+    <p>R.C. Merkle, <a href="http://nakamotoinstitute.org/public-key-cryptosystems.pdf">“Protocols for public key cryptosystems,”</a> In <em>Proc. 1980 Symposium on Security and Privacy</em>, IEEE Computer Society, pages 122-133, April 1980. <a href="#ref7" title="Jump back to [7]">↩</a></p>
+  </li>
+  <li>
+    <p>W. Feller, <a href="http://nakamotoinstitute.org/introduction-probability-theory-vol-i.pdf">“An introduction to probability theory and its applications,”</a> 1957. <a href="#ref8" title="Jump back to [8]">↩</a></p>
+  </li>
+</ol>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#satoshi-nakamoto" class="page__taxonomy-item" rel="tag">Satoshi Nakamoto</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categorias: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#biblioteca" class="page__taxonomy-item" rel="tag">Biblioteca</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Atualizado em:</strong> <time datetime="2008-10-31T00:00:00-02:00">October 31, 2008</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Compartilhe</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Bitcoin%3A+Um+sistema+de+dinheiro+eletr%C3%B4nico+peer-to-peer%20http%3A%2F%2Flocalhost%3A4000%2Fbiblioteca%2Fbitcoin%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fbiblioteca%2Fbitcoin%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fbiblioteca%2Fbitcoin%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/biblioteca/bitgold/" class="pagination--pager" title="Bit Gold
+">Anterior</a>
+    
+    
+      <a href="/biblioteca/coletanea-de-textos-do-hal-finney/" class="pagination--pager" title="Coletânea de textos do Hal Finney
+">Próxima</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">Talvez você também goste</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/biblioteca/carta-de-agradecimentos-pelos-100k/" rel="permalink">Carta agradecendo pelas 100,000 assinaturas
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        menos que 1 minuto(s) de leitura
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">Ross Ulbricht
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/biblioteca/feliz-aniversario-bitcoin/" rel="permalink">Feliz Aniversário, Bitcoin!
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        2 minuto(s) de leitura
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">Ross Ulbritch
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/biblioteca/carta-de-agradecimento-pelas-50mil-assinaturas/" rel="permalink">Carta agradecendo pelas 50,000 assinaturas
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        menos que 1 minuto(s) de leitura
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">Ross Ulbricht
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/biblioteca/carta-de-ross-para-a-reason-conference/" rel="permalink">Carta de Ross para a Reason Conference
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        1 minuto(s) de leitura
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">Ross Ulbricht
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    <!-- 
+      <li><strong>Acompanhe no</strong></li>
+     -->
+    Pode copiar, propriedade intelectual não existe!
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <!-- <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li> -->
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Cypherpunks Brasil. Desenvolvido com <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> em conjumto com entusiastas.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
