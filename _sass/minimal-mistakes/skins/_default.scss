@@ -3,3 +3,26 @@
    ========================================================================== */
 
 // Intentionally left blank
+
+$background-color: #2D283E !default;
+$text-color: #D1D7E3 !default;
+$primary-color: #802BB1 !default;
+$border-color: mix(#fff, $background-color, 20%) !default;
+$code-background-color: mix(#0C0032, $background-color, 15%) !default;
+$code-background-color-dark: mix(#0C0032, $background-color, 20%) !default;
+$form-background-color: mix(#0C0032, $background-color, 15%) !default;
+$footer-background-color: mix(#0C0032, $background-color, 15%) !default;
+$link-color: mix(#fff, #c2afff, 25%) !default;
+$link-color-hover: mix(#fff, $link-color, 25%) !default;
+$link-color-visited: mix(#000, $link-color, 25%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix(#564F6F, $text-color, 20%) !default;
+$navicon-link-color-hover: mix(#564F6F, $background-color, 30%) !default;
+.author__urls.social-icons .svg-inline--fa,
+.page__footer-follow .social-icons .svg-inline--fa {
+    color: inherit;
+}
+
+.ais-search-box .ais-search-box--input {
+    background-color: $form-background-color;
+}
