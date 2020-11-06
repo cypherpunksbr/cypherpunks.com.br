@@ -1,6 +1,10 @@
 ---
 title:  "Por que eu escrevi o PGP"
 date:   09-06-1991 -0300
+author: 
+  - Philip R. Zimmermann
+author__name: 
+  - Philip R. Zimmermann
 categories: 
   - Biblioteca
 tags:
