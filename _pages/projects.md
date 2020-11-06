@@ -1,7 +1,7 @@
 ---
-permalink: /submission/
+permalink: /projects/
 layout: archive
-title: "Submissões"
+title: "Nossos Projetos"
 last_modified_at: 2020-07-28
 toc: true
 ---

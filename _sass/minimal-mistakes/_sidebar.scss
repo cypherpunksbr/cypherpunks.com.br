@@ -62,11 +62,19 @@
   }
 
   img {
-    width: 100%;
-
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    display: block;
     &.emoji {
       width: 20px;
       height: 20px;
+    }
+    @include breakpoint($large){
+      width: 100%;
+      height: auto;
+      padding: 30px;
+      
     }
   }
 }

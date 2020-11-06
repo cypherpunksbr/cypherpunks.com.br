@@ -1,5 +1,6 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
   <div class="sidebar sticky">
+  <img src="{{ baseurl }}/_pages/img/cypherInvertTranslucid.png" width="" alt="">
   {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
   {% if page.sidebar %}
     {% for s in page.sidebar %}
@@ -15,5 +16,6 @@
       {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
   {% endif %}
+  <a href="https://telegra.ph/Mensagen-dos-Cypherpunks-Brasil-a-comunidade-10-31">⚠️ Mensagem dos Cypherpunks Brasil à comunidade ⚠️</a>
   </div>
 {% endif %}
