@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Contratos no Ciberespaço"
 date:   04-05-2000 -0300
 categories:
