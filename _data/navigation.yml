@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "Biblioteca"
-    url: /library/
+    url: /biblioteca/
   - title: "Artigos"
     url: /articles/
   - title: "Autores"
