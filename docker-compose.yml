@@ -1,0 +1,11 @@
+
+version: '2'
+services:
+  app:
+    image: jekyll/jekyll
+    command: jekyll serve --incremental -P 8080
+    ports:
+      - 80:8080
+    volumes:
+      - .:/srv/jekyll
+      - ./vendor/bundle:/usr/local/bundle
