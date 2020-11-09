@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Como Contribuir
 permalink: /comocontribuir/
 ---
