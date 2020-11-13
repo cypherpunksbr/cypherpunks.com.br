@@ -1,11 +1,53 @@
 
 version: '2'
 services:
+  proxy:
+    image: jwilder/nginx-proxy
+    depends_on:
+      - app
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /etc/nginx/certs
+      - /etc/nginx/vhost.d
+      - /usr/share/nginx/html
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+    environment:
+      - DHPARAM_GENERATION=0
+    networks:
+      - normie
+      - undercover
+
+  proxy-companion:
+    image: jrcs/letsencrypt-nginx-proxy-companion
+    depends_on:
+      - proxy
+    volumes_from:
+      - proxy:rw
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      - "DEFAULT_EMAIL=timothy@cypherpunks.com.br"
+    networks:
+      - undercover
+
   app:
     image: jekyll/jekyll
     command: jekyll serve --incremental -P 8080
-    ports:
-      - 80:8080
     volumes:
       - .:/srv/jekyll
       - ./vendor/bundle:/usr/local/bundle
+    ports:
+      - "8080:8080"
+    environment:
+      - LETSENCRYPT_HOST=cypherpunks.com.br
+      - VIRTUAL_HOST=cypherpunks.com.br
+      - VIRTUAL_PORT=8080
+    networks:
+      - undercover
+
+networks:
+  normie:
+    external: true
+  undercover:
