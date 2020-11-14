@@ -95,7 +95,7 @@ $dribbble-color: #ea4c89 !default;
 $facebook-color: #3b5998 !default;
 $flickr-color: #ff0084 !default;
 $foursquare-color: #0072b1 !default;
-$github-color: #171516 !default;
+$github-color: $lighter-gray !default;
 $gitlab-color: #e24329 !default;
 $instagram-color: #517fa4 !default;
 $keybase-color: #ef7639 !default;
@@ -164,7 +164,7 @@ $right-sidebar-width-wide: 400px !default;
    ========================================================================== */
 
 $border-radius: 4px !default;
-$box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125) !default;
+$box-shadow: $base05;
 $nav-height: 2em !default;
 $nav-toggle-height: 2rem !default;
 $navicon-width: 1.5rem !default;

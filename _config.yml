@@ -22,7 +22,7 @@ subtitle: # site tagline that appears below site title in masthead
 #name                     : "Your Name"
 description: >- 
   cypherpunks é um site dedicado a tradução de textos históricos e compartilhamento de conteúdo relacionado a criptoanarquismo, cypherpunk, criptologia, agorismo, sistemas descentralizados, hardware, moedas digitais e mais.
-url: http://178.128.217.115:8080
+url: https://cypherpunks.com.br
 baseurl:  # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -114,6 +114,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/cypherpunksbr/cypherpunks.com.br"
+    - label: "Telegram"
+      icon: "fab fa-fw fa-telegram"
+      url: "https://t.me/joinchat/Dcseo0fns78QotA-tu2OtQ"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"

@@ -76,6 +76,10 @@
       padding: 30px;
       
     }
+    @include breakpoint($medium) {
+      width: 300px;
+      height: 300px;
+    }
   }
 }
 
@@ -162,6 +166,7 @@
   a {
     color: inherit;
     text-decoration: none;
+
   }
 }
 
@@ -176,6 +181,9 @@
 .sidebar .author__name {
   font-family: $share-tech;
   font-size: $type-size-5;
+  @include breakpoint($medium) {
+    font-size: $type-size-4;
+  }
 }
 
 .author__bio {
@@ -184,6 +192,9 @@
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 20px;
+  }
+  @include breakpoint($medium) {
+    font-size: $type-size-5;
   }
 }
 
@@ -319,7 +330,7 @@
     color: inherit;
     font-size: $type-size-5;
     text-decoration: none;
-
+    
     &:hover {
       text-decoration: underline;
     }

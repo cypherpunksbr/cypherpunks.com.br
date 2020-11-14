@@ -2,8 +2,8 @@
 main:
   - title: "Biblioteca"
     url: /biblioteca/
-  - title: "Artigos"
-    url: /articles/
+  # - title: "Artigos"
+  #   url: /articles/
   - title: "Autores"
     url: /authors/
   - title: "Posts por Ano"

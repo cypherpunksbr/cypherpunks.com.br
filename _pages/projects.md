@@ -6,7 +6,11 @@ last_modified_at: 2020-07-28
 toc: true
 ---
 
-## Submissão de traduções:
+## Doações
+
+
+
+<!-- ## Submissão de traduções:
 
 Deseja contribuir com as traduções e ainda ser recompensado por isso? Aceitamos submissões de traduções e pagamos X quantidade de satoshis por palavra do artigo traduzido sob as seguintes condições:
 - O artigo deve estar completo, ou seja, vocẽ não ganha 50% do pagamento se traduzir metade do texto
@@ -17,7 +21,7 @@ Deseja contribuir com as traduções e ainda ser recompensado por isso? Aceitamo
 
 
 <form
-  action="https://formspree.io/mnqgkdve"
+  action=""
   method="POST"
   enctype="multipart/form-data"
 >
@@ -39,4 +43,4 @@ Deseja contribuir com as traduções e ainda ser recompensado por isso? Aceitamo
   </label>
 
   <button type="submit">Send</button>
-</form>
+</form> -->
