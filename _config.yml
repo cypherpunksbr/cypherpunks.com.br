@@ -217,6 +217,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-compose
+  - jekyll-redirect-from
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -274,3 +275,6 @@ defaults:
       comments: # true
       share: true
       related: true
+
+host: cypherpunks.com.br
+port: 80
