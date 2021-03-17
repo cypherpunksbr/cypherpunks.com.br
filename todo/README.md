@@ -1,4 +1,4 @@
-s## Traduções
+## Traduções
 
 :pencil2: Em processo de tradução por @
 
@@ -101,7 +101,7 @@ s## Traduções
 
 :ok: [Terceiros confiáveis](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/terceiros-confiaveis.html) - [Henry](https://github.com/henur)
 
-:ok: [Títulos Seguros de Propriedade]() - [Matheus Bach](https://github.com/matheusbach/ "Ver perfil no GitHub")
+:ok: [Títulos Seguros de Propriedade](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/TRANSLATED/secure-property-titles.html) - [Matheus Bach](https://github.com/matheusbach/ "Ver perfil no GitHub")
 
 * Mais publicações você pode encontrar em nossa [biblioteca](https://cypherpunks.com.br/biblioteca/)
 
