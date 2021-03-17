@@ -45,8 +45,6 @@
 
 :pencil2: [The Gentleperson's Guide To Forum Spies](https://cryptome.org/2012/07/gent-forum-spies.htm) - [@EuSouRye](https://github.com/EuSouRye)
 
-:pencil2: Truledger - [Matheus Bach](https://github.com/matheusbach)
-
 :pencil2: [smart contracts glossary](../todo/smart-contracts-glossary.html) - [Yuri CW](https://github.com/yuricwe)
 
 ### Textos traduzidos:
@@ -102,6 +100,9 @@
 :ok: [Terceiros confiáveis](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/terceiros-confiaveis.html) - [Henry](https://github.com/henur)
 
 :ok: [Títulos Seguros de Propriedade](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/TRANSLATED/secure-property-titles.html) - [Matheus Bach](https://github.com/matheusbach/ "Ver perfil no GitHub")
+
+:ok: [Truledger](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/TRANSLATED/trueledger.html) - [Matheus Bach](https://github.com/matheusbach)
+
 
 * Mais publicações você pode encontrar em nossa [biblioteca](https://cypherpunks.com.br/biblioteca/)
 
