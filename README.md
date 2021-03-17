@@ -9,20 +9,14 @@ Somos um grupo de pessoas (e robôs) interessados em criptologia, criptomoedas, 
 
 Se você tiver interesse em ajudar, criamos um [guia] sobre como você pode fazer isto. Se tiver qualquer dúvida ou alguma sugestão de melhoria, basta abrir uma [issue].
 
-Doe Bitcoins: bc1qjgsxk4qatgtlzqs0w6pu2lv3mcr025e2tz95nxafgt8qak70jm0qm0fqa3
-
-A carteira acima é um endereço multisig e os fundos só podem ser movidos se os integrantes do projeto concordarem. Todos os fundos são utilizados para manter o projeto e para apoiar as nossas iniciativas. Todos os nossos gastos são transparentes e podem ser consultados [neste link].
-
-Por medidas de segurança, não revelamos os detentores das chaves que controlam o endereço, nem a quantidade de assinaturas necessárias.
-
 ## Agradecimentos
 
 Este trabalho não seria possível sem a contribuição de diversas pessoas que ajudaram a traduzir, revisar, escrever código, configurar servidores entre muitas outras coisas. São eles/elas:
     
 Colaboradores:
--  [OneTimePad](https://cypherpunks.com.br/author/onetimepad/)
--  [accela](https://cypherpunks.com.br/author/accela/)
--  [Disruptivas](https://cypherpunks.com.br/author/deep/)
+-  [OneTimePad](https://twitter.com/AvelinoMorganti)
+-  [accela](https://#)
+-  [Disruptivas](https://#)
 -  [jeffeson](https://github.com/jeffesonjp)
 -  [Matheus Bach](https://github.com/matheusbach/)
 -  [pr1mx](https://github.com/pr1mx)
@@ -34,7 +28,7 @@ Colaboradores:
 -  [Hanerone](https://github.com/hanelore)
 -  [steffandsv](https://github.com/steffandsv)
 -  [das_rm](https://github.com/rdsm)
--  [Vinicius Figueiredo](https://github.com/ViniciusFigueiredo)
+-  [Vinicius F. Yaunner](https://github.com/viniciusyaunner)
 -  [MamãeCrypto](https://mamaecrypto.blogspot.com)
 
 Menções:
@@ -48,12 +42,11 @@ Por acreditarem e divulgarem o projeto
 
 
 
-
 Seu nome não aparece na lista acima? Lamentamos que isso tenha ocorrido. Por favor, reinvidique uma contribuição nesta página.
 
 **Pode copiar livremente. Propriedade Intelectual não é legítima.**
 
 
-[guia]: https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/CONTRIBUTING.md
+[guia]: todo/CONTRIBUTING.md
 [issue]: https://github.com/cypherpunksbr/cypherpunks.com.br/issues
 [neste link]: https://cypherpunks.com.br/transparencia/

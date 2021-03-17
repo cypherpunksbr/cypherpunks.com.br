@@ -1,13 +1,12 @@
+s## Traduções
 
-## Traduções
+:pencil2: Em processo de tradução por @
 
- :pencil2: Em processo de tradução por @  
- 
- :ok: Tradução finalizada  
- 
- :clock3: Aguarda tradução  
+:ok: Tradução finalizada
 
- :speech_balloon: Sugestão para tradução
+:clock3: Aguarda tradução
+
+:speech_balloon: Sugestão para tradução
 
 
 ### Textos sendo traduzidos:
@@ -26,6 +25,8 @@
 
 :pencil2: [Cyphernomicon](https://nakamotoinstitute.org/static/docs/cyphernomicon.txt) - [OneTimePad]()
 
+:pencil2: [A Measure of Sacrifice]() - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
+
 :pencil2: "Multinational Small Business" - [@Deephi]()
 
 :pencil2: Origins of Bitcoin - [@aferreira44]()
@@ -34,9 +35,11 @@
 
 :pencil2: Right to read - [@exslave]()
 
-:pencil2: Shelling Out: Money, Blockchains, and Social Scalability - [@hanelore](https://github.com/hanelore)
+:pencil2: [Satoshi Mails](https://satoshi.nakamotoinstitute.org/emails/) - [@MamãeCrypto]()
 
-:pencil2: Shelling Out: The Origins of Money 
+:pencil2: [Scarce Objects](../todo/scarce-objects.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
+
+:pencil2: Shelling Out: Money, Blockchains, and Social Scalability - [@hanelore](https://github.com/hanelore)
 
 :pencil2: The case for privacy - [@gabgrin](https://github.com/gabgrin)
 
@@ -44,8 +47,9 @@
 
 :pencil2: Truledger - [Matheus Bach](https://github.com/matheusbach)
 
+:pencil2: [smart contracts glossary](../todo/smart-contracts-glossary.html) - [Yuri CW](https://github.com/yuricwe)
 
-### Textos traduzidos: 
+### Textos traduzidos:
 
 :ok: [Auditoria Confidencial](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/auditoria-confidencial.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
@@ -93,6 +97,8 @@
 
 :ok: [rpow](../todo/rpow.html) - [Marcos]()
 
+:ok: [Shelling Out: As Origens do Dinheiro]() - [@leonardobjahn]()
+
 :ok: [Terceiros confiáveis](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/terceiros-confiaveis.html) - [Henry](https://github.com/henur)
 
 :ok: [Títulos Seguros de Propriedade]() - [Matheus Bach](https://github.com/matheusbach/ "Ver perfil no GitHub")
@@ -101,7 +107,7 @@
 
 
 ### Textos aguardando tradução:
- 
+
 :clock3: [bitcoin](../todo/bitcoin.html)
 
 :clock3: [cyberspace crypto anarchy and pushing limits](../todo/cyberspace-crypto-anarchy-and-pushing-limits.html)
@@ -134,11 +140,7 @@
 
 :clock3: [reciprocal altruism in the theory of money](../todo/reciprocal-altruism-in-the-theory-of-money.html)
 
-:clock3: [scarce objects](../todo/scarce-objects.html)
-
 :clock3: [secure property titles](../todo/secure-property-titles.html)
-
-:clock3: [smart contracts glossary](../todo/smart-contracts-glossary.html)
 
 :clock3: [the case for privacy](../todo/the-case-for-privacy.html)
 
@@ -150,11 +152,27 @@
 
 :clock3: [triple entry accounting](../todo/triple-entry-accounting.html)
 
- 
+
 * Você pode sugerir ou traduzir um texto que não esteja nessa lista. Basta submeter uma "pull request" pelo GitHub
 
 
 ### Aqui algumas sugestões de textos para tradução:
+
+:speech_balloon: [Opaque](https://opaque.link/)
+
+:speech_balloon: [Activism.net](https://www.activism.net/)
+
+:speech_balloon: [Cartas do Ross Ulbricht](https://freeross.org/writings-from-ross/)
+
+:speech_balloon: [Cypherpunks Archive mail list](https://lists.cpunks.org/pipermail/cypherpunks/)
+
+:speech_balloon: [Cypherspace Articles](http://www.cypherspace.org/)
+
+:speech_balloon: [Cryptoanarchy Wiki](https://cryptoanarchy.wiki)
+
+:speech_balloon: [Cryptography Mail Archive I](https://www.mail-archive.com/cryptography@metzdowd.com/msg10152.html)
+
+:speech_balloon: [Cryptography Mail Archive II](http://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html)
 
 :speech_balloon: [Activism.net](https://www.activism.net/)
 
@@ -178,9 +196,9 @@
 
 :speech_balloon: [Nick Szabo's Essays, Papers, and Concise Tutorials](http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/)
 
-:speech_balloon: [Paralelni Polis](https://www.paralelnipolis.cz/o-nas/en/)
+:speech_balloon: [P2P Foundation](https://p2pfoundation.net/)
 
-:speech_balloon: [Satoshi Mails](https://satoshi.nakamotoinstitute.org/emails/)
+:speech_balloon: [Paralelni Polis](https://www.paralelnipolis.cz/o-nas/en/)
 
 :speech_balloon: [The Gnu/Linux Crypto PT-BR](https://cabaladada.org/2013/09/16/linux_cripto_intro/)
 
