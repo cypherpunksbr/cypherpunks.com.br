@@ -14,7 +14,7 @@ tags:
 Enviado em novembro de 2018
 
 
-_Site originario - [Free Ross Ulbricht](https://freeross.org/letter-for-100k-signatures/)_
+_Site original - [Free Ross Ulbricht](https://freeross.org/letter-for-100k-signatures/)_
 
 Me belisquem, eu devo estar sonhando! 100,000 assinantes querem me ver fora da prisão! Isso é incrivel, ver uma enorme onda de apoio nesses primeiros meses desde o lançamento da petição. .
 
