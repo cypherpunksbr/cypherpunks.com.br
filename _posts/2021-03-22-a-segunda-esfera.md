@@ -16,7 +16,7 @@ tags:
 _Site original - [Anarplex - The Second Realm](https://anarplex.net/files/secondrealm/)_
 
 * <a href="https://raw.githubusercontent.com/cypherpunksbr/a-segunda-esfera/master/segundaesfera.md" target="_blank">segundaesfera.md</a> Markdown
-* <a href="https://github.com/cypherpunksbr/a-segunda-esfera/raw/master/segundaesfera.html" target="_blank">segundaesfera.html</a> HTML
+* <a href="https://github.com/cypherpunksbr/a-segunda-esfera/raw/master/segundaesfera.html" target="_blank" download="segundaesfera.html">segundaesfera.html</a> HTML
 * <a href="https://github.com/cypherpunksbr/a-segunda-esfera/raw/master/segundaesfera.pdf" target="_blank">segundaesfera.pdf</a> PDF
 * <a href="https://github.com/cypherpunksbr/a-segunda-esfera/raw/master/segundaesfera.epub" target="_blank">segundaesfera.epub</a> e-pub
 * <a href="https://github.com/cypherpunksbr/a-segunda-esfera/raw/master/segundaesfera.mobi" target="_blank">segundaesfera.mobi</a> Mobi
