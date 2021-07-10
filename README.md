@@ -28,7 +28,7 @@ Colaboradores:
 -  [Hanerone](https://github.com/hanelore)
 -  [steffandsv](https://github.com/steffandsv)
 -  [das_rm](https://github.com/rdsm)
--  [Vinicius Figueiredo](https://github.com/ViniciusFigueiredo)
+-  [Vinicius F. Yaunner](https://github.com/viniciusyaunner)
 -  [MamãeCrypto](https://mamaecrypto.blogspot.com)
 
 Menções:
@@ -42,12 +42,11 @@ Por acreditarem e divulgarem o projeto
 
 
 
-
 Seu nome não aparece na lista acima? Lamentamos que isso tenha ocorrido. Por favor, reinvidique uma contribuição nesta página.
 
 **Pode copiar livremente. Propriedade Intelectual não é legítima.**
 
 
-[guia]: https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/CONTRIBUTING.md
+[guia]: todo/CONTRIBUTING.md
 [issue]: https://github.com/cypherpunksbr/cypherpunks.com.br/issues
 [neste link]: https://cypherpunks.com.br/transparencia/

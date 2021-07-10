@@ -1,13 +1,12 @@
-
 ## Traduções
 
- :pencil2: Em processo de tradução por @  
- 
- :ok: Tradução finalizada  
- 
- :clock3: Aguarda tradução  
+:pencil2: Em processo de tradução por @
 
- :speech_balloon: Sugestão para tradução
+:ok: Tradução finalizada
+
+:clock3: Aguarda tradução
+
+:speech_balloon: Sugestão para tradução
 
 
 ### Textos sendo traduzidos:
@@ -46,10 +45,9 @@
 
 :pencil2: [The Gentleperson's Guide To Forum Spies](https://cryptome.org/2012/07/gent-forum-spies.htm) - [@EuSouRye](https://github.com/EuSouRye)
 
-:pencil2: Truledger - [Matheus Bach](https://github.com/matheusbach)
+:pencil2: [smart contracts glossary](../todo/smart-contracts-glossary.html) - [Yuri CW](https://github.com/yuricwe)
 
-
-### Textos traduzidos: 
+### Textos traduzidos:
 
 :ok: [Auditoria Confidencial](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/auditoria-confidencial.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
 
@@ -101,7 +99,10 @@
 
 :ok: [Terceiros confiáveis](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/terceiros-confiaveis.html) - [Henry](https://github.com/henur)
 
-:ok: [Títulos Seguros de Propriedade]() - [Matheus Bach](https://github.com/matheusbach/ "Ver perfil no GitHub")
+:ok: [Títulos Seguros de Propriedade](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/TRANSLATED/secure-property-titles.html) - [Matheus Bach](https://github.com/matheusbach/ "Ver perfil no GitHub")
+
+:ok: [Truledger](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/TRANSLATED/trueledger.html) - [Matheus Bach](https://github.com/matheusbach)
+
 
 :ok: [smart contracts glossary](../todo/smart-contracts-glossary.html) - [Yuri CW](https://github.com/yuricwe)
 
@@ -109,7 +110,7 @@
 
 
 ### Textos aguardando tradução:
- 
+
 :clock3: [bitcoin](../todo/bitcoin.html)
 
 :clock3: [cyberspace crypto anarchy and pushing limits](../todo/cyberspace-crypto-anarchy-and-pushing-limits.html)
@@ -154,13 +155,27 @@
 
 :clock3: [triple entry accounting](../todo/triple-entry-accounting.html)
 
- 
+
 * Você pode sugerir ou traduzir um texto que não esteja nessa lista. Basta submeter uma "pull request" pelo GitHub
 
 
 ### Aqui algumas sugestões de textos para tradução:
 
 :speech_balloon: [Opaque](https://opaque.link/)
+
+:speech_balloon: [Activism.net](https://www.activism.net/)
+
+:speech_balloon: [Cartas do Ross Ulbricht](https://freeross.org/writings-from-ross/)
+
+:speech_balloon: [Cypherpunks Archive mail list](https://lists.cpunks.org/pipermail/cypherpunks/)
+
+:speech_balloon: [Cypherspace Articles](http://www.cypherspace.org/)
+
+:speech_balloon: [Cryptoanarchy Wiki](https://cryptoanarchy.wiki)
+
+:speech_balloon: [Cryptography Mail Archive I](https://www.mail-archive.com/cryptography@metzdowd.com/msg10152.html)
+
+:speech_balloon: [Cryptography Mail Archive II](http://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html)
 
 :speech_balloon: [Activism.net](https://www.activism.net/)
 
