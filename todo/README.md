@@ -45,8 +45,6 @@
 
 :pencil2: [The Gentleperson's Guide To Forum Spies](https://cryptome.org/2012/07/gent-forum-spies.htm) - [@EuSouRye](https://github.com/EuSouRye)
 
-:pencil2: [smart contracts glossary](../todo/smart-contracts-glossary.html) - [Yuri CW](https://github.com/yuricwe)
-
 ### Textos traduzidos:
 
 :ok: [Auditoria Confidencial](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/posts/auditoria-confidencial.html) - [@jeffeson](https://github.com/jeffesonjp/ "Ver perfil no GitHub")
@@ -104,7 +102,7 @@
 :ok: [Truledger](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/TRANSLATED/trueledger.html) - [Matheus Bach](https://github.com/matheusbach)
 
 
-:ok: [smart contracts glossary](../todo/smart-contracts-glossary.html) - [Yuri CW](https://github.com/yuricwe)
+:ok: [Smart Contracts Glossary](../todo/smart-contracts-glossary.html) - [Yuri CW](https://github.com/yuricwe)
 
 * Mais publicações você pode encontrar em nossa [biblioteca](https://cypherpunks.com.br/biblioteca/)
 
