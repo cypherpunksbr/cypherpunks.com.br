@@ -104,6 +104,8 @@
 :ok: [Truledger](https://github.com/cypherpunksbr/cypherpunks.com.br/blob/master/todo/TRANSLATED/trueledger.html) - [Matheus Bach](https://github.com/matheusbach)
 
 
+:ok: [smart contracts glossary](../todo/smart-contracts-glossary.html) - [Yuri CW](https://github.com/yuricwe)
+
 * Mais publicações você pode encontrar em nossa [biblioteca](https://cypherpunks.com.br/biblioteca/)
 
 
