@@ -8,7 +8,7 @@ toc: true
 
 ## Saudações criptoanarquistas, cypherpunks e demais amigos da criptosfera.
 
-[Telegram](https://t.me/joinchat/Dcseo0fns78QotA-tu2OtQ){:target="_blank" rel="noopener"}
+[Telegram](https://t.me/criptologia){:target="_blank" rel="noopener"}
 [GitHub](https://github.com/cypherpunksbr/cypherpunks.com.br){:target="_blank" rel="noopener"}
 
 ### Quem Somos
