@@ -1,9 +1,6 @@
-[submodule "themes/hugo-bootstrap-theme"]
-	path = themes/hugo-bootstrap-theme
+[submodule "themes/hugo-theme-bootstrap"]
+	path = themes/hugo-theme-bootstrap
 	url = https://github.com/cypherpunksbr/hugo-theme-bootstrap.git
 [submodule "documentos"]
 	path = documentos
 	url = https://github.com/cypherpunksbr/documentos.git
-[submodule "themes/hugo-theme-bootstrap"]
-	path = themes/hugo-theme-bootstrap
-	url = https://github.com/cypherpunksbr/hugo-theme-bootstrap.git
