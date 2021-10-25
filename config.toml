@@ -1,4 +1,0 @@
-baseURL = 'http://cypherpunks.com.br/'
-languageCode = 'pt-br'
-title = 'Cypherpunks Brasil'
-theme = 'hugo-bootstrap-theme'

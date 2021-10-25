@@ -1,26 +1,16 @@
 +++
-title = "About"
-description = "Hugo, the world's fastest framework for building websites"
-date = "2019-02-28"
-aliases = ["about-us", "about-hugo", "contact"]
-author = "Hugo Authors"
+title = "Sobre"
+description = "Conheça mais sobre nós"
+aliases = ["about-us", "contact"]
+author = "Cypherpunks Brasil"
+date = false
 reward = false
 +++
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+# Quem Somos
 
-Hugo makes use of a variety of open source projects including:
+**Saudações criptoanarquistas, cypherpunks e demais amigos da criptosfera!**
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+cypherpunks é um site dedicado a tradução de textos históricos e compartilhamento de conteúdo relacionado a criptoanarquismo, cypherpunk, criptologia, agorismo, sistemas descentralizados, hardware, moedas digitais e mais.
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+Somos um grupo de pessoas (e robôs) interessados em criptologia, criptomoedas, protocolos, segurança, privacidade, comunicações seguras e formas de tornar o mundo um lugar mais livre. Traduzimos documentos históricos relacionados ao movimento cypherpunk. Escrevemos os nossos próprios artigos, evangelizamos pessoas, ensinamos o que sabemos sobre tecnologia e agorismo, escrevemos programas que ajudem a tornar nossas comunicações mais seguras e livres, realizamos encontros presenciais e mais.

@@ -1,0 +1,87 @@
+mainSections = ["post", "posts"] # Default to ["posts"].
+
+# titleSeparator = "|" # Title separator. Default to "-".
+
+description = "An extreme fast, responsive and feature-rich blog theme for Hugo"
+# images = ["site-feature-image.jpg"]
+
+logo = "images/logo.png"
+
+brand = "Cypherpunks Brasil"
+
+
+menusPosition = "right"
+
+palette = "green"
+
+color = "dark" # light, dark or dynamic. Default to dynamic.
+
+fullWidth = true # Full width.
+# fixedHeader = false # Turn on/off fixed header.
+
+poweredBy = false # Whether to show powered by.
+
+# featuredPostCount = 10 # The number of featured posts shown in sidebar.
+# recentPostCount = 10 # The number of recent posts shown in sidebar.
+# relatedPostCount = 10 # The number of related posts.
+# categoryCount = 10 # The number of categories shown in sidebar.
+# tagCount = 10 # The number of tags shown in sidebar.
+# seriesCount = 10 # The number of series shown in sidebar.
+
+# Custom CSS and JS
+customCSS = []
+customJS = []
+
+# tocWordCount = 280 # TOC is displayed only if the post's word count exceeds this value.
+
+[archive]
+  paginate = 50 # Archive pagination. Default to 100.
+  dateFormat = "02 Jan" # Archive date format. Default to "Jan 2".
+
+# Site verification
+[siteVerification]
+  google = ""
+  bing = ""
+  baidu = ""
+  baiduUnion = "" # Baidu Union
+  so = ""
+  sogou = ""
+  shenma = ""
+
+[creativeCommons]
+  # by = true # Credit must be given to you, the creator.
+  # nc = true # Only noncommercial use of your work is permitted.
+  # nd = true # No derivatives or adaptations of your work are permitted.
+  # sa = true # Adaptations must be shared under the same terms.
+
+[utterances]
+  repo = "razonyang/hugo-theme-bootstrap"
+  #issueTerm = "pathname" # pathname, url, title, og:title
+  #label = "comment"
+  theme = "github-dark" # github-light, github-dark, preferred-color-scheme, github-dark-orange, icy-dark, dark-blue, photon-dark.
+
+[search]
+  paginate = 5 # Pagination. Default to 10.
+  # resultContentWordCount = 240 # The maximum word count of result content for displaying.
+  # Fuse.js options. See https://fusejs.io/api/options.html.
+  [search.fuse]
+    # ignoreLocation = true
+    # location = 0
+    # isCaseSensitive = false
+    # minMatchCharLength = 1
+    threshold = 0.1
+    # distance = 100
+    # useExtendedSearch = true
+
+#[reward]
+  #alipay = "images/reward/alipay.png"
+  #wechat = "images/reward/wechat.png"
+
+[share]
+  addThis = "ra-60bcc43f59f2d04f" # AddThis pubid.
+
+[fontSize] # Comment or remove this settings to disable font size switcher.
+  # extraSmall = ".8rem"
+  # small = ".9rem"
+  # large = "1.1rem"
+  # extraLarge = "1.2rem"

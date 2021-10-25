@@ -1,0 +1,8 @@
+[[main]]
+  # desmarque aqui para adicionar # name = "Dropdown"
+  identifier = "dropdown"
+[[main]]
+  parent = "dropdown"
+  name = "Github"
+  url = "https://github.com/razonyang/hugo-theme-bootstrap"
+  pre = '<i class="fab fa-fw fa-github"></i>'
