@@ -1,5 +1,5 @@
 +++
-title = "Sobre"
+title = "Mais sobre o projeto"
 description = "Conheça mais sobre nós"
 aliases = ["about-us", "contact"]
 author = "Cypherpunks Brasil"

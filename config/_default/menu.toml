@@ -1,8 +1,28 @@
 [[main]]
-  # desmarque aqui para adicionar # name = "Dropdown"
-  identifier = "dropdown"
+  name = " Home"
+  identifier = "home"
+  pre = "<i class='fas fa-fw fa-home'></i>"
+  url = "/"
+  weight = 1
+
+  [[main]]
+  name = " Ano"
+  identifier = "archives"
+  pre = "<i class='fas fa-fw fa-calendar-alt'></i>"
+  url = "/archives"
+  layout = "archive"
+  weight = 2
+
+  [[main]]
+  name = " Categoria"
+  identifier = "categories"
+  pre = "<i class='fas fa-fw fa-folder'></i>"
+  url = "/categories"
+  weight = 3
+
 [[main]]
-  parent = "dropdown"
-  name = "Github"
-  url = "https://github.com/razonyang/hugo-theme-bootstrap"
-  pre = '<i class="fab fa-fw fa-github"></i>'
+  name = " Tag"
+  identifier = "tags"
+  pre = "<i class='fas fa-fw fa-tags'></i>"
+  url = "/tags"
+  weight = 4

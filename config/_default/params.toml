@@ -9,15 +9,14 @@ logo = "images/logo.png"
 
 brand = "Cypherpunks Brasil"
 
+dateFormat = "Jan 2, 2006"
 
 menusPosition = "right"
-
-palette = "green"
 
 color = "dark" # light, dark or dynamic. Default to dynamic.
 
 fullWidth = true # Full width.
-# fixedHeader = false # Turn on/off fixed header.
+fixedHeader = false # Turn on/off fixed header.
 
 poweredBy = false # Whether to show powered by.
 
@@ -76,9 +75,6 @@ customJS = []
 #[reward]
   #alipay = "images/reward/alipay.png"
   #wechat = "images/reward/wechat.png"
-
-[share]
-  addThis = "ra-60bcc43f59f2d04f" # AddThis pubid.
 
 [fontSize] # Comment or remove this settings to disable font size switcher.
   # extraSmall = ".8rem"
