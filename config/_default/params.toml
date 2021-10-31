@@ -47,14 +47,14 @@ customJS = []
   sogou = ""
   shenma = ""
 
-[creativeCommons]
-  # by = true # Credit must be given to you, the creator.
-  # nc = true # Only noncommercial use of your work is permitted.
-  # nd = true # No derivatives or adaptations of your work are permitted.
-  # sa = true # Adaptations must be shared under the same terms.
+#[creativeCommons]
+  by = false # Credit must be given to you, the creator.
+  nc = false # Only noncommercial use of your work is permitted.
+  nd = false # No derivatives or adaptations of your work are permitted.
+  sa = false # Adaptations must be shared under the same terms.
 
 [utterances]
-  repo = "razonyang/hugo-theme-bootstrap"
+  repo = "cypherpunksbr/hugo-theme-bootstrap"
   #issueTerm = "pathname" # pathname, url, title, og:title
   #label = "comment"
   theme = "github-dark" # github-light, github-dark, preferred-color-scheme, github-dark-orange, icy-dark, dark-blue, photon-dark.
