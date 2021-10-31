@@ -13,12 +13,12 @@
   layout = "archive"
   weight = 2
 
-#[[main]]
-#  name = " Categoria"
-#  identifier = "categories"
-#  pre = "<i class='fas fa-fw fa-folder'></i>"
-#  url = "/categorias"
-#  weight = 5
+[[main]]
+  name = " Autor"
+  identifier = "autores"
+  pre = "<i class='fas fa-fw fa-user'></i>"
+  url = "/author"
+  weight = 3
 
 [[main]]
   name = " Tag"
@@ -27,9 +27,9 @@
   url = "/tags"
   weight = 4
 
-[[main]]
-  name = " Autor"
-  identifier = "author"
-  pre = "<i class='fas fa-fw fa-user'></i>"
-  url = "/autores"
-  weight = 3
+#[[main]]
+#  name = " Categoria"
+#  identifier = "categories"
+#  pre = "<i class='fas fa-fw fa-folder'></i>"
+#  url = "/categorias"
+#  weight = 5
