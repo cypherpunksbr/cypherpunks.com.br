@@ -1,7 +1,7 @@
 [[main]]
   name = " Home"
   identifier = "home"
-  pre = "<i class='fas fa-fw fa-home'></i>"
+  pre = '<img class="logo" alt="Logo" src="http://localhost:1313/images/logo.png" loading="lazy" width="1087" height="1087">'
   url = "/"
   weight = 1
 
