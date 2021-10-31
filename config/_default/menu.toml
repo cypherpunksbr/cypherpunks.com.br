@@ -5,20 +5,20 @@
   url = "/"
   weight = 1
 
-  [[main]]
+[[main]]
   name = " Ano"
   identifier = "archives"
   pre = "<i class='fas fa-fw fa-calendar-alt'></i>"
-  url = "/archives"
+  url = "/arquivo"
   layout = "archive"
   weight = 2
 
-  [[main]]
-  name = " Categoria"
-  identifier = "categories"
-  pre = "<i class='fas fa-fw fa-folder'></i>"
-  url = "/categories"
-  weight = 3
+#[[main]]
+#  name = " Categoria"
+#  identifier = "categories"
+#  pre = "<i class='fas fa-fw fa-folder'></i>"
+#  url = "/categorias"
+#  weight = 5
 
 [[main]]
   name = " Tag"
@@ -26,3 +26,10 @@
   pre = "<i class='fas fa-fw fa-tags'></i>"
   url = "/tags"
   weight = 4
+
+[[main]]
+  name = " Autor"
+  identifier = "author"
+  pre = "<i class='fas fa-fw fa-user'></i>"
+  url = "/autores"
+  weight = 3

@@ -17,9 +17,8 @@ enableEmoji = true
   home = ["HTML", "RSS", "JSON"]
 
 [taxonomies]
-  category = "categories"
-  series = "series"
   tag = "tags"
+  author = "author"
 
 [Date]
   Format = "2006-1-2"
