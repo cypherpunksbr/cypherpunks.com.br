@@ -9,6 +9,10 @@ paginate = 10
 # Google analytics
 # googleAnalytics = "UA-123-45"
 
+googlefonts = ["Droid Sans", "Fira Mono"]
+fontbody = 'Droid Sans'
+fontcode = 'Fira Mono'
+
 enableRobotsTXT = true
 
 enableEmoji = true
