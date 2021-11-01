@@ -1,6 +1,8 @@
 [submodule "themes/hugo-theme-bootstrap"]
 	path = themes/hugo-theme-bootstrap
 	url = https://github.com/cypherpunksbr/hugo-theme-bootstrap.git
+	branch = master
 [submodule "documentos"]
 	path = documentos
 	url = https://github.com/cypherpunksbr/documentos.git
+	branch = main
