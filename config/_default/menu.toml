@@ -1,14 +1,6 @@
 [[main]]
-  name = " Home"
-  identifier = "home"
-  pre = '<img class="logo" alt="Logo" src="/images/logo.png" loading="lazy" width="1087" height="1087">'
-  url = "/"
-  weight = 1
-
-[[main]]
   name = " Ano"
   identifier = "archives"
-  pre = "<i class='fas fa-fw fa-calendar-alt'></i>"
   url = "/arquivo"
   layout = "archive"
   weight = 2
@@ -16,20 +8,17 @@
 [[main]]
   name = " Autor"
   identifier = "autores"
-  pre = "<i class='fas fa-fw fa-user'></i>"
   url = "/author"
   weight = 3
 
 [[main]]
   name = " Tag"
   identifier = "tags"
-  pre = "<i class='fas fa-fw fa-tags'></i>"
   url = "/tags"
   weight = 4
 
 #[[main]]
 #  name = " Categoria"
 #  identifier = "categories"
-#  pre = "<i class='fas fa-fw fa-folder'></i>"
 #  url = "/categorias"
 #  weight = 5

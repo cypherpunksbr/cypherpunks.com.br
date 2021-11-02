@@ -5,7 +5,7 @@ mainSection = ["documentos"] # Default to ["posts"].
 description = "An extreme fast, responsive and feature-rich blog theme for Hugo"
 # images = ["site-feature-image.jpg"]
 
-logo = "images/logo.png"
+#logo = "images/logo.png"
 
 brand = "Cypherpunks Brasil"
 
