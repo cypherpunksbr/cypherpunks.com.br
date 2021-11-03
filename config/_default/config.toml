@@ -3,7 +3,7 @@ title = "Cypherpunks Brasil"
 theme = "hugo-theme-bootstrap"
 copyright = "(CC0) 2018-{year} Cypherpunks Brasil. O site está sobre a licença Creative Commons Zero, pode copiar!"
 
-paginate = 10
+paginate = 5
 # paginatePath = "page"
 
 googlefonts = ["Droid Sans", "Fira Mono"]
