@@ -17,6 +17,12 @@
   url = "/tags"
   weight = 4
 
+[[main]]
+  name = " Artes"
+  identifier = "artes"
+  url = "/artes"
+  weight = 5
+
 #[[main]]
 #  name = " Categoria"
 #  identifier = "categories"
