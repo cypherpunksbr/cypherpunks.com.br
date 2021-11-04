@@ -6,3 +6,7 @@
 	path = documentos
 	url = https://github.com/cypherpunksbr/documentos.git
 	branch = main
+[submodule "artes"]
+	path = artes
+	url = https://github.com/cypherpunksbr/artes.git
+	branch = master
