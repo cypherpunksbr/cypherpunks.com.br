@@ -19,7 +19,7 @@
 
 [[main]]
   name = " Artes"
-  identifier = "artes"
+  identifier = "documentos"
   url = "/artes"
   weight = 5
 
