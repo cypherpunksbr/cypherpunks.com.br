@@ -10,3 +10,7 @@
 	path = artes
 	url = https://github.com/cypherpunksbr/artes.git
 	branch = master
+[submodule "themes/hugo-shortcode-gallery"]
+	path = themes/hugo-shortcode-gallery
+	url = https://github.com/cypherpunksbr/hugo-shortcode-gallery.git
+	branch = master
