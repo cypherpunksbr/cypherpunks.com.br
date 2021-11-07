@@ -31,12 +31,11 @@ poweredBy = false # Whether to show powered by.
 customCSS = []
 customJS = []
 
-
-    galleryRowHeight    = 200
-    galleryMargins      = 10
-    galleryResizeOptions= "800x800 q88 Lanczos"
-    galleryPreviewType  = "blur"
-    galleryThumbnailHoverEffect = "enlarge"
+galleryRowHeight    = 200
+galleryMargins      = 10
+galleryResizeOptions= "800x800 q88 Lanczos"
+galleryPreviewType  = "blur"
+galleryThumbnailHoverEffect = "enlarge"
 
 # tocWordCount = 280 # TOC is displayed only if the post's word count exceeds this value.
 
@@ -61,23 +60,22 @@ customJS = []
   sa = false # Adaptations must be shared under the same terms.
 
 [utterances]
-  repo = "cypherpunksbr/hugo-theme-bootstrap"
-  #issueTerm = "pathname" # pathname, url, title, og:title
-  #label = "comment"
-  theme = "github-dark" # github-light, github-dark, preferred-color-scheme, github-dark-orange, icy-dark, dark-blue, photon-dark.
+  repo = "cypherpunksbr/documentos"
+  issueTerm = "pathname" # pathname, url, title, og:title
+  label = "comentário"
+  theme = "preferred-color-scheme" # github-light, github-dark, preferred-color-scheme, github-dark-orange, icy-dark, dark-blue, photon-dark.
 
 [search]
   paginate = 10 # Pagination. Default to 10.
   # resultContentWordCount = 240 # The maximum word count of result content for displaying.
   # Fuse.js options. See https://fusejs.io/api/options.html.
   [search.fuse]
-    # ignoreLocation = true
-    # location = 0
-    # isCaseSensitive = false
-    # minMatchCharLength = 1
+    ignoreLocation = true
+    isCaseSensitive = false
+    minMatchCharLength = 4
     threshold = 0.1
-    # distance = 100
-    # useExtendedSearch = true
+    useExtendedSearch = true
+    shouldSort = true
 
 #[reward]
   #alipay = "images/reward/alipay.png"
