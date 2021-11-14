@@ -14,7 +14,7 @@ enableRobotsTXT = true
 
 enableEmoji = true
 
-markup.goldmark.renderer.unsafe = true
+markup.goldmark.renderer.unsafe = false
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
