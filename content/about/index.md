@@ -218,7 +218,7 @@ Somos um grupo de pessoas (e robôs) interessados em criptologia, criptomoedas, 
       </div>
     </a>
 
-    <a class="link-contributors" target="_blank" rel="noopener noreferrer" href="hhttps://github.com/SparK-Cruz">
+    <a class="link-contributors" target="_blank" rel="noopener noreferrer" href="https://github.com/SparK-Cruz">
       <div class="text-center profile-contributors">
         <img class="img-contributor" src="https://avatars.githubusercontent.com/u/1179000?v=4" />
         <hr class="hr text-center" />
