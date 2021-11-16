@@ -226,6 +226,14 @@ Somos um grupo de pessoas (e robôs) interessados em criptologia, criptomoedas, 
       </div>
     </a>
 
+    <a class="link-contributors" target="_blank" rel="noopener noreferrer" href="https://github.com/deepchaos">
+      <div class="text-center profile-contributors">
+        <img class="img-contributor" src="https://avatars.githubusercontent.com/u/44310183?v=4" />
+        <hr class="hr text-center" />
+        <p class="name-contributor">deepchaos</p>
+      </div>
+    </a>
+
   </div>
 </div>
 {{< /htmlToRender >}}
