@@ -239,3 +239,8 @@ Somos um grupo de pessoas (e robôs) interessados em criptologia, criptomoedas, 
   </div>
 </div>
 {{< /htmlToRender >}}
+
+
+
+
+##### ⊕ Faltou você aqui? Gostaria de tirar o seu? fale com [@usedel22](https://t.me/userdel22) ou com o [@matheus_bach](https://t.me/matheus_bach) no telegram, ou no nosso grupo lá. ⊕
