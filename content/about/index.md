@@ -17,12 +17,14 @@ Somos um grupo de pessoas (e robôs) interessados em criptologia, criptomoedas, 
 
 ---
 
+# Contribuidores
+
+##### Mentes que dedicaram tempo, esforço e comprometimento para tornar o projeto possível
+
 {{< htmlToRender >}}
 
 <!DOCTYPE HTML>
 <div class="">
-  <h1 class=" text-center title-contributors">Contribuidores</h1>
-  <div class="text-center mb-4 subtitle-contributors">Pessoas que contribuiram traduzindo, revisando, escrevendo, codando e tudo mais</div>
   <div class="all-contributors text-center">
       
     <a class="link-contributors" target="_blank" rel="noopener noreferrer" href="https://github.com/AvelinoMorganti">
@@ -45,7 +47,7 @@ Somos um grupo de pessoas (e robôs) interessados em criptologia, criptomoedas, 
       <div class="text-center profile-contributors">
         <img class="img-contributor" src="https://avatars.githubusercontent.com/u/35426162?v=4" />
         <hr class="hr text-center" />
-        <p class="name-contributor">matheusbach</p>
+        <p class="name-contributor">Matheus Bach</p>
       </div>
     </a>
 
