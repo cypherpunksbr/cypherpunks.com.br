@@ -24,7 +24,7 @@ poweredBy = false # Whether to show powered by.
 # recentPostCount = 20 # The number of recent posts shown in sidebar.
 # relatedPostCount = 20 # The number of related posts.
 # categoryCount = 20 # The number of categories shown in sidebar.
-tagCount = 20 # The number of tags shown in sidebar.
+tagCount = 25 # The number of tags shown in sidebar.
 # seriesCount = 20 # The number of series shown in sidebar.
 
 # Custom CSS and JS
