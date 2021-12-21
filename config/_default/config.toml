@@ -1,0 +1,27 @@
+baseURL = "https://cypherpunks.com.br/"
+title = "Cypherpunks Brasil"
+theme = ["hugo-theme-bootstrap", "hugo-shortcode-gallery"]
+copyright = "(CC0) 2018-{year} Cypherpunks Brasil. O site está sobre a licença Creative Commons Zero, pode copiar!"
+
+paginate = 5
+# paginatePath = "page"
+
+googlefonts = ["Droid Sans", "Fira Mono"]
+fontbody = 'Droid Sans'
+fontcode = 'Fira Mono'
+
+enableRobotsTXT = true
+
+enableEmoji = true
+
+markup.goldmark.renderer.unsafe = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+  tag = "tags"
+  author = "author"
+
+[Date]
+  Format = "2006-1-2"

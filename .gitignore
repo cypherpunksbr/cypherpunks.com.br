@@ -1,5 +1,1 @@
-_site/
-.jekyll-cache/
-.jekyll-metadata
-.sass-cache/
-vendor/
+resources/_gen

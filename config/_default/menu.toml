@@ -1,0 +1,30 @@
+[[main]]
+  name = " Ano"
+  identifier = "archives"
+  url = "/arquivo"
+  layout = "archive"
+  weight = 2
+
+[[main]]
+  name = " Autor"
+  identifier = "autores"
+  url = "/author"
+  weight = 3
+
+[[main]]
+  name = " Tag"
+  identifier = "tags"
+  url = "/tags"
+  weight = 4
+
+[[main]]
+  name = " Artes "
+  identifier = "gallery"
+  url = "/artes"
+  weight = 5
+
+#[[main]]
+#  name = " Categoria"
+#  identifier = "categories"
+#  url = "/categorias"
+#  weight = 5

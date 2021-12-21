@@ -1,0 +1,88 @@
+mainSection = ["documentos"] # Default to ["posts"].
+
+# titleSeparator = "|" # Title separator. Default to "-".
+
+description = "An extreme fast, responsive and feature-rich blog theme for Hugo"
+# images = ["site-feature-image.jpg"]
+
+#logo = "images/logo.png"
+
+brand = "Cypherpunks Brasil"
+
+dateFormat = "Jan 2, 2006"
+
+menusPosition = "right"
+
+color = "dark" # light, dark or dynamic. Default to dynamic.
+
+fullWidth = true # Full width.
+fixedHeader = false # Turn on/off fixed header.
+
+poweredBy = false # Whether to show powered by.
+
+# featuredPostCount = 20 # The number of featured posts shown in sidebar.
+# recentPostCount = 20 # The number of recent posts shown in sidebar.
+# relatedPostCount = 20 # The number of related posts.
+# categoryCount = 20 # The number of categories shown in sidebar.
+tagCount = 25 # The number of tags shown in sidebar.
+# seriesCount = 20 # The number of series shown in sidebar.
+
+# Custom CSS and JS
+customCSS = []
+customJS = []
+
+galleryRowHeight    = 200
+galleryMargins      = 10
+galleryResizeOptions= "800x800 q88 Lanczos"
+galleryPreviewType  = "blur"
+galleryThumbnailHoverEffect = "enlarge"
+
+# tocWordCount = 280 # TOC is displayed only if the post's word count exceeds this value.
+
+[archive]
+  paginate = 100 # Archive pagination. Default to 100.
+  dateFormat = "02 Jan" # Archive date format. Default to "Jan 2".
+
+# Site verification
+[siteVerification]
+  google = ""
+  bing = ""
+  baidu = ""
+  baiduUnion = "" # Baidu Union
+  so = ""
+  sogou = ""
+  shenma = ""
+
+#[creativeCommons]
+  by = false # Credit must be given to you, the creator.
+  nc = false # Only noncommercial use of your work is permitted.
+  nd = false # No derivatives or adaptations of your work are permitted.
+  sa = false # Adaptations must be shared under the same terms.
+
+[utterances]
+  repo = "cypherpunksbr/documentos"
+  issueTerm = "pathname" # pathname, url, title, og:title
+  label = "comentário"
+  theme = "preferred-color-scheme" # github-light, github-dark, preferred-color-scheme, github-dark-orange, icy-dark, dark-blue, photon-dark.
+
+[search]
+  paginate = 10 # Pagination. Default to 10.
+  # resultContentWordCount = 240 # The maximum word count of result content for displaying.
+  # Fuse.js options. See https://fusejs.io/api/options.html.
+  [search.fuse]
+    ignoreLocation = true
+    isCaseSensitive = false
+    minMatchCharLength = 4
+    threshold = 0.1
+    useExtendedSearch = true
+    shouldSort = true
+
+#[reward]
+  #alipay = "images/reward/alipay.png"
+  #wechat = "images/reward/wechat.png"
+
+[fontSize] # Comment or remove this settings to disable font size switcher.
+  # extraSmall = ".8rem"
+  # small = ".9rem"
+  # large = "1.1rem"
+  # extraLarge = "1.2rem"
