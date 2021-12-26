@@ -16,10 +16,6 @@ features = [
   "documentos históricos"
 ]
 
-[author]
-  name = "Cypherpunks Brasil"
-  homepage = "https://github.com/cypherpunksbr"
-
 #logo = "images/logo.png"
 
 brand = "Cypherpunks Brasil"
