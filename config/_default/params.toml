@@ -2,7 +2,7 @@ mainSection = ["documentos"] # Default to ["posts"].
 
 # titleSeparator = "|" # Title separator. Default to "-".
 
-description = "An extreme fast, responsive and feature-rich blog theme for Hugo"
+description = "Cypherpunks Brasil é um projeto dedicado a tradução de textos históricos e compartilhamento de conteúdo relacionado a criptoanarquismo, cypherpunk, criptologia, agorismo, sistemas descentralizados, hardware, moedas digitais, anarquismo, sobrevivencialismo e mais."
 # images = ["site-feature-image.jpg"]
 
 #logo = "images/logo.png"
@@ -13,7 +13,7 @@ dateFormat = "Jan 2, 2006"
 
 menusPosition = "right"
 
-color = "dark" # light, dark or dynamic. Default to dynamic.
+color = 'dark' # light, dark or dynamic. Default to dynamic.
 
 fullWidth = true # Full width.
 fixedHeader = false # Turn on/off fixed header.
