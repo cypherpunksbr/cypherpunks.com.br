@@ -5,6 +5,21 @@ mainSection = ["documentos"] # Default to ["posts"].
 description = "Cypherpunks Brasil é um projeto dedicado a tradução de textos históricos e compartilhamento de conteúdo relacionado a criptoanarquismo, cypherpunk, criptologia, agorismo, sistemas descentralizados, hardware, moedas digitais, anarquismo, sobrevivencialismo e mais."
 # images = ["site-feature-image.jpg"]
 
+licenselink = "https://creativecommons.org/publicdomain/zero/1.0/deed.pt_BR"
+
+homepage = "https://cypherpunks.com.br/"
+
+features = [
+  "blog",
+  "informações",
+  "trauduções",
+  "documentos históricos"
+]
+
+[author]
+  name = "Cypherpunks Brasil"
+  homepage = "https://github.com/cypherpunksbr"
+
 #logo = "images/logo.png"
 
 brand = "Cypherpunks Brasil"
@@ -13,7 +28,7 @@ dateFormat = "Jan 2, 2006"
 
 menusPosition = "right"
 
-color = 'dark' # light, dark or dynamic. Default to dynamic.
+color = "dark" # light, dark or dynamic. Default to dynamic.
 
 fullWidth = true # Full width.
 fixedHeader = false # Turn on/off fixed header.
