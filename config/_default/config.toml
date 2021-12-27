@@ -10,7 +10,7 @@ googlefonts = ["Droid Sans", "Fira Mono"]
 fontbody = 'Droid Sans'
 fontcode = 'Fira Mono'
 
-enableRobotsTXT = true
+enableRobotsTXT = false
 
 enableEmoji = true
 
