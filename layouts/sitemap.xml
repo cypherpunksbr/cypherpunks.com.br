@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     {{ range .Data.Pages }}
         {{ if ne .Params.sitemap_exclude true }}
+            {{ if not (in .Site.Params.dirsExcludedFromSitemap .Data.Plural) }}
                 <url>
                     <loc>https://cypherpunks.com.br{{ .Permalink }}</loc>
                     {{ if not .Lastmod.IsZero }}
@@ -21,5 +22,6 @@
                     {{ end }}
                 </url>
             {{ end }}
+        {{ end }}
     {{ end }}
 </urlset>

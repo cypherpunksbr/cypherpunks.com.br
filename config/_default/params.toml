@@ -20,6 +20,8 @@ features = [
 
 brand = "Cypherpunks Brasil"
 
+dirsExcludedFromSitemap = ["tags", "categories", "stuff"]
+
 dateFormat = "Jan 2, 2006"
 
 menusPosition = "right"
