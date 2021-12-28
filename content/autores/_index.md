@@ -1,4 +1,0 @@
----
-title: "Autores"
-layout: authors
----
