@@ -79,13 +79,16 @@ galleryThumbnailHoverEffect = "enlarge"
   theme = "preferred-color-scheme" # github-light, github-dark, preferred-color-scheme, github-dark-orange, icy-dark, dark-blue, photon-dark.
 
 [search]
-  paginate = 10 # Pagination. Default to 10.
+  paginate = 25 # Pagination. Default to 10.
   # resultContentWordCount = 240 # The maximum word count of result content for displaying.
   # Fuse.js options. See https://fusejs.io/api/options.html.
   [search.fuse]
-    ignoreLocation = true
+    ignoreLocation = false
+    distance = 50000
+    findAllMatches = true
+    fieldNormWeight = 1.5
     isCaseSensitive = false
-    minMatchCharLength = 4
+    minMatchCharLength = 1
     threshold = 0.1
     useExtendedSearch = true
     shouldSort = true
