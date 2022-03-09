@@ -52,6 +52,10 @@ galleryThumbnailHoverEffect = "enlarge"
 
 # tocWordCount = 280 # TOC is displayed only if the post's word count exceeds this value.
 
+[post]
+  excerpt = "description"
+  excerptMaxLength = 340
+
 [archive]
   paginate = 100 # Archive pagination. Default to 100.
   dateFormat = "02 Jan" # Archive date format. Default to "Jan 2".
