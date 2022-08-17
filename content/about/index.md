@@ -228,6 +228,22 @@ Somos um grupo de pessoas (e robôs) interessados em criptologia, criptomoedas, 
       </div>
     </a>
 
+    <a class="link-contributors" target="_blank" rel="noopener noreferrer" href="https://twitter.com/daniel_miorim">
+      <div class="text-center profile-contributors">
+        <img class="img-contributor" src="https://pbs.twimg.com/profile_images/1526326636353839104/ywaZaBUi_400x400.jpg" />
+        <hr class="hr text-center" />
+        <p class="name-contributor">Daniel Miorim</p>
+      </div>
+    </a>
+
+    <a class="link-contributors" target="_blank" rel="noopener noreferrer" href="https://bitnoticias.com.br/author/leonardobjahn/">
+      <div class="text-center profile-contributors">
+        <img class="img-contributor" src="https://media-exp1.licdn.com/dms/image/C4E03AQEbpliFDs3FHQ/profile-displayphoto-shrink_200_200/0/1640009207661?e=2147483647&v=beta&t=BOo-sWz-rxK6TI_QJYIl9-sxK-qW1yU4gNmZE0QNUIE" />
+        <hr class="hr text-center" />
+        <p class="name-contributor">Leonardo Broering Jahn </p>
+      </div>
+    </a>
+
   </div>
 </div>
 {{< /htmlToRender >}}
@@ -235,4 +251,4 @@ Somos um grupo de pessoas (e robôs) interessados em criptologia, criptomoedas, 
 
 
 
-##### ⊕ Faltou você aqui? Gostaria de tirar o seu? fale com [@usedel22](https://t.me/userdel22) ou com o [@matheus_bach](https://t.me/matheus_bach) no telegram, ou no nosso grupo lá. ⊕
+##### ⊕ Faltou você aqui? Gostaria de tirar o seu? fale com [@usedel22](https://t.me/userdel22), [@matheus_bach](https://t.me/matheus_bach) ou em nosso [grupo no telegram](https://t.me/criptologia). ⊕
