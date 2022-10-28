@@ -26,7 +26,7 @@ dateFormat = "Jan 2, 2006"
 
 menusPosition = "right"
 
-color = "dark" # light, dark or dynamic. Default to dynamic.
+color = "light" # light, dark or dynamic. Default to dynamic.
 
 fullWidth = true # Full width.
 fixedHeader = false # Turn on/off fixed header.
