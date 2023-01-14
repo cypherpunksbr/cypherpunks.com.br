@@ -259,4 +259,4 @@ Somos um grupo de pessoas (e robôs) interessados em criptologia, criptomoedas, 
 
 
 
-##### ⊕ Faltou você aqui? Gostaria de tirar o seu? fale com [@usedel22](https://t.me/userdel22), [@matheus_bach](https://t.me/matheus_bach) ou em nosso [grupo no telegram](https://t.me/criptologia). ⊕
+##### ⊕ Faltou você aqui? Gostaria de tirar o seu? fale com [@usedel22](https://t.me/userdel22), [@matheus_bach](https://t.me/matheus_bach) ou em nosso [grupo no telegram](https://t.me/CypherpunksBrasil/431). ⊕
