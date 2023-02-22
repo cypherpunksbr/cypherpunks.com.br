@@ -256,7 +256,7 @@ Somos um grupo de pessoas (e robôs) interessados em criptologia, criptomoedas, 
       <div class="text-center profile-contributors">
         <img class="img-contributor" src="https://avatars.githubusercontent.com/u/46814712" />
         <hr class="hr text-center" />
-        <p class="name-contributor">João Paulo Hotequil</p>
+        <p class="name-contributor">hotequil</p>
       </div>
     </a>
     
