@@ -26,3 +26,9 @@ markup.goldmark.renderer.unsafe = false
 
 [Date]
   Format = "2006-1-2"
+
+[module]
+[[module.mounts]]
+  source = 'content'
+  target = 'content'
+  excludeFiles = ['**README.md', '**readme.md']
