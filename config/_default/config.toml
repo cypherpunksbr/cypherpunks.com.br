@@ -3,6 +3,7 @@ title = "Cypherpunks Brasil"
 theme = ["hugo-theme-bootstrap", "hugo-shortcode-gallery"]
 copyright = "(CC0) 2018-{year} Cypherpunks Brasil. O site está sobre a licença Creative Commons Zero, pode copiar!"
 languageCode = "pt-br"
+logo = "images/xor-background-light.webp"
 
 paginate = 5
 # paginatePath = "page"
