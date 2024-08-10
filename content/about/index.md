@@ -75,11 +75,11 @@ Somos um grupo de pessoas (e robôs) interessados em criptologia, criptomoedas, 
       </div>
     </a>
 
-    <a class="link-contributors" target="_blank" rel="noopener noreferrer" href="https://github.com/OGabrielPereira">
+    <a class="link-contributors" target="_blank" rel="noopener noreferrer" href="https://github.com/lsprdev">
       <div class="text-center profile-contributors">
-        <img class="img-contributor" alt="Imagem de OGabrielPereira" src="https://avatars.githubusercontent.com/u/56761360?v=4" />
+        <img class="img-contributor" alt="Imagem de lsprdev" src="https://avatars.githubusercontent.com/u/56761360?v=4" />
         <hr class="hr text-center" />
-        <p class="name-contributor">OGabrielPereira</p>
+        <p class="name-contributor">lsprdev</p>
       </div>
     </a>
 
