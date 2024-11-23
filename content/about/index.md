@@ -251,14 +251,6 @@ Somos um grupo de pessoas (e robôs) interessados em criptologia, criptomoedas, 
         <p class="name-contributor">Leonardo Broering Jahn</p>
       </div>
     </a>
-
-    <a class="link-contributors" target="_blank" rel="noopener noreferrer" href="https://github.com/hotequil">
-      <div class="text-center profile-contributors">
-        <img class="img-contributor" alt="Imagem de hotequil" src="https://avatars.githubusercontent.com/u/46814712" />
-        <hr class="hr text-center" />
-        <p class="name-contributor">hotequil</p>
-      </div>
-    </a>
     
   </div>
 </div>
