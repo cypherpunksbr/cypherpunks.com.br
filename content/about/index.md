@@ -251,6 +251,14 @@ Somos um grupo de pessoas (e robôs) interessados em criptologia, criptomoedas, 
         <p class="name-contributor">Leonardo Broering Jahn</p>
       </div>
     </a>
+
+    <a class="link-contributors" target="_blank" rel="noopener noreferrer" href="">
+      <div class="text-center profile-contributors">
+        <img class="img-contributor" alt="Imagem de Caio Forne" src="https://i.ibb.co/RpTNgCZ0/photo-2025-10-18-15-21-52.webp" />
+        <hr class="hr text-center" />
+        <p class="name-contributor">Caio Forne</p>
+      </div>
+    </a>
     
   </div>
 </div>
@@ -260,3 +268,4 @@ Somos um grupo de pessoas (e robôs) interessados em criptologia, criptomoedas, 
 
 
 ##### ⊕ Faltou você aqui? Gostaria de tirar o seu? fale com [@usedel22](https://t.me/userdel22), [@matheus_bach](https://t.me/matheus_bach) ou em nosso [grupo no telegram](https://t.me/CypherpunksBrasil/431). ⊕
+
